@@ -1,0 +1,67 @@
+
+
+/* 테이블 */
+#table-assetsRegister td:nth-child(2n+1){
+	padding-left: 13px;
+	padding-top: 13px;
+ 	background-color: #F6F6F6;
+ }
+ #table-assetsRegister{
+ background-color: #fff!important;
+ }
+
+ 
+ /* 선택 버튼  */
+ #order-form fieldset{
+ 	padding-top: 0px !important;
+ 	padding-bottom: 0px !important;
+ }
+ #order-form section{
+ 	margin-bottom: 0px !important;
+ }
+ #order-form, #order-form fieldset{
+ 	height: 30px;
+ }
+ #table-assetsRegister .dropdown{
+ 	padding-left: 13px;
+ 	padding-right: 13px;
+ }
+ /* #table-assetsRegister td a{
+ 	background-color: #F6F6F6;
+ 	color: black;
+ } */
+ 
+ 
+ /* 액션(검색, 글작성) 버튼  */
+ .bt-bar-group i{
+	 margin-right: 5px; 
+ }
+ .bt-bar-group{
+ 	margin-top: 10px;
+ }
+.bt-bar-group .btn-right{
+	float: right;
+}
+ 
+ 
+ /* 상단 메뉴 경로 */
+ .content-top-menu{
+ 	float: right;
+ }
+.content-top-menu ul li{
+	text-decoration: none;
+	color: black;
+	list-style: none;
+}
+.content-top-menu ul>li{
+	display: inline;
+}
+.content-top-menu ul a:link{
+	text-decoration: none;
+}
+.content-top-menu ul a{
+	color: gray;
+}
+.content-top-menu ul .activ{
+	color: blark;
+}
