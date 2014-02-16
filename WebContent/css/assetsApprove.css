@@ -1,0 +1,150 @@
+/* 전체 스크롤   */
+#content{
+	height: 720px;
+	overflow-y:scroll;
+}
+
+
+/* 테이블 */
+#table-assetsRegister td:nth-child(2n+1){
+	padding-left: 13px;
+	padding-top: 13px;
+ 	background-color: #F6F6F6;
+ }
+ #table-assetsRegister{
+ background-color: #fff!important;
+ }
+
+ 
+ /* 선택 버튼  */
+ #order-form fieldset{
+ 	padding-top: 0px !important;
+ 	padding-bottom: 0px !important;
+ }
+ #order-form section{
+ 	margin-bottom: 0px !important;
+ }
+ #order-form, #order-form fieldset{
+ 	height: 30px;
+ }
+ #table-assetsRegister .dropdown{
+ 	padding-left: 13px;
+ 	padding-right: 13px;
+ }
+ /* #table-assetsRegister td a{
+ 	background-color: #F6F6F6;
+ 	color: black;
+ } */
+ 
+ 
+ 
+ 
+ /* 액션(검색, 글작성) 버튼  */
+ .bt-bar-group i{
+	 margin-right: 5px; 
+ }
+ .bt-bar-group{
+ 	margin-top: 10px;
+ }
+.bt-bar-group .btn-right{
+	float: right;
+	margin-bottom: 10px;
+}
+.bt-bar-bottom .btn-bottom{
+	position: absolute;
+	right: 13px;
+	bottom: -10px;
+	/* float: right; */
+}
+
+
+ 
+ /* 상단 메뉴 경로 */
+ .content-top-menu{
+ 	float: right;
+ }
+.content-top-menu ul li{
+	text-decoration: none;
+	color: black;
+	list-style: none;
+}
+.content-top-menu ul>li{
+	display: inline;
+}
+.content-top-menu ul a:link{
+	text-decoration: none;
+}
+.content-top-menu ul a{
+	color: gray;
+}
+.content-top-menu ul .activ{
+	color: blark;
+}
+
+
+
+/* 테이블 상단의 버튼  */
+.widget-body-toolbar .btn-primary{
+	float: right;
+	/* position: absolute;
+	top: 4px;
+	right: 10px; */
+} 
+.dataTables_length{
+	margin-right: 100px;
+}
+.widget-body-toolbar{
+	padding-top: 4px !important;
+}
+
+
+
+/* 조회 -> 모달창 */
+.modal-body fieldset{
+	height: 260px;
+	overflow-y:scroll;
+	
+}
+/* .modal-body .model-content-top{
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-top: 10px;
+} */
+.modal-body table{
+	width: 560px;
+}
+
+
+/* 모달창 테이블  */
+#dt_basic_3{
+	width: 568px !important;
+}
+#dt_basic_3_length{
+	margin-right: 0px!important;
+}
+#dt_basic_3 td:nth-child(1){
+	text-align: center;
+}
+#dt_basic_3 td:nth-child(1), #dt_basic_3 th:nth-child(1){
+	width: 60px;
+}
+#dt_basic_3 td:nth-child(2), #dt_basic_3 th:nth-child(2){
+	width: 200px;
+}
+#dt_basic_3 td:nth-child(3), #dt_basic_3 th:nth-child(3){
+	width: 160px;
+}
+#dt_basic_3 td:nth-child(4), #dt_basic_3 th:nth-child(4){
+	width: 188px;
+}
+#modal-content{
+	padding: 10px;
+}
+#modal-content > div{
+	margin-bottom: 0px !important;
+}
+#modal-content footer > button{
+	margin-top: 10px;
+	margin-left: 8px;
+	float: right;
+}
