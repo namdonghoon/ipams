@@ -1,4 +1,7 @@
-
+/* 전체 배경  */
+/* #content{
+	background-color: black;
+} */
 
 /* 테이블 */
 #table-assetsRegister td:nth-child(2n+1){
