@@ -15,7 +15,7 @@
  background-color: #fff!important;
  }
  .margin-customer{
- 	margin-top: 38px !important;
+ 	/* margin-top: 38px !important; */
  	margin-bottom: 30px !important;
  }
  .border-table{
@@ -48,14 +48,14 @@
  }
  th:first-child{  
  background-image: none !important;
- } 
+ }
 
  tfoot{
  	display: none;
  }
- th, tr td:first-child{
+ /* th, tr td:first-child{
 	text-align: center !important; 
-}
+} */
 
 
  
@@ -94,9 +94,9 @@
 .widget-body-toolbar{
 	padding-top: 3px !important; 
 }
-.widget-body-toolbar h4{
+.process h4{ 
 	float: left;
-	margin-top: 5px;
+	margin-top: 100px;
 }
  .bt-bar-group i{
 	 margin-right: 5px; 
@@ -109,10 +109,8 @@
 	margin-bottom: 10px;
 }
 .bt-bar-bottom .btn-bottom{
-	position: absolute;
-	right: 13px;
-	bottom: -10px;
-	/* float: right; */
+	
+	float: right;
 }
 .bt-float{
 	float: right;
@@ -120,6 +118,11 @@
 #widget-grid .dataTables_filter{
 	display: none;
 }
+.margin-customer-bottom{
+ 	margin-bottom: 10px !important;
+ }
+
+
 
  
  /* 상단 메뉴 경로 */
@@ -179,8 +182,55 @@
 .modal-content h4{
 	margin-bottom: 12px; 
 } 
-#modal-content h4{
+.h-title{
 	padding-left: 10px;
+	margin-bottom: 10px;
 	background: url("../image/modal_title_icon.png") no-repeat left center #ffffff;
-	
+}
+
+
+
+
+/*  통계 차트  */
+.process{
+	width: 100%;
+	height: 130px; 
+}
+.process .list-inline{
+	float: right;
+}
+.box-group{
+	border: 1px solid #d9d9d9;
+	border-radius: 10px;
+}
+
+.box-group .box-header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid #d9d9d9;
+}
+.box-group > div{
+	padding: 3px;
+}
+.box-container div{
+	margin: 3px;
+}
+.list-inline{
+	margin-bottom: 0px !important;
+}
+hr{
+	width: 100%;
+}
+.color-orange{
+	color: rgb(248, 148, 6);
+}
+.color-gray{
+	color: rgb(169, 169, 169);
+}
+.color-blue{
+	color: rgb(58, 135, 173);
+}
+.font-bold{
+	font-weight:bold;
 }
