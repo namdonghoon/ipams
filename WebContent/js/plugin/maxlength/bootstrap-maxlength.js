@@ -9,11 +9,11 @@
 /*jslint browser:true*/
 /*global  jQuery*/
 (function ($) {
+
     "use strict";
 
     $.fn.extend({
         maxlength: function (options, callback) {
-
             var documentBody = $('body'),
                 defaults = {
                     alwaysShow: false, // if true the indicator it's always shown.
@@ -44,6 +44,7 @@
           * @return {number}
           */
             function inputLength(input) {
+
               var text = input.val();
               var matches = text.match(/\n/g);
 

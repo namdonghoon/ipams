@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+	</head>
+	<body>
+
+
+
+
+
+        <button data-toggle="modal" data-target="#myModal">
+            <strong>MODAL 샘플</strong>
+        </button>
+
+
+
+
+
+
+        <!-- Modal -->
+        <!-- approval -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산정보</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">승인</button>
+                            <button type="button" class="btn btn-primary">보류</button>
+                            <button type="button" class="btn btn-primary">반려</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- deploy -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 자산정보</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary">배포</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end Modal -->
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+
+
+	</body>
+
+</html>

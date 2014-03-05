@@ -99,12 +99,17 @@ $(document).ready(function() {
 	});
 
 	// HIDE MENU
-	$('#hide-menu >:first-child > a').click(function(e) {
-		$('body').toggleClass("hidden-menu");
-		e.preventDefault();
-	});
-	
-	$('#show-shortcut').click(function(e) {
+//	$('#hide-menu >:first-child > a').click(function(e) {
+//		$('body').toggleClass("hidden-menu");
+//		e.preventDefault();
+//	});
+    //2014_0219 추가
+    $('#hide-menu').click(function(e) {
+        $('body').toggleClass("hidden-menu");
+        e.preventDefault();
+    });
+
+    $('#show-shortcut').click(function(e) {
 		if ($.shortcut_dropdown.is(":visible")) {
 			shortcut_buttons_hide();
 		} else {
@@ -128,8 +133,8 @@ $(document).ready(function() {
 		$this = $(this);
 
 		if ($this.find('.badge').hasClass('bg-color-red')) {
-			$this.find('.badge').removeClassPrefix('bg-color-');
-			$this.find('.badge').text("0");
+//			$this.find('.badge').removeClassPrefix('bg-color-');
+//			$this.find('.badge').text("0");
 			// console.log("Ajax call for activity")
 		}
 
@@ -203,18 +208,18 @@ $(document).ready(function() {
 	});
 
 	// LOGOUT BUTTON
-	$('#logout a').click(function(e) {
+	$('#logout').click(function(e) {
 		//get the link
 		$.loginURL = $(this).attr('href');
 
 		// ask verification
 		$.SmartMessageBox({
-			title : "<i class='fa fa-sign-out txt-color-orangeDark'></i> Logout <span class='txt-color-orangeDark'><strong>" + $('#show-shortcut').text() + "</strong></span> ?",
-			content : "You can improve your security further after logging out by closing this opened browser",
-			buttons : '[No][Yes]'
+			title : "<i class='fa fa-sign-out txt-color-orangeDark'></i> IPAMS를 로그아웃 하시겠습니까? <span class='txt-color-orangeDark'><strong>" + $('#logo').text() + "</strong></span> ",
+			content : '안전하게 로그아웃 하시려면 [네] 버튼을 클릭하세요.',
+			buttons : '[아니오][네]'
 
 		}, function(ButtonPressed) {
-			if (ButtonPressed == "Yes") {
+			if (ButtonPressed == "네") {
 				$.root_.addClass('animated fadeOutUp');
 				setTimeout(logout, 1000)
 			}

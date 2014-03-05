@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization
+		with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <img src="../../images/top_logo.png" alt="IPAMS"></span>
+				<!-- END LOGO PLACEHOLDER -->
+
+				<!-- Note: The activity badge color changes when clicked and resets the number to 0
+				Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+
+
+				<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+
+
+            <!-- projects dropdown -->
+            <div id="project-context">
+    <span class="notification"> <i class="fa fa-bell-o"></i></span>
+    <span class="label">알림센터</span>
+    <span id="activity" class="popover-trigger-element dropdown-toggle">
+        미확인 알림이
+        <span><b class="badge bg-color-red bounceIn animated"> 21 </b></span>
+        개 있습니다.
+    </span>
+
+                <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+                <div class="ajax-dropdown">
+
+
+                    <!-- notification content -->
+                    <div class="ajax-notifications custom-scroll">
+
+                        <div class="alert alert-transparent">
+                            <ul class="notification_list">
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end notification content -->
+
+                    <!-- footer: refresh area -->
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-sm" href="javascript:void(0);"><i class="fa fa-chevron-circle-right margin-right-5"></i>알림센터 바로가기</button>
+                    </div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- END AJAX-DROPDOWN -->
+
+
+				<!-- Suggestion: populate this list with fetch and push technique -->
+				<ul  class="dropdown-menu custom-scroll" style="height: 200px; overflow-y:auto;">
+					<li>
+						<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Assesment Report for merchant account</a>
+					</li>
+                    <li>
+                        <a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Notes on pipeline upgradee</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Assesment Report for merchant account</a>
+                    </li>
+                    <li class="divider"></li>
+					<li class="text-align-right">
+						<a href="javascript:void(0);"><i class="fa fa-power-off"></i> 알림센터가기</a>
+					</li>
+				</ul>
+				<!-- end dropdown-menu-->
+
+			</div>
+			<!-- end projects dropdown -->
+            <!-- pulled right: nav area -->
+            <div class="user_box pull-right">
+                <div class="user_name">
+                    <span>홍길동</span>님 환영합니다.
+                </div>
+                <!-- 내정보 수정 -->
+                <div class="btn btn-sm btn_blue myinfo">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-gear"></i></a> </span>
+                </div>
+                <!-- end 내정보 수정 -->
+                <!-- logout button -->
+                <div id="logout" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
+                </div>
+                <!-- end logout button -->
+                <div id="hide-menu" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+
+			<!-- 전체메뉴보기 -->
+			<div class="sitemap-info">
+				<span> <i class="fa fa-sitemap"></i> <a href="javascript:void(0);" id="show-shortcut">전체메뉴보기 </a> </span>
+			</div>
+			<!-- end 전체메뉴보기 -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+					<li class="menu_bookmark_box">
+						<a href="#">
+                            <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
+                        </a>
+						<ul>
+							<li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">문서관리</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+							</li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">진단수행</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">승인대상목록</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark_add">
+                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                </div>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>사업관리</li><li>사업관리 </li><li>사업정보 수정 </li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+
+
+
+
+
+
+
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                    <div class="row">
+                        <h6 class="h-title ml10">사업정보 수정</h6>
+                        <div class="col-md-12 col-md-3">
+
+                            <div class="show-grid-div1">
+                                <!--   트리들어가는 곳   -->
+                                트리 내용 삽입
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                           <div class="show-grid-div1" role="content">
+                                        
+                                <!-- widget content -->
+                                <div class="fuelux">
+            
+                                    <div class="wizard mb20">
+
+                                        <ul class="steps">
+                                            <li data-target="#step1">
+                                                <span class="badge badge-info">1</span>사업개요<span class="chevron"></span>
+                                            </li>
+                                            <li data-target="#step2" class="active">
+                                                <span class="badge">2</span>사업 담당자<span class="chevron"></span>
+                                            </li>
+                                            <!-- <li data-target="#step3">
+                                                <span class="badge">3</span>Step 3<span class="chevron"></span>
+                                            </li> --> 
+                                            
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="step-content">
+                                        <form class="form-horizontal" id="fuelux-wizard" method="post">
+            
+                                            <div class="step-pane active" id="step2">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-md-3">
+                                                        <h6 class="h-title">임직원 검색</h6>
+                                                            <a class="btn btn-default mb10" href="javascript:void(0);">
+                                                                <i class="fa fa-plus"></i> 일괄추가
+                                                            </a>
+                                                        <div class="show-grid-div2">
+                                                            <!--   트리들어가는 곳   -->
+                                                            트리 내용 삽입
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-md-9">
+                                                        <h6 class="h-title">사업 담당자 목록</h6>
+                                                            <a class="btn btn-default mb10" href="javascript:void(0);">
+                                                                <i class="fa fa-minus"></i> 일괄제거
+                                                            </a>
+
+                                                        
+                                                        <!--   내용 삽입      -->
+                                                        <table class="table table-bordered table-fixed mt5 tbodycenter">
+                                                            <colgroup>
+                                                                <col width="30px">
+                                                                <col>
+                                                                <col width="145px">
+                                                                <col width="155px">
+                                                                <col width="60px">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="smart-form">
+                                                                        <label class="checkbox">
+                                                                            <input type="checkbox" name="checkbox" checked="checked"><i></i>
+                                                                        </label>
+                                                                    </th>
+                                                                    <th>기업/기관</th>
+                                                                    <th>이름</th>
+                                                                    <th>구분</th>
+                                                                    <th>비고</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                
+                                                            <tr>
+                                                                <td class="smart-form">
+                                                                
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox" name="checkbox" checked="checked"><i></i>
+                                                                    </label>
+                                                                </td>
+                                                                <td>경기도청</td>
+                                                                <td>
+                                                                    <!-- 인명정보 -->
+                                                    <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="left"
+                                                    data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+                                                    data-content="
+                                                        <ul class='user_info'>
+                                                            <p><img src='../../images/member_big.png'></p>
+                                                            <li>시스템관리자</li>
+                                                            <li>(주)드림인프라</li>
+                                                            <li>SI사업부</li>
+                                                            <li>부장</li>
+                                                            <li>systemadministrator@dreaminfra.co.kr </li>
+                                                        </ul>
+                                                    " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                                    <!--인명정보 끝-->
+                                                                </td>
+                                                                <td>
+                                                                    <span>
+                                                                        <select class="form-control pull-left" style="width:100px;">
+                                                                                <option>사업관리자</option>
+                                                                                <option>사업취급자</option>
+                                                                        </select>
+                                                                    <span>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="btn btn-default" href="javascript:void(0);">추가</a>
+                                                                </td>
+                                                            </tr>
+                                                        
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end step2  -->
+                                        </form>
+                                    </div> 
+                                    <!-- end step-content -->
+                                </div>
+                                <!-- end widget content -->
+            
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="align-right mt20">
+                        <button type="button" class="btn btn-lg btn-primary float-left">
+                            <i class="fa fa-arrow-left margin-right-5"></i>이전
+                        </button>
+                        <button type="button" class="btn btn-lg btn-success ">
+                            다음
+                            <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+			<!-- END MAIN CONTENT -->
+            </div>
+		</div>
+		<!-- END MAIN PANEL -->
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
+                </div>
+            </footer>
+        </nav>
+        <!-- end footer -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+        
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>-->
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- data picker-->
+        <script type="text/javascript">
+        $('#startdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+            }
+        });
+
+        $('#finishdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+            }
+        });
+    </script>
+    <!-- end data picker -->
+
+
+
+
+
+        <script>
+            $(document).ready(function() {
+
+                // DO NOT REMOVE : GLOBAL FUNCTIONS!
+                pageSetUp();
+
+                /*
+                 * PAGE RELATED SCRIPTS
+                 */
+
+                $(".js-status-update a").click(function() {
+                    var selText = $(this).text();
+                    $this = $(this);
+                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                    $this.parents('.dropdown-menu').find('li').removeClass('active');
+                    $this.parent().addClass('active');
+                });
+            });
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+</html>

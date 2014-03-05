@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization
+		with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <img src="images/top_logo.png" alt="IPAMS"></span>
+				<!-- END LOGO PLACEHOLDER -->
+
+				<!-- Note: The activity badge color changes when clicked and resets the number to 0
+				Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+
+
+				<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+
+
+            <!-- projects dropdown -->
+            <div id="project-context">
+    <span class="notification"> <i class="fa fa-bell-o"></i></span>
+    <span class="label">알림센터</span>
+    <span id="activity" class="popover-trigger-element dropdown-toggle">
+        미확인 알림이
+        <span><b class="badge bg-color-red bounceIn animated"> 21 </b></span>
+        개 있습니다.
+    </span>
+
+                <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+                <div class="ajax-dropdown">
+
+
+                    <!-- notification content -->
+                    <div class="ajax-notifications custom-scroll">
+
+                        <div class="alert alert-transparent">
+                            <ul class="notification_list">
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end notification content -->
+
+                    <!-- footer: refresh area -->
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-sm" href="javascript:void(0);"><i class="fa fa-chevron-circle-right margin-right-5"></i>알림센터 바로가기</button>
+                    </div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- END AJAX-DROPDOWN -->
+
+
+				<!-- Suggestion: populate this list with fetch and push technique -->
+				<ul  class="dropdown-menu custom-scroll" style="height: 200px; overflow-y:auto;">
+					<li>
+						<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Assesment Report for merchant account</a>
+					</li>
+                    <li>
+                        <a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Notes on pipeline upgradee</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Assesment Report for merchant account</a>
+                    </li>
+                    <li class="divider"></li>
+					<li class="text-align-right">
+						<a href="javascript:void(0);"><i class="fa fa-power-off"></i> 알림센터가기</a>
+					</li>
+				</ul>
+				<!-- end dropdown-menu-->
+
+			</div>
+			<!-- end projects dropdown -->
+            <!-- pulled right: nav area -->
+            <div class="user_box pull-right">
+                <div class="user_name">
+                    <span>홍길동</span>님 환영합니다.
+                </div>
+                <!-- 내정보 수정 -->
+                <div class="btn btn-sm btn_blue myinfo">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-gear"></i></a> </span>
+                </div>
+                <!-- end 내정보 수정 -->
+                <!-- logout button -->
+                <div id="logout" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
+                </div>
+                <!-- end logout button -->
+                <div id="hide-menu" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+
+			<!-- 전체메뉴보기 -->
+			<div class="sitemap-info">
+				<span> <i class="fa fa-sitemap"></i> <a href="javascript:void(0);" id="show-shortcut">전체메뉴보기 </a> </span>
+			</div>
+			<!-- end 전체메뉴보기 -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+					<li class="menu_bookmark_box">
+						<a href="#">
+                            <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
+                        </a>
+						<ul>
+							<li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">문서관리</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+							</li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">진단수행</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">승인대상목록</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark_add">
+                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                </div>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> IPAMS HOME </h1>
+					</div>
+				</div>
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+					<!-- row -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <!-- new widget -->
+                            <div class="jarviswidget jarviswidget-color-blue jarviswidget-sortable" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false">
+                                <!-- widget options:
+                                usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                                data-widget-colorbutton="false"
+                                data-widget-editbutton="false"
+                                data-widget-togglebutton="false"
+                                data-widget-deletebutton="false"
+                                data-widget-fullscreenbutton="false"
+                                data-widget-custombutton="false"
+                                data-widget-collapsed="true"
+                                data-widget-sortable="false"
+
+                                -->
+                                <header>
+                                    <span class="widget-icon"> <i class="fa fa-check txt-color-white"></i> </span>
+                                    <h2><strong>해야할 일</strong></h2>
+                                </header>
+
+                                <!-- widget div-->
+                                <div class="no-padding">
+                                    <!-- widget edit box -->
+
+                                    <!-- end widget edit box -->
+
+                                    <div class="widget-body no-padding smart-form smart-form-new no-margin custom-scroll">
+                                        <!-- content goes here -->
+                                            <div style="float:left; width:110px;height:560px;padding:5px; border-right: solid 1px #dddddd;">
+                                                <ul class="filter-list small">
+                                                    <li>
+                                                        <a href="#" class="filter-item">
+                                                            <span class="color" style="background-color:#ff788a"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">나의 할일</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item">
+                                                            <span class="color" style="background-color: #ff9215"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">부서별 할일</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item " >
+                                                            <span class="color" style="background-color:#90cc00"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">조직별 할일</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <hr class="margin-bottom-5">
+                                                <ul class="filter-list small">
+                                                    <li>
+                                                        <a href="#" class="filter-item">
+                                                            <span class="color" style="background-color:#6bc1e3"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">기반정보관리</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item">
+                                                            <span class="color" style="background-color: #449fd2"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">사업관리</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item">
+                                                            <span class="color" style="background-color: #57889C"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">평가수행관리</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item " >
+                                                            <span class="color" style="background-color:#578ED3"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">정기점검관리</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item " >
+                                                            <span class="color" style="background-color:#b985f9"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">모니터링</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item " >
+                                                            <span class="color" style="background-color:#9a61d7"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">커뮤니티</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="filter-item " >
+                                                            <span class="color" style="background-color:#a93e86"></span>
+                                                            <span class="remove-close"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="name">시스템관리</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <hr class="margin-bottom-5">
+                                            </div>
+                                        <div class="todolist_box">
+                                            <h4 class="todolist_header"><i class="fa fa-exclamation margin-right-5"></i>오늘 할 일</h4>
+                                            <ul class="todolist" >
+                                                <li class="listbox" style="display:none;">
+                                                    <h4 class="text-align-center">오늘 할 일이 없습니다.</h4>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-pink ml5">개인</span>
+                                                        <span class="label label-orange ml5">부서</span>
+                                                        <span class="label label-blue ml5">평가수행관리</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-ygreen ml5">조직</span>
+                                                        <span class="label label-skyblue ml5">기반정보관리</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-ygreen ml5">조직</span>
+                                                        <span class="label label-lightblue ml5">사업관리</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-ygreen ml5">조직</span>
+                                                        <span class="label label-seablue ml5">정기점검관리</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="todolist_box">
+                                            <h4 class="todolist_header"><i class="fa fa-warning margin-right-5"></i>지연일정 목록</h4>
+                                            <ul class="todolist" >
+                                                <li class="listbox" style="display:none;">
+                                                    <h4 class="text-align-center">지연된 일정이 없습니다.</h4>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-pink ml5">개인</span>
+                                                        <span class="label label-orange ml5">부서</span>
+                                                        <span class="label label-lilac ml5">모니터링</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-pink ml5">개인</span>
+                                                        <span class="label label-orange ml5">부서</span>
+                                                        <span class="label label-purple ml5">정보제공</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                                <li class="listbox">
+                                                    <p class="list_detail">
+                                                        <span class="label label-pink ml5">개인</span>
+                                                        <span class="label label-orange ml5">부서</span>
+                                                        <span class="label label-lavender ml5">정보제공</span>
+                                                        <span>진단수행</span> > <span>진행</span> > <span>운영계획수립</span>
+                                                    </p>
+                                                    <p class="pull-left txt_ellipsis"><strong><a href="">개인정보보호를 위한 책임자를 지정하고 운영하고 있는가? </a></strong></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                    <!-- end widget div -->
+                                    <!-- widget footer -->
+									<div class="widget-footer"></div>
+									<!-- end widget footer -->
+                                </div>
+                                <!-- end widget -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <!-- new widget -->
+                            <div class="jarviswidget jarviswidget-color-blue" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false">
+
+                                <!-- widget options:
+                                usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                                data-widget-colorbutton="false"
+                                data-widget-editbutton="false"
+                                data-widget-togglebutton="false"
+                                data-widget-deletebutton="false"
+                                data-widget-fullscreenbutton="false"
+                                data-widget-custombutton="false"
+                                data-widget-collapsed="true"
+                                data-widget-sortable="false"
+
+                                -->
+                                <header>
+                                    <span class="widget-icon"> <i class="fa fa-calendar"></i> </span>
+                                    <h2><strong>개인일정</strong></h2>
+                                    <div class="widget-toolbar">
+                                        <!-- add: non-hidden - to disable auto hide -->
+                                        <div class="btn-group">
+                                            <button class="btn dropdown-toggle btn-xs btn-default" data-toggle="dropdown">
+                                                보기선택 <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu js-status-update pull-right">
+                                                <li>
+                                                    <a href="javascript:void(0);" id="mt">월별일정</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" id="ag">주간일정</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" id="td">오늘일정</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <!-- widget div-->
+                                <div class="no-padding calendar_box">
+
+                                    <div class="widget-body" >
+                                        <!-- content goes here -->
+                                        <div class="widget-body-toolbar">
+                                            <div id="calendar-buttons">
+                                                <div class="btn-group">
+                                                    <a href="javascript:void(0)" class="btn btn-default btn-xs" id="btn-prev"><i class="fa fa-chevron-left"></i></a>
+                                                    <a href="javascript:void(0)" class="btn btn-default btn-xs" id="btn-next"><i class="fa fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="calendar"></div>
+                                        <!-- end content -->
+                                    </div>
+                                </div>
+                                <!-- end widget div -->
+                                	<!-- widget footer -->
+                                	<div class="no-padding">
+                                		<div class="widget-footer"></div>
+                                	</div>
+									
+									<!-- end widget footer -->
+                            </div>
+                            <!-- end widget -->
+                        </div>
+                    </div>
+					<!-- end row -->
+					<div class="row">
+						<div class="col-sm-12">
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget" id="wid-id-11" data-widget-colorbutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false">
+								<!-- widget options:
+									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+									
+									data-widget-colorbutton="false"	
+									data-widget-editbutton="false"
+									data-widget-togglebutton="false"
+									data-widget-deletebutton="false"
+									data-widget-fullscreenbutton="false"
+									data-widget-custombutton="false"
+									data-widget-collapsed="true" 
+									data-widget-sortable="false"
+									
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-list"></i> </span>
+									<h2><strong>목록보기 </strong></h2>	
+									
+									<ul id="widget-tab-1" class="nav nav-tabs pull-right">
+				
+										<li class="active">
+				
+											<a data-toggle="tab" href="#hr1"> <i class="fa fa-lg fa-download"></i> <span class="hidden-mobile hidden-tablet"> 승인관리 </span> </a>
+				
+										</li>
+				
+										<li>
+											<a data-toggle="tab" href="#hr2"> <i class="fa fa-lg fa-upload"></i> <span class="hidden-mobile hidden-tablet"> 배포관리 </span></a>
+										</li>
+				
+									</ul>	
+									
+								</header>
+				
+								<!-- widget div-->
+								<div>
+									
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+										
+									</div>
+									<!-- end widget edit box -->
+									
+									<!-- widget content -->
+									<div class="widget-body">
+				
+										<!-- widget body text-->
+										
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="hr1">
+                                                <div class="search_group">
+                                                    <form class="navbar-form navbar-left" role="search">
+                                                        <div class="form-group">
+                                                            <input class="form-control" placeholder="검색" type="text">
+                                                        </div>
+                                                        <button class="btn btn-default" type="submit">
+                                                            <i class="fa fa-search"></i>검색
+                                                        </button>
+                                                    </form>
+                                                    <div class="reorder_length">
+                                                        <span class="smart-form">
+                                                            <label class="select" style="width:60px">
+                                                                <select size="1" name="datatable_col_reorder_length" aria-controls="datatable_col_reorder">
+                                                                    <option value="10" selected="selected">10</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="50">50</option>
+                                                                    <option value="100">100</option>
+                                                                </select>
+                                                                <i></i>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <p class="go_btn">
+                                                        <a class="btn btn-default"><i class="fa fa-external-link margin-right-5"></i>승인센터가기</a>
+                                                    </p>
+                                                </div>
+												<table class="table table-bordered table-condensed table-hover tbodycenter m0">
+													<colgroup>
+								                    	<col width="40px">
+								                        <col width="80px">
+								                        <col>
+								                        <col width="80px">
+								                        <col width="140px">
+								                    </colgroup>
+													<thead>
+								                        <tr>
+								                        	<th>No.</th>
+								                            <th>분류명</th>
+								                            <th>제목</th>
+								                            <th>승인요청일</th>
+								                            <th>승인요청자</th>
+								                        </tr>
+								                    </thead>
+													<tbody>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                            대기중인 승인절차가 없습니다.
+                                                        </td>
+                                                    </tr>
+							                            <tr>
+							                            	<td>
+							                            		1
+							                            	</td>
+					                                        <td>
+                                                               전산자산
+							                                </td>
+							                                <td class="tleft">
+                                                                <!--자산정보-->
+                                                                <button data-toggle="modal" data-target="#myModal" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                   data-content="하드웨어(서버) GG-SVR-001"
+                                                                   data-html="true">
+                                                                    <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                                </button>
+                                                                <!--자산정보 끝-->
+							                                </td>
+                                                            <td>
+                                                                2014-01-13
+                                                            </td>
+							                                <td>
+																<!-- 인명정보 -->
+																<a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="left"
+																data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																data-content="
+																	<ul class='user_info'>
+																		<p><img src='images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+																<!--인명정보 끝-->
+							                                </td>
+							                            </tr>
+							                    </tbody>
+												</table>
+                                                <div class="text-center">
+                                                    <ul class="pagination pagination-sm pagination-alt">
+                                                        <li>
+                                                            <a href="javascript:void(0);">처음</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">이전</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">2</a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="javascript:void(0);">3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">4</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">5</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">다음</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0);">끝</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade in" id="hr2">
+                                            <div class="search_group">
+                                                <form class="navbar-form navbar-left" role="search">
+                                                    <div class="form-group">
+                                                        <input class="form-control" placeholder="검색" type="text">
+                                                    </div>
+                                                    <button class="btn btn-default" type="submit">
+                                                        <i class="fa fa-search"></i>검색
+                                                    </button>
+                                                </form>
+                                                <div class="reorder_length">
+                                                        <span class="smart-form">
+                                                            <label class="select" style="width:60px">
+                                                                <select size="1" name="datatable_col_reorder_length" aria-controls="datatable_col_reorder">
+                                                                    <option value="10" selected="selected">10</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="50">50</option>
+                                                                    <option value="100">100</option>
+                                                                </select>
+                                                                <i></i>
+                                                            </label>
+                                                        </span>
+                                                </div>
+                                                <p class="go_btn">
+                                                    <a class="btn btn-default"><i class="fa fa-external-link margin-right-5"></i>배포센터가기</a>
+                                                </p>
+                                            </div>
+                                            <table class="table table-bordered table-condensed table-hover tbodycenter m0">
+                                                <colgroup>
+                                                    <col width="40px">
+                                                    <col>
+                                                    <col width="100px">
+                                                    <col width="130px">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>문서명</th>
+                                                    <th>배포일</th>
+                                                    <th>배포자</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        대기중인 배포절차가 없습니다.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td class="tleft">
+                                                        <a htef="javascript:void(0);" data-toggle="modal" data-target="#myModal2">[경기도 정책서 문서 검토 (샘플)] 경기도 정책서 문서 검토 (샘플) - 현황진단 결과 보고서</a>
+                                                    </td>
+                                                    <td>
+                                                        2014-01-13
+                                                    </td>
+                                                    <td>
+                                                        <!-- 인명정보 -->
+                                                        <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="left"
+                                                           data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                           data-content="
+																	<ul class='user_info'>
+																		<p><img src='images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                                        <!--인명정보 끝-->
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="text-center">
+                                                <ul class="pagination pagination-sm pagination-alt">
+                                                    <li>
+                                                        <a href="javascript:void(0);">처음</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">이전</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">2</a>
+                                                    </li>
+                                                    <li class="active">
+                                                        <a href="javascript:void(0);">3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">다음</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">끝</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </div>
+
+                                    </div>
+
+										
+										<!-- end widget body text-->
+										
+										<!-- widget footer -->
+										<div class="widget-footer"></div>
+										<!-- end widget footer -->
+									</div>
+									<!-- end widget content -->
+									
+								</div>
+								<!-- end widget div -->
+								
+							</div>
+							<!-- end widget -->
+
+						</div>
+					</div>
+
+				</section>
+				<!-- end widget grid -->
+                <!--
+                하단 즉시 알림 버튼
+                스크립트는 아래쪽 '하단 즉시 알림'으로 검색바람
+                -->
+                <a href="#" id="eg1"> 하단 즉시 알림 샘플 - 테스트용이니 추후 삭제 요망</a>
+			</div>
+
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
+                </div>
+            </footer>
+        </nav>
+        <!-- end footer -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+        <!-- Modal -->
+        <!-- approval -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산정보</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">승인</button>
+                            <button type="button" class="btn btn-primary">보류</button>
+                            <button type="button" class="btn btn-primary">반려</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- deploy -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 자산정보</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed table-hover">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            GG-SVR-001
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            경기도청 거버넌스 서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            구매
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            신규
+                                        </td>
+                                        <th>도입가</th>
+                                        <td>
+                                            <div class="input-prepend mb0">
+                                                <span class="add-on">￦</span><span class="add-on">1,300,000</span><span class="add-on">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-12-05
+                                        </td>
+                                    </tr>
+                                    </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary">배포</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end Modal -->
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="js/app.js"></script>
+		
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+
+		<!-- Full Calendar -->
+		<script src="js/plugin/fullcalendar/jquery.fullcalendar.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+
+            // DO NOT REMOVE : GLOBAL FUNCTIONS!
+            pageSetUp();
+
+            /*
+             * PAGE RELATED SCRIPTS
+             */
+
+            $(".js-status-update a").click(function() {
+                var selText = $(this).text();
+                $this = $(this);
+                $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                $this.parents('.dropdown-menu').find('li').removeClass('active');
+                $this.parent().addClass('active');
+            });
+
+            /*
+             * TODO: add a way to add more todo's to list
+             */
+
+            // initialize sortable
+            $(function() {
+                $("#sortable1, #sortable2").sortable({
+                    handle : '.handle',
+                    connectWith : ".todo",
+                    update : countTasks
+                }).disableSelection();
+            });
+
+            // check and uncheck
+            $('.todo .checkbox > input[type="checkbox"]').click(function() {
+                $this = $(this).parent().parent().parent();
+
+                if ($(this).prop('checked')) {
+                    $this.addClass("complete");
+
+                    // remove this if you want to undo a check list once checked
+                    //$(this).attr("disabled", true);
+                    $(this).parent().hide();
+
+                    // once clicked - add class, copy to memory then remove and add to sortable3
+                    $this.slideUp(500, function() {
+                        $this.clone().prependTo("#sortable3").effect("highlight", {}, 800);
+                        $this.remove();
+                        countTasks();
+                    });
+                } else {
+                    // insert undo code here...
+                }
+
+            })
+            // count tasks
+            function countTasks() {
+
+                $('.todo-group-title').each(function() {
+                    $this = $(this);
+                    $this.find(".num-of-tasks").text($this.next().find("li").size());
+                });
+
+            }
+
+
+
+            /*
+             * FULL CALENDAR JS
+             */
+
+            if ($("#calendar").length) {
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+
+                var calendar = $('#calendar').fullCalendar({
+
+                    editable : true,
+                    draggable : true,
+                    selectable : false,
+                    selectHelper : true,
+                    unselectAuto : false,
+                    disableResizing : false,
+
+                    header : {
+                        left : 'title', //,today
+                        center : 'prev, next, today',
+                        right : 'month, agendaWeek, agenDay' //month, agendaDay,
+                    },
+
+                    select : function(start, end, allDay) {
+                        var title = prompt('Event Title:');
+                        if (title) {
+                            calendar.fullCalendar('renderEvent', {
+                                        title : title,
+                                        start : start,
+                                        end : end,
+                                        allDay : allDay
+                                    }, true // make the event "stick"
+                            );
+                        }
+                        calendar.fullCalendar('unselect');
+                    },
+
+                    events : [{
+                        title : '봄맞이 대청소',
+                        start : new Date(y, m, 1),
+                        description : '복사기 점검',
+                        className : ["event", "bg-color-greenLight"],
+                        icon : 'fa-check'
+                    }, {
+                        title : '연말정산 등록기간',
+                        start : new Date(y, m, d - 5),
+                        end : new Date(y, m, d - 2),
+                        className : ["event", "bg-color-red"],
+                        icon : 'fa-lock'
+                    }, {
+                        id : 999,
+                        title : '주간보고',
+                        start : new Date(y, m, d - 3, 16, 0),
+                        allDay : false,
+                        className : ["event", "bg-color-blue"],
+                        icon : 'fa-clock-o'
+                    }, {
+                        id : 999,
+                        title : '주간보고',
+                        start : new Date(y, m, d + 4, 16, 0),
+                        allDay : false,
+                        className : ["event", "bg-color-blue"],
+                        icon : 'fa-clock-o'
+                    }, {
+                        title : '회의',
+                        start : new Date(y, m, d, 10, 30),
+                        allDay : false,
+                        className : ["event", "bg-color-darken"]
+                    }, {
+                        title : '점심약속',
+                        start : new Date(y, m, d, 12, 0),
+                        end : new Date(y, m, d, 14, 0),
+                        allDay : false,
+                        className : ["event", "bg-color-darken"]
+                    }, {
+                        title : '대리님생일',
+                        start : new Date(y, m, d + 1, 19, 0),
+                        end : new Date(y, m, d + 1, 22, 30),
+                        allDay : false,
+                        className : ["event", "bg-color-darken"]
+                    }, {
+                        title : '창립기념파티',
+                        start : new Date(y, m, 28),
+                        end : new Date(y, m, 29),
+                        className : ["event", "bg-color-darken"]
+                    }],
+
+                    eventRender : function(event, element, icon) {
+                        if (!event.description == "") {
+                            element.find('.fc-event-title').append("<br/><span class='ultra-light'>" + event.description + "</span>");
+                        }
+                        if (!event.icon == "") {
+                            element.find('.fc-event-title').append("<i class='air air-top-right fa " + event.icon + " '></i>");
+                        }
+                    }
+                });
+
+            };
+
+            /* hide default buttons */
+            $('.fc-header-right, .fc-header-center').hide();
+
+            // calendar prev
+            $('#calendar-buttons #btn-prev').click(function() {
+                $('.fc-button-prev').click();
+                return false;
+            });
+
+            // calendar next
+            $('#calendar-buttons #btn-next').click(function() {
+                $('.fc-button-next').click();
+                return false;
+            });
+
+            // calendar today
+            $('#calendar-buttons #btn-today').click(function() {
+                $('.fc-button-today').click();
+                return false;
+            });
+
+            // calendar month
+            $('#mt').click(function() {
+                $('#calendar').fullCalendar('changeView', 'month');
+            });
+
+            // calendar agenda week
+            $('#ag').click(function() {
+                $('#calendar').fullCalendar('changeView', 'agendaWeek');
+            });
+
+            // calendar agenda day
+            $('#td').click(function() {
+                $('#calendar').fullCalendar('changeView', 'agendaDay');
+            });
+
+
+
+        });
+
+        </script>
+
+        <!-- Your GOOGLE ANALYTICS CODE Below -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <!-- 하단 즉시 알림 -->
+        <script type="text/javascript">
+            /*
+             * Smart Notifications
+             */
+            $('#eg1').click(function(e) {
+
+                $.bigBox({
+                    title : "평가수행관리 > 개선계획수립",
+                    content : "개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다. ",
+                    color : "#C46A69",
+                    //timeout: 6000,
+                    icon : "fa fa-bell shake animated",
+                    timeout : 6000
+                });
+
+                e.preventDefault();
+
+            })
+
+            $('#eg2').click(function(e) {
+
+                $.bigBox({
+                    title : "Big Information box",
+                    content : "Lorem ipsum dolor sit amet, test consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    color : "#3276B1",
+                    //timeout: 8000,
+                    icon : "fa fa-warning swing animated",
+                    number : "2"
+                });
+
+                e.preventDefault();
+            })
+            // 중점사항 dropdown keep
+            $('.filter-list .filter-item').click(function(e) {
+                if($(this).hasClass('checked')){
+                    $(this).removeClass('checked')
+                            .css("background-color","");
+                }else{
+                    $(this).addClass('checked')
+                            .css("background-color",$(this).children(".color").css("background-color"));
+                }
+                //e.stopPropagation();
+            });
+        </script>
+
+	</body>
+
+</html>

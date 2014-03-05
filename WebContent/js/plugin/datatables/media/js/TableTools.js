@@ -1301,7 +1301,7 @@ TableTools.prototype = {
 		
 		if ( oConfig.sAction == "flash_save" )
 		{
-			flash.setAction( 'save' );
+			flash.setAction( '저장' );
 			flash.setCharSet( (oConfig.sCharSet=="utf16le") ? 'UTF16LE' : 'UTF8' );
 			flash.setBomInc( oConfig.bBomInc );
 			flash.setFileName( oConfig.sFileName.replace('*', this.fnGetTitle(oConfig)) );
