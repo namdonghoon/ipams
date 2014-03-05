@@ -78,9 +78,7 @@ th{
     float: right;
     margin: 9px 5px 0 0;
 }
-.search-color{
-    background: #eeeeee;
-}
+
 div.reorder_length {
     float: right;
     margin-top: 9px;
@@ -657,6 +655,9 @@ ul.user_info li{
 /*  검색 */
 .search button.btn{
     padding: 17px 10px;
+    background: #eeeeee;
+}
+.search-color button.btn{
     background: #eeeeee;
 }
 .btn{

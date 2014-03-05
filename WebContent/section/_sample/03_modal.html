@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+
+
+        <!-- MAIN PANEL -->
+        <div id="main" role="main">
+
+
+
+
+
+        <button data-toggle="modal" data-target="#myModal1">
+            <strong>1. MODAL 빈 공간</strong>
+        </button>
+
+
+        <button data-toggle="modal" data-target="#myModal2">
+            <strong>2. MODAL 일반 테이블</strong>
+        </button>
+
+
+        <button data-toggle="modal" data-target="#myModal3">
+            <strong>3. MODAL 데이터 테이블(검색포함)</strong>
+        </button>
+
+
+
+		
+
+
+
+
+
+
+        <!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">모달 소제목</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+
+                                <!--  내용 삽입  -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+
+
+
+
+        <!-- Modal_2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산 담당자 정보 조회</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <!--  시작. 모달 내용  -->
+                        <h6 class="h-title">자산담당자 목록</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed tbodycenter">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col>
+                                        <col style="width: 150px;">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>기업/기관명</th>
+                                        <th>이름</th>
+                                        <th>구분</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>(주)kt rental</td>
+                                        <td class="tleft">
+                                            <!-- 인명정보 -->
+                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="
+                                                <ul class='user_info'>
+                                                    <p><img src='../../images/member_big.png'></p>
+                                                    <li>시스템관리자</li>
+                                                    <li>(주)드림인프라</li>
+                                                    <li>SI사업부</li>
+                                                    <li>부장</li>
+                                                    <li>systemadministrator@dreaminfra.co.kr </li>
+                                                </ul>
+                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                            <!--인명정보 끝-->
+                                        </td>
+                                        <td>자산관리자</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--  끝. 모달 내용  -->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 변경된 자산 상세조회</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h6 class="h-title">자산담당자 검색</h6>
+
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-blueDark top10 mb20" id="wid-id-3" data-widget-editbutton="false">
+
+
+                                        <div class="jarviswidget-editbox">
+                                            <!-- This area used as dropdown edit box -->
+                                        </div>
+
+
+                                        <p class="go_btn align-right mb6">
+                                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+                                        </p>
+                                        <!-- widget div-->
+                                        <div class="mt30 table-bordered ">
+                        
+                                            <!-- widget content -->
+                                            <div class="widget-body no-padding border-top-type1">
+                                                <div class="">
+                                                
+                                                </div>
+                                                <table id="datatable_tabletools" class="table table-bordered table-condensed table-hover tbodycenter remove-sort">
+                                                    <colgroup>
+                                                        <col width="40px">
+                                                        <col width="150px">
+                                                        <col>
+                                                        <col width="70px">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="smart-form">
+                                                                <label class="checkbox">
+                                                                        <input type="checkbox">
+                                                                        <i></i> 
+                                                                </label>
+                                                            </th>
+                                                            <th>기업/기관</th>
+                                                            <th>이름</th>
+                                                            <th>비고</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="smart-form">
+                                                                <label class="checkbox">
+                                                                        <input type="checkbox">
+                                                                        <i></i> 
+                                                                </label>
+                                                            </td>
+                                                            <td class="tleft">드림인프라-1</td>
+                                                            <td class="tleft">
+                                                                <!-- 인명정보 -->
+                                                                <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                   data-content="
+                                                                    <ul class='user_info'>
+                                                                        <p><img src='../../images/member_big.png'></p>
+                                                                        <li>시스템관리자</li>
+                                                                        <li>(주)드림인프라</li>
+                                                                        <li>SI사업부</li>
+                                                                        <li>부장</li>
+                                                                        <li>systemadministrator@dreaminfra.co.kr </li>
+                                                                    </ul>
+                                                                " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                                                <!--인명정보 끝-->
+                                                            </td>
+                                                            <td>
+                                                                <div class="input-group-btn">
+                                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm" type="button">추가</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                    <div class="text-center">
+                                        <ul class="pagination pagination-sm pagination-alt">
+                                            <li>
+                                                <a href="javascript:void(0);">처음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">이전</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">다음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">마지막</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        닫기
+                    </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        완료
+                    </button>
+                </div><!-- /.modal-content -->
+                </div>
+                
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+
+
+
+
+
+        
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		
+
+        <!-- PAGE RELATED PLUGIN(S) -->
+        <script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
+        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
+        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
+        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
+        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
+        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
+        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
+
+
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+
+
+       <script type="text/javascript">
+        
+        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+        
+        $(document).ready(function() {
+            
+            pageSetUp();
+            
+            /*
+             * BASIC
+             */
+            $('#dt_basic').dataTable({
+                "sPaginationType" : "bootstrap_full"
+            });
+    
+            /* END BASIC */
+    
+            /* Add the events etc before DataTables hides a column */
+            $("#datatable_fixed_column thead input").keyup(function() {
+                oTable.fnFilter(this.value, oTable.oApi._fnVisibleToColumnIndex(oTable.fnSettings(), $("thead input").index(this)));
+            });
+    
+            $("#datatable_fixed_column thead input").each(function(i) {
+                this.initVal = this.value;
+            });
+            $("#datatable_fixed_column thead input").focus(function() {
+                if (this.className == "search_init") {
+                    this.className = "";
+                    this.value = "";
+                }
+            });
+            $("#datatable_fixed_column thead input").blur(function(i) {
+                if (this.value == "") {
+                    this.className = "search_init";
+                    this.value = this.initVal;
+                }
+            });     
+            
+    
+            var oTable = $('#datatable_fixed_column').dataTable({
+                "sDom" : "<'dt-top-row'><'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                //"sDom" : "t<'row dt-wrapper'<'col-sm-6'i><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'>>",
+                "oLanguage" : {
+                    "sSearch" : "Search all columns:"
+                },
+                "bSortCellsTop" : true
+            });     
+            
+            /*
+             * COL ORDER
+             */
+            $('#datatable_col_reorder').dataTable({
+                "sPaginationType" : "bootstrap",
+                "sDom" : "R<'dt-top-row'Clf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                "fnInitComplete" : function(oSettings, json) {
+                    $('.ColVis_Button').addClass('btn btn-default btn-sm').html('Columns <i class="icon-arrow-down"></i>');
+                }
+            });
+            
+            /* END COL ORDER */
+    
+            /* TABLE TOOLS */
+            $('#datatable_tabletools').dataTable({
+                "sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+                "oTableTools" : {
+                    "aButtons" : ["copy", "print", {
+                        "sExtends" : "collection",
+                        "sButtonText" : '저장 <span class="caret" />',
+                        "aButtons" : ["csv", "xls"]
+                    }],
+                    "sSwfPath" : "../../js/plugin/datatables/media/swf/copy_csv_xls_pdf.swf"
+                },
+                "fnInitComplete" : function(oSettings, json) {
+                    $(this).closest('#dt_table_tools_wrapper').find('.DTTT.btn-group').addClass('table_tools_group').children('a.btn').each(function() {
+                        $(this).addClass('btn-sm btn-default');
+                    });
+                }
+            });
+        
+            /*
+            * 기존 테이블의 작은버튼을 기본버튼으로 변경
+            */ 
+            $('.dt-top-row a').removeClass('btn-sm');
+
+        /* END TABLE TOOLS */
+        })
+    </script>
+
+
+
+	</body>
+
+</html>
