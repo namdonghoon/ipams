@@ -700,6 +700,9 @@ input, select{
 
 
 /* 마진 크기 조정 */
+.mb0{
+	margin-bottom: 0px;
+}
  .mt10 {
 margin-top: 10px;
 }.mb10 {
@@ -727,7 +730,13 @@ margin-left: 30px;
 }.mr30 {
 margin-right: 30px;
 }.mt50{
-    margin-top: 50px ;
+    margin-top: 50px;
+}.mt60{
+    margin-top: 60px;
+}.mr70{
+    margin-right:70px;
+}.mb6{
+	margin-bottom: 6px;
 }
 
 
@@ -752,7 +761,6 @@ margin-right: 30px;
 .input-group-addon{
     font-size: 12px;
 }
-
 
 
 /* 자산등록 사업정보 표 (높음, 보통, 낮음) */
@@ -797,27 +805,18 @@ margin-right: 30px;
     padding-left: 10px !important;
 }
 
-/* 테이블 상단툴바 정렬*/
-.modal-dialog .dt-top-row .dataTables_length{
+/* 테이블 상단툴바 조절*/
+.dt-top-row .dataTables_length{
     right: 0px;
 }
-.modal-dialog .dt-top-row .dataTables_filter{
+.dt-top-row .dataTables_filter{
     left: 0px;
-}
-.dt-top-row a, .dt-top-row .select{
-    top: -3px;
 }
 .dt-top-row .select select{
     height: 31px;
 }
-.dt-top-row div.dataTables_filter{
-    top: -41px;
-}
 .dt-top-row .dataTables_filter input{
     height: 31px;
-}
-.mt70{
-    margin-right: 70px;
 }
 .dt-top-row .DTTT{
     right: 162px;
@@ -825,9 +824,17 @@ margin-right: 30px;
 .top10{
     top: 10px;
 }
+.display-non-wid-id-3 .dataTables_filter, .display-non-wid-id-3 .DTTT{
+	display: none;
+}
 
 /* 테이블 내용 */
-
+.modal-dialog .dataTables_wrapper .remove-sort thead tr th:FIRST-CHILD{
+	background-image: none;
+}
+.remove-sort{
+	background-image: none !important;
+}
 /* ======= End ======= */
 
 
@@ -945,4 +952,25 @@ pre.text-box {
 .pie-box .easy-pie-title{
 	margin-left:10px;
 	width:150px;
+}
+/*글쓰기 파일업로드*/
+.file_upload{
+margin-top: 10px;
+margin-left: 0;
+padding-left: 0;
+}
+.file_upload li{
+list-style: none;
+padding: 5px;
+margin-bottom: 2px;
+border: solid 1px #dddddd;
+}
+.file_upload li span{
+color: #999999;
+border-right: solid 1px #dddddd;
+padding-right: 5px;
+margin-right: 5px;
+}
+.reply_box li{
+list-style: none;
 }
