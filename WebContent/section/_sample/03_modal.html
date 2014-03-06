@@ -64,6 +64,9 @@
 
 
 
+		<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal4">
+		<i class="fa fa-fw fa-upload"></i>4. MODAL 파일 업로드</button>
+
 		
 
 
@@ -79,7 +82,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 주 제목</h4>
                     </div>
                     <div class="modal-body">
                         <h6 class="h-title">모달 소제목</h6>
@@ -114,7 +117,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산 담당자 정보 조회</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 자산 담당자 정보 조회</h4>
                     </div>
                     <div class="modal-body">
                         
@@ -187,7 +190,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 변경된 자산 상세조회</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 변경된 자산 상세조회</h4>
                     </div>
                     <div class="modal-body">
                         <div>
@@ -233,7 +236,7 @@
                                                             </th>
                                                             <th>기업/기관</th>
                                                             <th>이름</th>
-                                                            <th>비고</th>
+                                                            <th class="remove-sort">비고</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -316,7 +319,7 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">
                         닫기
                     </button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
                         완료
                     </button>
                 </div><!-- /.modal-content -->
@@ -330,6 +333,78 @@
 
 
 
+
+
+		<!-- Modal-4 -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 파일업로드</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="h-title pull-left">파일업로드</h6>
+                                <div style="margin-left:110px;">
+                                    <div class="alert alert-info">
+                                        <i class="fa-fw fa fa-info"></i>100MB 이상의 파일은 업로드 되지 않습니다.
+                                    </div>
+                                </div>
+                                <table class="table table-bordered tbodycenter">
+                                    <colgroup>
+                                        <col>
+                                        <col width="100">
+                                        <col width="150">
+                                        <col width="80">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>파일명</th>
+                                        <th>파일크기</th>
+                                        <th>진행률</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tleft">경기도정보보안_s_text.ai</td>
+                                        <td>1MB</td>
+                                        <td>
+                                            <div class="bar-holder">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm">
+                                               삭제
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary disabled">완료</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end Modal -->
         
 		<!--================================================== -->
 

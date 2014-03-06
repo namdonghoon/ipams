@@ -381,7 +381,7 @@
 
 
 
-                <!--  2. 일반 테이블 (기본 페이징 테이블)  -->
+                <!--  3. 일반 테이블 (기본 페이징 테이블, view)  -->
                 <div class="well well-light">
                     <div class="row">
                         <div class="col-md-12">
@@ -405,7 +405,7 @@
                                     <!-- widget content -->
                                     <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
                             
-                                        <table id="datatable_tabletools-1" class="table table-bordered table-condensed table-hover tbodycenter">
+                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
                                             <colgroup>
                                                 <col width="30px">
                                                 <col width="50px">
@@ -458,11 +458,11 @@
                                                     <td>
                                                         <span class="badge bg-color-blueLight">신규</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         조회</a>      
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         추가</a>                                                      
                                                     </td>
@@ -491,11 +491,11 @@
                                                     <td>
                                                         <span class="badge badge-color-darkorange">진행중</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         조회</a>  
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         추가</a>                                                      
                                                     </td>
@@ -522,11 +522,11 @@
                                                     <td>
                                                         <span class="badge badge-color-darkorange">진행중</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         조회</a>  
                                                     </td>
-                                                    <td>
+                                                    <td class="remove-sort">
                                                         <a class="btn btn-sm btn-default" href="javascript:void(0);">
                                                         추가</a>                                                      
                                                     </td>
@@ -573,6 +573,218 @@
                 </div>
             </div>
 
+
+
+
+
+
+	
+			<!--  4. 검색 테이블 (기본 페이징 테이블, view, 파일변환, 인쇄, 복사)  -->
+			<div class="well well-light">
+				<h6 class="h-title mb0 float-left">승인 대상 목록</h6>
+	            <div class="row">
+	                <div class="col-md-12">
+	                    
+	                    <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
+	                        
+	                        <!-- widget edit box -->
+	                        <div class="jarviswidget-editbox">
+	                            <!-- This area used as dropdown edit box -->
+	                            
+	                        </div>
+	                        <!-- end widget edit box -->
+	
+	                        <p class="go_btn align-right mb6">
+	                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+	                        </p>
+	                        <!-- widget div-->
+	                        <div class="mt30 table-bordered ">
+	        
+	                            <!-- widget content -->
+	                            <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                    
+	                                <table id="datatable_tabletools-1" class="table table-bordered table-condensed table-hover tbodycenter">
+	                                    <colgroup>
+	                                        <col width="30px">
+	                                        <col width="50px">
+	                                        <col>
+	                                        <col width="100px">
+	                                        <col width="80px">
+	                                        <col width="80px">
+	                                        <col width="85px">
+	                                        <col width="80px">
+	                                        <col width="80px">
+	                                    </colgroup>
+	                                    <thead>
+	                                        <tr>
+	                                            <th class="smart-form remove-sort">
+	                                                <label class="checkbox">
+	                                                    <input type="checkbox">
+	                                                    <i></i> 
+	                                                </label>
+	                                            </th>
+	                                            <th>No.</th>
+	                                            <th>자산명</th>
+	                                            <th>도입일</th>
+	                                            <th>도입형태</th>
+	                                            <th>도입구분</th>
+	                                            <th>진행상황</th>
+	                                            <th class="remove-sort">담당정보</th>
+	                                            <th class="remove-sort">비고</th>
+	                                        </tr>
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr>
+	                                            <td class="smart-form">
+	                                                <label class="checkbox">
+	                                                    <input type="checkbox">
+	                                                    <i></i> 
+	                                                </label>
+	                                            </td>
+	                                            <td>1</td>
+	                                            <td class="tleft">
+	                                                <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+	                                                data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+	                                                data-content="하드웨어(서버) GG-SVR-001"
+	                                                data-html="true">
+	                                                    <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+	                                                </a>
+	                                            </td>
+	                                            <td>2014-02-01</td>
+	                                            <td>도-44</td>
+	                                            <td>5</td>
+	                                            <td>
+	                                                <span class="badge bg-color-blueLight">신규</span>
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                조회</a>      
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                추가</a>                                                      
+	                                            </td>
+	                                        </tr>
+	                                        <tr>
+	                                            <td class="smart-form">
+	                                                <label class="checkbox">
+	                                                            <input type="checkbox">
+	                                                            <i></i> 
+	                                                </label>
+	                                            </td>
+	                                            <td>2</td>
+	                                            <td class="tleft">
+	                                                <!--자산정보-->
+	                                                <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+	                                                        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+	                                                        data-content="하드웨어(서버) GG-SVR-001"
+	                                                        data-html="true">
+	                                                    <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+	                                                </a>
+	                                                <!--자산정보 끝-->
+	                                            </td>
+	                                            <td>2014-02-03</td>
+	                                            <td>도입-11</td>
+	                                            <td>5</td>
+	                                            <td>
+	                                                <span class="badge badge-color-darkorange">진행중</span>
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                조회</a>  
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                추가</a>                                                      
+	                                            </td>
+	                                        </tr>
+	                                        <tr>
+	                                            <td class="smart-form">
+	                                                <label class="checkbox">
+	                                                            <input type="checkbox">
+	                                                            <i></i> 
+	                                                </label>
+	                                            </td>
+	                                            <td>3</td>
+	                                            <td class="tleft">
+	                                                <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+	                                                data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+	                                                data-content="하드웨어(서버) GG-SVR-001"
+	                                                data-html="true">
+	                                                    <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+	                                                </a>
+	                                            </td>
+	                                            <td>2014-01-02</td>
+	                                            <td>4</td>
+	                                            <td>5</td>
+	                                            <td>
+	                                                <span class="badge badge-color-darkorange">진행중</span>
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                조회</a>  
+	                                            </td>
+	                                            <td class="remove-sort">
+	                                                <a class="btn btn-sm btn-default" href="javascript:void(0);">
+	                                                추가</a>                                                      
+	                                            </td>
+	                                        </tr>
+	                                    </tbody>
+	                                </table>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    
+	                    <div class="text-center">
+	                        <ul class="pagination pagination-sm">
+	                            <li>
+	                                <a href="javascript:void(0);">처음</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">이전</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">1</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">2</a>
+	                            </li>
+	                            <li class="active">
+	                                <a href="javascript:void(0);">3</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">4</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">5</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">다음</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">마지막</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div><!-- END ROW  -->
+	        </div><!-- END well  -->
+	        
+	        
+	        
+	        
+	        
+	        
+	        
+	    </div>
+		
+		
+		
+		
+		
+		
+		
+		
 
 		<!--================================================== -->
 
@@ -712,7 +924,7 @@
 
 
 
- <script type="text/javascript">
+ 		<script type="text/javascript">
         
         // DO NOT REMOVE : GLOBAL FUNCTIONS!
         
@@ -760,9 +972,7 @@
                 "bSortCellsTop" : true
             });     
             
-    
-
-
+ 
 
 
             /*
@@ -795,22 +1005,7 @@
                     });
                 }
             });
-            $('#datatable_tabletools-2').dataTable({
-                "sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
-                "oTableTools" : {
-                    "aButtons" : ["copy", "print", {
-                        "sExtends" : "collection",
-                        "sButtonText" : '저장 <span class="caret" />',
-                        "aButtons" : ["csv", "xls"]
-                    }],
-                    "sSwfPath" : "../../js/plugin/datatables/media/swf/copy_csv_xls_pdf.swf"
-                },
-                "fnInitComplete" : function(oSettings, json) {
-                    $(this).closest('#dt_table_tools_wrapper').find('.DTTT.btn-group').addClass('table_tools_group').children('a.btn').each(function() {
-                        $(this).addClass('btn-sm btn-default');
-                    });
-                }
-            });
+            
         
 
             /*

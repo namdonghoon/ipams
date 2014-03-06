@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+
+        <!-- MAIN PANEL -->
+       	<div id="main" class="row no-margin-left mr20" >
+			
+			
+			
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    
+				    
+				    
+				    	<!--============ START 일반버튼 ============ -->
+						<h6 class="h-title">일반버튼</h6>
+		        		<div>
+				            <button class="btn btn-primary ">
+				                <i class="fa fa-pencil margin-right-5"></i>신규등록
+				            </button>
+				            <button class="btn btn-default">
+				                <i class="fa fa-plus"></i> 일괄추가
+				            </button>
+				            <button class="btn btn-default">
+				                <i class="fa fa-minus"></i> 일괄제거
+				            </button>
+				            <button class="btn btn-default">
+				                <i class="fa fa-folder-open"></i> 불러오기 
+				            </button>
+				            <button class="btn btn-default">
+				                <i class="fa fa-pencil"></i> 업무흐름도작성
+				            </button>
+				            <button type="button" class="btn btn-sm btn-default" rel="tooltip" data-original-title="기업/기관 또는 부서를 선택해야 활성화됩니다.">
+	                           <i class="fa fa-external-link"></i>&nbsp;기업/기관 조직도 
+	                       </button>
+				       	</div>
+				
+				            
+				        
+						<button class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
+                            조회
+                        </button>
+                        
+				        <div class="btn-group">
+				            <button type="button" class="btn btn-default btn-sm">수정</button>
+				            <button type="button" class="btn btn-default btn-sm">삭제</button>
+				        </div>
+				        
+				        <div class="">
+		                    <button type="button" class="btn btn-sm btn-default">
+		                        <i class="fa fa-pencil"></i>&nbsp;등록
+		                    </button>
+		                    <button type="button" class="btn btn-sm btn-default ">
+		                        <i class="fa fa-pencil-square-o"></i>&nbsp;수정
+		                    </button>
+		                    <button type="button" class="btn btn-sm btn-default ">                        
+		                        <i class="fa fa-trash-o"></i>&nbsp;삭제
+		                    </button>
+		                </div>
+		                
+		                <div class="">
+		              		<button class="btn btn-default" >
+		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
+		                    </button>
+		                    <button class="btn btn-default" >
+		                    	<i class="fa fa-upload"></i> 엑셀 등록
+		                    </button>
+		                    <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                        	<button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+						</div>
+						
+						
+						
+		                <div class="search">
+				            <button class="btn btn-default">
+				                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+				            </button>
+				        </div>
+				        <div class="search-color">
+				            <button class="btn btn-default">
+				                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+				            </button>
+				        </div>
+				        <!--============ END 일반버튼 ============ -->
+				        
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    
+				    
+				    	<!--============ START 이동버튼 ============ -->
+						<h6 class="h-title">이동버튼</h6>
+						
+				        <div>
+				            <button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+				        </div>
+				
+		        		<div class="align-right">
+				            <button type="button" class="btn btn-lg btn-primary float-left">
+				                <i class="fa fa-times margin-right-5"></i>취소
+				            </button>
+				            <button type="button" class="btn btn-lg btn-success ">
+				                다음
+				                <i class="fa fa-arrow-right"></i>
+				            </button>
+				        </div>
+				        <div class="align-right">
+				            <button type="button" class="btn btn-lg btn-primary float-left">
+				                <i class="fa fa-times margin-right-5"></i>취소
+				            </button>
+				            <button type="button" class="btn btn-lg btn-success ">
+				                저장
+				                <i class="fa fa-check"></i></button>
+				        </div>
+				
+				        <div class="align-right">
+				            <button type="button" class="btn btn-lg btn-primary float-left">
+				                <i class="fa fa-times margin-right-5"></i>취소
+				            </button>
+				            <button type="button" class="btn btn-lg btn-success ">
+				                완료
+				                <i class="fa fa-check"></i></button>
+				        </div>
+	        			<!--============ END 이동버튼 ============ -->
+	        			
+	        			
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    
+				    
+				    	<!--============ START 입력박스 ============ -->
+						<h6 class="h-title">입력 박스</h6>
+						
+						<input class="form-control" placeholder="구성도명을 입력하세요." type="text">
+	
+				        <table>
+				            <tr>
+				                <td class="smart-form">
+				                    <label class="textarea textarea-resizable">
+				                        <textarea rows="3"></textarea>
+				                    </label>
+				                </td>
+				            </tr>
+				        </table>
+				        <!--============ END 입력박스 ============ -->
+						
+					</div>
+				</div>
+				
+	
+				
+				
+				
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    
+				    <!--============ START 셀렉트 박스 ============ -->
+						<h6 class="h-title">셀렉트 박스</h6>
+						
+						<span>
+				            <select class="form-control" style="width:100px;">
+				                <option>-전체-</option>
+				                <option>1</option>
+				                <option>2</option>
+				                <option>3</option>
+				            </select>
+				        </span>
+				
+				        <span>
+				            <select class="form-control" disabled style="width:100px;">
+				                <option>-전체-</option>
+				                <option>1</option>
+				                <option>2</option>
+				                <option>3</option>
+				            </select>
+				        </span>
+					</div>
+				</div>
+	
+	
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+						<h6 class="h-title">체크 박스</h6>
+						
+						<!--============ START 체크 박스 ============ -->
+						<table>
+				            <tr>
+				                <td class="smart-form"> 
+				                    <label class="checkbox">
+				                        <input type="checkbox">
+				                        <i></i> 
+				                    </label>
+				                </td>
+				            </tr>
+				        </table>
+				
+				        <table>
+				            <tr>
+				                <td class="smart-form"> 
+				                    <label class="checkbox display-inline ">
+				                        <input type="checkbox" name="checkbox" checked="checked"><i></i>화면표시 &nbsp;
+				                    </label>
+				                    <label class="checkbox display-inline ">
+				                        <input type="checkbox" name="checkbox" checked="checked"><i></i>화면표시 &nbsp;
+				                    </label>
+				                    <label class="checkbox display-inline ">
+				                        <input type="checkbox" name="checkbox" checked="checked"><i></i>화면표시 &nbsp;
+				                    </label>
+				                </td>
+				            </tr>
+				        </table>	
+						<!--============ END 체크 박스 ============ -->
+						
+						
+					</div>
+				</div>
+				
+
+
+
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title">캘린더</h6>
+				    
+				        <!--============= START 시작일, 종료일 =============-->
+				        <fieldset class="no-padding-all smart-form">
+				            <div class="row">
+				                <section class="col col-sm-5 no-margin-bottom">
+				                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+				                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+				                    </label>
+				                </section>
+				                <section class="col col-sm-5 no-margin-bottom">
+				                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+				                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+				                    </label>
+				                </section>
+				            </div>
+				        </fieldset>
+				        <!--============= END 시작일, 종료일 =============-->
+				        
+				        
+				    </div>
+			    </div>
+		        
+					
+					
+					
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title">정보 제공</h6>
+				        
+				        <!--============= START 정보제공  =============-->
+				        <div class="alert alert-info">
+				            1) 좌측 패널에서 아이콘을 우측 화면으로 드래그하여 업무명을 등록합니다.<br>
+				            2) 연결된 선의 재연결은 선을 선택한 후에 끝점을 움직여 주세요.<br>
+				        </div>
+				        <!--============= END 정보제공 =============-->
+				        
+					</div>
+				</div>
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title">사용자 정보박스</h6>
+				    	
+				    	<!--============= START 사용자 정보박스   =============-->
+				    	
+				    	<!--자산정보-->
+				        <button data-toggle="modal" data-target="#myModal" class="user_info_box" rel="popover-hover" data-placement="bottom"
+				           data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+				           data-content="하드웨어(서버) GG-SVR-001"
+				           data-html="true">
+				            <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+				        </button>
+				        <!--자산정보 끝-->
+				
+				        <!-- 인명정보 -->
+				        <button class="user_info_box" rel="popover-hover" data-placement="left"
+				        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+				        data-content="
+				            <ul class='user_info'>
+				                <p><img src='../../images/member_big.png'></p>
+				                <li>시스템관리자</li>
+				                <li>(주)드림인프라</li>
+				                <li>SI사업부</li>
+				                <li>부장</li>
+				                <li>systemadministrator@dreaminfra.co.kr </li>
+				            </ul>
+				        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+				        </button>
+				        <!--인명정보 끝-->
+				    	
+				    	
+				    	<!--============= END 사용자 정보박스 =============-->
+				    	
+					</div>
+				</div>
+		
+			
+				
+				
+				
+				
+				
+				
+				<div class="col-md-12 col-md-8">
+				    <div class="show-grid-div1 well">
+						<h6 class="h-title">Wizards</h6>
+				
+						<!--============= START Wizards =============-->
+						<div class="fuelux">
+          				
+	                        <div class="wizard mb20">
+	
+	                            <ul class="steps">
+	                                <li data-target="#step1">
+	                                    <span class="badge badge-info">1</span>첫번째 항목<span class="chevron"></span>
+	                                </li>
+	                                <li data-target="#step2">
+	                                    <span class="badge">2</span>두번째 항목<span class="chevron"></span>
+	                                </li>
+	                                <li data-target="#step3" class="active">
+	                                    <span class="badge">3</span>세번째 항목(활성화)<span class="chevron"></span>
+	                                </li>
+	                                
+	                            </ul>
+	                        </div>
+	
+	
+	                        <div class="step-content">
+	                            <form class="form-horizontal" id="fuelux-wizard" method="post">
+	
+	                               <!-- id:  step1, step2, step3(active) -->
+	                                <div class="step-pane active" id="step3">
+	                                    <h6 class="h-title"> 소제목 </h6>
+	                                    
+	                                    <p>내용 삽입.</p>
+	                                        
+	                                </div>
+	                                <!-- end step3  -->
+	                            </form>
+	                        </div> 
+	                        <!-- end step-content -->  
+	                       
+	                    </div>
+	                    <!--============= END Wizards =============-->
+	                    
+					</div>
+				</div>
+		
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+						<h6 class="h-title">검색 박스</h6>
+		
+						<!--============= START 검색 박스 =============-->
+						<div class="input-group search-color width-80">
+							<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default btn-search">
+									<i class="fa fa-search">&nbsp;검색</i>
+								</button>
+							</div>
+						</div>
+						<!--============= END 검색박스 =============-->
+						
+					</div>
+				</div>
+		
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title">셀렉트 박스(검색 포함)</h6>
+				    
+				    	<!--============= START 셀렉트 박스(검색) =============-->
+				    	
+				    	<!--  너비조정 width-10 ~ 100  -->
+				    	<div class="width-80">
+							<select  class="select2">
+								<option>정규직</option>
+								<option>임원</option>
+								<option>파견직</option>
+								<option>본부장</option>
+								<option>감사</option>
+								<option>팀원</option>
+								<option>test1</option>
+								<option>test2</option>
+								<option>test3</option>
+								<option>test4</option>
+								<option>test5</option>												
+							</select>
+						</div>
+				    	
+				    	<!--============= END 셀렉트 박스(검색) =============-->
+				    
+				    
+				    </div>
+			    </div>
+		
+		
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title">라디오 박스</h6>
+				    	
+				    	<!--============= START 라디오 박스 =============-->
+						<form class="smart-form">
+		                    <div class="inline-group">
+		                        <label class="radio">
+		                            <input type="radio" name="radio-inline" checked="checked">
+		                                <i></i>일반
+		                        </label>
+		                        <label class="radio">
+		                            <input type="radio" name="radio-inline">
+		                                <i></i>공지사항
+		                        </label>
+		                    </div>
+		                </form>
+		                <!--============= END 라디오 박스 =============-->
+		      		</div>
+		      </div>
+		
+		
+		
+		
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title"> 박스</h6>
+				    	
+				    	<!--============= START  =============-->
+				    	
+				    	
+		                <!--============= END  =============-->
+		      		</div>
+		      	</div>
+		
+		
+		
+		
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well">
+				    	<h6 class="h-title"> 박스</h6>
+				    	
+				    	<!--============= START  =============-->
+				    	
+				    	
+		                <!--============= END  =============-->
+		      		</div>
+		      	</div>
+		
+		
+		
+		
+				<!--============= START 그리드 =============-->
+				<div class="">
+	                <div class="row">
+	                    <div class="col-md-12">
+	                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
+	                    </div>
+	                </div>
+	                <div class="well well-light">
+	                    <div class="row">
+	                        <h6 class="h-title ml10">그리드 대 제목</h6>
+	                        <div class="col-md-12 col-md-3">
+	
+	                            <div class="show-grid-div1">
+	
+	                                그리드 1번째
+	
+	                            </div>
+	                        </div>
+	                        <div class="col-xs-12 col-md-9">
+	                            <div class="show-grid-div1">
+	                               
+	                                그리드 2번쨰
+	
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	
+	                    <!--  버튼 넣을 곳  -->
+	                    <div class="align-right mt20">
+	                        <button type="button" class="btn btn-lg btn-primary float-left">
+	                            <i class="fa fa-times margin-right-5"></i>취소
+	                        </button>
+	                        <button type="button" class="btn btn-lg btn-success ">
+	                            다음
+	                            <i class="fa fa-arrow-right"></i></button>
+	                    </div>
+	                </div>
+            	</div><!-- END CONTENT -->
+				<!--============= END 그리드 =============-->
+		
+		
+		
+		</div>
+		<!--End Row  -->
+
+
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>-->
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+
+        <!-- data picker-->
+    	<script type="text/javascript">
+	        $('#startdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	            }
+	        });
+	
+	        $('#finishdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+    	</script>
+    	<!-- end data picker -->
+
+
+		<script>
+            $(document).ready(function() {
+
+                // DO NOT REMOVE : GLOBAL FUNCTIONS!
+                pageSetUp();
+
+                /*
+                 * PAGE RELATED SCRIPTS
+                 */
+
+                $(".js-status-update a").click(function() {
+                    var selText = $(this).text();
+                    $this = $(this);
+                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                    $this.parents('.dropdown-menu').find('li').removeClass('active');
+                    $this.parent().addClass('active');
+                });
+            });
+        </script>
+
+
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+
+		</script>
+
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+
+
+	</body>
+
+</html>

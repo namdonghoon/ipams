@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>사업관리</li><li>사업관리 </li><li>사업정보 수정 </li>
+					<li>IPAMS HOME</li><li>기반정보관리</li><li>조직 및 인사 </li><li>기업조직도 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -314,91 +314,112 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> > 기업조직도</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                <div class="row">
-                    <h6 class="h-title ml10">사업정보 수정</h6>
-                    <div class="col-md-12 col-md-3">
+                    <div class="row">
+                        
+                        <div class="col-md-12 col-md-4">
+                            <h4 class="h-title">부서 선택</h4>
 
-                        <div class="show-grid-div1">
-                            <!--   트리들어가는 곳   -->
-                            트리 내용 삽입
+
+							<div class="input-group search-color">
+  								<input class="form-control" placeholder="기관/기업명을 입력하세요." type="text">
+								<div class="input-group-btn">
+									<button class="btn btn-default btn-search mb10">
+										<i class="fa fa-search">&nbsp;검색</i>
+									</button>
+								</div>
+  							</div>
+
+							<div class="show-grid-div1">
+	                                <!--   트리들어가는 곳   -->
+	                                트리 내용 삽입
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-md-9">
-                        <div class="show-grid-div1" role="content">
-                            
-                            <!-- widget content -->
-                            <div class="fuelux">
+                        
+                        <div class="col-xs-12 col-md-8">
+                            <h4 class="h-title float-left">부서 상세</h4>
+                            <div class="align-right mb10">
+
+                                <!--  버튼으로 적용 (작동안됨.) -->
+                                <button type="button" class="btn btn-sm btn-default" rel="tooltip" data-original-title="기업/기관 또는 부서를 선택해야 활성화됩니다.">
+                                    <i class="fa fa-external-link"></i>&nbsp;기업/기관 조직도 
+                                </button>
 
 
-                                <div class="step-content">
-                                    <form class="form-horizontal" id="fuelux-wizard" method="post">
-                                        <table class="table table-bordered">
-                                            <colgroup>
-                                                <col width="100px;">
-                                                <col>
-                                                <col width="50px;">
-                                            </colgroup>
+                            </div>
+                           <div class="" role="content">
+                                <form class="form-horizontal" id="fuelux-wizard" method="post">
+    
+
+                                    <table class="table table-bordered table-fixed">
+                                        <colgroup>
+                                            <col width="100px">
+                                            <col>
+                                        </colgroup>
                                             <tbody>
-                                                <tr>
-                                                    <th>
-                                                        <label>구성도명</label>
-                                                    </th>
-                                                    <td>
-                                                        <input class="form-control" placeholder="구성도명을 입력하세요." type="text">
-                                                    </td>
+                                                <tr>  
+                                                    <th>기업/기관</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서설명</th>  
+                                                    <td></td> 
                                                 </tr>
                                             </tbody>
-                                        </table>
+                                    </table>
+
+                                </form>
+                            </div> 
 
 
-                                         <div class="alert alert-info">
-                                            1) 연결된 선의 재연결은 선 선택후 끝점을 움직여 주세요. <br>
-                                            2) 구성항목 및 연결선 선택후 키보드 Delete 를 누르면 삭제할 수 있습니다. <br>
-                                            3) 구성항목 이름 영역을 드래그하면 이동할 수 있습니다.
-                                        </div>
+                            <h4 class="h-title float-left mt20">부서 상세
+                                &nbsp;<span>0</span>명
+                            </h4>
+                           <table class="table table-bordered table-fixed">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col width="145px">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>직급</th>
+                                        <th>이름</th>
+                                        <th>이메일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> - </td>
+                                        <td> - </td>
+                                        <td> - </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
 
-                                        <div class="row">
-                                            
-                                            <div class="col-xs-12 col-md-2">
-                                                <div class="show-grid-div1">
-
-
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xs-12 col-md-10">
-                                                <div class="show-grid-div1">
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </form>
-                                </div> 
-                                <!-- end step-content -->
-                            </div>
-                            <!-- end widget content -->
-        
                         </div>
                     </div>
+
+                <div class="mt20">
+                    <button type="button" class="btn btn-sm btn-default">
+                        <i class="fa fa-pencil"></i>&nbsp;등록
+                    </button>
+                    <button type="button" class="btn btn-sm btn-default ">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;수정
+                    </button>
+                    <button type="button" class="btn btn-sm btn-default ">                        
+                        <i class="fa fa-trash-o"></i>&nbsp;삭제
+                    </button>
                 </div>
-                    <div class="align-right mt20">
-                        <button type="button" class="btn btn-lg btn-primary float-left">
-                            <i class="fa fa-times margin-right-5"></i>취소
-                        </button>
-                        <button type="button" class="btn btn-lg btn-success ">
-                            저장
-                            <i class="fa fa-check"></i></button>
-                    </div>
+
                 </div>
 			<!-- END MAIN CONTENT -->
             </div>
@@ -455,6 +476,8 @@
 		</div>
 		<!-- END SHORTCUT AREA -->
         
+
+
 
 		<!--================================================== -->
 

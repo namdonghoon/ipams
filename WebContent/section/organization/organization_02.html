@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>사업관리</li><li>사업관리 </li><li>사업정보 수정 </li>
+					<li>IPAMS HOME</li><li>기반정보관리</li><li>조직 및 인사 </li><li>인사정보목록 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -308,126 +308,114 @@
 
 
 
-
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> > 인사정보목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
-                        <h6 class="h-title ml10">사업정보 수정</h6>
-                        <div class="col-md-12 col-md-3">
-
-                            <div class="show-grid-div1">
-                                <!--   트리들어가는 곳   -->
-                                트리 내용 삽입
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-9">
-                           <div class="show-grid-div1" role="content">
-                                        
-                                <!-- widget content -->
-                                <div class="fuelux">
-            
-                                    <div class="wizard mb20">
-
-                                        <ul class="steps">
-                                            <li data-target="#step1">
-                                                <span class="badge badge-info">1</span>사업개요<span class="chevron"></span>
-                                            </li>
-                                            <li data-target="#step2">
-                                                <span class="badge">2</span>사업 담당자<span class="chevron"></span>
-                                            </li>
-                                            <li data-target="#step3" class="active">
-                                                <span class="badge">3</span>관련 문서<span class="chevron"></span>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-
-
-                                    <div class="step-content">
-                                        <form class="form-horizontal" id="fuelux-wizard" method="post">
-            
-                                           
-                                            <div class="step-pane active" id="step3">
-                                                <h6 class="h-title">문서 등록 목록</h6>
-                                                                                                	<div class="pull-left">
-                                                    <a class="btn btn-default mb10" data-toggle="modal" href="#myModal">
-                                                        <i class="fa fa-folder-open"></i> 불러오기 
-                                                    </a> 
-
-                                                    <a class="btn btn-default mb10" href="javascript:void(0);">
-                                                        <i class="fa fa-minus"></i> 일괄삭제
-                                                    </a> 
-                                                   </div>
-                                                   <div class="pull-right">
-                                                    <a class="btn btn-primary mb10" href="javascript:void(0);">
-                                                        <i class="fa fa-pencil"></i> 신규등록
-                                                    </a> 
-                                                </div>
-
-                                                <table class="table table-bordered table-fixed mt5 tbodycenter">
-                                                    <colgroup>
-                                                        <col width="30px">
-                                                        <col width="50px">
-                                                        <col>
-                                                        <col>
-                                                        <col width="100px">
-                                                        <col width="80px">
-                                                        <col width="150px">
-                                                        <col width="70px">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="smart-form" >
-                                                                <label class="checkbox">
-                                                                    <input type="checkbox" name="checkbox" checked="checked"><i></i>
-                                                                </label>
-                                                            </th>
-                                                            <th>No.</th>
-                                                            <th>분류</th>
-                                                            <th>문서명</th>
-                                                            <th>최근업데이트</th>
-                                                            <th>변경이력</th>
-                                                            <th>문서정보</th>
-                                                            <th>비고</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-
-                                        
-                                                    <tr>
-                                                        <td class="smart-form">
-                                                            <label class="checkbox">
-                                                                <input type="checkbox" name="checkbox" checked="checked"><i></i>
-                                                            </label>
-                                                        
-                                                        </td>
-                                                        <td>1</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                
-                                                    </tbody>
-                                                </table>
-
-
-                                            </div>
-                                            <!-- end step3  -->
-                                        </form>
-                                    </div> 
-                                    <!-- end step-content -->
+                        
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col>
+                                    <col width="100px">
+                                    <col>
+                                    <col width="70px">
+                                </colgroup>
+                                <tr>
+                                    <th>기업/기관</th>
+                                    <td></td>
+                                    <th>부서</th>
+                                    <td></td>
+                                    <td rowspan="2" class="search text-align-center">
+                                        <button class="btn btn-default btn-lg" href="javascript:void(0);">
+                                            <i class="fa fa-search fa-lg margin-right-5"></i>검색
+                                        </button>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th>이름</th>
+                                    <td></td>
+                                    <th>상태</th>
+                                    <td></td> 
                                     
-                                    <div class="text-center">
+                                </tr>
+                            </table>
+
+                            <div class="text-align-right margin-bottom-5">
+                                <button data-toggle="modal" data-target="#myModal1" class="btn btn-default float-left">
+                                    부서이동
+                                </button>
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-pencil margin-right-5"></i>신규등록
+                                </button>
+                            </div>
+
+                            <table class="table table-bordered tbodycenter">
+                                <colgroup>
+                                    <col width="50px">
+                                    <col width="50px">
+                                    <col>
+                                    <col>
+                                    <col width="90px">
+                                    <col width="100px">
+                                    <col width="200px">
+                                    <col width="90px">
+                                    <col width="90px">
+                                    <col width="150px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="smart-form">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="checkbox" checked="checked"><i></i>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th>No.</th>
+                                        <th>기업/기관</th>
+                                        <th>부서</th>
+                                        <th>직급</th>
+                                        <th>이름</th>
+                                        <th>이메일</th>
+                                        <th>상태</th>
+                                        <th>변경이력</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
+                                                    조회
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default btn-sm">조회</button>
+                                                    <button type="button" class="btn btn-default btn-sm">수정</button>
+                                                    <button type="button" class="btn btn-default btn-sm">삭제</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+
+                            <div class="text-center">
                                 <ul class="pagination pagination-sm">
                                     <li>
                                         <a href="javascript:void(0);">처음</a>
@@ -454,29 +442,18 @@
                                         <a href="javascript:void(0);">다음</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">마지막</a>
+                                        <a href="javascript:void(0);">끝</a>
                                     </li>
                                 </ul>
                             </div>
-                                </div>
-                                <!-- end widget content -->
-            
-            
-            
-                            </div> 
+
                         </div>
                         
+                        
                     </div>
-                    <div class="align-right mt20">
-                        <button type="button" class="btn btn-lg btn-primary float-left">
-                            <i class="fa fa-times margin-right-5"></i>취소
-                        </button>
-                        <button type="button" class="btn btn-lg btn-success ">
-                            다음
-                            <i class="fa fa-arrow-right"></i></button>
-                	</div>
+
+
                 </div>
-                
 			<!-- END MAIN CONTENT -->
             </div>
 		</div>
@@ -534,238 +511,52 @@
         
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 문서 목록</h6>
-                    </div>
-                    <div class="modal-body">
-                        <h6 class="h-title">문서 등록 대상 목록</h6>
-                        <div class="row">
-                            <div class="col-md-12">
 
-                                 <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="100px;">
-                                        <col>
-                                        <col width="100px;">
-                                        <col>
-                                        <col  width="60px;">
-                                    </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th><label for="">분류</label></th>
-                                        <td class=".display-inline">
-                                            <span>
-                                                <select class="form-control pull-left" style="width:100px;">
-                                                        <option>-대분류-</option>
-                                                        <option>구매</option>
-                                                        <option>인사</option>
-                                                        <option>보안</option>
-                                                        <option>총무</option>
-                                                        <option>개발</option>
-                                                </select>
-                                            </span>
-                                            <span>
-                                                <select class="form-control pull-left" style="width:100px;">
-                                                        <option>-중분류-</option>
-                                                </select>
-                                            </span>
-                                            <span>
-                                                <select class="form-control pull-left" style="width:100px;">
-                                                        <option>-소분류-</option>
-                                                </select>
-                                            </span>
-
-
-                                            </div>
-                                        </td>
-                                        <th><label for="">문서명</label></th>
-                                        <td>
-                                            <input class="form-control" placeholder="문서명" type="text">
-                                        </td>
-                                        <td>
-                                            <a class="btn btn-default btn-lg search-color" href="javascript:void(0);">
-                                                <i class="fa fa-search fa-lg margin-right-5"></i>검색
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                </table>
-
-                                <table class="table table-bordered table-condensed tbodycenter table-hover mt30">
-                                    <colgroup>
-                                        <col width="30px">
-                                        <col width="50px">
-                                        <col >
-                                        <col >
-                                        <col width="150px">
-                                        <col width="100px">
-                                        <col width="70px">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th class="smart-form"> 
-                                           
-                                                <label class="checkbox">
-                                                    <input type="checkbox" name="checkbox" checked="checked"><i></i>
-                                                </label>
-                                                
-                                            </th>
-                                            <th>No.</th>
-                                            <th>분류</th>
-                                            <th>문서명</th>
-                                            <th>첨부파일</th>
-                                            <th>최근업데이트</th>
-                                            <th>비고</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="smart-form">
-                                                
-                                                <label class="checkbox">
-                                                    <input type="checkbox" name="checkbox" checked="checked"><i></i>
-                                                </label>
-                                            </td>
-                                            <td>1</td>
-                                            <td class="tleft">IPAMS > 보고서 > 평가계획 수립 보고서</td>
-                                            <td class="tleft">정책연습</td>
-                                            <td class="tleft">
-                                                <a href="#" alt="파일 다운로드"> 다운로드</a>
-                                            </td>
-                                            <td>2014-01-02</td>
-                                            <td> 
-                                                <button type="button" class="btn btn-default btn-sm">조회</button>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                                <div class="text-center">
-                                    <ul class="pagination pagination-sm pagination-alt">
-                                        <li>
-                                            <a href="javascript:void(0);">처음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">이전</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">2</a>
-                                        </li>
-                                        <li class="active">
-                                            <a href="javascript:void(0);">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">5</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">다음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">끝</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            확인
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 승인내역조회</h6>
-                    </div>
-                    <div class="modal-body">
-                        <h6 class="h-title">승인내역</h6>
-                        <div class="rdd\ow">
-                            <div class="col-md-12">
-
-
-                                <table class="table table-bordered table-condensed tbodycenter">
-                                    <colgroup>
-                                        <col style="width: 60px;">
-                                        <col style="width: 120px;">
-                                        <col style="width: 60px;">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th>번호</th>
-                                        <th>이름</th>
-                                        <th>상태</th>
-                                        <th>사유</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <!-- 인명정보 -->
-                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
-                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" data-content="<ul class='user_info'>
-                                                    <p><img src='../../images/member_big.png'></p>
-                                                    <li>시스템관리자</li>
-                                                    <li>(주)드림인프라</li>
-                                                    <li>SI사업부</li>
-                                                    <li>부장</li>
-                                                    <li>systemadministrator@dreaminfra.co.kr </li>
-                                                </ul>
-                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
-                                            <!--인명정보 끝-->
-                                        </td>
-                                        <td>
-                                            <span class="badge badge-color-bluegreen">승인완료</span>
-                                        </td>
-                                        <td class="tleft">
-                                            전산자산 식별을 위한 자산명 변경 / Hostname 등록 / IP 등록
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
-
-
+       
+	<!-- Modal_1 -->
+	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <h6 class="h-title">모달 소제목</h6>
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                            
+					<div class="input-group search-color width-60">
+								<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
+						<div class="input-group-btn">
+							<button class="btn btn-default btn-search">
+								<i class="fa fa-search">&nbsp;검색</i>
+							</button>
+						</div>
+						
+							</div>
+	                            <!--  내용 삽입  -->
+	                         <div class="show-grid-div1 mt10">
+	
+	                         </div>
+	
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	        <!-- end modal -->
 
 
 		<!--================================================== -->

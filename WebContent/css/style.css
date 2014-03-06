@@ -660,6 +660,10 @@ ul.user_info li{
 .search-color button.btn{
     background: #eeeeee;
 }
+.btn-search{
+	padding-bottom: 7px;
+}
+
 .btn{
     font-size: 12px;
 }
@@ -671,6 +675,29 @@ input, select{
 }
 
 /*============ 2.25 남동훈 수정사항 =============*/
+
+/* 박스 너비  */
+.width-10{
+	width: 10%;
+}.width-20{
+	width: 20%;
+}.width-30{
+	width: 30%;
+}.width-40{
+	width: 40%;
+}.width-50{
+	width: 50%;
+}.width-60{
+	width: 60%;
+}.width-70{
+	width: 70%;
+}.width-80{
+	width: 80%;
+}.width-90{
+	width: 90%;
+}.width-100{
+	width: 100%;
+}
 
 /* 패딩 속성 무효 */
 .no-padding-top{
@@ -825,9 +852,10 @@ margin-right: 30px;
 .top10{
     top: 10px;
 }
-.display-non-wid-id-3 .dataTables_filter, .display-non-wid-id-3 .DTTT{
+#dt_basic_wrapper .dataTables_filter{
 	display: none;
 }
+
 
 /* 테이블 내용 */
 .modal-dialog .dataTables_wrapper .remove-sort thead tr th:FIRST-CHILD{

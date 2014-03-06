@@ -273,192 +273,263 @@
 		<!-- END NAVIGATION -->
 
 		<!-- MAIN PANEL -->
-		<div id="main" role="main">
+	<div id="main" role="main">
 
-			<!-- RIBBON -->
-			<div id="ribbon">
+		<!-- RIBBON -->
+		<div id="ribbon">
 
-				<span class="ribbon-button-alignment">
-                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
-                        <i class="fa fa-home"></i>
-                    </span>
-                </span>
-				<!-- breadcrumb -->
-				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>사업관리</li><li>사업관리 </li><li>사업정보 수정 </li>
-				</ol>
-				<!-- end breadcrumb -->
+			<span class="ribbon-button-alignment"> <span
+				class="btn btn-ribbon" rel="tooltip" data-placement="bottom"
+				data-original-title="<i class='fa fa-home'></i> 홈으로 가기"
+				data-html="true"> <i class="fa fa-home"></i>
+			</span>
+			</span>
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li>IPAMS HOME</li>
+				<li>기반정보관리</li>
+				<li>조직 및 인사</li>
+				<li>인사정보등록</li>
+			</ol>
+			<!-- end breadcrumb -->
 
-				<!-- You can also add more buttons to the
-				ribbon for further usability
+		</div>
+		<!-- END RIBBON -->
 
-				Example below:
 
-				<span class="ribbon-button-alignment pull-right">
-				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
-				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
-				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
-				</span> -->
 
+
+
+
+
+
+		<!-- MAIN CONTENT -->
+		<div id="content">
+		
+		
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-title txt-color-blueDark">
+						<i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> >
+							인사정보등록</span>
+					</h1>
+				</div>
 			</div>
-			<!-- END RIBBON -->
+			<div class="well well-light">
+				<div class="row">
+
+					<div class="col-md-12">
+						<h6 class="h-title float-left">신규등록</h6>
+						<div class="align-right">
+		              		<button class="btn btn-default mb10" >
+		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
+		                    </button>
+		                    <button class="btn btn-default mb10" >
+		                    	<i class="fa fa-upload"></i> 엑셀 등록
+		                    </button>
+						</div> 
+						
+						
+						<table class="table table-bordered" id="employeeTable">
+				            <colgroup>
+				                <col width="100px">
+				                <col>
+				            </colgroup>
+				            <tbody>
+					            <tr>
+					                <th><label for="company">기업/기관</label></th>
+					                <td>
+						                <div class="input-group search-color width-40" data-toggle="modal" data-target="#myModal1">
+			  								<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text" disabled>
+											<div class="input-group-btn">
+												<button class="btn btn-default btn-search">
+													<i class="fa fa-search">&nbsp;검색</i>
+												</button>
+											</div>
+											
+			  							</div>
+					                
+					                </td>
+					            </tr> 
+					            <tr>
+					                <th><label for="department">부서</label></th>
+					                <td>
+					                	<div class="input-group search-color width-40">
+			  								<input class="form-control" placeholder="검색시 부서명이 자동선택 됩니다." type="text" disabled>
+			  							</div>
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="type">고용형태</label></th>
+					                <td>
+					                	<div class="width-40">
+											<select  class="select2">
+												<option>정규직</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+									</td>
+					            </tr>
+					            <tr>
+					                <th><label for="position">직급</label></th>
+					                <td>
+					                	<div class="width-40">
+											<select  class="select2">
+												<option>정규직</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="duty">직책</label></th>
+					                <td>
+					                	<div class="width-40">
+											<select  class="select2">
+												<option>정규직</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="employeeNumber">사원번호</label></th>
+					                <td>
+					                	<input class="form-control width-40" placeholder="사원번호를 입력하세요." type="text">
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="name">이름</label></th>
+					                <td>
+					                	<input class="form-control width-40" placeholder="이름을 입력하세요." type="text">
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="email">이메일</label></th>
+					                <td>
+					                	<input class="form-control width-40" placeholder="이메일을 입력하세요." type="text">
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="status">상태</label></th>
+					                <td>
+					                	<div class="width-40">
+											<select  class="select2">
+												<option>정규직</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+					                </td>
+					            </tr>
+					        </tbody>
+				        </table>
+						
+						
+						<div class="align-right">
+				            <button type="button" class="btn btn-lg btn-primary float-left">
+				                <i class="fa fa-times margin-right-5"></i>취소
+				            </button>
+				            <button type="button" class="btn btn-lg btn-success ">
+				                완료
+				                <i class="fa fa-check"></i></button>
+				        </div>
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		<!-- END CONTENT  -->
+		 
+	</div>
 
 
 
 
-
-
-
-
-			<!-- MAIN CONTENT -->
-            <div id="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
-                    </div>
+	<!-- Modal_1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
                 </div>
-                <div class="well well-light">
-                <div class="row">
-                    <h6 class="h-title ml10">사업정보 수정</h6>
-                    <div class="col-md-12 col-md-3">
-
-                        <div class="show-grid-div1">
-                            <!--   트리들어가는 곳   -->
-                            트리 내용 삽입
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-9">
-                        <div class="show-grid-div1" role="content">
+                <div class="modal-body">
+                    <h6 class="h-title">모달 소제목</h6>
+                    <div class="row">
+                        <div class="col-md-12">
                             
-                            <!-- widget content -->
-                            <div class="fuelux">
+						<div class="input-group search-color width-60">
+							<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default btn-search">
+									<i class="fa fa-search">&nbsp;검색</i>
+								</button>
+							</div>
+					
+						</div>
+                            <!--  내용 삽입  -->
+                         <div class="show-grid-div1 mt10">
 
+                         </div>
 
-                                <div class="step-content">
-                                    <form class="form-horizontal" id="fuelux-wizard" method="post">
-                                        <table class="table table-bordered">
-                                            <colgroup>
-                                                <col width="100px;">
-                                                <col>
-                                                <col width="50px;">
-                                            </colgroup>
-                                            <tbody>
-                                                <tr>
-                                                    <th>
-                                                        <label>구성도명</label>
-                                                    </th>
-                                                    <td>
-                                                        <input class="form-control" placeholder="구성도명을 입력하세요." type="text">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-                                         <div class="alert alert-info">
-                                            1) 연결된 선의 재연결은 선 선택후 끝점을 움직여 주세요. <br>
-                                            2) 구성항목 및 연결선 선택후 키보드 Delete 를 누르면 삭제할 수 있습니다. <br>
-                                            3) 구성항목 이름 영역을 드래그하면 이동할 수 있습니다.
-                                        </div>
-
-
-                                        <div class="row">
-                                            
-                                            <div class="col-xs-12 col-md-2">
-                                                <div class="show-grid-div1">
-
-
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xs-12 col-md-10">
-                                                <div class="show-grid-div1">
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </form>
-                                </div> 
-                                <!-- end step-content -->
-                            </div>
-                            <!-- end widget content -->
-        
                         </div>
                     </div>
                 </div>
-                    <div class="align-right mt20">
-                        <button type="button" class="btn btn-lg btn-primary float-left">
-                            <i class="fa fa-times margin-right-5"></i>취소
-                        </button>
-                        <button type="button" class="btn btn-lg btn-success ">
-                            저장
-                            <i class="fa fa-check"></i></button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        닫기
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                       	완료
+                    </button>
                 </div>
-			<!-- END MAIN CONTENT -->
-            </div>
-		</div>
-		<!-- END MAIN PANEL -->
-        <!-- footer -->
-        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-            <footer class="footer">
-                <div class="footer_box">
-                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
-                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
-                </div>
-            </footer>
-        </nav>
-        <!-- end footer -->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+        <!-- end modal -->
 
-        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
-        Note: These tiles are completely responsive,
-        you can add as many as you like
-        -->
-		<div id="shortcut">
-			<ul>
-                <li>
-                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
-                </li>
-				<li>
-					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
-				</li>
-				<li>
-					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
-				</li>
-				<li>
-					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
-				</li>
-				<li>
-					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
-				</li>
-				<li>
-					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
-				</li>
-                <li>
-                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
-                </li>
-                <li>
-                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
-                </li>
-                <li>
-                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
-                </li>
-                <li>
-                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
-                </li>
-			</ul>
-		</div>
-		<!-- END SHORTCUT AREA -->
-        
 
-		<!--================================================== -->
+	<!--================================================== -->
 
-		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+	<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
 		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
 
 		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
@@ -469,13 +540,12 @@
 			}
 		</script>
 
-        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script>
 			if (!window.jQuery.ui) {
 				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
 			}
-		</script>-->
+		</script>
 
 		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
 		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
@@ -496,7 +566,7 @@
 		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
 
 		<!-- JQUERY VALIDATE -->
-		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+		<script src="../../"></script>
 
 		<!-- JQUERY MASKED INPUT -->
 		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
@@ -515,7 +585,7 @@
 
 		<!--[if IE 7]>
 
-		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
 
 		<![endif]-->
 
@@ -525,81 +595,127 @@
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
 
-        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-		<!-- PAGE RELATED PLUGIN(S) -->
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
 
-		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
-		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
-		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
-		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+		</script>
 
-		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
-        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
 
-        <!-- data picker-->
-        <script type="text/javascript">
-        $('#startdate').datepicker({
-            dateFormat : 'yy-mm-dd',
-            prevText : '<i class="fa fa-chevron-left"></i>',
-            nextText : '<i class="fa fa-chevron-right"></i>',
-            onSelect : function(selectedDate) {
-                $('#finishdate').datepicker('option', 'minDate', selectedDate);
-            }
-        });
-
-        $('#finishdate').datepicker({
-            dateFormat : 'yy-mm-dd',
-            prevText : '<i class="fa fa-chevron-left"></i>',
-            nextText : '<i class="fa fa-chevron-right"></i>',
-            onSelect : function(selectedDate) {
-                $('#startdate').datepicker('option', 'maxDate', selectedDate);
-            }
-        });
-    </script>
-    <!-- end data picker -->
-
-
-
-
-
-        <script>
-            $(document).ready(function() {
-
-                // DO NOT REMOVE : GLOBAL FUNCTIONS!
-                pageSetUp();
-
-                /*
-                 * PAGE RELATED SCRIPTS
-                 */
-
-                $(".js-status-update a").click(function() {
-                    var selText = $(this).text();
-                    $this = $(this);
-                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
-                    $this.parents('.dropdown-menu').find('li').removeClass('active');
-                    $this.parent().addClass('active');
-                });
-            });
-
-        </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		</script>
 
 
 
