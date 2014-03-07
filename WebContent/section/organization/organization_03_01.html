@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>기반정보관리</li><li>조직 및 인사 </li><li>기업조직도 </li>
+					<li>IPAMS HOME</li><li>기반정보관리</li><li>조직 및 인사 </li><li>직무기술 할당 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -308,121 +308,237 @@
 
 
 
-
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> > 기업조직도</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> > 직무기술 할당</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
-                        
-                        <div class="col-md-12 col-md-4">
-                            <h6 class="h-title">부서 선택</h6>
-
-
-							<div class="input-group search-color">
-  								<input class="form-control" placeholder="기관/기업명을 입력하세요." type="text">
-								<div class="input-group-btn">
-									<button class="btn btn-default btn-search mb10">
-										<i class="fa fa-search">&nbsp;검색</i>
-									</button>
-								</div>
-  							</div>
-
-							<div class="show-grid-div2">
-	                                <!--   트리들어가는 곳   -->
-	                                트리 내용 삽입
+                        <div class="col-md-12 col-md-6">
+                            <h6 class="h-title">직무 개요</h6>
+                            <table class="table table-bordered form">
+					            <colgroup>
+					                <col width="100px">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					                <tr>
+					                    <th>직무분류</th>
+					                    <td>
+					                    <span>
+								            <select class="form-control" style="width:100px;">
+								                <option>전사공통</option>
+								                <option>기획</option>
+								                <option>인사</option>
+								                <option>개발</option>
+								                <option>마케팅</option>
+								                <option>영업</option>
+								            </select>
+								        </span>
+					                    </td>
+					                </tr>
+					                <tr>
+					                    <th>직무명</th>
+					                   	<td>
+					                   		<input class="form-control" placeholder="직무명을 입력하세요." type="text">
+					                   	</td>
+					                   </tr>
+					                <tr>
+					                    <th>직무내용</th>
+					                    <td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="3"></textarea>
+						                    </label>
+						                </td>
+					                </tr>
+					                <tr>
+					                    <th>할당내역</th>
+					                    <td>
+					                    	총 0명
+					                    	<button type="button" class="btn btn-default btn-sm"> &nbsp;상세조회</button>
+					                    </td>
+					                </tr>
+					            </tbody>
+					        </table>
+                            
+                        </div>
+                        <div class="col-md-12 col-md-6">
+                 			<h6 class="h-title">관련부서 정보 총
+                 				<span>0</span>개 선택
+                 			</h6>
+	                        
+                            <div class="show-grid-div2">
+                            
+                            
                             </div>
                         </div>
                         
-                        <div class="col-xs-12 col-md-8">
-                            <h6 class="h-title float-left">부서 상세</h6>
-                            <div class="align-right mb10">
-
-                                <!--  버튼으로 적용 (작동안됨.) -->
-                                <button type="button" class="btn btn-sm btn-default" rel="tooltip" data-original-title="기업/기관 또는 부서를 선택해야 활성화됩니다.">
-                                    <i class="fa fa-external-link"></i>&nbsp;기업/기관 조직도 
-                                </button>
-
-
-                            </div>
-                           <div class="" role="content">
-                                <form class="form-horizontal" id="fuelux-wizard" method="post">
-    
-
-                                    <table class="table table-bordered table-fixed">
-                                        <colgroup>
-                                            <col width="100px">
-                                            <col>
-                                        </colgroup>
-                                            <tbody>
-                                                <tr>  
-                                                    <th>기업/기관</th>  
-                                                    <td></td> 
-                                                </tr> 
-                                                <tr>  
-                                                    <th>부서</th>  
-                                                    <td></td> 
-                                                </tr> 
-                                                <tr>  
-                                                    <th>부서설명</th>  
-                                                    <td></td> 
-                                                </tr>
-                                            </tbody>
-                                    </table>
-
-                                </form>
-                            </div> 
-
-
-                            <h6 class="h-title float-left mt20">부서 상세
-                                &nbsp;<span>0</span>명
-                            </h6>
-                           <table class="table table-bordered table-fixed">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col width="145px">
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>직급</th>
-                                        <th>이름</th>
-                                        <th>이메일</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> - </td>
-                                        <td> - </td>
-                                        <td> - </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
+                        <div class="col-md-12">
+                        	<div class="align-right">
+	                        	<h6 class="h-title float-left">직무수행요건</h6>
+	                        	<button class="btn btn-default">
+					                <i class="fa fa-plus"></i>&nbsp;항목추가
+					            </button>
+				            </div>
+                        	<table class="table table-bordered">
+								<colgroup>
+								    <col width="200px;">
+								    <col>
+								    <col width="70px;">
+							    </colgroup>
+							    <thead>
+								    <tr>
+								        <th>구분</th>
+								        <th>내용</th>
+								        <th>비고</th>
+								    </tr>
+							    </thead>
+							    <tbody>
+							    	<tr>
+									   	<td>학력</td>
+									   	<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="2"></textarea>
+						                    </label>
+						                </td>
+									   	<td></td>
+									</tr>
+									
+							    	<tr>
+									   	<td>경력</td>
+									   	<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="2"></textarea>
+						                    </label>
+						                </td>
+									   	<td></td>
+									</tr>
+									
+							    	<tr>
+									   	<td>자격증</td>
+									   	<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="2"></textarea>
+						                    </label>
+						                </td>
+									   	<td></td>
+									</tr>
+							    
+							    	<tr>
+									   	<td>요구역량</td>
+									   	<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="2"></textarea>
+						                    </label>
+						                </td>
+									   	<td></td>
+									</tr>
+							    </tbody>
+							</table>
                         </div>
+                        
+                        
+                        
+                        <div class="col-md-12">
+                        	<div class="align-right">
+	                        	<h6 class="h-title float-left">세부직무내용</h6>
+	                        	<button class="btn btn-default">
+					                <i class="fa fa-plus"></i>&nbsp;항목추가
+					            </button>
+				            </div>
+                        	<table class="table table-bordered tbodycenter">
+								<colgroup>
+								    <col width="200px;">
+								    <col>
+								    <col width="150px;">
+								    <col width="150px;">
+								    <col width="70px;">
+							    </colgroup>
+								<thead>
+							    <tr>
+							        <th>직무내용</th>
+							        <th>처리절차 및 방법</th>
+							        <th>수행주기</th>
+							        <th>관련문서</th>
+							        <th>비고</th>
+							    </tr>
+							    </thead>
+							    <tbody>
+							    	<tr>
+							    		<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea></textarea>
+						                    </label>
+						                </td>
+						                <td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea></textarea>
+						                    </label>
+						                </td>
+						                <td>
+						                	<input class="form-control" placeholder="" type="text">
+						                </td>
+						                <td>
+						                	<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">
+												<i class="fa fa-fw fa-upload"></i>파일업로드
+											</button>			                	
+						                </td>
+						                <td></td>
+							    	</tr>
+							    </tbody>
+							    
+							</table>
+                        		
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-12">
+                        	<h6 class="h-title">특이사항</h6>
+                        	<table class="table table-bordered">
+								<colgroup>
+									<col width="100px">
+								    <col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>특이사항</th>
+										<td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="3"></textarea>
+						                    </label>
+						                </td>
+									</tr>
+								</tbody>
+							</table>
+                        </div>
+                        
+                        
+                        
+                        
+                        
                     </div>
+                    <!-- END ROW -->
+	
+	
+					<div class="align-right">
+			            <button type="button" class="btn btn-lg btn-primary float-left">
+			                <i class="fa fa-times margin-right-5"></i>취소
+			            </button>
+			            <button type="button" class="btn btn-lg btn-success ">
+			                완료 &nbsp;<i class="fa fa-check"></i></button>
+			        </div>
+			        
 
-                <div class="mt20">
-                    <button data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-default">
-                        <i class="fa fa-pencil"></i>&nbsp;등록
-                    </button>
-                    <button data-toggle="modal" data-target="#myModal2" type="button" class="btn btn-sm btn-default ">
-                        <i class="fa fa-pencil-square-o"></i>&nbsp;수정
-                    </button>
-                    <button type="button" class="btn btn-sm btn-default ">                        
-                        <i class="fa fa-trash-o"></i>&nbsp;삭제
-                    </button>
                 </div>
-
-                </div>
-			<!-- END MAIN CONTENT -->
+                <!-- END well  -->
+			
             </div>
+            <!-- END MAIN CONTENT -->
+            
 		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
@@ -475,11 +591,12 @@
 			</ul>
 		</div>
 		<!-- END SHORTCUT AREA -->
-        
-        
-        
-        
-        <!-- Modal_1 -->
+    
+
+
+
+
+		<!-- Modal-1 -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -487,129 +604,71 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 부서등록</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 파일업로드</h4>
                     </div>
                     <div class="modal-body">
+
                         <div class="row">
                             <div class="col-md-12">
-                                
-
-                                <!--  내용 삽입  -->
-								<form  method="post">
-						            <table class="table table-bordered">
-						            	<colgroup>
-						            		<col width="100px;">
-						            		<col>
-						            	</colgroup>
-						                <tbody>
-							                <tr>
-							                    <th>기업/기관</th>
-							                    <td>(주)kt rental</td>
-							                </tr>
-							                <tr>
-							                    <th>상위부서</th>
-							                    <td></td>
-							                </tr>
-							                <tr>
-							                    <th>부서명</th>
-							                    <td>
-							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
-							                    </td>
-							                </tr>
-							                <tr>
-							                    <th>부서설명</th>
-							                    <td class="smart-form">
-								                    <label class="textarea textarea-resizable">
-								                        <textarea rows="3"></textarea>
-								                    </label>
-								                </td>
-							                </tr>
-							            </tbody>
-						            </table>
-						        </form>
-
+                                <h6 class="h-title pull-left">파일업로드</h6>
+                                <div style="margin-left:110px;">
+                                    <div class="alert alert-info">
+                                        <i class="fa-fw fa fa-info"></i>100MB 이상의 파일은 업로드 되지 않습니다.
+                                    </div>
+                                </div>
+                                <table class="table table-bordered tbodycenter">
+                                    <colgroup>
+                                        <col>
+                                        <col width="100">
+                                        <col width="150">
+                                        <col width="80">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>파일명</th>
+                                        <th>파일크기</th>
+                                        <th>진행률</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tleft">경기도정보보안_s_text.ai</td>
+                                        <td>1MB</td>
+                                        <td>
+                                            <div class="bar-holder">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm">
+                                               삭제
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
                             </div>
                         </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
                         </button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                          	완료
-                        </button>
+                        <button type="button" class="btn btn-primary disabled">완료</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal -->
+        <!-- end Modal -->
 
 
 
-		<!-- Modal_1 -->
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h6 class="modal-title"><i class="fa fa-power-off"></i> 부서수정</h6>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                
-
-                                <!--  내용 삽입  -->
-								<form  method="post">
-						            <table class="table table-bordered">
-						            	<colgroup>
-						            		<col width="100px;">
-						            		<col>
-						            	</colgroup>
-						                <tbody>
-							                <tr>
-							                    <th>기업/기관</th>
-							                    <td>(주)kt rental</td>
-							                </tr>
-							                <tr>
-							                    <th>상위부서</th>
-							                    <td></td>
-							                </tr>
-							                <tr>
-							                    <th>부서명</th>
-							                    <td>
-							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
-							                    </td>
-							                </tr>
-							                <tr>
-							                    <th>부서설명</th>
-							                    <td class="smart-form">
-								                    <label class="textarea textarea-resizable">
-								                        <textarea rows="3"></textarea>
-								                    </label>
-								                </td>
-							                </tr>
-							            </tbody>
-						            </table>
-						        </form>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-                          	완료
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
 
 		<!--================================================== -->
 
@@ -739,6 +798,22 @@
             });
 
         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

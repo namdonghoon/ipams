@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization
+		with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <img src="../../images/top_logo.png" alt="IPAMS"></span>
+				<!-- END LOGO PLACEHOLDER -->
+
+				<!-- Note: The activity badge color changes when clicked and resets the number to 0
+				Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+
+
+				<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+
+
+            <!-- projects dropdown -->
+            <div id="project-context">
+			    <span class="notification"> <i class="fa fa-bell-o"></i></span>
+			    <span class="label">알림센터</span>
+			    <span id="activity" class="popover-trigger-element dropdown-toggle">
+			        미확인 알림이
+			        <span><b class="badge bg-color-red bounceIn animated"> 21 </b></span>
+			        개 있습니다.
+			    </span>
+
+                <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+                <div class="ajax-dropdown">
+
+
+                    <!-- notification content -->
+                    <div class="ajax-notifications custom-scroll">
+
+                        <div class="alert alert-transparent">
+                            <ul class="notification_list">
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end notification content -->
+
+                    <!-- footer: refresh area -->
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-sm" href="javascript:void(0);"><i class="fa fa-chevron-circle-right margin-right-5"></i>알림센터 바로가기</button>
+                    </div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- END AJAX-DROPDOWN -->
+
+
+				<!-- Suggestion: populate this list with fetch and push technique -->
+				<ul  class="dropdown-menu custom-scroll" style="height: 200px; overflow-y:auto;">
+					<li>
+						<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Assesment Report for merchant account</a>
+					</li>
+                    <li>
+                        <a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Notes on pipeline upgradee</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Assesment Report for merchant account</a>
+                    </li>
+                    <li class="divider"></li>
+					<li class="text-align-right">
+						<a href="javascript:void(0);"><i class="fa fa-power-off"></i> 알림센터가기</a>
+					</li>
+				</ul>
+				<!-- end dropdown-menu-->
+
+			</div>
+			<!-- end projects dropdown -->
+            <!-- pulled right: nav area -->
+            <div class="user_box pull-right">
+                <div class="user_name">
+                    <span>홍길동</span>님 환영합니다.
+                </div>
+                <!-- 내정보 수정 -->
+                <div class="btn btn-sm btn_blue myinfo">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-gear"></i></a> </span>
+                </div>
+                <!-- end 내정보 수정 -->
+                <!-- logout button -->
+                <div id="logout" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
+                </div>
+                <!-- end logout button -->
+                <div id="hide-menu" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+
+			<!-- 전체메뉴보기 -->
+			<div class="sitemap-info">
+				<span> <i class="fa fa-sitemap"></i> <a href="javascript:void(0);" id="show-shortcut">전체메뉴보기 </a> </span>
+			</div>
+			<!-- end 전체메뉴보기 -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+					<li class="menu_bookmark_box">
+						<a href="#">
+                            <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
+                        </a>
+						<ul>
+							<li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">문서관리</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+							</li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">진단수행</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">승인대상목록</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark_add">
+                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                </div>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+		<!-- MAIN PANEL -->
+	<div id="main" role="main">
+
+		<!-- RIBBON -->
+		<div id="ribbon">
+
+			<span class="ribbon-button-alignment"> <span
+				class="btn btn-ribbon" rel="tooltip" data-placement="bottom"
+				data-original-title="<i class='fa fa-home'></i> 홈으로 가기"
+				data-html="true"> <i class="fa fa-home"></i>
+			</span>
+			</span>
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li>IPAMS HOME</li>
+				<li>기반정보관리</li>
+				<li>조직 및 인사</li>
+				<li>변경이력목록</li>
+			</ol>
+			<!-- end breadcrumb -->
+
+		</div>
+		<!-- END RIBBON -->
+
+
+
+
+
+
+
+
+		<!-- MAIN CONTENT -->
+		<div id="content">
+		
+		
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-title txt-color-blueDark">
+						<i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> >
+							변경이력목록</span>
+					</h1>
+				</div>
+			</div>
+			<div class="well well-light">
+				<div class="row">
+
+					<div class="col-md-12">
+						
+						<table class="table table-bordered form">
+							<colgroup>
+							    <col width="100px;">
+							    <col width="350px;">
+							    <col width="100px;">
+							    <col>
+							    <col width="50px;">
+							</colgroup>
+							<tbody>
+								<tr>
+								    <th><label for="startDate">변경일</label></th>
+								    <td>
+								    	<fieldset class="no-padding-all smart-form">
+								            <div class="row">
+								                <section class="col col-sm-6 no-margin-bottom">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+								                    </label>
+								                </section>
+								                <section class="col col-sm-6 no-margin-bottom">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+								                    </label>
+								                </section>
+								            </div>
+								        </fieldset>
+								    </td>
+								    <th><label for="writer">변경자</label></th>
+								    <td class="form-inline" >
+								        <input class="form-control" placeholder="변경자를 입력하세요." type="text">
+								    </td>
+								    <td>
+								    	<div class="search-color">
+								            <button class="btn btn-default">
+								                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+								            </button>
+								        </div>
+								    </td>
+								</tr>
+							</tbody>
+						</table>
+						
+						
+						<table class="table table-bordered table-condensed tbodycenter table-hover">
+	                        <colgroup>
+							    <col width="50px">
+							    <col>
+							    <col width="100px">
+							    <col width="100px">
+							    <col width="100px">
+							    <col width="150px">
+							    <col width="70px">
+							</colgroup>
+	                        <thead>
+	                        <tr>
+							    <th>No.</th>
+							    <th>기업/기관</th>
+							    <th>부서</th>
+							    <th>이름</th>
+							    <th>변경자</th>
+							    <th>변경일</th>
+							    <th>비고</th>
+							</tr>
+	                        </thead>
+	                        <tbody>
+	                        <tr>
+	                            <td>1</td>
+	                            <td>
+	                                
+	                            </td>
+	                            <td>2014-02-01</td>
+	                            <td>도-44</td>
+	                            <td>5</td>
+	                            <td>
+	                              2014-02-25 09:47.59
+	                            </td>
+	                            <td>
+	                                <a class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="담당자 정보조회" data-toggle="modal" href="#myModal">
+	                                    조회
+	                                </a>
+	                            </td>
+	                            
+	                        </tr>
+	                        </tbody>
+	                    </table>
+	                    <div class="text-center">
+	                        <ul class="pagination pagination-sm">
+	                            <li>
+	                                <a href="javascript:void(0);">처음</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">이전</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">1</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">2</a>
+	                            </li>
+	                            <li class="active">
+	                                <a href="javascript:void(0);">3</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">4</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">5</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">다음</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:void(0);">마지막</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+						
+						<div>
+				            <button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+				        </div>
+						
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		<!-- END CONTENT  -->
+		 
+	</div>
+
+
+
+
+	<!-- Modal_1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
+                </div>
+                <div class="modal-body">
+                    <h6 class="h-title">모달 소제목</h6>
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+						<div class="input-group search-color width-60">
+							<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default btn-search">
+									<i class="fa fa-search">&nbsp;검색</i>
+								</button>
+							</div>
+					
+						</div>
+                            <!--  내용 삽입  -->
+                         <div class="show-grid-div1 mt10">
+
+                         </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        닫기
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                       	완료
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+        <!-- end modal -->
+
+
+	<!--================================================== -->
+
+	<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+
+		<!-- data picker-->
+    	<script type="text/javascript">
+	        $('#startdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	            }
+	        });
+	
+	        $('#finishdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+    	</script>
+    	<!-- end data picker -->
+
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+
+		</script>
+
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+
+
+
+
+
+
+
+	</body>
+
+</html>

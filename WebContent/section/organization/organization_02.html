@@ -329,9 +329,13 @@
                                 </colgroup>
                                 <tr>
                                     <th>기업/기관</th>
-                                    <td></td>
+                                    <td>
+                                    	<input class="form-control" placeholder="기업/기관명을 입력하세요." type="text">
+                                    </td>
                                     <th>부서</th>
-                                    <td></td>
+                                    <td>
+                                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+                                    </td>
                                     <td rowspan="2" class="search text-align-center">
                                         <button class="btn btn-default btn-lg" href="javascript:void(0);">
                                             <i class="fa fa-search fa-lg margin-right-5"></i>검색
@@ -340,9 +344,20 @@
                                 </tr> 
                                 <tr>
                                     <th>이름</th>
-                                    <td></td>
+                                    <td>
+                                    	<input class="form-control" placeholder="이름을 입력하세요." type="text">
+                                    </td>
                                     <th>상태</th>
-                                    <td></td> 
+                                    <td>
+                                    	<span>
+								            <select class="form-control" style="width:100px;">
+								                <option>-전체-</option>
+								                <option>1</option>
+								                <option>2</option>
+								                <option>3</option>
+								            </select>
+								        </span>
+                                    </td> 
                                     
                                 </tr>
                             </table>
@@ -371,13 +386,12 @@
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th>
-                                            <div class="smart-form">
-                                                <label class="checkbox">
-                                                    <input type="checkbox" name="checkbox" checked="checked"><i></i>
-                                                </label>
-                                            </div>
-                                        </th>
+                                        <th class="smart-form"> 
+						                    <label class="checkbox">
+						                        <input type="checkbox">
+						                        <i></i> 
+						                    </label>
+						                </th>
                                         <th>No.</th>
                                         <th>기업/기관</th>
                                         <th>부서</th>
@@ -391,14 +405,19 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td class="smart-form"> 
+							                    <label class="checkbox">
+							                        <input type="checkbox">
+							                        <i></i> 
+							                    </label>
+							                </td>
+                                            <td>1</td>
+                                            <td>드림인프라</td>
+                                            <td>개발본부</td>
+                                            <td>과장</td>
+                                            <td>홍길동</td>
+                                            <td>abcd@dreaminfa.co.kr</td>
+                                            <td>재직</td>
                                             <td>
                                                 <button class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
                                                     조회
@@ -442,7 +461,7 @@
                                         <a href="javascript:void(0);">다음</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">끝</a>
+                                        <a href="javascript:void(0);">마지막</a>
                                     </li>
                                 </ul>
                             </div>
