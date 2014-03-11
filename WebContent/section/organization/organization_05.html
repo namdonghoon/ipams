@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>전산자산</li><li>자산등록관리 </li><li>신규등록</li>
+					<li>IPAMS HOME</li><li>인사정보관리 </li><li>부서정보관리 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -314,244 +314,116 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 전산자산 <span> > 신규등록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 부서정보관리</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <!-- widget content -->
-                            <div class="fuelux">
-                                <div class="wizard mb20">
-                                    <ul class="steps">
-                                        <li data-target="#step1">
-                                            <span class="badge badge-info">1</span>공통 사항<span class="chevron"></span>
-                                        </li>
-                                        <li data-target="#step2" class="active">
-                                            <span class="badge">2</span>자산유형별 정보<span class="chevron"></span>
-                                        </li>
-                                        <li data-target="#step3">
-                                            <span class="badge">3</span>자산가치 정보<span class="chevron"></span>	
-                                        </li> 
-                                        
-                                    </ul>
-                                </div>
+                        
+                        <div class="col-md-12 col-md-4">
+                            <h6 class="h-title">부서 선택</h6>
+
+
+							<div class="input-group search-color">
+  								<input class="form-control" placeholder="기관/기업명을 입력하세요." type="text">
+								<div class="input-group-btn">
+									<button class="btn btn-default btn-search mb10">
+										<i class="fa fa-search">&nbsp;검색</i>
+									</button>
+								</div>
+  							</div>
+
+							<div class="show-grid-div2">
+	                                <!--   트리들어가는 곳   -->
+	                                트리 내용 삽입
                             </div>
                         </div>
-					</div>
-                
+                        
+                        <div class="col-xs-12 col-md-8">
+                            <h6 class="h-title float-left">부서 상세</h6>
+                            <div class="align-right mb10">
 
-                <div class="alert alert-info">
-                    <strong>기본정보</strong> 탭의 필수 값을 입력하면 추가 정보를 입력하지 않아도 <strong>다음단계</strong>를 진행할 수 있습니다.
-                </div>
+                                <!--  버튼으로 적용 (작동안됨.) -->
+                                <button type="button" class="btn btn-sm btn-default" rel="tooltip" data-original-title="기업/기관 또는 부서를 선택해야 활성화됩니다.">
+                                    <i class="fa fa-external-link"></i>&nbsp;기업/기관 조직도 
+                                </button>
 
-                <div class="well well-light">
-                    <div class="tab-pane active" id="hr2">
 
-                        <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#iss1" data-toggle="tab">기본정보</a>
-                            </li>
-                            <li class="">
-                                <a href="#iss2" data-toggle="tab">운용정보</a>
-                            </li>
-                            <li class="">
-                                <a href="#iss3" data-toggle="tab">OS정보</a>
-                            </li>
-                            <li class="">
-                                <a href="#iss4" data-toggle="tab">호스트/IP정보</a>
-                            </li>
-                            <li class="">
-                                <a href="#iss5" data-toggle="tab">위치정보</a>
-                            </li>
-                        </ul>
+                            </div>
+                           <div class="" role="content">
+                                <form class="form-horizontal" id="fuelux-wizard" method="post">
+    
 
-                        <div class="tab-content">
-                            <div class="tab-pane padding-top-10 active" id="iss1">
+                                    <table class="table table-bordered table-fixed">
+                                        <colgroup>
+                                            <col width="100px">
+                                            <col>
+                                        </colgroup>
+                                            <tbody>
+                                                <tr>  
+                                                    <th>기업/기관</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서설명</th>  
+                                                    <td></td> 
+                                                </tr>
+                                            </tbody>
+                                    </table>
 
-                                <h6 class="h-title">기본정보-하드웨어(네트워크)</h6>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="120">
-                                        <col>
-                                        <col width="120">
-                                        <col>
-                                        <col width="120">
-                                        <col>
-                                    </colgroup>
-                                    <tbody><tr>
-                                        <th>모델명</th>
-                                        <td>
-                                            <input class="form-control" placeholder="모델명" type="text">
-                                        </td>
-                                        <th>제조사명</th>
-                                        <td>
-                                            <input class="form-control" placeholder="제조사명" type="text">    
-                                        </td>
-                                        <th>사용용도</th>
-                                        <td>
-                                            <span>
-                                                <select class="form-control pull-left margin-right-5" style="width:100px;">
-                                                    <option>선택 </option>
-                                                    <option>운영</option>
-                                                    <option>개발</option>
-                                                    <option>테스트</option>
-                                                </select>
-                                            </span>
-                                        </td>
+                                </form>
+                            </div> 
+
+
+                            <h6 class="h-title float-left mt20">부서 상세
+                                &nbsp;<span>0</span>명
+                            </h6>
+                           <table class="table table-bordered table-fixed">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col width="145px">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>직급</th>
+                                        <th>이름</th>
+                                        <th>이메일</th>
                                     </tr>
-                                    </tbody>
-                                </table>
-
-                                <h6 class="h-title">비고</h6>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="100px;/">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>비고</th>
-                                            <td class="smart-form">
-                                                <label class="textarea textarea-resizable"> 
-                                                    <textarea rows="3" class="custom-scroll"></textarea> 
-                                                </label>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-
-                            </div>
-                            <div class="tab-pane padding-top-10" id="iss2">
-                                <h6 class="h-title">운용정보</h6>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col style="width: 120px;">
-                                        <col>
-                                    </colgroup>
-                                    <tbody><tr>
-                                        <th>장비구분</th>
-                                        <td>
-                                            <select class="form-control pull-left margin-right-5" style="width:220px;">
-                                                <option>선택</option>
-                                                
-                                                <option>L2</option>
-                                            
-                                                <option>L3</option>
-                                            
-                                                <option>L4</option>
-                                            
-                                                <option>라우터</option>
-                                            
-                                                <option>허브</option>
-                                                
-                                            </select>
-                                        </td>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> - </td>
+                                        <td> - </td>
+                                        <td> - </td>
                                     </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                            <div class="tab-pane padding-top-10" id="iss3">
-                                <h6 class="h-title">OS정보</h6>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="120px;">
-                                        <col>
-                                        <col width="120px;">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>OS명</th>
-                                            <td>
-                                                <input class="form-control" placeholder="OS명" type="text">
-                                            </td>
-                                            <th>OS버전</th>
-                                            <td>
-                                                <input class="form-control" placeholder="OS버전" type="text">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-
-                            
-                            <div class="tab-pane padding-top-10" id="iss4">
-                                <div class="text-align-right">
-                                    <h6 class="h-title float-left">호스트/IP정보</h6>
-                                    <a data-toggle="modal" href="#myModal" class="btn btn-primary">
-                                        <i class="fa fa-pencil margin-right-5"></i>신규등록
-                                    </a>
-                                </div>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="50px">
-                                        <col>
-                                        <col width="150px">
-                                        <col width="80px">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>No.</th>
-                                            <th>호스트</th>
-                                            <th>IP</th>
-                                            <th>비고</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                </tbody>
+                            </table>
 
 
-                            <div class="tab-pane padding-top-10" id="iss5">
-                                <h6 class="h-title float-left">위치정보</h6>
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col style="width: 120px;">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>위치정보</th>
-                                            <td class="smart-form">
-                                                <label class="textarea textarea-resizable"> 
-                                                    <textarea rows="3" class="custom-scroll"></textarea> 
-                                                </label>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
                         </div>
                     </div>
+
+                <div class="mt20">
+                    <button data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-default">
+                        <i class="fa fa-pencil"></i>&nbsp;등록
+                    </button>
+                    <button data-toggle="modal" data-target="#myModal2" type="button" class="btn btn-sm btn-default ">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;수정
+                    </button>
+                    <button type="button" class="btn btn-sm btn-default ">                        
+                        <i class="fa fa-trash-o"></i>&nbsp;삭제
+                    </button>
                 </div>
 
-                <div class="align-right mt20">
-                    <button type="button" class="btn btn-lg btn-primary float-left">
-                        <i class="fa fa-times margin-right-5"></i>취소
-                    </button>
-                    <button type="button" class="btn btn-lg btn-success ">
-                        다음
-                        <i class="fa fa-arrow-right"></i>
-                    </button>
                 </div>
-                    
-    			</div>
-                
+			<!-- END MAIN CONTENT -->
             </div>
-		     <!-- END MAIN CONTENT -->
-        </div>
+		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
@@ -604,51 +476,67 @@
 		</div>
 		<!-- END SHORTCUT AREA -->
         
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        
+        
+        
+        <!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 호스트/IP 정보 등록</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 부서등록</h4>
                     </div>
                     <div class="modal-body">
-                        <h6 class="h-title">호스트/IP정보 입력</h6>
                         <div class="row">
                             <div class="col-md-12">
+                                
 
-                                <table class="table table-bordered">
-                                    <colgroup>
-                                        <col width="100px">
-                                        <col>
-                                    </colgroup>
-                                    <tbody>
-                                    <tr>
-                                        <th>호스트</th>
-                                        <td>
-                                            <input class="form-control" placeholder="호스트명을 입력해주세요." type="text">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>IP</th>
-                                        <td>
-                                            <input class="form-control" placeholder="IP명을 입력해주세요." type="text">
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <!--  내용 삽입  -->
+								<form  method="post">
+						            <table class="table table-bordered">
+						            	<colgroup>
+						            		<col width="100px;">
+						            		<col>
+						            	</colgroup>
+						                <tbody>
+							                <tr>
+							                    <th>기업/기관</th>
+							                    <td>(주)kt rental</td>
+							                </tr>
+							                <tr>
+							                    <th>상위부서</th>
+							                    <td></td>
+							                </tr>
+							                <tr>
+							                    <th>부서명</th>
+							                    <td>
+							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+							                    </td>
+							                </tr>
+							                <tr>
+							                    <th>부서설명</th>
+							                    <td class="smart-form">
+								                    <label class="textarea textarea-resizable">
+								                        <textarea rows="3"></textarea>
+								                    </label>
+								                </td>
+							                </tr>
+							            </tbody>
+						            </table>
+						        </form>
 
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer align-right">
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
                         </button>
-                         <button type="button" class="btn btn-default" data-dismiss="modal">
-                            완료
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                          	완료
                         </button>
                     </div>
                 </div><!-- /.modal-content -->
@@ -656,6 +544,72 @@
         </div><!-- /.modal -->
         <!-- end modal -->
 
+
+
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h6 class="modal-title"><i class="fa fa-power-off"></i> 부서수정</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+
+                                <!--  내용 삽입  -->
+								<form  method="post">
+						            <table class="table table-bordered">
+						            	<colgroup>
+						            		<col width="100px;">
+						            		<col>
+						            	</colgroup>
+						                <tbody>
+							                <tr>
+							                    <th>기업/기관</th>
+							                    <td>(주)kt rental</td>
+							                </tr>
+							                <tr>
+							                    <th>상위부서</th>
+							                    <td></td>
+							                </tr>
+							                <tr>
+							                    <th>부서명</th>
+							                    <td>
+							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+							                    </td>
+							                </tr>
+							                <tr>
+							                    <th>부서설명</th>
+							                    <td class="smart-form">
+								                    <label class="textarea textarea-resizable">
+								                        <textarea rows="3"></textarea>
+								                    </label>
+								                </td>
+							                </tr>
+							            </tbody>
+						            </table>
+						        </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                          	완료
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 
 		<!--================================================== -->
 
@@ -785,22 +739,6 @@
             });
 
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

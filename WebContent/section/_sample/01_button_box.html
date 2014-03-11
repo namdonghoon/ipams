@@ -201,8 +201,8 @@
 				
 				<div class="col-md-12 col-md-4">
 				    <div class="show-grid-div1 well">
-				  
-				     <!--============ START 셀렉트 박스 ============ -->
+				    
+				    <!--============ START 셀렉트 박스 ============ -->
 						<h6 class="h-title">셀렉트 박스</h6>
 						
 						<span>
@@ -222,8 +222,6 @@
 				                <option>3</option>
 				            </select>
 				        </span>
-
-
                         <h6 class="h-title">셀렉트 박스 나란히</h6>
                         <span>
                             <select class="form-control pull-left margin-right-5" style="width:150px;">
@@ -480,21 +478,42 @@
 				    	<h6 class="h-title">라디오 박스</h6>
 				    	
 				    	<!--============= START 라디오 박스 =============-->
-						<form class="smart-form">
-		                    <div class="inline-group">
-		                        <label class="radio">
-		                            <input type="radio" name="radio-inline" checked="checked">
-		                                <i></i>일반
-		                        </label>
-		                        <label class="radio">
-		                            <input type="radio" name="radio-inline">
-		                                <i></i>공지사항
-		                        </label>
-		                    </div>
-		                </form>
+	                    <div class="inline-group smart-form">
+	                        <label class="radio">
+	                            <input type="radio" name="radio-inline" checked="checked">
+	                                <i></i>일반
+	                        </label>
+	                        <label class="radio">
+	                            <input type="radio" name="radio-inline">
+	                                <i></i>공지사항
+	                        </label>
+	                    </div>
 		                <!--============= END 라디오 박스 =============-->
 		      		</div>
 		      </div>
+		
+		
+		
+				<div class="col-md-12 col-md-4">
+				    <div class="show-grid-div1 well well-light">
+				    	<h6 class="h-title">에러 체크 CSS -> .smart-form, .state-error</h6>
+				    	
+				    	<!--============= START 에러 체크 박스 CSS=============-->
+	                    <div class="smart-form">
+							<label class="label">E-mail</label>
+							<label class="input state-error">
+								<input type="email" name="email" class="invalid">
+							</label>
+							<em for="email" class="invalid">Enter a VALID email</em>
+						</div>
+		                <!--============= END 에러체크 박스 CSS=============-->
+		      		</div>
+		      </div>
+		
+		
+		
+		
+			
 		
 		
 		
@@ -793,8 +812,6 @@
 
 		</script>
 
-
-		
 
 
 	</body>

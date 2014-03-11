@@ -19,7 +19,7 @@
 		<!-- Basic Styles -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
-
+		
 		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
@@ -288,7 +288,7 @@
 			<ol class="breadcrumb">
 				<li>IPAMS HOME</li>
 				<li>인사정보관리</li>
-				<li>인사정보등록</li>
+				<li>기업/기관정보 수정</li>
 			</ol>
 			<!-- end breadcrumb -->
 
@@ -310,7 +310,7 @@
 				<div class="col-md-12">
 					<h1 class="page-title txt-color-blueDark">
 						<i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >
-							인사정보등록</span>
+							기업/기관정보 수정</span>
 					</h1>
 				</div>
 			</div>
@@ -318,15 +318,7 @@
 				<div class="row">
 
 					<div class="col-md-12">
-						<h6 class="h-title float-left">신규등록</h6>
-						<div class="align-right">
-		              		<button class="btn btn-default mb10" >
-		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
-		                    </button>
-		                    <button class="btn btn-default mb10" >
-		                    	<i class="fa fa-upload"></i> 엑셀 등록
-		                    </button>
-						</div> 
+						<h6 class="h-title float-left">기업/기관정보 수정</h6>
 						
 						
 						<table class="table table-bordered" id="employeeTable">
@@ -335,128 +327,91 @@
 				                <col>
 				            </colgroup>
 				            <tbody>
-					            <tr>
-					                <th><label for="company">기업/기관</label></th>
-					                <td>
-						                <div class="input-group search-color width-40" data-toggle="modal" data-target="#myModal1">
-			  								<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text" disabled>
-											<div class="input-group-btn">
+				            	<tr>
+								    <th><label for="type">유형</label></th>
+								    <td>
+								    	<div style="width:150px;">
+											<select  class="select2">
+												<option>민간기업</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+									</div>
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="pattern">분류</label></th>
+								    <td>
+								    	<div style="width:150px;">
+											<select  class="select2">
+												<option>제휴업체</option>
+												<option>임원</option>
+												<option>파견직</option>
+												<option>본부장</option>
+												<option>감사</option>
+												<option>팀원</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="name">기업/기관명</label></th>
+								    <td>
+								    	<input class="form-control" placeholder="기업/기관명을 입력하세요." type="text" style="width:500px">
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="postNumber">대표 전화번호</label></th>
+								    <td> 
+								    	<input type="text" class="form-control display-inline" maxlength="4" style="width:80px">&nbsp;-
+								    	<input type="text" class="form-control display-inline" maxlength="4" style="width:80px">&nbsp;-
+								    	<input type="text" class="form-control display-inline" maxlength="4" style="width:80px">
+								    	
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="zipCode">우편번호</label></th>
+								    <td>
+								    	<div class="input-group search-color"  data-toggle="modal" data-target="#myModal1" >
+											<input class="form-control" placeholder="우편번호를 검색하세요." disabled type="text">
+											<div class="input-group-btn" style="width:80px">
 												<button class="btn btn-default btn-search">
 													<i class="fa fa-search">&nbsp;검색</i>
 												</button>
 											</div>
-											
-			  							</div>
-					                
-					                </td>
-					            </tr> 
-					            <tr>
-					                <th><label for="department">부서</label></th>
-					                <td>
-					                	<div class="input-group search-color width-40">
-			  								<input class="form-control" placeholder="검색시 부서명이 자동선택 됩니다." type="text" disabled>
-			  							</div>
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="type">고용형태</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
 										</div>
-									</td>
-					            </tr>
-					            <tr>
-					                <th><label for="position">직급</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="subAddress">주소</label></th>
+								    <td>
+								    	<input type="text" class="form-control display-inline" disabled style="width:250px">
+								    	<input type="text" class="form-control display-inline" disabled style="width:250px">
+								    </td>
+								</tr>
+								<tr>
+								    <th><label for="note">비고</label></th>
+								    <td class="smart-form">
+					                    <label class="textarea textarea-resizable">
+					                        <textarea rows="3" style="width:500px"></textarea>
+					                    </label>
 					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="duty">직책</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="employeeNumber">사원번호</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="사원번호를 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="name">이름</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="이름을 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="email">이메일</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="이메일을 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="status">상태</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					                </td>
-					            </tr>
-					        </tbody>
+								</tr>
+								
+							</tbody>
 				        </table>
 						
 						
@@ -468,15 +423,20 @@
 				                완료
 				                <i class="fa fa-check"></i></button>
 				        </div>
+				        
 					</div>
 			
 				</div>
 			</div>
 		</div>
 		<!-- END CONTENT  -->
-		 
+		
+		
+					
+		
+					
 	</div>
-
+		 
 
 
 
@@ -488,26 +448,82 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         &times;
                     </button>
-                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
+                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주소 검색</h4>
                 </div>
                 <div class="modal-body">
-                    <h6 class="h-title">모달 소제목</h6>
                     <div class="row">
                         <div class="col-md-12">
-                            
-						<div class="input-group search-color width-60">
-							<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
-							<div class="input-group-btn">
-								<button class="btn btn-default btn-search">
-									<i class="fa fa-search">&nbsp;검색</i>
-								</button>
-							</div>
-					
-						</div>
-                            <!--  내용 삽입  -->
-                         <div class="show-grid-div1 mt10">
-
-                         </div>
+                        	<table class="width-100">
+	                        	<colgroup>
+						            <col style="width: 200px;">
+						            <col>
+						        </colgroup>
+						        <tbody>
+						        <tr>
+						            <td colspan="2">
+						                 <div class="alert alert-info">
+								            1) 도로명 검색 : 예) 잠실로(도로명) + 51-33(건물번호)<br>
+								            2) 동(읍/면)명 검색 : 예) 주소가 "광진구 자양2동..." 일 경우, "자양2" 또는 "자양2동"을 입력<br>
+								        </div>
+						            </td>
+						        </tr>
+						        <tr>
+						            <td class="smart-form pb10">
+						                <div class=" input-group float-left b6">
+					                        <label class="radio ">
+					                            <input type="radio" name="radio-inline" checked="checked">
+					                                <i></i>동(읍/면)명&nbsp;&nbsp;
+					                        </label> 
+					                        <label class="radio ">
+					                            <input type="radio" name="radio-inline">
+					                                <i></i>도로명&nbsp;&nbsp;
+					                        </label>
+					                    </div>	
+					                    
+						            </td>
+						            <td class="pb10">
+						            	<div class="input-group search-color b10">
+											<input class="form-control" placeholder="" type="text">
+											<div class="input-group-btn">
+												<button class="btn btn-default btn-search">
+													<i class="fa fa-search">&nbsp;검색</i>
+												</button>
+											</div>
+										</div>
+						            </td>
+						            
+						        </tr>
+							</tbody>
+						</table>
+					                      
+						<table class="table table-bordered tbodycenter" style="margin-bottom: 0px;">
+					        <colgroup>
+					            <col style="width: 50px;">
+					            <col style="width: 70px;">
+					            <col>
+					        </colgroup>
+					        <thead>
+						        <tr>
+						            <th>선택</th>
+						            <th>우편번호</th>
+						            <th>주소</th>
+						        </tr>
+					        </thead>
+					        	<tbody>
+							        <tr>
+							            <td class="smart-form">
+							            	<div class=" input-group float-left">
+						                        <label class="radio">
+						                            <input type="radio" checked="checked"><i></i>
+						                        </label>
+					                    	</div>
+							            
+							            </td>
+							            <td>429-741</td>
+							            <td>부산 광역시 </td>
+							        </tr>
+						        </tbody>
+					        </table>
 
                         </div>
                     </div>
@@ -524,7 +540,6 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
         <!-- end modal -->
-
 
 	<!--================================================== -->
 

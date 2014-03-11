@@ -47,7 +47,7 @@
 
 
 
-
+		<h4 class="h-title"> Modal 샘플 </h4>
         <button data-toggle="modal" data-target="#myModal1">
             <strong>1. MODAL 빈 공간</strong>
         </button>
@@ -57,23 +57,40 @@
             <strong>2. MODAL 일반 테이블</strong>
         </button>
 
-
         <button data-toggle="modal" data-target="#myModal3">
-            <strong>3. MODAL 데이터 테이블(검색포함)</strong>
+            <strong>3. MODAL 데이터 테이블(검색, 저장, 인쇄, 복사)</strong>
+        </button>
+
+		<button data-toggle="modal" data-target="#myModal4">
+			<strong>4. MODAL 파일 업로드</strong>
+		</button>
+
+
+        <button data-toggle="modal" data-target="#myModal5">
+            <strong>5. MODAL 주소 검색 </strong>
         </button>
 
 
+        <button data-toggle="modal" data-target="#myModal6">
+            <strong>6. MODAL 기본 데이터 검색 </strong>
+        </button>
 
-		<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal4">
-		<i class="fa fa-fw fa-upload"></i>4. MODAL 파일 업로드</button>
-
-		</div>
-
-
-
-
-
-
+		<br>
+		<br>
+		
+		
+		
+		
+		<h4 class="h-title"> 사용했던 MODAL </h4> 
+		<button data-toggle="modal" data-target="#myModal100">
+            <strong>정보제공 -> 등록 </strong>
+        </button>
+        <button data-toggle="modal" data-target="#myModal101">
+            <strong>정보제공 -> 수정 </strong>
+        </button>
+		
+		
+		
         <!-- Modal_1 -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
@@ -404,7 +421,381 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end Modal -->
+        <!-- end Modal4 -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Modal_5 -->
+	    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주소 검색</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                        	<table class="width-100">
+		                        	<colgroup>
+							            <col style="width: 200px;">
+							            <col>
+							        </colgroup>
+							        <tbody>
+							        <tr>
+							            <td colspan="2">
+							                 <div class="alert alert-info">
+									            1) 도로명 검색 : 예) 잠실로(도로명) + 51-33(건물번호)<br>
+									            2) 동(읍/면)명 검색 : 예) 주소가 "광진구 자양2동..." 일 경우, "자양2" 또는 "자양2동"을 입력<br>
+									        </div>
+							            </td>
+							        </tr>
+							        <tr>
+							            <td class="smart-form pb10">
+							                <div class=" input-group float-left b6">
+						                        <label class="radio ">
+						                            <input type="radio" name="radio-inline" checked="checked">
+						                                <i></i>동(읍/면)명&nbsp;&nbsp;
+						                        </label> 
+						                        <label class="radio ">
+						                            <input type="radio" name="radio-inline">
+						                                <i></i>도로명&nbsp;&nbsp;
+						                        </label>
+						                    </div>	
+						                    
+							            </td>
+							            <td class="pb10">
+							            	<div class="input-group search-color b10">
+												<input class="form-control" placeholder="" type="text">
+												<div class="input-group-btn">
+													<button class="btn btn-default btn-search">
+														<i class="fa fa-search">&nbsp;검색</i>
+													</button>
+												</div>
+											</div>
+							            </td>
+							            
+							        </tr>
+								</tbody>
+							</table>
+						                      
+							<table class="table table-bordered tbodycenter" style="margin-bottom: 0px;">
+						        <colgroup>
+						            <col style="width: 50px;">
+						            <col style="width: 70px;">
+						            <col>
+						        </colgroup>
+						        <thead>
+							        <tr>
+							            <th>선택</th>
+							            <th>우편번호</th>
+							            <th>주소</th>
+							        </tr>
+						        </thead>
+						        	<tbody>
+								        <tr>
+								            <td class="smart-form">
+								            	<div class=" input-group float-left">
+							                        <label class="radio">
+							                            <input type="radio" checked="checked"><i></i>
+							                        </label>
+						                    	</div>
+								            
+								            </td>
+								            <td>429-741</td>
+								            <td>부산 광역시 </td>
+								        </tr>
+							        </tbody>
+						        </table>
+	
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+        <!-- end modal_5 -->
+        
+        
+        
+        
+        
+        
+        <!-- Modal_6 -->
+	    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주소 검색</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                        	<!-- 내용 시작  -->
+		                        <div class="jarviswidget jarviswidget-color-blueDark mt40 mb20"  data-widget-editbutton="false">
+		                        
+									 <!-- widget edit box -->
+									 <div class="jarviswidget-editbox">
+									     <!-- This area used as dropdown edit box -->
+									 </div>
+									 <!-- end widget edit box -->
+									
+									 <!-- widget div-->
+									 <div class="mt30 table-bordered ">
+									
+									     <!-- widget content -->
+									     <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+									
+									         <table id="dt_basic-1" class="table table-bordered table-condensed table-hover tbodycenter">
+									             <colgroup>
+			                                        <col width="30px;">
+			                                        <col>
+			                                        <col width="140px;">
+			                                    </colgroup>
+									             <thead>
+									                 <tr>
+									                 	<th>No.</th>
+									                 	<th>기업/기관</th>
+									                 	<th>이름</th>								                 	
+									                 </tr>
+									             </thead>
+									             <tbody>
+									                 <tr>
+									                 	<td>1</td>
+									                 	<td>경기도청</td>
+									                 	<td>
+									                 		<button class="user_info_box" rel="popover-hover" data-placement="left"
+													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+													        data-content="
+													            <ul class='user_info'>
+													                <p><img src='../../images/member_big.png'></p>
+													                <li>시스템관리자</li>
+													                <li>(주)드림인프라</li>
+													                <li>SI사업부</li>
+													                <li>부장</li>
+													                <li>systemadministrator@dreaminfra.co.kr </li>
+													            </ul>
+													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+													        </button>
+									                 	</td>								                 									                 
+									                 </tr>
+								                </tbody>
+								            </table>
+								        </div>
+								    </div>
+								</div>
+		                        
+		                        
+		                        <!-- end widget -->
+	                            <div class="text-center">
+	                                <ul class="pagination pagination-sm pagination-alt">
+	                                    <li>
+	                                        <a href="javascript:void(0);">처음</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">이전</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">1</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">2</a>
+	                                    </li>
+	                                    <li class="active">
+	                                        <a href="javascript:void(0);">3</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">4</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">5</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">다음</a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0);">마지막</a>
+	                                    </li>
+	                                </ul>
+	                            </div>
+		                        
+		                        
+		                    </div>
+	                    </div>
+	                </div>
+	                <!-- End row  -->
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	    <!-- end modal_5 -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Modal_100 -->
+        <div class="modal fade" id="myModal100" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 등록</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed">
+						            <colgroup>
+						                <col width="100px;">
+						                <col>
+						            </colgroup>
+						            <tbody>
+						            <tr>
+						                <th>분류유형</th>
+						                <td>
+						                	<input class="form-control" type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>분류명</th>
+						                <td>
+						                	<input class="form-control" placeholder="분류명을 입력하세요." type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>설명</th>
+						                <td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="5"></textarea>
+						                    </label>
+						                </td>           
+						            </tr>
+						            </tbody>
+						        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+        
+        
+        <!-- Modal_101 -->
+        <div class="modal fade" id="myModal101" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 수정</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed">
+						            <colgroup>
+						                <col width="100px;">
+						                <col>
+						            </colgroup>
+						            <tbody>
+						            <tr>
+						                <th>분류유형</th>
+						                <td>
+						                	<input class="form-control" type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>분류명</th>
+						                <td>
+						                	<input class="form-control" placeholder="분류명을 입력하세요." type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>설명</th>
+						                <td class="smart-form">
+						                    <label class="textarea textarea-resizable">
+						                        <textarea rows="3"></textarea>
+						                    </label>
+						                </td>           
+						            </tr>
+						            </tbody>
+						        </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 		<!--================================================== -->
 
@@ -457,8 +848,6 @@
         // DO NOT REMOVE : GLOBAL FUNCTIONS!
         
         $(document).ready(function() {
-        	
-        	
             
             pageSetUp();
             
@@ -466,6 +855,9 @@
              * BASIC
              */
             $('#dt_basic').dataTable({
+                "sPaginationType" : "bootstrap_full"
+            });
+            $('#dt_basic-1').dataTable({
                 "sPaginationType" : "bootstrap_full"
             });
     

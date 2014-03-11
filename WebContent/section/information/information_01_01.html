@@ -229,6 +229,41 @@
 			-->
 			<nav>
 				<ul>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">정보제공</span></a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">게시판</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 게시판목록 </a>
+                                        <ul>
+                                            <li class="active">
+                                                <a href="javascript:void(0);"> 정기점검 Q&A 게시판</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 게시판관리 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">정보보안포털</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 정보보안 포털 조회 </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 정보보안 포털 관리 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
 					<li class="menu_bookmark_box">
 						<a href="#">
                             <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
@@ -236,7 +271,7 @@
 						<ul>
 							<li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">문서관리</a>
+                                    <a href="javascript:void(0);">문서관리</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -244,7 +279,7 @@
 							</li>
                             <li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">진단수행</a>
+                                    <a href="javascript:void(0);">진단수행</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -252,7 +287,7 @@
                             </li>
                             <li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">승인대상목록</a>
+                                    <a href="javascript:void(0);">승인대상목록</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -260,7 +295,7 @@
                             </li>
                             <li>
                                 <div class="alert bookmark_add">
-                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                    <a href="javascript:void(0);"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
                                 </div>
                             </li>
 						</ul>
@@ -285,7 +320,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>기반정보관리</li><li>조직 및 인사 </li><li>평가생성목록 </li>
+					<li>IPAMS HOME</li><li>정보제공</li><li>게시판 </li><li>게시판목록 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -303,159 +338,122 @@
 			</div>
 			<!-- END RIBBON -->
 
-
-
-
-
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 기반정보관리 <span> > 평가생성목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa fa-list-alt"></i> 정보제공 <span> > 정기점검 Q&A게시판</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                    <div class="row">
-                        <div class="col-md-12">
-                          	
-                       		<table class="table table-bordered form">
-							    <colgroup>
-									<col width="100px;">
-									<col>
-									<col width="100px;">
-									<col width="250px;">
-								</colgroup>
-							    <tbody>
-								    <tr>
-								        <th><label for="name">평가명</label></th>
-								        <td>
-								        	<input class="form-control" placeholder="평가명을 입력하세요." type="text">
-								        </td>
-								        <th><label for="typeName">평가유형명</label></th>
-								        <td>
-								        	<input class="form-control" placeholder="평가유형을 입력하세요." type="text">
-								        </td>
-								    </tr>
-								    <tr>
-								    	<th><label for="targetType">평가대상유형</label></th>
-								        <td>
-								           <input class="form-control" placeholder="평가대상유형을 입력하세요." type="text">
-								        </td>
-								        <th><label for="administratorName">평가총괄자</label></th>
-								        <td>
-								        	<input class="form-control" placeholder="평가총괄자를 입력하세요." type="text">
-								        </td>
-								    </tr>
-							    </tbody>
- 							</table>
- 						</div>
-  				                       	
-                        <div class="col-md-12">
-                        	<div class="align-right mb10">
-					            <button class="btn btn-primary ">
-					                <i class="fa fa-pencil margin-right-5"></i>신규등록
-					            </button>
-				            </div>
-                            <table class="table table-bordered table-condensed tbodycenter table-hover">
-						        <colgroup>
-							        <col width="60px">
-									<col>
-									<col>
-									<col width="100px">
-									<col width="145px">
-									<col width="90px">
-									<col width="150px">
-						        </colgroup>
-						        <thead>
-							        <tr>
-							            <th>No.</th>
-							            <th>평가명</th>
-										<th>평가유형명</th>
-										<th>평가대상유형</th>
-										<th>평가총괄자</th>
-										<th>진행상태</th>
-										<th>비고</th>
-							        </tr>
-						        </thead>
-						        <tbody>
-						            <tr>
-						                <td>28</td>
-						                <td>통합_KTR_관리체계진단 정보보호대책명세서(ISMS 및 CCTV)_2013</td>
-						                <td>통합_KTR_관리체계진단 정보보호대책명세서(ISMS 및 CCTV)_2013</td>
-						                <td>기업</td>
-						                <td>
-						                	<button class="user_info_box" rel="popover-hover" data-placement="left"
-										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-										        data-content="
-										            <ul class='user_info'>
-										                <p><img src='../../images/member_big.png'></p>
-										                <li>시스템관리자</li>
-										                <li>(주)드림인프라</li>
-										                <li>SI사업부</li>
-										                <li>부장</li>
-										                <li>systemadministrator@dreaminfra.co.kr </li>
-										            </ul>
-										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-										        </button>
-						                </td>
-						                <td> 
-						                	<span class="badge badge-color-darkorange"  rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회">진행중</span>
-						                	
-						                </td>
-						                <td>
-						                	<div class="btn-group">
-						                		<button type="button" class="btn btn-default btn-sm"  rel="tooltip"  data-original-title="평가 조회" >조회</button>
-									            <button type="button" class="btn btn-default btn-sm"  rel="tooltip"  data-original-title="진행된 평가수정 불가" >수정</button>
-									            <button type="button" class="btn btn-default btn-sm"  rel="tooltip"  data-original-title="진행된 평가삭제 불가" >삭제</button>
-									        </div>
-						                </td>
-						            </tr>
-						        
-						        </tbody>
-						    </table>
-						    
-                            <div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
-                            </div>
-	                    </div>
-		            </div>
-                    <!-- END ROW --> 
-                          
-                </div><!-- END well  -->
-                    
-			
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="h-title">게시글목록</h6>
+                        <table id="table-assetsRegister" class="table table-bordered">
+                            <colgroup>
+                                <col width="100px;">
+                                <col>
+                                <col width="100px;">
+                                <col>
+                                <col width="100px;">
+                                <col>
+                                <col width="50px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제목</th>
+                                    <td>
+                                        <input class="form-control" placeholder="검색할 제목을 입력하세요." type="text">
+                                    </td>
+                                    <th>내용</th>
+                                    <td>
+                                        <input class="form-control" placeholder="검색할 내용을 입력하세요." type="text">
+                                    </td>
+                                    <th>작성자</th>
+                                    <td>
+                                        <input class="form-control" placeholder="검색할 작성자 이름을 입력하세요." type="text">
+                                    </td>
+                                    <td class="">           
+                                        <btn class="btn btn-default float-right search-color" href="javascript:void(0);">
+                                            <i class="fa fa-search"></i>검색
+                                        </btn>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mt10 mb10 align-right">
+                            <a class="btn btn-primary " href="javascript:void(0);">
+                                <i class="fa fa-pencil margin-right-5"></i>신규작성
+                            </a>                                     
+                        </div>
+                        <table class="table table-bordered table-condensed tbodycenter table-hover">
+                            <colgroup>
+                                <col width="50px">
+                                <col>
+                                <col width="90px">
+                                <col width="90px">
+                                <col width="90px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                                <th>조회수</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td class="tleft"><a href="javascript:void(0);">테스트</a></td>
+                                <td>김웅정</td>
+                                <td>2014-03-04</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">검색된 게시물이 없습니다.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <ul class="pagination pagination-sm">
+                                <li>
+                                    <a href="javascript:void(0);">처음</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">이전</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">2</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">4</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">5</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">다음</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">마지막</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			<!-- END MAIN CONTENT -->
             </div>
-            <!-- END MAIN CONTENT -->
-            
 		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
@@ -508,43 +506,6 @@
 			</ul>
 		</div>
 		<!-- END SHORTCUT AREA -->
-        
-
-
-
-       
-	<!-- Modal_1 -->
-	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-	        <div class="modal-dialog modal-sm">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                        &times;
-	                    </button>
-	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 부서 상세</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <div class="row">
-	                        <div class="col-md-12">
-	              
-	                            <!--  내용 삽입  -->
-		                         <div class="show-grid-div2 mt10">
-		
-		                         </div>
-	
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">
-	                        닫기
-	                    </button>
-	                </div>
-	            </div><!-- /.modal-content -->
-	        </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
-	        <!-- end modal -->
-
 
 		<!--================================================== -->
 
@@ -615,8 +576,6 @@
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
 
-        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
 		<!-- PAGE RELATED PLUGIN(S) -->
 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
@@ -629,7 +588,7 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
         <!-- data picker-->
-        <script type="text/javascript">
+    <script type="text/javascript">
         $('#startdate').datepicker({
             dateFormat : 'yy-mm-dd',
             prevText : '<i class="fa fa-chevron-left"></i>',

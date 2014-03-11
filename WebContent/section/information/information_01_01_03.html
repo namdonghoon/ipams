@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<html lang="ko" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="utf-8">
 		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
@@ -26,7 +26,6 @@
 
         <!-- 2014_0218_스타일 추가-->
         <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="../../css/assetsApprove.css">
 
 		<!-- SmartAdmin RTL Support is under construction
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
@@ -230,14 +229,49 @@
 			-->
 			<nav>
 				<ul>
+                    <li>
+                        <a href="javascript:void(0);"><i class="fa fa-lg fa-fw fa-list-alt"></i> <span class="menu-item-parent">정보제공</span></a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">게시판</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 게시판목록 </a>
+                                        <ul>
+                                            <li class="active">
+                                                <a href="javascript:void(0);"> 정기점검 Q&A 게시판</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 게시판관리 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">정보보안포털</a>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 정보보안 포털 조회 </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-fw fa-expand-o"></i> 정보보안 포털 관리 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
 					<li class="menu_bookmark_box">
-						<a href="#">
+						<a href="javascript:void(0);">
                             <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
                         </a>
 						<ul>
 							<li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">문서관리</a>
+                                    <a href="javascript:void(0);">문서관리</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -245,7 +279,7 @@
 							</li>
                             <li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">진단수행</a>
+                                    <a href="javascript:void(0);">진단수행</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -253,7 +287,7 @@
                             </li>
                             <li>
                                 <div class="alert bookmark fade in">
-                                    <a href="#">승인대상목록</a>
+                                    <a href="javascript:void(0);">승인대상목록</a>
                                     <button class="close" data-dismiss="alert">
                                         <i class="fa fa-times"></i>
                                     </button>
@@ -261,7 +295,7 @@
                             </li>
                             <li>
                                 <div class="alert bookmark_add">
-                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                    <a href="javascript:void(0);"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
                                 </div>
                             </li>
 						</ul>
@@ -285,9 +319,9 @@
                     </span>
                 </span>
 				<!-- breadcrumb -->
-                <ol class="breadcrumb">
-                    <li>IPAMS HOME</li><li>전산자산</li><li>자산등록관리 </li>
-                </ol>
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>정보제공</li><li>게시판 </li><li>게시판목록 </li>
+				</ol>
 				<!-- end breadcrumb -->
 
 				<!-- You can also add more buttons to the
@@ -308,349 +342,286 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 전산자산 <span> > 자산등록관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa fa-list-alt"></i> 정보제공 <span> > 정기점검 Q&A게시판</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                    <h3 class="mt10 mb20"><i class="fa fa-chevron-right margin-right-5"></i>자산변경이력</h3>
-                    <div class="row">
-                        <div class="col-md-12">
-                        <table class="table table-bordered table-condensed">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="h-title">글내용</h6>
+                        <table class="table table-bordered">
                             <colgroup>
-                                <col width="90px;">
+                                <col width="100px">
                                 <col>
-                                <col width="90px;">
-                                <col>
-                                <col width="90px;">
-                                <col>
-                                <col width="70px;">
                             </colgroup>
+                            <tbody>
                             <tr>
-                                <th>자산유형</th>
+                                <th>유형</th>
                                 <td>
-                                    <div class="dropdown">
-                                        <a href="javascript:void(0);" class="btn btn-default" data-toggle="dropdown" data-target="#" role="button"> 선택 <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li>
-                                                <a href="javascript:void(0);">전체</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">소프트웨어</a>
-                                            </li>
-                                            <!-- <li class="divider"></li> -->
-                                            <li class="dropdown-submenu">
-                                                <a tabindex="-1" href="javascript:void(0);">하드웨어</a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0);">서버</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0);">네트워크</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0);">보안</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0);">스토리지</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0);">백업</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0);">기타 </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <th>도입일</th>
-                                <td id="platformsFilter" colspan="3">
-                                    <form id="order-form" class="smart-form" novalidate="novalidate">
-                                        <div class="row">
-                                            <div class="col col-sm-5">
-                                                <label class="input"> <i class="icon-append fa fa-calendar"></i>
-                                                    <input type="text" name="startdate" id="startdate" placeholder="시작일">
-                                                </label>
-                                            </div>
-                                            <div class="col-sm-1">
-                                                <p class="text-align-center mt10">~</p>
-                                            </div>
-                                            <div class="col col-sm-5">
-                                                <label class="input"> <i class="icon-append fa fa-calendar"></i>
-                                                    <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-                                                </label>
-                                            </div>
+                                    <form class="smart-form">
+                                        <div class="inline-group">
+                                            <label class="radio">
+                                                <input type="radio" name="radio-inline" checked="checked">
+                                                    <i></i>일반
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="radio-inline">
+                                                    <i></i>공지사항
+                                            </label>
                                         </div>
                                     </form>
                                 </td>
-                                <td rowspan="3" class="search text-align-center">
-                                    <a class="btn btn-default btn-lg" href="javascript:void(0);">
-                                        <i class="fa fa-search fa-lg margin-right-5"></i>검색
-                                    </a>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                <td>
+                                    <form class="smart-form">
+                                        <label class="input state-disabled">
+                                            <input type="text" disabled="disabled" value="">
+                                        </label>
+                                    </form>
                                 </td>
                             </tr>
                             <tr>
-                                <th>도입형태</th>
-                                <td id="formFilter">
-                                    <div class="dropdown">
-                                        <a href="javascript:void(0);" class="btn btn-default" data-toggle="dropdown" data-target="#" role="button"> 선택 <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu multi-level" role="menu">
-                                            <li>
-                                                <a href="javascript:void(0);">구매</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">임대</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">기증</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">기타</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <th>도입구분</th>
-                                <td id="divisionFilter">
-                                    <div class="dropdown">
-                                        <a href="javascript:void(0);" class="btn btn-default" data-toggle="dropdown" data-target="#" role="button"> 선택 <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu multi-level" role="menu">
-                                            <li>
-                                                <a href="javascript:void(0);">신규</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">대・개체</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">이전</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">기타</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <th>진행상황</th>
-                                <td id="progressFilter">
-                                    <div class="dropdown">
-                                        <a href="javascript:void(0);" class="btn btn-default" data-toggle="dropdown" data-target="#" role="button"> 선택 <span class="caret"></span> </a>
-                                        <ul class="dropdown-menu multi-level" role="menu">
-                                            <li>
-                                                <a href="javascript:void(0);">미승인</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">진행중</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">완료</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <th>내용</th>
+                                <td>
+                                    <form class="smart-form">
+                                        <label class="textarea textarea-resizable state-disabled">
+                                            <textarea rows="5" class="custom-scroll" disabled="disabled"></textarea>
+                                        </label>
+                                    </form>
                                 </td>
                             </tr>
                             <tr>
-                                <th>자산관리번호</th>
+                                <th>첨부파일</th>
                                 <td>
-                                    <input class="form-control" placeholder="자산관리번호" type="text">
-                                </td>
-                                <th>자산명</th>
-                                <td>
-                                    <input class="form-control" placeholder="자산명" type="text">
-                                </td>
-                                <th>자산담당자</th>
-                                <td>
-                                    <input class="form-control" placeholder="자산담당자" type="text">
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="text-align-right margin-bottom-5">
-                                <a class="btn btn-primary " href="javascript:void(0);">
-                                    <i class="fa fa-pencil margin-right-5"></i>신규등록
-                                </a>
-                            </div>
-                        <table class="table table-bordered table-condensed tbodycenter">
-                            <colgroup>
-                                <col width="30px">
-                                <col>
-                                <col width="80px">
-                                <col width="70px">
-                                <col width="70px">
-                                <col width="80px">
-                                <col width="60px">
-                                <col width="70px">
-                                <col width="70px">
-                                <col width="150px">
-                            </colgroup>
-                            <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>자산명</th>
-                                <th>도입일</th>
-                                <th>도입형태</th>
-                                <th>도입구분</th>
-                                <th>진행상황</th>
-                                <th>담당자</th>
-                                <th>승인내역</th>
-                                <th>변경이력</th>
-                                <th>비고</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="tleft">
-                                    <!--자산정보-->
-                                    <button class="user_info_box" rel="popover-hover" data-placement="bottom"
-                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                            data-content="하드웨어(서버) GG-SVR-001"
-                                            data-html="true">
-                                        <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-                                    </button>
-                                    <!--자산정보 끝-->
-                                </td>
-                                <td>2014-02-01</td>
-                                <td>도-44</td>
-                                <td>5</td>
-                                <td>
-                                    <span class="badge badge-color-bluegreen">승인완료</span>
-                                </td>
-                                <td>
-                                    <a class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="담당자 정보조회" data-toggle="modal" href="#myModal">
-                                        조회
-                                    </a>
-                                </td>
-                                <td>
-                                    <a class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="승인정보조회" data-toggle="modal" href="#myModal2">
-                                        1 / 1
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);"  class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
-                                        조회
-                                    </a>
-                                </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm">조회</button>
-                                        <button type="button" class="btn btn-default btn-sm">수정</button>
-                                        <button type="button" class="btn btn-default btn-sm">삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td class="tleft">
-                                    <!--자산정보-->
-                                    <button class="user_info_box" rel="popover-hover" data-placement="bottom"
-                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                            data-content="하드웨어(서버) GG-SVR-001"
-                                            data-html="true">
-                                        <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-                                    </button>
-                                    <!--자산정보 끝-->
-                                </td>
-                                <td>2014-02-01</td>
-                                <td>도-44</td>
-                                <td>5</td>
-                                <td>
-                                    <span class="badge badge-color-darkorange">진행중</span>
-                                </td>
-                                <td>
-                                    <a data-toggle="modal" href="#" class="btn btn-default btn-sm" href="javascript:void(0);">
-                                        조회
-                                    </a>
-                                </td>
-                                <td>
-                                    <a data-toggle="modal" href="#" class="btn btn-default btn-sm" href="javascript:void(0);">
-                                        1 / 1
-                                    </a>
-                                </td>
-                                <td>없음</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm">조회</button>
-                                        <button type="button" class="btn btn-default btn-sm">수정</button>
-                                        <button type="button" class="btn btn-default btn-sm">삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td class="tleft">
-                                    <!--자산정보-->
-                                    <button class="user_info_box" rel="popover-hover" data-placement="bottom"
-                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                            data-content="하드웨어(서버) GG-SVR-001"
-                                            data-html="true">
-                                        <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-                                    </button>
-                                    <!--자산정보 끝-->
-                                </td>
-                                <td>2014-02-01</td>
-                                <td>도-44</td>
-                                <td>5</td>
-                                <td>
-                                    <span class="badge bg-color-blueLight">신규</span>
-                                </td>
-                                <td>
-                                    <a data-toggle="modal" href="#" class="btn btn-default btn-sm" href="javascript:void(0);">
-                                        조회
-                                    </a>
-                                </td>
-                                <td>
-                                    <a data-toggle="modal" href="#" class="btn btn-default btn-sm" href="javascript:void(0);">
-                                        1 / 1
-                                    </a>
-                                </td>
-                                <td>없음</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm">조회</button>
-                                        <button type="button" class="btn btn-default btn-sm">수정</button>
-                                        <button type="button" class="btn btn-default btn-sm">삭제</button>
-                                    </div>
+                                    <ul class="file_upload">
+                                        <li>
+                                            <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+                                        </li>
+                                        <li>
+                                            <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+                                        </li>
+                                        <li>
+                                            <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
-                        <div class="text-center">
-                            <ul class="pagination pagination-sm">
-                                <li>
-                                    <a href="javascript:void(0);">처음</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">이전</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">1</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">2</a>
-                                </li>
-                                <li class="active">
-                                    <a href="javascript:void(0);">3</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">4</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">5</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">다음</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">끝</a>
-                                </li>
-                            </ul>
-
+                        <div class="text-align-right">
+                            <button href="javascript:void(0);" class="btn btn-default">
+                                <i class="fa fa-fw fa-list"></i>목록
+                            </button>
+                            <button href="javascript:void(0);" class="btn btn-default">
+                                <i class="fa fa-fw fa-edit"></i>수정
+                            </button>
+                            <button href="javascript:void(0);" class="btn btn-default">
+                                <i class="fa fa-fw fa-trash-o"></i>삭제
+                            </button>
                         </div>
                     </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="h-title">댓글</h6>
+                            <ul class="well reply_box">
+                                <li class="reply">
+                                    <p>
+                                    <span>
+                                        <!-- 인명정보 -->
+																<a class="user_info_box" rel="popover-hover" data-placement="right"
+                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                   data-content="
+																	<ul class='user_info'>
+																		<p><img src='../../images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+																<!--인명정보 끝-->
+                                    </span>
+                                    <span>
+                                        2014-03-03
+                                    </span>
+                                    <span>
+                                        16:04
+                                    </span>
+                                    <span class="pull-right">
+                                        <a href="javascript:void(0);">답글</a> | <a href="javascript:void(0);">수정</a> | <a href="javascript:void(0);">삭제</a>
+                                    </span>
+                                    </p>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="col-xs-12" style="margin-left:-15px; ">
+                                                <textarea class="form-control view" disabled="disabled" placeholder="답글이 보입니다." rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <span>
+                                                    <!-- 인명정보 -->
+                                                    <a class="user_info_box" rel="popover-hover" data-placement="right"
+                                                       data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                       data-content="
+                                                        <ul class='user_info'>
+                                                            <p><img src='../../images/member_big.png'></p>
+                                                            <li>시스템관리자</li>
+                                                            <li>(주)드림인프라</li>
+                                                            <li>SI사업부</li>
+                                                            <li>부장</li>
+                                                            <li>systemadministrator@dreaminfra.co.kr </li>
+                                                        </ul>
+                                                    " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                                    <!--인명정보 끝-->
+                                                </span>
+                                                <span>
+                                                    2014-03-03
+                                                </span>
+                                                <span>
+                                                    16:04
+                                                </span>
+                                                <span class="pull-right">
+                                                    <a href="javascript:void(0);">수정</a> | <a href="javascript:void(0);">삭제</a>
+                                                </span>
+                                                </p>
+                                                <fieldset>
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12" style="margin-left:-15px;">
+                                                            <textarea class="form-control view" disabled="disabled" placeholder="답글이 보입니다." rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <span>
+                                                    <!-- 인명정보 -->
+                                                    <a class="user_info_box" rel="popover-hover" data-placement="right"
+                                                       data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                       data-content="
+                                                        <ul class='user_info'>
+                                                            <p><img src='../../images/member_big.png'></p>
+                                                            <li>시스템관리자</li>
+                                                            <li>(주)드림인프라</li>
+                                                            <li>SI사업부</li>
+                                                            <li>부장</li>
+                                                            <li>systemadministrator@dreaminfra.co.kr </li>
+                                                        </ul>
+                                                    " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                                    <!--인명정보 끝-->
+                                                </span>
+                                                <span>
+                                                    2014-03-03
+                                                </span>
+                                                <span>
+                                                    16:04
+                                                </span>
+
+                                                <!--span class="pull-right">
+                                                    <a href="javascript:void(0);">답글</a> | <a href="javascript:void(0);">수정</a> | <a href="javascript:void(0);">삭제</a>
+                                                </span-->
+                                            </p>
+                                            <fieldset>
+                                                <div class="form-group">
+                                                    <div class="col-xs-12" style="margin-left:-15px;">
+                                                        <textarea class="form-control view" disabled="disabled" placeholder="답글이 보입니다." rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+                                </li>
+                                <li class="reply">
+                                    <p>
+                                    <span>
+                                        <!-- 인명정보 -->
+																<a class="user_info_box" rel="popover-hover" data-placement="right"
+                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                   data-content="
+																	<ul class='user_info'>
+																		<p><img src='../../images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+																<!--인명정보 끝-->
+                                    </span>
+                                    <span>
+                                        2014-03-03
+                                    </span>
+                                    <span>
+                                        16:04
+                                    </span>
+                                    <span class="pull-right">
+                                        <a href="javascript:void(0);">답글</a> | <a href="javascript:void(0);">수정</a> | <a href="javascript:void(0);">삭제</a>
+                                    </span>
+                                    </p>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="col-xs-12" style="margin-left:-15px;">
+                                                <textarea class="form-control view" disabled="disabled" placeholder="답글이 보입니다." rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="row write-form">
+                                                <label class="col-xs-1 control-label">답글쓰기</label>
+                                                <div class="col-xs-10" >
+                                                    <textarea class="form-control" placeholder="답글을 입력하세요." rows="3"></textarea>
+                                                </div>
+                                                <div class="col-xs-1" style="float:right">
+                                                    <button href="javascript:void(0);" class="btn btn-default btn-sm">
+                                                        <i class="fa fa-fw fa-pencil"></i>확인
+                                                    </button>
+                                                    <button href="javascript:void(0);" class="btn btn-default btn-sm">
+                                                        <i class="fa fa-fw fa-trash-o"></i>취소
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <hr>
+                                </li>
+
+
+                            </ul>
+                            <fieldset>
+                                <div class="form-group">
+                                    <div class="row write-form">
+                                        <label class="col-xs-1 control-label">답글쓰기</label>
+                                        <div class="col-xs-10" >
+                                            <textarea class="form-control" placeholder="답글을 입력하세요." rows="3"></textarea>
+                                        </div>
+                                        <div class="col-xs-1" style="float:right">
+                                            <button href="javascript:void(0);" class="btn btn-default btn-sm">
+                                                <i class="fa fa-fw fa-pencil"></i>확인
+                                            </button>
+                                            <button href="javascript:void(0);" class="btn btn-default btn-sm">
+                                                <i class="fa fa-fw fa-trash-o"></i>취소
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
-			</div>
 			<!-- END MAIN CONTENT -->
+            </div>
 		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
@@ -711,60 +682,68 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산 담당자 정보 조회</h4>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 파일업로드</h4>
                     </div>
                     <div class="modal-body">
-                        <h6 class="h-title">자산담당자 목록</h6>
+
                         <div class="row">
                             <div class="col-md-12">
-                                <table class="table table-bordered table-condensed tbodycenter">
+                                <h6 class="h-title pull-left">파일업로드</h6>
+                                <div style="margin-left:110px;">
+                                    <div class="alert alert-info">
+                                        <i class="fa-fw fa fa-info"></i>100MB 이상의 파일은 업로드 되지 않습니다.
+                                    </div>
+                                </div>
+                                <table class="table table-bordered tbodycenter">
                                     <colgroup>
-                                        <col style="width: 120px;">
                                         <col>
-                                        <col style="width: 150px;">
+                                        <col width="100">
+                                        <col width="150">
+                                        <col width="80">
                                     </colgroup>
                                     <thead>
                                     <tr>
-                                        <th>기업/기관명</th>
-                                        <th>이름</th>
-                                        <th>구분</th>
+                                        <th>파일명</th>
+                                        <th>파일크기</th>
+                                        <th>진행률</th>
+                                        <th>비고</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>(주)kt rental</td>
-                                        <td class="tleft">
-                                            <!-- 인명정보 -->
-                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
-                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                               data-content="
-																	<ul class='user_info'>
-																		<p><img src='../../images/member_big.png'></p>
-																    	<li>시스템관리자</li>
-																        <li>(주)드림인프라</li>
-																        <li>SI사업부</li>
-																        <li>부장</li>
-																        <li>systemadministrator@dreaminfra.co.kr </li>
-																	</ul>
-																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
-                                            <!--인명정보 끝-->
+                                        <td class="tleft">경기도정보보안_s_text.ai</td>
+                                        <td>1MB</td>
+                                        <td>
+                                            <div class="bar-holder">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+                                                </div>
+                                            </div>
                                         </td>
-                                        <td>자산관리자</td>
+                                        <td>
+                                            <button href="javascript:void(0);" class="btn btn-default btn-sm">
+                                               삭제
+                                            </button>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
+                                <button href="javascript:void(0);" class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                                <button href="javascript:void(0);" class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
                             </div>
                         </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
                         </button>
+                        <button type="button" class="btn btn-primary disabled">완료</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal -->
+        <!-- end Modal -->
 		<!--================================================== -->
 
 		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
@@ -778,12 +757,13 @@
 			}
 		</script>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script>
 			if (!window.jQuery.ui) {
 				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
 			}
-		</script>
+		</script>-->
 
 		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
 		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
@@ -832,17 +812,44 @@
 
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
-		
+
 		<!-- PAGE RELATED PLUGIN(S) -->
-		
+
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
-		
+
 		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- data picker-->
+    <script type="text/javascript">
+        $('#startdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+            }
+        });
+
+        $('#finishdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+            }
+        });
+    </script>
+    <!-- end data picker -->
+
+
+
+
+
         <script>
             $(document).ready(function() {
 
@@ -863,6 +870,30 @@
             });
 
         </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</body>
 
 </html>
