@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>문서관리  </li><li>문서등록관리 </li><li>문서등록현황 </li>
+					<li>IPAMS HOME</li><li>문서관리</li><li>문서등록관리 </li><li>문서등록현황 </li><li>LC이력조회 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -306,25 +306,109 @@
 
 
 
-
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 문서관리 <span> > 문서등록현황</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 문서관리 <span> > LC이력조회</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                
                 	<div class="row">
                         <div class="col-md-12">
                             
+                            <table class="table table-bordered tbodycenter">
+								<colgroup>
+								    <col width="50px">
+								    <col>
+								    <col width="150px">
+								    <col width="100px">
+								    <col width="70px">
+								    <col width="70px">
+								    <col width="70px">
+								    <col width="70px">
+								    <col width="70px">
+								</colgroup>
+								<thead>
+								<tr>
+								    <th>No.</th>
+								    <th>문서명</th>
+								    <th>등록일</th>
+								    <th>실행자</th>
+								    <th>대상자</th>
+								    <th>상태</th>
+								    <th>비고</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>-</td>
+										<td>2014-03-11 15:56:40</td>
+										<td>
+											<button class="user_info_box" rel="popover-hover" data-placement="left"
+									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+									        data-content="
+									            <ul class='user_info'>
+									                <p><img src='../../images/member_big.png'></p>
+									                <li>시스템관리자</li>
+									                <li>(주)드림인프라</li>
+									                <li>SI사업부</li>
+									                <li>부장</li>
+									                <li>systemadministrator@dreaminfra.co.kr </li>
+									            </ul>
+									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+									        </button>
+										</td>
+										<td>-</td>
+										<td>생성</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
                             
+                            
+                            <div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+                            
+                           	<div>
+				            	<button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+				        	</div>
                             
                         </div>
                     </div>
-			        
+			        <!-- end row  -->
 
                 </div>
                 <!-- END well  -->
@@ -519,25 +603,6 @@
             });
 
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

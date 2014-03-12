@@ -894,7 +894,7 @@ td.smart-form .radio{
 
 
 /* 개발 충돌 관련 CSS  */
-.not-smart-form:not(smart-form){
+.not-smart-form:not(.smart-form){
 	
 }
 
