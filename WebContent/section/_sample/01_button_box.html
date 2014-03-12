@@ -48,7 +48,7 @@
 				<div class="col-md-12 col-md-4">
 				    <div class="show-grid-div1 well">
 				    
-				    
+				    	
 				    
 				    	<!--============ START 일반버튼 ============ -->
 						<h6 class="h-title">일반버튼</h6>
@@ -104,7 +104,7 @@
 		                    	<i class="fa fa-upload"></i> 엑셀 등록
 		                    </button>
 		                    <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
-                        	<button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+                        	
 						</div>
 						
 						
@@ -129,7 +129,6 @@
 				
 				<div class="col-md-12 col-md-4">
 				    <div class="show-grid-div1 well">
-				    
 				    
 				    	<!--============ START 이동버튼 ============ -->
 						<h6 class="h-title">이동버튼</h6>
@@ -166,10 +165,39 @@
 				        </div>
 	        			<!--============ END 이동버튼 ============ -->
 	        			
-	        			
 					</div>
+					
+					
+					
+					<div class="show-grid-div1 well">
+				    
+				    	<!--============ START 업로드 ============ -->
+	        			<h6 class="h-title">업로드 게이지 (width값 조절)</h6>
+				    	<div class="progress eval" ><!-- width 값에 따라 조절  -->
+ 							<div class="bar" style="width: 50%;">   
+								<span class="number">50%</span>
+							</div>
+						</div>
+						<div class="progress eval" ><!-- 100%시 .bar-success  -->
+							<div class="bar" style="width: 100%;">   
+								<span class="number">100%</span>
+							</div>
+						</div> 
+						
+						<div class="progress eval" > <!-- aria-valuenow 값에 따라 조절  -->
+							<div class="bar" style="width: 0%;" aria-valuetransitiongoal="100">   
+								<span class="number"></span>
+							</div>
+						</div>
+						
+						
+				    			<!-- 아래 스크립트 추가 필요.  -->
+	        			<!--============ END 업로드 ============ -->
+				    
+				    </div>
+					
+					
 				</div>
-				
 				
 				
 				<div class="col-md-12 col-md-4">
@@ -528,6 +556,37 @@
 		
 		
 		
+		
+			<div class="col-md-12 col-md-4">
+			    <div class="show-grid-div1 well well-light">
+			    
+			    	<!--============= START 업로드 박스=============-->
+					<h6 class="h-title">업로드 박스</h6>
+					<button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+					
+					<ul class="file_upload">
+	                    <li>
+	                        <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+	                    </li>
+	                    <li>
+	                        <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+	                    </li>
+	                </ul>
+	                
+	                <ul class="file_upload">
+                       <li>
+                           <a href="javascript:void(0);"><span><i class="fa fa-fw fa-times"></i></span></a>경기도청 지도.ai
+                       </li>
+                       <li>
+                           <a href="javascript:void(0);"><span><i class="fa fa-fw fa-times"></i></span></a>경기도청 지도.ai
+                       </li>
+                       <li>
+                           <a href="javascript:void(0);"><span><i class="fa fa-fw fa-times"></i></span></a>경기도청 지도.ai
+                       </li>
+                   </ul>
+					<!--============= END 업로드 박스=============-->
+				</div>
+			</div>
 			
 		
 		
@@ -536,52 +595,48 @@
 		
 		
 		
-				<!--============= START 그리드 =============-->
-				<div class="">
-	                <div class="row">
-	                    <div class="col-md-12">
-	                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
-	                    </div>
-	                </div>
-	                <div class="well well-light">
-	                    <div class="row">
-	                        <h6 class="h-title ml10">그리드 대 제목</h6>
-	                        <div class="col-md-12 col-md-3">
-	
-	                            <div class="show-grid-div1">
-	
-	                                그리드 1번째
-	
-	                            </div>
-	                        </div>
-	                        <div class="col-xs-12 col-md-9">
-	                            <div class="show-grid-div1">
-	                               
-	                                그리드 2번쨰
-	
-	                            </div>
-	                        </div>
-	                    </div>
-	
-	
-	                    <!--  버튼 넣을 곳  -->
-	                    <div class="align-right mt20">
-	                        <button type="button" class="btn btn-lg btn-primary float-left">
-	                            <i class="fa fa-times margin-right-5"></i>취소
-	                        </button>
-	                        <button type="button" class="btn btn-lg btn-success ">
-	                            다음
-	                            <i class="fa fa-arrow-right"></i></button>
-	                    </div>
-	                </div>
-            	</div><!-- END CONTENT -->
-				<!--============= END 그리드 =============-->
-		
-		
-		
-		</div>
-		<!--End Row  -->
+			<!--============= START 그리드 =============-->
+			<div class="">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 사업관리 <span> > 사업관리</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                    <div class="row">
+                        <h6 class="h-title ml10">그리드 대 제목</h6>
+                        <div class="col-md-12 col-md-3">
 
+                            <div class="show-grid-div1">
+
+                                그리드 1번째
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <div class="show-grid-div1">
+                               
+                                그리드 2번쨰
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--  버튼 넣을 곳  -->
+                    <div class="align-right mt20">
+                        <button type="button" class="btn btn-lg btn-primary float-left">
+                            <i class="fa fa-times margin-right-5"></i>취소
+                        </button>
+                        <button type="button" class="btn btn-lg btn-success ">
+                            다음
+                            <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+           	</div><!-- END CONTENT -->
+			<!--============= END 그리드 =============-->
+	
+		</div>
 
 		<!--================================================== -->
 
@@ -653,7 +708,7 @@
 		<script src="../../js/app.js"></script>
 
 		<!-- PAGE RELATED PLUGIN(S) -->
-
+		<script src="../../js/plugin/bootstrap-progressbar/bootstrap-progressbar.js"></script>
 
 		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
@@ -807,7 +862,6 @@
 		
 	
 		})
-
 		</script>
 
 		<!-- Your GOOGLE ANALYTICS CODE Below -->
@@ -826,6 +880,20 @@
 			})();
 
 		</script>
+
+
+		<script type="text/javascript">
+		$('.bar').progressbar({ 
+			display_text : 'fill'   
+		}); 
+		$(".bar span").text(function(index, text){
+			if(text.trim() == "100%"){
+				$(this).parent().addClass("bar-success");
+			}
+		});
+		
+		</script>
+
 
 
 

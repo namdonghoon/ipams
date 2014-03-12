@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>문서관리</li><li>문서등록관리 </li><li>문서등록현황</li><li>배포정보 등록</li>
+					<li>IPAMS HOME</li><li>문서관리</li><li>문서등록관리 </li><li>문서등록현황 </li><li>조회 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -306,101 +306,174 @@
 
 
 
-
-
-
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 문서관리 <span> > 배포정보 등록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 문서관리 <span> > 조회</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                    <div class="row">
-                        <div class="col-md-12 col-md-6">
-							<h6 class="h-title">임직원 검색</h6>
-							<a class="btn btn-default mb10" href="javascript:void(0);"> 
-								<i class="fa fa-plus"></i> 일괄추가
-							</a> 
-							<div class="show-grid-div2">
-                                <!--   트리들어가는 곳   -->
-                                트리 내용 삽입
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6">
-                        	<h6 class="h-title">배포 대상자 목록</h6>
-                        	<a class="btn btn-default mb10" href="javascript:void(0);">
-								<i class="fa fa-minus"></i> 일괄제거
-							</a>
-							<table class="table table-bordered mt5 tbodycenter">
-					            <colgroup>
-					                <col width="40px">
-					                <col width="80px">
-					                <col>
-					                <col width="150px">
-					                <col width="60px">
-					            </colgroup>
-					            <thead>
-					                <tr>
-					                    <th class="smart-form"> 
-						                    <label class="checkbox">
-						                        <input type="checkbox">
-						                        <i></i> 
-						                    </label>
-						                </th>
-					                    <th>순번</th>
-					                    <th>기업/기관명</th>
-					                    <th>이름</th>
-					                    <th>비고</th>
-					                </tr>
-					            </thead>
-					            <tbody>
-					            	<tr>
-					            		<td class="smart-form"> 
-						                    <label class="checkbox">
-						                        <input type="checkbox">
-						                        <i></i> 
-						                    </label>
-						                </td>
-					            		<td>1</td>
-					            		<td class="tleft">드림인프라</td>
-					            		<td class="tleft">
-					            			<button class="user_info_box" rel="popover-hover" data-placement="left"
-										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-										        data-content="
-										            <ul class='user_info'>
-										                <p><img src='../../images/member_big.png'></p>
-										                <li>시스템관리자</li>
-										                <li>(주)드림인프라</li>
-										                <li>SI사업부</li>
-										                <li>부장</li>
-										                <li>systemadministrator@dreaminfra.co.kr </li>
-										            </ul>
-										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>양승환</strong>
-										        </button>
-					            		</td>
-					            		<td>
-					            			<button type="button" class="btn btn-default btn-sm">제거</button>
-					            		</td>
-					            	</tr>
-					            </tbody>
-					        </table>         
+                	<div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-sm btn-default float-right mb10">
+	                           <i class="fa fa-external-link"></i>&nbsp;인쇄/저장 
+	                       	</button>
+                            <table class="table table-bordered table-condensed">
+                            	<colgroup>
+						            <col width="120px;">
+						            <col>
+						            <col width="120px;">
+						            <col>
+						            <col width="120px;">
+						            <col>
+						        </colgroup>
+						        <tbody>
+						        	<tr>
+						        		<th>대분류</th>
+						        		<td>경영</td>
+						        		<th>중분류</th>
+						        		<td>경영총괄</td>
+						        		<th>소분류</th>
+						        		<td>일반</td>
+						        	</tr>
+						        	<tr>
+						        		<th>문서명</th>
+						        		<td colspan="5">-</td>
+						        	</tr>
+						        	<tr>
+						        		<th>문서내용</th>
+						        		<td colspan="5">-</td>
+						        	</tr>
+						        	<tr>
+						        		<th>첨부파일</th>
+						        		<td colspan="5">
+						        			<ul class="file_upload">
+							                    <li>
+							                        <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai
+							                    </li>
+							                </ul>
+						        		</td>
+						        	</tr>
+						        	<tr>
+						        		<th>승인절차</th>
+						        		<td colspan="5">
+						        			<div class="alert alert-info mb10">
+									            1) <strong>[관리]</strong>권한을 가진 사용자는 미 승인 상태의 승인자에게 <strong>[승인 요청]</strong>알림을 재발송할 수 있습니다. <br>
+												2) 알림 재발송은 현재 진행 중인 <strong>미 승인</strong> 대상자에게만 발송됩니다.
+									        </div>
+									        <button class="btn btn-default float-right mb10">
+												<i class="fa fa-envelope">&nbsp;승인요청 알림 재발송</i>
+											</button>
+											
+									        <table class="table table-bordered table-condensed tbodycenter mb0">
+			                                    <colgroup>
+												    <col width="50px">
+												    <col width="150px">
+												    <col width="70px">
+												    <col>
+												</colgroup>
+			                                    <thead>
+			                                    <tr>
+			                                        <th>순번</th>
+			                                        <th>이름</th>
+			                                        <th>상태</th>
+			                                        <th>사유</th>
+			                                    </tr>
+			                                    </thead>
+			                                    <tbody>
+			                                    <tr>
+			                                        <td>1</td>
+			                                        <td class="tleft">
+			                                            <!-- 인명정보 -->
+			                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+			                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+			                                               data-content="
+			                                                <ul class='user_info'>
+			                                                    <p><img src='../../images/member_big.png'></p>
+			                                                    <li>시스템관리자</li>
+			                                                    <li>(주)드림인프라</li>
+			                                                    <li>SI사업부</li>
+			                                                    <li>부장</li>
+			                                                    <li>systemadministrator@dreaminfra.co.kr </li>
+			                                                </ul>
+			                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+			                                            <!--인명정보 끝-->
+			                                        </td>
+			                                        <td>미승인</td>
+			                                        <td>-</td>
+			                                    </tr>
+			                                    </tbody>
+			                                </table>
+						        		</td>
+						        	</tr>
+						        	<tr>
+						        		<th>배포절차</th>
+						        		<td colspan="5">
+						        			<table class="table table-bordered table-condensed tbodycenter mb0">
+			                                    <colgroup>
+												    <col width="50px">
+												    <col width="150px">
+												    <col width="70px">
+												    <col>
+												</colgroup>
+			                                    <thead>
+			                                    <tr>
+			                                        <th>순번</th>
+			                                        <th>이름</th>
+			                                        <th>상태</th>
+			                                        <th>사유</th>
+			                                    </tr>
+			                                    </thead>
+			                                    <tbody>
+			                                    <tr>
+			                                        <td>1</td>
+			                                        <td class="tleft">
+			                                            <!-- 인명정보 -->
+			                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+			                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+			                                               data-content="
+			                                                <ul class='user_info'>
+			                                                    <p><img src='../../images/member_big.png'></p>
+			                                                    <li>시스템관리자</li>
+			                                                    <li>(주)드림인프라</li>
+			                                                    <li>SI사업부</li>
+			                                                    <li>부장</li>
+			                                                    <li>systemadministrator@dreaminfra.co.kr </li>
+			                                                </ul>
+			                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+			                                            <!--인명정보 끝-->
+			                                        </td>
+			                                        <td>발송</td>
+			                                        <td>-</td>
+			                                    </tr>
+			                                    </tbody>
+			                                </table>
+						        		</td>
+						        	</tr>
+						        	<tr>
+						        		<th>파기일</th>
+						        		<td colspan="5"></td>
+						        	</tr>
+						        </tbody>
+                            </table>
+                            
+                            
+                            
+                           	<div>
+				            	<button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+				        	</div>
+                            
                         </div>
                     </div>
-                    <div class="align-right">
-			            <button type="button" class="btn btn-lg btn-primary float-left">
-			                <i class="fa fa-times margin-right-5"></i>취소
-			            </button>
-			            <button type="button" class="btn btn-lg btn-success ">
-			                완료
-			                <i class="fa fa-check"></i></button>
-			        </div>
-                </div>
-			<!-- END MAIN CONTENT -->
+			        <!-- end row  -->
 
+                </div>
+                <!-- END well  -->
+			
             </div>
+            <!-- END MAIN CONTENT -->
+            
 		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
@@ -453,7 +526,13 @@
 			</ul>
 		</div>
 		<!-- END SHORTCUT AREA -->
-        
+    
+
+
+
+
+
+
 		<!--================================================== -->
 
 		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
@@ -582,25 +661,6 @@
             });
 
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
