@@ -80,7 +80,9 @@
 		<button data-toggle="modal" data-target="#myModal7">
             <strong>7. MODAL 일괄추가 테이블(검색, 페이지 view) </strong>
         </button>		
-		
+		 		
+
+
 		<br>
 		<br>
 		<br>
@@ -399,11 +401,11 @@
                                         <td class="tleft">경기도정보보안_s_text.ai</td>
                                         <td>1MB</td>
                                         <td>
-                                            <div class="bar-holder">
-                                                <div class="progress">
-                                                    <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
-                                                </div>
-                                            </div>
+                                            <div class="progress eval mb0" >
+												<div class="bar" style="width: 100%;">   
+													<span class="number">100%</span>
+												</div>
+											</div> 
                                         </td>
                                         <td>
                                             <button class="btn btn-default btn-sm">
@@ -818,8 +820,7 @@
         
         
         
-        
-        
+       
         
         
         <!-- Modal_100 -->
@@ -1087,10 +1088,21 @@
             */ 
             $('.dt-top-row a').removeClass('btn-sm');
 
-        /* END TABLE TOOLS */
         })
     </script>
 
+
+	<script type="text/javascript">
+		$('.bar').progressbar({ 
+			display_text : 'fill'   
+		}); 
+		$(".bar span").text(function(index, text){
+			if(text.trim() == "100%"){
+				$(this).parent().addClass("bar-success");
+			}
+		});
+		
+		</script>
 
 
 	</body>

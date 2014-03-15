@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+
+
+        <!-- MAIN PANEL -->
+        <div id="main" role="main">
+]
+
+
+            <div id="content">
+
+
+                <!--  3. 일반 테이블 (기본 페이징 테이블, view)  -->
+                <div class="well well-light">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
+                                
+                                <!-- widget edit box -->
+                                <div class="jarviswidget-editbox">
+                                    <!-- This area used as dropdown edit box -->
+                                    
+                                </div>
+                                <!-- end widget edit box -->
+
+                                <h6 class="h-title mb0 float-left">승인 대상 목록</h6>
+                                <p class="go_btn align-right mb6">
+                                    <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+                                </p>
+                                <!-- widget div-->
+                                <div class="mt30 table-bordered ">
+                
+                                    <!-- widget content -->
+                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+                            
+                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+                                            <colgroup>
+                                                <col width="30px">
+                                                <col width="50px">
+                                                <col>
+                                                <col width="100px">
+                                                <col width="80px">
+                                                <col width="80px">
+                                                <col width="85px">
+                                                <col width="80px">
+                                                <col width="80px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="smart-form remove-sort">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <i></i> 
+                                                        </label>
+                                                    </th>
+                                                    <th>No.</th>
+                                                    <th>자산명</th>
+                                                    <th>도입일</th>
+                                                    <th>도입형태</th>
+                                                    <th>도입구분</th>
+                                                    <th>진행상황</th>
+                                                    <th class="remove-sort">담당정보</th>
+                                                    <th class="remove-sort">비고</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="smart-form">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox">
+                                                            <i></i> 
+                                                        </label>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td class="tleft">
+                                                        <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                        data-content="하드웨어(서버) GG-SVR-001"
+                                                        data-html="true">
+                                                            <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                        </a>
+                                                    </td>
+                                                    <td>2014-02-01</td>
+                                                    <td>도-44</td>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <span class="badge bg-color-blueLight">신규</span>
+                                                    </td>
+                                                    <td>
+                                                        <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        조회</a>      
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        추가</a>                                                      
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="smart-form">
+                                                        <label class="checkbox">
+                                                                    <input type="checkbox">
+                                                                    <i></i> 
+                                                        </label>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td class="tleft">
+                                                        <!--자산정보-->
+                                                        <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                                data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                data-content="하드웨어(서버) GG-SVR-001"
+                                                                data-html="true">
+                                                            <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                        </a>
+                                                        <!--자산정보 끝-->
+                                                    </td>
+                                                    <td>2014-02-03</td>
+                                                    <td>도입-11</td>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <span class="badge badge-color-darkorange">진행중</span>
+                                                    </td>
+                                                    <td>
+                                                        <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        조회</a>  
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        추가</a>                                                      
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="smart-form">
+                                                        <label class="checkbox">
+                                                                    <input type="checkbox">
+                                                                    <i></i> 
+                                                        </label>
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td class="tleft">
+                                                        <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                        data-content="하드웨어(서버) GG-SVR-001"
+                                                        data-html="true">
+                                                            <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                        </a>
+                                                    </td>
+                                                    <td>2014-01-02</td>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>
+                                                        <span class="badge badge-color-darkorange">진행중</span>
+                                                    </td>
+                                                    <td>
+                                                        <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        조회</a>  
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                        추가</a>                                                      
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	        
+	        
+	        
+	        
+	    </div>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>-->
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S) -->
+        <script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
+        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
+        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
+        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
+        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
+        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
+        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- data picker-->
+
+
+
+
+		<!-- 페이지 추가, 팀장님의 자산관리 일괄추가, 제거 페이지 동작 비교  --> 
+ 		<script type="text/javascript">
+        
+	        // DO NOT REMOVE : GLOBAL FUNCTIONS!
+	        
+	        $(document).ready(function() {
+	            
+	            pageSetUp();
+	            
+	            $('#dt_basic').dataTable({
+	                "sPaginationType" : "bootstrap_full",	
+	                "sDom": 'rt<"dt-bottom-row" i> <"dt-bottom page-box" <p>>' 
+	                
+	            }); 
+	        })
+    	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+</html>

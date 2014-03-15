@@ -163,6 +163,13 @@
 				                완료
 				                <i class="fa fa-check"></i></button>
 				        </div>
+				        <div class="align-right">
+				            <button type="button" class="btn btn-lg btn-primary float-left">
+				                <i class="fa fa-times margin-right-5"></i>취소
+				            </button>
+				            <button type="button" class="btn btn-lg btn-success ">
+				                <i class="fa fa-pencil-square-o"></i>&nbsp; 수정</button>
+				        </div>
 	        			<!--============ END 이동버튼 ============ -->
 	        			
 					</div>
@@ -258,9 +265,9 @@
                                 <option>2</option>
                                 <option>3</option>
                             </select>
-                            </span>
-                            <span>
-                               <select class="form-control" disabled style="width:150px;">
+                        </span>
+                        <span>
+                           <select class="form-control" disabled style="width:150px;">
                                 <option>프로젝트관리</option>
                                  <option>1</option>
                                  <option>2</option>
@@ -315,7 +322,7 @@
 				    <div class="show-grid-div1 well">
 				    	<h6 class="h-title">캘린더</h6>
 				    
-				        <!--============= START 시작일, 종료일 =============-->
+				        <!--============= START 시작일, 종료일, 단일일자 =============-->
 				        <fieldset class="no-padding-all smart-form">
 				            <div class="row">
 				                <section class="col col-sm-5 no-margin-bottom">
@@ -330,7 +337,17 @@
 				                </section>
 				            </div>
 				        </fieldset>
-				        <!--============= END 시작일, 종료일 =============-->
+				        
+				        <table>
+				        <tr>
+					        <td class="smart-form">
+					        	<label class="input"><i class="icon-append fa fa-calendar"></i>
+									<input type="text" class="datepicker"  placeholder="단일일자" data-dateformat='yy-mm-dd'>
+								</label>
+							</td>
+				        </tr>
+				        </table>
+				        <!--============= END 시작일, 종료일, 단일일자 =============-->
 				        
 				        
 				    </div>
@@ -509,26 +526,26 @@
 				    	<h6>block</h6>
 	                    <div class="inline-group smart-form">
 	                        <label class="radio">
-	                            <input type="radio" name="radio-inline" checked="checked">
+	                            <input type="radio" checked="checked">
 	                                <i></i>일반
 	                        </label>
-	                        <label class="radio display-inline">
-	                            <input type="radio" name="radio-inline">
+	                        <label class="radio">
+	                            <input type="radio" >
 	                                <i></i>공지사항
 	                        </label>
 	                    </div>
 	                    
-	                    <br>
+	                    <br> 
 	                    
 	                    <h6>inline</h6>
-	                    <div class="smart-form input-group float-left b6">
-	                        <label class="radio ">
-	                            <input type="radio" name="radio-inline" checked="checked">
-	                                <i></i>동(읍/면)명&nbsp;&nbsp;
+	                    <div class="inline-group smart-form">
+	                        <label class="radio display-inline"> 
+	                            <input type="radio" checked="checked">
+	                                <i class="t0"></i>미진행&nbsp;&nbsp;
 	                        </label> 
-	                        <label class="radio ">
-	                            <input type="radio" name="radio-inline">
-	                                <i></i>도로명&nbsp;&nbsp;
+	                        <label class="radio display-inline">
+	                            <input type="radio" >
+	                                <i class="t0"></i>진행
 	                        </label>
 	                    </div>
 		                <!--============= END 라디오 박스 =============-->
@@ -614,7 +631,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-9">
-                            <div class="show-grid-div1">
+                            <div class="show-grid-div2">
                                
                                 그리드 2번쨰
 

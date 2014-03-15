@@ -16,75 +16,186 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+		
+		
 		<!-- Basic Styles -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
 
-		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
-		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
 
         <!-- 2014_0218_스타일 추가-->
         <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
-
-		<!-- SmartAdmin RTL Support is under construction
-		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
-
-		<!-- We recommend you use "your_style.css" to override SmartAdmin
-		specific styles this will also ensure you retrain your customization
-		with each SmartAdmin update.
-		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
-
-		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
-		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
-
-		<!-- FAVICONS -->
-		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
-
-		<!-- GOOGLE FONT -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
-
+ 
 	</head>
-	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+	<body style="font-family: '나눔고딕','굴림','굴림체','돋움','돋움체';font-size: 9pt; background-color:#FFFFFF; background-image:none;">
 
 
-		<div class="row-fluid affix">
-			<div class="navbar navbar-inverse " style="margin-bottom: 0px;">
-			    <div class="navbar-inner">
-				    <div class="container-fluid">
-				        <!-- main 메뉴 -->
-				        <ul class="nav pull-left">
-				            <li class="brand active">
-				                <a href="#">IPAMS 문서 내보내기</a>
-				            </li>
-				        </ul>
-				        <!-- main 메뉴 (end)-->
-				        <div class="btn-group pull-right" style="margin-right : 30px; margin-top: 20px;">
-		                    <a id="printBtn" href="/dev/basis/document/output/1?viewType=print" class="btn" style="color:black;"><i class="icon-print"></i>인쇄</a>
-		                    <a class="btn-group">
+        <!-- MAIN PANEL -->
+        <div id="main" role="main" style="margin:0px;">
+        
+        
+			<div class="row-fluid affix" id="exportControl">
+				<div class="navbar navbar-inverse " style="margin-bottom: 0px;">
+				    <div class="navbar-inner">
+					    <div class="container-fluid">
+					        <!-- main 메뉴 -->
+					        <ul class="nav pull-left">
+					            <li class="brand active"> 
+					                <a href="#">IPAMS 문서 내보내기</a>
+					            </li>
+					        </ul>
+					        
+					        <!-- main 메뉴 (end)-->
+					        <div class="btn-group pull-right" style="margin-right : 30px; margin-top: 10px;">
+			                    <a id="printBtn" href="" class="btn btn-default" style="color:black;">
+			                    	<i class="fa fa-print"></i> 인쇄
+			                    </a>
+		                        <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="" style="color:black;">
+		                           <i class="fa fa-download"></i> 파일 다운로드<span class="caret"></span>
 		                        </a>
-	                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color:black;">
-	                           <i class="icon-download"></i>파일 다운로드<span class="caret"></span>
-	                        </a>
-	                        <ul class="dropdown-menu">
-	                           <li><a href="#" class="saveBtn" data-type="html">HTML 파일로 저장</a></li>
-	                        </ul>
-		                    
-		                </div>
-				    </div>
-				</div>
+		                        <ul class="dropdown-menu">
+		                           <li><a href="" class="saveBtn" data-type="html">HTML 파일로 저장</a></li>
+		                        </ul>
+			                </div>
+					    </div>
+					</div>
+				</div>		
+			    <form name="htmlDownloadForm" id="htmlDownloadForm" action="" method="POST">
+					<input type="hidden" name="_method" value="get">
+					<input type="hidden" name="title" value="tt3">
+					<input type="hidden" name="html">
+				</form>
 			</div>
-		    <form name="htmlDownloadForm">
-				<input type="hidden" name="_method" value="get">
-				<input type="hidden" name="title" value="문서 등록 테스트">
-				<input type="hidden" name="html">
-			</form>
+
+
+
+			<div class="contents" style="padding-top: 100px;">
+			
+			
+				<div id="document-header">
+				
+					<div class="report_form" style="padding: 30px 20px; max-width: 720px; color: rgb(51, 51, 51); font-family: 나눔고딕, 굴림, 굴림체, 돋움, 돋움체; line-height: 20px;">
+						<div class="report_name" style="font-size: 36pt; line-height:36pt; font-weight: 700; display: table; padding: 20px; word-break:break-all; word-wrap:break-word;">tt3</div>
+						<div class="vertical_divider" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(170, 170, 170); margin: 40px 20px 5px;">&nbsp;</div>
+						
+						<table class="report_writer" style="max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0px; float: right; margin-top: 700px; margin-bottom: 50px;">
+						    <colgroup>
+						        <col width="100px">
+						        <col width="200px">
+						    </colgroup>
+						    <tbody>
+						        <tr>
+						            <th>소속</th>
+						            <td>(주)kt rental &nbsp; 시스템팀</td>
+						        </tr>
+						        <tr>
+						            <th>직급</th>
+						            <td>대리</td>
+						        </tr> 
+						        <tr>
+						            <th>서명</th>
+						            <td>김웅정</td>
+						        </tr>
+						    </tbody>
+						</table>
+						
+					</div>
+				
+					<div style="page-break-before:always"></div>
+				
+					<div class="report_form" style="padding: 30px 20px; max-width: 720px; color: rgb(51, 51, 51); font-family: 나눔고딕, 굴림, 굴림체, 돋움, 돋움체; line-height: 20px;">
+					
+						<table>
+						    <tbody><tr>
+						        <td>
+						            <div class="sub_title" style="font-size: 11pt; font-weight: 700; border-left-width: 5px; border-left-style: solid; border-left-color: rgb(51, 51, 51); padding: 0px 20px; margin-bottom: 5px;">승인 내역</div>        
+						        </td>
+						    </tr>
+						    <tr>
+						        <td>
+						        <table class="table table-bordered" style="max-width: 100%; background-color: transparent; border-spacing: 0px; width: 720px; margin-bottom: 20px; border: 0px solid rgb(255, 255, 255); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
+								    <colgroup>
+								        <col width="50px">
+								        <col>
+								        <col>
+								        <col width="120px">
+								        <col width="120px">
+								        <col width="100px">
+								        <col>
+								    </colgroup>
+								    <thead>
+								        <tr>
+								            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 0px; background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-top-left-radius: 4px;">순서</th>
+								            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">기업/기관명</th>
+								            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">부서명</th>
+								            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">이름</th>
+								            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-width: 1px 0px 1px 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; border-top-right-radius: 4px;">상태</th>
+								        </tr>
+								    </thead>
+								    <tbody>
+								    
+								    
+								    
+								    <tr><td class="txt_c" colspan="5" style="text-align: center; padding: 8px; line-height: 10px; vertical-align: top; border-width: 1px 0px; border-top-style: solid; border-top-color: rgb(221, 221, 221); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">승인 내역이 존재하지 않습니다.</td></tr>
+								    
+								    </tbody>
+								</table>
+						        </td>
+						    </tr>
+						</tbody></table>
+					
+					
+					</div>
+				
+					<div style="page-break-before:always"></div>
+					
+					<div class="report_form" style="padding: 30px 20px; max-width: 720px; color: rgb(51, 51, 51); font-family: 나눔고딕, 굴림, 굴림체, 돋움, 돋움체; line-height: 20px;">
+						<div class="sub_title" style="font-size: 11pt; font-weight: 700; border-left-width: 5px; border-left-style: solid; border-left-color: rgb(51, 51, 51); padding: 0px 20px; margin-bottom: 5px;">배포 내역</div>
+						
+						<table class="table table-bordered" style="max-width: 100%; background-color: transparent; border-spacing: 0px; width: 720px; margin-bottom: 20px; border: 0px solid rgb(255, 255, 255); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
+						    <colgroup>
+						        <col width="50px">
+						        <col>
+						        <col>
+						        <col width="120px">
+						        <col width="120px">
+						        <col width="100px">
+						        <col>
+						    </colgroup>
+						    <thead>
+						        <tr>
+						            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 0px; background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-top-left-radius: 4px;">순서</th>
+						            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">기업/기관명</th>
+						            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">부서명</th>
+						            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">이름</th>
+						            <th style="padding: 8px; line-height: 15px; text-align: center; vertical-align: bottom; border-width: 1px 0px 1px 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-style: solid; border-left-color: rgb(221, 221, 221); background-color: rgb(245, 245, 245); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; border-top-right-radius: 4px;">상태</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+					            <tr>
+					            <td class="txt_c" style="text-align: center; padding: 8px; line-height: 10px; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 0px; font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-left-radius: 4px;">1</td>
+					            <td style="padding: 8px; line-height: 10px; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">드림인프라</td>
+					            <td style="padding: 8px; line-height: 10px; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">컨설팅팀</td>
+					            <td style="padding: 8px; line-height: 10px; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">양승환</td>
+					            <td style="text-align: center; padding: 8px; line-height: 10px; vertical-align: top; border-width: 1px 0px 1px 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-left-style: solid; border-left-color: rgb(221, 221, 221); font-size: 9pt; border-bottom-color: rgb(221, 221, 221); border-bottom-style: solid; border-bottom-right-radius: 4px;">발송</td>
+					            </tr>
+						    </tbody>
+						</table>
+					</div>
+					
+					<div style="page-break-before:always"></div>
+					
+					<div class="report_form" style="padding: 30px 20px; max-width: 720px; color: rgb(51, 51, 51); font-family: 나눔고딕, 굴림, 굴림체, 돋움, 돋움체; line-height: 20px;">
+					<p>tt3</p>
+					
+					</div>
+				</div>
+			
+			</div>
 		</div>
-
-
-
-
+		
+		
+		
 
 		<!--================================================== -->
 
@@ -100,54 +211,11 @@
 		</script>
 
         <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-			}
-		</script>-->
-
-		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
-		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
-
 		<!-- BOOTSTRAP JS -->
 		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+		<script src="../../js/jquery.printPage.js"></script> 
 
-		<!-- CUSTOM NOTIFICATION -->
-		<script src="../../js/notification/SmartNotification.min.js"></script>
-
-		<!-- JARVIS WIDGETS -->
-		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
-
-		<!-- EASY PIE CHARTS -->
-		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-
-		<!-- SPARKLINES -->
-		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- JQUERY VALIDATE -->
-		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
-
-		<!-- JQUERY MASKED INPUT -->
-		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-
-		<!-- JQUERY SELECT2 INPUT -->
-		<script src="../../js/plugin/select2/select2.min.js"></script>
-
-		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-
-		<!-- browser msie issue fix -->
-		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-
-		<!-- SmartClick: For mobile devices -->
-		<script src="../../js/plugin/smartclick/smartclick.js"></script>
-
-		<!--[if IE 7]>
-
-		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
-
-		<![endif]-->
+		
 
 		<!-- Demo purpose only -->
 		<script src="../../js/demo.js"></script>
@@ -155,65 +223,35 @@
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
 
-        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-		<!-- PAGE RELATED PLUGIN(S) -->
 
-		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
-		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
-		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
-		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
 
-		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
-        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-
-        <!-- data picker-->
-        <script type="text/javascript">
-        $('#startdate').datepicker({
-            dateFormat : 'yy-mm-dd',
-            prevText : '<i class="fa fa-chevron-left"></i>',
-            nextText : '<i class="fa fa-chevron-right"></i>',
-            onSelect : function(selectedDate) {
-                $('#finishdate').datepicker('option', 'minDate', selectedDate);
-            }
-        });
-
-        $('#finishdate').datepicker({
-            dateFormat : 'yy-mm-dd',
-            prevText : '<i class="fa fa-chevron-left"></i>',
-            nextText : '<i class="fa fa-chevron-right"></i>',
-            onSelect : function(selectedDate) {
-                $('#startdate').datepicker('option', 'maxDate', selectedDate);
-            }
-        });
-    </script>
-    <!-- end data picker -->
+	<script type="text/javascript">
+		$(function () {
+			
+		    $('#printBtn').printPage();
+		    
+		    $(".saveBtn").on('click', function () {
+		        var type = $(this).data('type');
+		        
+		        if ( type === 'html' ) {
+		            $('#exportControl').hide();
+		        
+			        var htmlString = document.documentElement.innerHTML;
+			        $('input[name=html]').val(htmlString);
+			        $('#htmlDownloadForm').submit();
+			        $('#exportControl').show();
+		        }
+		    });
+		    
+		    
+		});
+	</script>
 
 
 
 
 
-        <script>
-            $(document).ready(function() {
 
-                // DO NOT REMOVE : GLOBAL FUNCTIONS!
-                pageSetUp();
-
-                /*
-                 * PAGE RELATED SCRIPTS
-                 */
-
-                $(".js-status-update a").click(function() {
-                    var selText = $(this).text();
-                    $this = $(this);
-                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
-                    $this.parents('.dropdown-menu').find('li').removeClass('active');
-                    $this.parent().addClass('active');
-                });
-            });
-
-        </script>
 
 
 
