@@ -791,6 +791,12 @@ margin-right: 30px;
 .display-inline{
     display: inline !important;
 }
+.display-inherit{
+    display: inherit !important;
+}
+.display-table-cell{
+    display: table-cell !important;
+}
 
 .input-group-addon, .smart-form .radio{
     font-size: 12px;
