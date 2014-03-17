@@ -44,49 +44,48 @@
         <!-- MAIN PANEL -->
         <div id="main" role="main">
 
-
-
-
+                                   
 		<h4 class="h-title"> Modal 샘플 </h4>
         <button data-toggle="modal" data-target="#myModal1">
-            <strong>1. MODAL 빈 공간</strong>
+            <strong>MODAL 빈 공간</strong>
         </button>
-
-
-        <button data-toggle="modal" data-target="#myModal2">
-            <strong>2. MODAL 일반 테이블</strong>
-        </button>
-
-        <button data-toggle="modal" data-target="#myModal3">
-            <strong>3. MODAL 데이터 테이블(검색, 저장, 인쇄, 복사)</strong>
-        </button>
-
-		<button data-toggle="modal" data-target="#myModal4">
-			<strong>4. MODAL 파일 업로드</strong>
+        <button data-toggle="modal" data-target="#myModal4">
+			<strong>MODAL 파일 업로드</strong>
 		</button>
-
-
         <button data-toggle="modal" data-target="#myModal5">
-            <strong>5. MODAL 주소 검색 </strong>
+            <strong>MODAL 주소 검색 </strong>
         </button>
+        
+        
+        <br><br>
 
 
+		<h4 class="h-title"> MODAL 일반 테이블</h4>
+        <button data-toggle="modal" data-target="#myModal2">
+            <strong>MODAL 일반 테이블</strong>
+        </button>
+        
+        
+        <br><br>
+        
+        
+        <br>
+		<h4 class="h-title"> MODAL 데이터 테이블</h4>
+        <button data-toggle="modal" data-target="#myModal3">
+            <strong>MODAL [검색] [일괄추가] [페이지분류] </strong> 
+        </button>
         <button data-toggle="modal" data-target="#myModal6">
-            <strong>6. MODAL 기본 데이터 검색 </strong>
+            <strong>MODAL [검색], [저장], [인쇄], [복사]</strong>
         </button>
+        <button data-toggle="modal" data-target="#myModal7">
+            <strong>MODAL [검색], [저장], [인쇄], [복사] [일괄추가]</strong>
+        </button>
+        
+        
 
-		<br>
 		
-		<button data-toggle="modal" data-target="#myModal7">
-            <strong>7. MODAL 일괄추가 테이블(검색, 페이지 view) </strong>
-        </button>		
-		 		
 
-
-		<br>
-		<br>
-		<br>
-		
+		<br><br>
 		
 		
 		
@@ -208,158 +207,87 @@
 
 
 
-        <!-- Modal_3 -->
-        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 변경된 자산 상세조회</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <h6 class="h-title">자산담당자 검색</h6>
-
-                                    <!-- Widget ID (each widget will need unique ID)-->
-                                    <div class="jarviswidget jarviswidget-color-blueDark top10 mb20" id="wid-id-3" data-widget-editbutton="false">
-
-
-                                        <div class="jarviswidget-editbox">
-                                            <!-- This area used as dropdown edit box -->
-                                        </div>
-
-
-                                        <p class="go_btn align-right mb6">
-                                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
-                                        </p>
-                                        <!-- widget div-->
-                                        <div class="mt30 table-bordered ">
-                        
-                                            <!-- widget content -->
-                                            <div class="widget-body no-padding border-top-type1">
-                                                <div class="">
-                                                
-                                                </div>
-                                                <table id="datatable_tabletools" class="table table-bordered table-condensed table-hover tbodycenter">
-                                                    <colgroup>
-                                                        <col width="40px">
-                                                        <col width="150px">
-                                                        <col>
-                                                        <col width="70px">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="smart-form">
-                                                                <label class="checkbox">
-                                                                        <input type="checkbox">
-                                                                        <i></i> 
-                                                                </label>
-                                                            </th>
-                                                            <th>기업/기관</th>
-                                                            <th>이름</th>
-                                                            <th class="remove-sort">비고</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="smart-form">
-                                                                <label class="checkbox">
-                                                                        <input type="checkbox">
-                                                                        <i></i> 
-                                                                </label>
-                                                            </td>
-                                                            <td class="tleft">드림인프라-1</td>
-                                                            <td class="tleft">
-                                                                <!-- 인명정보 -->
-                                                                <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
-                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                                                   data-content="
-                                                                    <ul class='user_info'>
-                                                                        <p><img src='../../images/member_big.png'></p>
-                                                                        <li>시스템관리자</li>
-                                                                        <li>(주)드림인프라</li>
-                                                                        <li>SI사업부</li>
-                                                                        <li>부장</li>
-                                                                        <li>systemadministrator@dreaminfra.co.kr </li>
-                                                                    </ul>
-                                                                " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
-                                                                <!--인명정보 끝-->
-                                                            </td>
-                                                            <td>
-                                                                <div class="input-group-btn">
-                                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm" type="button">추가</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- end widget content -->
-                                        </div>
-                                        <!-- end widget div -->
-                                    </div>
-                                    <!-- end widget -->
-                                    <div class="text-center">
-                                        <ul class="pagination pagination-sm pagination-alt">
-                                            <li>
-                                                <a href="javascript:void(0);">처음</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">이전</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">1</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">2</a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="javascript:void(0);">3</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">4</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">5</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">다음</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">마지막</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        닫기
-                    </button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-                        완료
-                    </button>
-                </div><!-- /.modal-content -->
-                </div>
-                
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal_3 -->
-
-
-
-
-
-
+       <!-- Modal_3 검색 테이블-->
+	    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 기본 검색 테이블</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                        	
+		                        <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+	                                
+	                                <p class="go_btn align-right mb6">
+	                                    <a href="" class="btn btn-default mr70 mt4"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+	                                </p>
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+	                                            <colgroup>
+	                                                <col width="30px">
+	                                                <col width="50px">
+	                                                <col>
+	                                                <col width="100px">
+	                                            </colgroup>
+	                                            <thead>
+	                                                <tr>
+	                                                    <th>sample-row-1</th>
+	                                                    <th>sample-row-2</th>
+	                                                    <th>sample-row-3</th>
+	                                                    <th>sample-row-4</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
+	                            </div>
+	                            <div style="width: 100%; height: 30px;"></div>
+			                        
+			                        
+			                    </div>
+		                    </div>
+		                </div>
+	                <!-- End row  -->
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	    <!-- end modal_3 -->
+        
+        
+        
 
 		<!-- Modal_4 -->
         <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
@@ -448,7 +376,7 @@
 	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 	                        &times;
 	                    </button>
-	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주소 검색</h4>
+	                    <h4 class="modal-title"><i class="fa fa-power-off"></i> 주소 검색</h4>
 	                </div>
 	                <div class="modal-body">
 	                    <div class="row">
@@ -544,131 +472,87 @@
         
         
         
-        
-        
-        <!-- Modal_6 -->
-	    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
-	        <div class="modal-dialog modal-sm">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                        &times;
-	                    </button>
-	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주소 검색</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <div class="row">
-	                        <div class="col-md-12">
-	                        	<!-- 내용 시작  -->
-		                        <div class="jarviswidget jarviswidget-color-blueDark mt40 mb20"  data-widget-editbutton="false">
-		                        
-									 <!-- widget edit box -->
-									 <div class="jarviswidget-editbox">
-									     <!-- This area used as dropdown edit box -->
-									 </div>
-									 <!-- end widget edit box -->
-									
-									 <!-- widget div-->
-									 <div class="mt30 table-bordered ">
-									
-									     <!-- widget content -->
-									     <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-									
-									         <table id="dt_basic-1" class="table table-bordered table-condensed table-hover tbodycenter">
-									             <colgroup>
-			                                        <col width="30px;">
-			                                        <col>
-			                                        <col width="140px;">
-			                                    </colgroup>
-									             <thead>
-									                 <tr>
-									                 	<th>No.</th>
-									                 	<th>기업/기관</th>
-									                 	<th>이름</th>								                 	
-									                 </tr>
-									             </thead>
-									             <tbody>
-									                 <tr>
-									                 	<td>1</td>
-									                 	<td>경기도청</td>
-									                 	<td>
-									                 		<button class="user_info_box" rel="popover-hover" data-placement="left"
-													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-													        data-content="
-													            <ul class='user_info'>
-													                <p><img src='../../images/member_big.png'></p>
-													                <li>시스템관리자</li>
-													                <li>(주)드림인프라</li>
-													                <li>SI사업부</li>
-													                <li>부장</li>
-													                <li>systemadministrator@dreaminfra.co.kr </li>
-													            </ul>
-													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-													        </button>
-									                 	</td>								                 									                 
-									                 </tr>
-								                </tbody>
-								            </table>
-								        </div>
-								    </div>
-								</div>
-		                        
-		                        
-		                        <!-- end widget -->
-	                            <div class="text-center">
-	                                <ul class="pagination pagination-sm pagination-alt">
-	                                    <li>
-	                                        <a href="javascript:void(0);">처음</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">이전</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">1</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">2</a>
-	                                    </li>
-	                                    <li class="active">
-	                                        <a href="javascript:void(0);">3</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">4</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">5</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">다음</a>
-	                                    </li>
-	                                    <li>
-	                                        <a href="javascript:void(0);">마지막</a>
-	                                    </li>
-	                                </ul>
+         <!-- Modal_6 -->
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 저장,출력, 데이터 테이블</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+									<div class="jarviswidget jarviswidget-color-blueDark top10 mb20 mt50"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+	                                
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="datatable_tabletools" class="table table-bordered table-condensed table-hover tbodycenter">
+	                                            <colgroup>
+	                                                <col width="30px">
+	                                                <col width="50px">
+	                                                <col>
+	                                                <col width="100px">
+	                                            </colgroup>
+	                                            <thead>
+	                                                <tr>
+	                                                    <th>sample-row-1</th>
+	                                                    <th>sample-row-2</th>
+	                                                    <th>sample-row-3</th>
+	                                                    <th>sample-row-4</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
 	                            </div>
-		                        
-		                        
-		                    </div>
-	                    </div>
-	                </div>
-	                <!-- End row  -->
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">
-	                        닫기
-	                    </button>
-	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-	                       	완료
-	                    </button>
-	                </div>
-	            </div><!-- /.modal-content -->
-	        </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
-	    <!-- end modal_6 -->
+	                            <div style="width: 100%; height: 30px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        닫기
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                        완료
+                    </button>
+                </div><!-- /.modal-content -->
+                </div>
+                
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal_6 -->
         
         
         
         
-        <!-- Modal_7 -->
+        
+         <!-- Modal_7 -->
         <div class="modal fade" id="myModal7" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -676,127 +560,59 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 변경된 자산 상세조회</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 저장,출력 일괄추가, 데이터 테이블</h4>
                     </div>
                     <div class="modal-body">
                         <div>
                             <div class="row">
                                 <div class="col-md-12">
-
-                                    <h6 class="h-title float-left">자산담당자 검색</h6>
-
-                                    <!-- Widget ID (each widget will need unique ID)-->
-                                    <div class="jarviswidget jarviswidget-color-blueDark mb20" id="wid-id-3" data-widget-editbutton="false">
-
-
-                                        <div class="jarviswidget-editbox">
-                                            <!-- This area used as dropdown edit box -->
-                                        </div>
-
-
-                                        <p class="go_btn align-right position-rel">
-                                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
-                                        </p>
-                                        <!-- widget div-->
-                                        <div class="mt30 table-bordered ">
-                        
-                                            <!-- widget content -->
-                                            <div class="widget-body no-padding border-top-type1">
-                                                <div class="">
-                                                
-                                                </div>
-                                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-                                                    <colgroup>
-                                                        <col width="40px">
-                                                        <col width="150px">
-                                                        <col>
-                                                        <col width="70px">
-                                                    </colgroup>
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="smart-form remove-sort">
-                                                                <label class="checkbox">
-                                                                        <input type="checkbox">
-                                                                        <i></i> 
-                                                                </label>
-                                                            </th>
-                                                            <th>기업/기관</th>
-                                                            <th>이름</th>
-                                                            <th class="remove-sort">비고</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="smart-form">
-                                                                <label class="checkbox">
-                                                                        <input type="checkbox">
-                                                                        <i></i> 
-                                                                </label>
-                                                            </td>
-                                                            <td class="tleft">드림인프라-1</td>
-                                                            <td class="tleft">
-                                                                <!-- 인명정보 -->
-                                                                <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
-                                                                   data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                                                   data-content="
-                                                                    <ul class='user_info'>
-                                                                        <p><img src='../../images/member_big.png'></p>
-                                                                        <li>시스템관리자</li>
-                                                                        <li>(주)드림인프라</li>
-                                                                        <li>SI사업부</li>
-                                                                        <li>부장</li>
-                                                                        <li>systemadministrator@dreaminfra.co.kr </li>
-                                                                    </ul>
-                                                                " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
-                                                                <!--인명정보 끝-->
-                                                            </td>
-                                                            <td>
-                                                                <div class="input-group-btn">
-                                                                    <a href="javascript:void(0);" class="btn btn-default btn-sm" type="button">추가</a>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- end widget content -->
-                                        </div>
-                                        <!-- end widget div -->
-                                    </div>
-                                    <!-- end widget -->
-                                    <div class="text-center">
-                                        <ul class="pagination pagination-sm pagination-alt">
-                                            <li>
-                                                <a href="javascript:void(0);">처음</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">이전</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">1</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">2</a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="javascript:void(0);">3</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">4</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">5</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">다음</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">마지막</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+									<div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+	                                
+	                                <p class="go_btn align-right mb6">
+	                                    <a href="" class="btn btn-default mr70 mt4"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+	                                </p>
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="datatable_tabletools_add" class="table table-bordered table-condensed table-hover tbodycenter">
+	                                            <colgroup>
+	                                                <col width="30px">
+	                                                <col width="50px">
+	                                                <col>
+	                                                <col width="100px">
+	                                            </colgroup>
+	                                            <thead>
+	                                                <tr>
+	                                                    <th>sample-row-1</th>
+	                                                    <th>sample-row-2</th>
+	                                                    <th>sample-row-3</th>
+	                                                    <th>sample-row-4</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                    <td>-</td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
+	                            </div>
+	                            <div style="width: 100%; height: 30px;"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -815,8 +631,6 @@
         </div><!-- /.modal -->
         <!-- end modal_7 -->
         
-        
-       
         
         
         
@@ -1012,62 +826,37 @@
             /*
              * BASIC
              */
-            $('#dt_basic').dataTable({
-                "sPaginationType" : "bootstrap_full"
-            });
-            $('#dt_basic-1').dataTable({
-                "sPaginationType" : "bootstrap_full"
-            });
-    
-            /* END BASIC */
-    
-            /* Add the events etc before DataTables hides a column */
-            $("#datatable_fixed_column thead input").keyup(function() {
-                oTable.fnFilter(this.value, oTable.oApi._fnVisibleToColumnIndex(oTable.fnSettings(), $("thead input").index(this)));
-            });
-    
-            $("#datatable_fixed_column thead input").each(function(i) {
-                this.initVal = this.value;
-            });
-            $("#datatable_fixed_column thead input").focus(function() {
-                if (this.className == "search_init") {
-                    this.className = "";
-                    this.value = "";
-                }
-            });
-            $("#datatable_fixed_column thead input").blur(function(i) {
-                if (this.value == "") {
-                    this.className = "search_init";
-                    this.value = this.initVal;
-                }
-            });     
+             
+             /* 검색, 일괄추가, 페이지분류 */
+             $('#dt_basic').dataTable({
+                "sPaginationType" : "bootstrap_full",	
+                "sDom": '<"dt-top-row" fl> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
+            }); 
             
-    
-            var oTable = $('#datatable_fixed_column').dataTable({
-                "sDom" : "<'dt-top-row'><'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
-                //"sDom" : "t<'row dt-wrapper'<'col-sm-6'i><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'>>",
-                "oLanguage" : {
-                    "sSearch" : "Search all columns:"
-                },
-                "bSortCellsTop" : true
-            });     
             
-            /*
-             * COL ORDER
-             */
-            $('#datatable_col_reorder').dataTable({
-                "sPaginationType" : "bootstrap",
-                "sDom" : "R<'dt-top-row'Clf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
-                "fnInitComplete" : function(oSettings, json) {
-                    $('.ColVis_Button').addClass('btn btn-default btn-sm').html('Columns <i class="icon-arrow-down"></i>');
-                }
-            });
             
-            /* END COL ORDER */
-    
             /* TABLE TOOLS */
             $('#datatable_tabletools').dataTable({
-                "sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 text-right'p>>",
+            	"sPaginationType" : "bootstrap_full",
+                "sDom" : "<'dt-top-row'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 dt-bottom page-box page-modal mt50'p>> ",
+                "oTableTools" : {
+                    "aButtons" : ["copy", "print", {
+                        "sExtends" : "collection",
+                        "sButtonText" : '저장 <span class="caret" />',
+                        "aButtons" : ["csv", "xls"]
+                    }],
+                    "sSwfPath" : "../../js/plugin/datatables/media/swf/copy_csv_xls_pdf.swf"
+                },
+                "fnInitComplete" : function(oSettings, json) {
+                    $(this).closest('#dt_table_tools_wrapper').find('.DTTT.btn-group').addClass('table_tools_group').children('a.btn').each(function() {
+                        $(this).addClass('btn-sm btn-default');
+                    });
+                }
+            });
+            
+            $('#datatable_tabletools_add').dataTable({
+            	"sPaginationType" : "bootstrap_full",
+                "sDom" : "<'dt-top-row DTTT-sort'Tlf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row'<'col-sm-6'i><'col-sm-6 dt-bottom page-box page-modalmt50'p>> ",
                 "oTableTools" : {
                     "aButtons" : ["copy", "print", {
                         "sExtends" : "collection",

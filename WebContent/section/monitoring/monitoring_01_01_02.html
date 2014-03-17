@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization
+		with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <img src="../../images/top_logo.png" alt="IPAMS"></span>
+				<!-- END LOGO PLACEHOLDER -->
+
+				<!-- Note: The activity badge color changes when clicked and resets the number to 0
+				Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+
+
+				<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+
+
+            <!-- projects dropdown -->
+            <div id="project-context">
+    <span class="notification"> <i class="fa fa-bell-o"></i></span>
+    <span class="label">알림센터</span>
+    <span id="activity" class="popover-trigger-element dropdown-toggle">
+        미확인 알림이
+        <span><b class="badge bg-color-red bounceIn animated"> 21 </b></span>
+        개 있습니다.
+    </span>
+
+                <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+                <div class="ajax-dropdown">
+
+
+                    <!-- notification content -->
+                    <div class="ajax-notifications custom-scroll">
+
+                        <div class="alert alert-transparent">
+                            <ul class="notification_list">
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end notification content -->
+
+                    <!-- footer: refresh area -->
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-sm" href="javascript:void(0);"><i class="fa fa-chevron-circle-right margin-right-5"></i>알림센터 바로가기</button>
+                    </div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- END AJAX-DROPDOWN -->
+
+
+				<!-- Suggestion: populate this list with fetch and push technique -->
+				<ul  class="dropdown-menu custom-scroll" style="height: 200px; overflow-y:auto;">
+					<li>
+						<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Assesment Report for merchant account</a>
+					</li>
+                    <li>
+                        <a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Notes on pipeline upgradee</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Assesment Report for merchant account</a>
+                    </li>
+                    <li class="divider"></li>
+					<li class="text-align-right">
+						<a href="javascript:void(0);"><i class="fa fa-power-off"></i> 알림센터가기</a>
+					</li>
+				</ul>
+				<!-- end dropdown-menu-->
+
+			</div>
+			<!-- end projects dropdown -->
+            <!-- pulled right: nav area -->
+            <div class="user_box pull-right">
+                <div class="user_name">
+                    <span>홍길동</span>님 환영합니다.
+                </div>
+                <!-- 내정보 수정 -->
+                <div class="btn btn-sm btn_blue myinfo">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-gear"></i></a> </span>
+                </div>
+                <!-- end 내정보 수정 -->
+                <!-- logout button -->
+                <div id="logout" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
+                </div>
+                <!-- end logout button -->
+                <div id="hide-menu" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+
+			<!-- 전체메뉴보기 -->
+			<div class="sitemap-info">
+				<span> <i class="fa fa-sitemap"></i> <a href="javascript:void(0);" id="show-shortcut">전체메뉴보기 </a> </span>
+			</div>
+			<!-- end 전체메뉴보기 -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+					<li class="menu_bookmark_box">
+						<a href="#">
+                            <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
+                        </a>
+						<ul>
+							<li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">문서관리</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+							</li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">진단수행</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">승인대상목록</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark_add">
+                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                </div>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>모니터링</li><li>대시보드 </li><li>대시보드 등록 </li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 대시보드 등록</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                <div class="row">
+                    <div class="col-xs-12">
+                            <table class="table table-bordered">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>대시보드명</th>
+                                    <td>
+                                        <input class="form-control" placeholder="대시보드 이름은 최대 100자까지만 사용가능합니다." type="text" style="width:500px;">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                    <th>구성요소 등록</th>
+                    <td>
+                    <ul id="monitoringTab" class="nav nav-tabs">
+                        <li class="active" >
+                            <a href="#tab1" data-toggle="tab">평가수행 모니터링</a>
+                        </li>
+                        <li dclass="">
+                            <a href="#tab2" data-toggle="tab">기반정보 모니터링</a>
+                        </li>
+                        <li class="">
+                            <a href="#tab3" data-toggle="tab">시스템 모니터링</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane padding-top-10 active" id="tab1">
+                        <table class="table table-bordered">
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col>
+                                <col style="width: 100px;">
+                                <col>
+                                <col style="width:80px;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>
+                                    평가명
+                                </th>
+                                <td>
+                                    <input class="form-control maxlength-hidden" maxlength="200" type="text" >
+                                </td>
+                                <th>
+                                    평가유형명
+                                </th>
+                                <td>
+                                    <input class="form-control maxlength-hidden" maxlength="200" type="text" >
+                                </td>
+                                <td>
+                                    <div class="search-color">
+                                        <button class="btn btn-default">
+                                            <i class="fa fa-search fa-lg margin-right-5"></i>검색
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="mb20">
+                            <table class="table table-bordered table-fixed">
+                                <colgroup>
+                                    <col width="50px">
+                                    <col>
+                                    <col width="25%">
+                                    <col width="95px">
+                                    <col width="90px">
+                                    <col width="90px">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>선택</th>
+                                    <th>평가명</th>
+                                    <th>평가유형</th>
+                                    <th>평가대상유형</th>
+                                    <th>평가총괄자</th>
+                                    <th>진행상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="6" class="no-padding-all">
+                                        <div >
+                                            <div style="overflow: hidden; width: auto; height: 150px; overflow-y:scroll;">
+                                            <table class="table table-fixed tbodycenter">
+                                                <colgroup>
+                                                    <col width="50px">
+                                                    <col>
+                                                    <col width="25%">
+                                                    <col width="95px">
+                                                    <col width="85px">
+                                                    <col width="85px">
+                                                </colgroup>
+                                                <tbody>
+                                                <tr class="selectRow" style="cursor: pointer;">
+                                                    <td class="smart-form">
+                                                            <label class="radio">
+                                                                <input type="radio" name="radio-inline">
+                                                                <i></i>
+                                                            </label>
+                                                    </td>
+                                                    <td class="tleft">안성시 정보보안 관리실태 평가 1분기</td>
+                                                    <td>경기도 정보보안 관리실태 평가</td>
+                                                    <td>기업</td>
+                                                    <td>관리자</td>
+                                                    <td>현황진단</td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td class="smart-form">
+                                                        <label class="radio">
+                                                            <input type="radio" name="radio-inline">
+                                                            <i></i>
+                                                        </label>
+                                                    </td>
+                                                    <td class="tleft">파주시 정보보안 관리실태 평가</td>
+                                                    <td>경기도 정보보안 관리실태 평가</td>
+                                                    <td>기업</td>
+                                                    <td>김가람</td>
+                                                    <td>현황진단</td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td class="smart-form">
+                                                        <label class="radio">
+                                                            <input type="radio" name="radio-inline">
+                                                            <i></i>
+                                                        </label>
+                                                    </td>
+                                                    <td class="tleft">파주시 정보보안 관리실태 평가</td>
+                                                    <td>경기도 정보보안 관리실태 평가</td>
+                                                    <td>기업</td>
+                                                    <td>김가람</td>
+                                                    <td>현황진단</td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td class="smart-form">
+                                                        <label class="radio">
+                                                            <input type="radio" name="radio-inline">
+                                                            <i></i>
+                                                        </label>
+                                                    </td>
+                                                    <td class="tleft">파주시 정보보안 관리실태 평가</td>
+                                                    <td>경기도 정보보안 관리실태 평가</td>
+                                                    <td>기업</td>
+                                                    <td>김가람</td>
+                                                    <td>현황진단</td>
+                                                </tr>
+                                                <tr style="cursor: pointer;">
+                                                    <td class="smart-form">
+                                                        <label class="radio">
+                                                            <input type="radio" name="radio-inline">
+                                                            <i></i>
+                                                        </label>
+                                                    </td>
+                                                    <td class="tleft">파주시 정보보안 관리실태 평가</td>
+                                                    <td>경기도 정보보안 관리실태 평가</td>
+                                                    <td>기업</td>
+                                                    <td>김가람</td>
+                                                    <td>현황진단</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <table id="assessmentMonitoringOptionTable" class="table table-bordered mb20 hide">
+                            <colgroup>
+                                <col style="width: 200px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th><label>모니터링유형</label></th>
+                                <th><label>옵션</label></th>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <select class="form-control" name="assessmentMonitoringType" id="assessmentMonitoringType">
+                                        <option value="assessment-status">평가진행 현황</option>
+                                        <option value="assessment-response">현황진단 현황</option>
+                                        <option value="risk-analysis">위험평가 현황</option>
+                                        <option value="improvement-plan">개선계획 수립 현황</option>
+                                        <option value="perform-check">이행점검 현황</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <table id="assessment-status-option" class="table table-bordered mb0 ">
+                                        <colgroup>
+                                            <col width="100px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>평가단계</th>
+                                            <td>
+                                                <select name="" id="assessmentStep" class="form-control" style="width:250px;">
+                                                    <option value="planning">평가계획</option>
+                                                    <option value="status-analysis">현황진단</option>
+                                                    <option value="risk-estimate">위험평가</option>
+                                                    <option value="establish-improvement-plan">개선계획 수립</option>
+                                                    <option value="perform-check">이행점검</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="assessment-response-option" class="table table-bordered mb0 hide">
+                                        <colgroup>
+                                            <col width="120px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>진단/보정 선택</th>
+                                            <td>
+                                                <select name="assessmentPerformType" id="assessmentPerformType" class="form-control" style="width: 300px;">
+                                                    <option value="perform">진단</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>평가대상 선택</th>
+                                            <td>
+                                                <select name="assessmentTarget" id="assessmentTarget" class="form-control" style="width: 300px;">
+                                                    <option value="108">안성시</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>평가영역 선택</th>
+                                            <td>
+                                                <select name="assessmentTerritory" id="assessmentTerritory" class="form-control" style="width: 300px;">
+                                                    <option value="201">정보보안 정책</option>
+                                                    <option value="202">정보자산 보안관리</option>
+                                                    <option value="203">인적 보안</option>
+                                                    <option value="204">사이버위기관리</option>
+                                                    <option value="205">전자정보 보안</option>
+                                                    <option value="206">정보시스템 보안</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>차트 유형 선택</th>
+                                            <td>
+                                                <select name="assessmentTerritoryMonitoringType" id="assessmentTerritoryMonitoringType" class="form-control" style="width: 300px;">
+                                                    <option value="territory">평가영역별 응답 현황</option>
+                                                    <option value="regulationItem">통제항목별 응답 현황</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="risk-analysis-option" class="table table-bordered mb0 hide">
+                                        <colgroup>
+                                            <col width="120px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>위험등급 선택</th>
+                                            <td>
+                                                <select name="riskGrade" id="riskGrade" class="form-control" style="width:300px;">
+                                                    <option value="NONE">전체</option>
+                                                    <option value="first">1순위</option>
+                                                    <option value="second">2순위</option>
+                                                    <option value="third">3순위</option>
+                                                    <option value="fourth">4순위</option>
+                                                    <option value="fifth">5순위</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>차트 유형 선택</th>
+                                            <td class="smart-form">
+                                                <label class="radio">
+                                                    <input type="radio" name="radio-inline">
+                                                    <i></i> 등급비율
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="radio-inline">
+                                                    <i></i> 등급외 침해요인 TOP 10
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="improvement-plan-option" class="table table-bordered assessmentMonitoringOption mb0 hide">
+                                        <colgroup>
+                                            <col width="150px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>개선계획 그룹 선택</th>
+                                            <td>
+                                                <select name="infringementImprovementPlan" id="infringementImprovementPlan" class="form-control" style="width: 300px;">
+                                                    <option value="territory">개선계획 그룹이 존재하지 않습니다.</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="perform-check-option" class="table table-bordered assessmentMonitoringOption mb0 hide">
+                                        <colgroup>
+                                            <col width="150px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>개선계획 그룹 선택</th>
+                                            <td>
+                                                <select name="performCheckImprovementPlan" id="performCheckImprovementPlan" class="form-control" style="width: 300px;">
+                                                    <option value="0">개선계획 그룹이 존재하지 않습니다.
+                                                    </option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>차트 유형 선택</th>
+                                            <td class="smart-form">
+                                                <label class="radio">
+                                                    <input type="radio" name="radio-inline">
+                                                    <i></i> 이행점검 현황
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="radio-inline">
+                                                    <i></i> 이행점검 응답현황
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- 테이블 (end) -->
+                        <button type="button" class="btn btn-default pull-right mb5" id="btnAddMonitoring" onclick="dashboardManage.addMonitoring();">미리보기에 추가</button>
+                        </div>
+                        <div class="tab-pane padding-top-10" id="tab2">
+                        <table class="table table-bordered mb20">
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th><label>모니터링유형</label></th>
+                            <th><label>옵션</label></th>
+                        </tr>
+                        <tr>
+                        <td style="vertical-align: top;">
+                            <select name="systemManageMonitoringType" id="systemManageMonitoringType" class="form-control">
+                                <option value="employee-role">직무기술정보 등록 현황</option>
+                                <option value="business-privacy-officer">사업별 개인정보 담당자 현황</option>
+                                <option value="business-usage-privacy">사업별 취급 개인정보 현황</option>
+                                <option value="privacy-business">개인정보 항목별 취급 사업수</option>
+                            </select>
+                        </td>
+                        <td>
+                        <table id="employee-role-option" class="table table-bordered mb0 hide">
+                            <colgroup>
+                                <col width="100px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>조직정보</th>
+                                <td>
+                                    <button type="button" data-toggle="modal" data-target="#myModal1" class="btn btn-default pull-left mr10">부서선택</button>
+                                    <input id="departmentHierachy" class="pull-left form-control disabled" style="width: 80%;" placeholder="드림인프라 > 기획부 >  디자인팀">
+                                    </input>
+                                    <button type="button" class="btn btn-mini detail-button" style="margin-top: 7px; display: none;">부서상세</button>
+                                    <input type="hidden" id="departmentId" name="departmentId">
+                                    <input type="hidden" id="companyId" name="companyId">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table id="education-schedule-option" class="table table-bordered mb0 hide">
+                            <colgroup>
+                                <col width="100px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>교육기간</th>
+                                <td>
+                                    <select id="educationYearSelect" name="educationYearSelect" class="form-control" style="width:300px;">
+                                        <option value="">전체</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2013">2013년</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table id="business-option" class="table table-bordered mb0 ">
+                            <colgroup>
+                                <col width="100px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>사업기간</th>
+                                <td>
+                                    <select id="businessYearSelect" name="businessYearSelect" class="form-control" style="width: 300px;">
+                                        <option value="">전체</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2013">2013년</option>
+                                        <option value="2012">2012년</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>사업명</th>
+                                <td>
+                                    <select multiple style="width:100%" class="select2" placeholder="복수선택가능합니다.">
+                                        <optgroup label="">
+                                            <option value="경기도청">경기도청</option>
+                                            <option value="IPAMS">IPAMS</option>
+                                            <option value="KT랜탈">KT랜탈</option>
+                                            <option value="NIE" selected="selected">NIE</option>
+                                            <option value="GS앰비즈">GS앰비즈</option>
+                                            <option value="행정안전부">행정안전부</option>
+                                            <option value="대구시청">대구시청</option>
+                                            <option value="서울시청">서울시청</option>
+                                            <option value="세종예술회관">세종예술회관</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table id="privacy-business-option" class="table table-bordered mb0 ">
+                            <colgroup>
+                                <col width="100px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>사업기간</th>
+                                <td>
+                                    <select id="privacyYearSelect" name="privacyYearSelect" class="form-control" style="width: 300px;">
+                                        <option value="">전체</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2013">2013년</option>
+                                        <option value="2012">2012년</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>개인정보 항목</th>
+                                <td style="word-break: break-all; word-wrap: break-word;">
+                                    <select multiple style="width:100%" class="select2" placeholder="복수선택가능합니다.">
+                                        <optgroup label="">
+                                         <option value="1">성명</option>
+                                        <option value="10">운전자번호</option>
+                                        <option value="11">여권번호</option>
+                                        <option value="12">외국인등록번호</option>
+                                        <option value="13">얼굴</option>
+                                        <option value="14">지문</option>
+                                        <option value="15">홍채</option>
+                                        <option value="16">음성</option>
+                                        <option value="17">유전자정보</option>
+                                        <option value="18">키</option>
+                                        <option value="19">몸무게</option>
+                                        <option value="2">주소</option>
+                                        <option value="20">건강상태</option>
+                                        <option value="21">진료기록</option>
+                                        <option value="22">신체장애</option>
+                                        <option value="23">장애등급</option>
+                                        <option value="24">병력</option>
+                                        <option value="25">도서</option>
+                                        <option value="26">비디오</option>
+                                        <option value="27">잡지구독정보</option>
+                                        <option value="28">물품구매내역</option>
+                                        <option value="29">웹사이트검색내역</option>
+                                        <option value="3">본적지</option>
+                                        <option value="30">사상</option>
+                                        <option value="31">신조</option>
+                                        <option value="32">종교</option>
+                                        <option value="33">가치관</option>
+                                        <option value="34">정당</option>
+                                        <option value="35">노조 가입</option>
+                                        <option value="36">소득</option>
+                                        <option value="37">신용카드번호</option>
+                                        <option value="38">통장계좌번호</option>
+                                        <option value="39">동산</option>
+                                        <option value="4">전화번호</option>
+                                        <option value="40">부동산</option>
+                                        <option value="41">저축</option>
+                                        <option value="42">개인신용평가정보</option>
+                                        <option value="43">대출</option>
+                                        <option value="44">담보설정</option>
+                                        <option value="45">신용카드 사용내역</option>
+                                        <option value="46">학력</option>
+                                        <option value="47">성적</option>
+                                        <option value="48">출석상황</option>
+                                        <option value="49">자격증 보유내역</option>
+                                        <option value="5">생년월일</option>
+                                        <option value="50">상벌기록</option>
+                                        <option value="51">생활기록부</option>
+                                        <option value="52">전과</option>
+                                        <option value="53">법죄기록</option>
+                                        <option value="54">재판기록</option>
+                                        <option value="55">과태료 납부내역</option>
+                                        <option value="56">직장</option>
+                                        <option value="57">고융주</option>
+                                        <option value="58">근무처</option>
+                                        <option value="59">근로경력</option>
+                                        <option value="6">출생지</option>
+                                        <option value="60">상벌기록</option>
+                                        <option value="61">직무평가기록</option>
+                                        <option value="62">병역여부</option>
+                                        <option value="63">군번</option>
+                                        <option value="64">계급</option>
+                                        <option value="65">근무부대</option>
+                                        <option value="66">전화통화내역</option>
+                                        <option value="67">IP주소</option>
+                                        <option value="68">웹사이트 접속내역</option>
+                                        <option value="69">이메일</option>
+                                        <option value="7">이메일</option>
+                                        <option value="70">전화메시지</option>
+                                        <option value="71">GPS(개인위치정보)</option>
+                                        <option value="8">가족구성원</option>
+                                        <option value="9">주민등록번호</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                            <button type="button" class="btn btn-default pull-right mb5" id="btnAddMonitoring" onclick="dashboardManage.addMonitoring();">미리보기에 추가</button>
+                        </div>
+                        <div class="tab-pane padding-top-10" id="tab3">
+                            <table class="table table-bordered mb20">
+                                <colgroup>
+                                    <col style="width: 200px;">
+                                    <col>
+                                </colgroup>
+                                <tbody><tr>
+                                    <th><label>모니터링유형</label></th>
+                                    <th><label>옵션</label></th>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <select name="systemMonitoringType" id="systemMonitoringType" class="form-control">
+                                            <option value="login">로그인현황</option>
+                                            <option value="account-permit">계정신청/승인 현황</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <table class="table table-bordered mb0">
+                                            <colgroup>
+                                                <col width="100px">
+                                                <col width="120px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th>년/월 선택</th>
+                                                <td>
+                                                    <div class="smart-form input-group" style="padding-left: 10px;">
+                                                        <label class="radio mr10">
+                                                            <input type="radio" name="radio-inline" checked="checked">
+                                                            <i></i>년
+                                                        </label>
+                                                        <label class="radio">
+                                                            <input type="radio" name="radio-inline">
+                                                            <i></i>월
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="width-40 float-left margin-right-5">
+                                                    <select class="select2">
+                                                        <optgroup label="선택">선택</optgroup>
+                                                            <option value="2012년">2012년</option>
+                                                            <option value="2013년">2013년</option>
+                                                            <option value="2014년">2014년</option>
+                                                        </optgroup>
+                                                    </select>
+                                                    </div>
+                                                    <div class="width-40 float-left ">
+                                                    <select class="select2">
+                                                        <optgroup label="선택">선택</optgroup>
+                                                            <option value="1">1월</option>
+                                                            <option value="2">2월</option>
+                                                            <option value="3">3월</option>
+                                                            <option value="4">4월</option>
+                                                            <option value="5">5월</option>
+                                                            <option value="6">6월</option>
+                                                            <option value="7">7월</option>
+                                                            <option value="8">8월</option>
+                                                            <option value="9">9월</option>
+                                                            <option value="10">10월</option>
+                                                            <option value="11">11월</option>
+                                                            <option value="12">12월</option>
+                                                        </optgroup>
+                                                    </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-default pull-right mb5" id="btnAddMonitoring" onclick="dashboardManage.addMonitoring();">미리보기에 추가</button>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+                </tbody>
+             </table>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6 class="h-title float-left">대시보드 미리보기</h6>
+                            <button type="button" class="btn btn-default pull-right mb5" id="btnAddMonitoring" onclick="dashboardManage.addRow();">
+                                <i class="fa fa-dashboard"></i> 대시보드 줄 추가
+                            </button>
+                        </div>
+                    </div>
+
+                    <article class="well well-light">
+                        <div class="dashboard_added">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="dashboard_head mb20">
+                                    <h4>대시보드 이름</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="well fade in">
+                            <button class="close" data-dismiss="alert">
+                                ×
+                            </button>
+                            <ul class="row">
+                                <li>
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-darken" data-widget-togglebutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-deletebutton="false">
+                                        <!-- widget options:
+                                            usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                                            data-widget-colorbutton="false"
+                                            data-widget-editbutton="false"
+                                            data-widget-togglebutton="false"
+                                            data-widget-deletebutton="false"
+                                            data-widget-fullscreenbutton="false"
+                                            data-widget-custombutton="false"
+                                            data-widget-collapsed="true"
+                                            data-widget-sortable="false"
+                                        -->
+                                        <header>
+                                            <h6 class="ml10"><i class="fa fa-bar-chart-o"></i><strong> 사업별 개인정보 취급자수</strong> </h6>
+                                        </header>
+                                        <!-- widget div-->
+                                        <div class="chartbox_bg">
+                                            <!-- widget content -->
+                                            <div class="widget-body">
+                                                <div class="chart-container">
+                                                    하이챠트
+                                                </div>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                </li>
+                                <li>
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-darken" data-widget-togglebutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-deletebutton="false">
+                                        <!-- widget options:
+                                            usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                                            data-widget-colorbutton="false"
+                                            data-widget-editbutton="false"
+                                            data-widget-togglebutton="false"
+                                            data-widget-deletebutton="false"
+                                            data-widget-fullscreenbutton="false"
+                                            data-widget-custombutton="false"
+                                            data-widget-collapsed="true"
+                                            data-widget-sortable="false"
+                                        -->
+                                        <header>
+                                            <h6 class="ml10"><i class="fa fa-bar-chart-o"></i><strong> 사업별 개인정보 취급자수</strong> </h6>
+                                        </header>
+                                        <!-- widget div-->
+                                        <div class="chartbox_bg">
+                                            <!-- widget content -->
+                                            <div class="widget-body">
+                                                <div class="chart-container">
+                                                    하이챠트
+                                                </div>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                </li>
+                                <li>
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-darken" data-widget-togglebutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-deletebutton="false">
+                                        <!-- widget options:
+                                            usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                                            data-widget-colorbutton="false"
+                                            data-widget-editbutton="false"
+                                            data-widget-togglebutton="false"
+                                            data-widget-deletebutton="false"
+                                            data-widget-fullscreenbutton="false"
+                                            data-widget-custombutton="false"
+                                            data-widget-collapsed="true"
+                                            data-widget-sortable="false"
+                                        -->
+                                        <header>
+                                            <h6 class="ml10"><i class="fa fa-bar-chart-o"></i><strong> 사업별 개인정보 취급자수</strong> </h6>
+                                        </header>
+                                        <!-- widget div-->
+                                        <div class="chartbox_bg">
+                                            <!-- widget content -->
+                                            <div class="widget-body">
+                                                <div class="chart-container">
+                                                    하이챠트
+                                                </div>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="well fade in">
+                            <button class="close" data-dismiss="alert">
+                                ×
+                            </button>
+                            <ul class="row">
+                                <li>
+                                    <section id="widget-grid">
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-darken" data-widget-togglebutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-fullscreenbutton="false">
+                                        <!-- widget options:
+                                            usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                                            data-widget-colorbutton="false"
+                                            data-widget-editbutton="false"
+                                            data-widget-togglebutton="false"
+                                            data-widget-deletebutton="false"
+                                            data-widget-fullscreenbutton="false"
+                                            data-widget-custombutton="false"
+                                            data-widget-collapsed="true"
+                                            data-widget-sortable="false"
+                                        -->
+                                        <header>
+                                            <h6 class="ml10"><i class="fa fa-bar-chart-o"></i><strong> 사업별 개인정보 취급자수</strong> </h6>
+                                        </header>
+                                        <!-- widget div-->
+                                        <div class="chartbox_bg">
+                                            <!-- widget content -->
+                                            <div class="widget-body">
+                                                <div class="chart-container">
+                                                    하이챠트
+                                                </div>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                        </section>
+                                </li>
+                                <li>
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-darken" data-widget-togglebutton="false" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-deletebutton="false">
+                                        <!-- widget options:
+                                            usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                                            data-widget-colorbutton="false"
+                                            data-widget-editbutton="false"
+                                            data-widget-togglebutton="false"
+                                            data-widget-deletebutton="false"
+                                            data-widget-fullscreenbutton="false"
+                                            data-widget-custombutton="false"
+                                            data-widget-collapsed="true"
+                                            data-widget-sortable="false"
+                                        -->
+                                        <header>
+                                            <h6 class="ml10"><i class="fa fa-bar-chart-o"></i><strong> 사업별 개인정보 취급자수</strong> </h6>
+                                        </header>
+                                        <!-- widget div-->
+                                        <div class="chartbox_bg">
+                                            <!-- widget content -->
+                                            <div class="widget-body">
+                                                <div class="chart-container">
+                                                    하이챠트
+                                                </div>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        </div>
+
+
+
+                          <!--  <div class="dashboard_box" >
+
+                                <ul class="">
+                                    <a onclick="closeDashboard(this);" class="close" style="color:black; margin: 5px 5px 0px 0px;">×</a>
+                                </ul>
+                            </div>
+                            -->
+                    </article>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 mt10 align-right">
+                            <button type="button" class="btn btn-lg btn-primary float-left">
+                                <i class="fa fa-times margin-right-5"></i>취소
+                            </button>
+                            <button type="button" class="btn btn-lg btn-success ">
+                                완료
+                                <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                </div>
+			<!-- END MAIN CONTENT -->
+            </div>
+		</div>
+		<!-- END MAIN PANEL -->
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
+                </div>
+            </footer>
+        </nav>
+        <!-- end footer -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+        <!-- Modal -->
+
+        <div class="modal fade " id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 부서선택</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">부서검색</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="input-group search-color width-50 margin-bottom-10">
+                                    <input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-search">
+                                            <i class="fa fa-search">&nbsp;검색</i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="show-grid-div1">
+
+                                    트리
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                            완료
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 승인내역조회</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">승인내역</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed tbodycenter">
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 120px;">
+                                        <col style="width: 60px;">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>이름</th>
+                                        <th>상태</th>
+                                        <th>사유</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <!-- 인명정보 -->
+                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="
+																	<ul class='user_info'>
+																		<p><img src='../../images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                            <!--인명정보 끝-->
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-color-bluegreen">승인완료</span>
+                                        </td>
+                                        <td class="tleft">
+                                            전산자산 식별을 위한 자산명 변경 / Hostname 등록 / IP 등록
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>-->
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- data picker-->
+    <script type="text/javascript">
+        $('#startdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+            }
+        });
+
+        $('#finishdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+            }
+        });
+    </script>
+    <!-- end data picker -->
+
+
+
+
+
+        <script>
+            $(document).ready(function() {
+
+                // DO NOT REMOVE : GLOBAL FUNCTIONS!
+                pageSetUp();
+
+                /*
+                 * PAGE RELATED SCRIPTS
+                 */
+
+                $(".js-status-update a").click(function() {
+                    var selText = $(this).text();
+                    $this = $(this);
+                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                    $this.parents('.dropdown-menu').find('li').removeClass('active');
+                    $this.parent().addClass('active');
+                });
+            });
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+</html>

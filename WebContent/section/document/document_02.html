@@ -438,109 +438,100 @@
                         
                         <div class="col-md-12">
                             
-                            <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
-                                
-                                <!-- widget edit box -->
-                                <div class="jarviswidget-editbox">
-                                    <!-- This area used as dropdown edit box -->
-                                    
-                                </div>
-                                <!-- end widget edit box -->
-
-                                <h6 class="h-title mb0 float-left">승인 대상 목록</h6>
-                                <p class="go_btn align-right mb6">
-                                    <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+                            <h6 class="h-title float-left">승인 대상 목록</h6>
+                                <p class="go_btn align-right position-rel">
+                                    <a href="" class="btn btn-default mr5"><i class="fa fa-plus"></i> 일괄추가</a>
+                                    <label class="select view_option">
+                                        <select class="form-control">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
                                 </p>
-                                <!-- widget div-->
-                                <div class="mt30 table-bordered ">
-                
-                                    <!-- widget content -->
-                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-                            
-                                        <table id="dt_basic_no_search" class="table table-bordered table-condensed table-hover tbodycenter">
-                                            <colgroup>
-											    <col width="30px">
-											    <col width="50px">
-											    <col>
-											    <col>
-											    <col width="100px">
-											    <col width="90px">
-											    <col width="90px">
-											    <col width="100px">
-											</colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th class="smart-form remove-sort">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </th>
-                                                    <th>No.</th>
-                                                    <th>분류</th>
-                                                    <th>문서명</th>
-                                                    <th>최근업데이트</th>
-                                                    <th>진행상황</th>
-                                                    <th class="remove-sort">승인내역</th>
-                                                    <th class="remove-sort">비고</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="smart-form">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </td>
-                                                    <td>1</td>
-                                                    <td class="tleft">
-                                                        경영>경영총괄>일반
-                                                    </td>
-                                                    <td>문서이름</td>
-                                                    <td>2014-02-01</td>
-                                                    <td>
-                                                        <span class="badge badge-color-darkorange">진행중</span>
-                                                    </td>
-                                                    <td>
-                                                        <a data-toggle="modal" href="#myModal1" class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        조회</a>      
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        추가</a>                                                      
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="smart-form">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td class="tleft">
-                                                        경영>경영총괄>일반
-                                                    </td>
-                                                    <td>문서이름</td>
-                                                    <td>2014-02-05</td>
-                                                    <td>
-                                                        <span class="badge bg-color-blueLight">신규</span>
-                                                    </td>
-                                                    <td>
-                                                        <a data-toggle="modal" href="#myModal1" class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        조회</a>      
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        추가</a>                                                      
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                                <table id="dt_basic_no_search" class="table table-bordered table-condensed table-hover tbodycenter">
+                                    <colgroup>
+									    <col width="30px">
+									    <col width="50px">
+									    <col>
+									    <col>
+									    <col width="100px">
+									    <col width="90px">
+									    <col width="90px">
+									    <col width="100px">
+									</colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="smart-form remove-sort">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i> 
+                                                </label>
+                                            </th>
+                                            <th>No.</th>
+                                            <th>분류</th>
+                                            <th>문서명</th>
+                                            <th>최근업데이트</th>
+                                            <th>진행상황</th>
+                                            <th class="remove-sort">승인내역</th>
+                                            <th class="remove-sort">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="smart-form">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i> 
+                                                </label>
+                                            </td>
+                                            <td>1</td>
+                                            <td class="tleft">
+                                                경영>경영총괄>일반
+                                            </td>
+                                            <td>문서이름</td>
+                                            <td>2014-02-01</td>
+                                            <td>
+                                                <span class="badge badge-color-darkorange">진행중</span>
+                                            </td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                조회</a>      
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                추가</a>                                                      
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smart-form">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i> 
+                                                </label>
+                                            </td>
+                                            <td>2</td>
+                                            <td class="tleft">
+                                                경영>경영총괄>일반
+                                            </td>
+                                            <td>문서이름</td>
+                                            <td>2014-02-05</td>
+                                            <td>
+                                                <span class="badge bg-color-blueLight">신규</span>
+                                            </td>
+                                            <td>
+                                                <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                조회</a>      
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                추가</a>                                                      
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             
                             <div class="text-center">
                                 <ul class="pagination pagination-sm">
@@ -579,110 +570,101 @@
                         
                         <div class="col-md-12">
                             
-                            <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
-                                
-                                <!-- widget edit box -->
-                                <div class="jarviswidget-editbox">
-                                    <!-- This area used as dropdown edit box -->
-                                    
-                                </div>
-                                <!-- end widget edit box -->
-
-                                <h6 class="h-title mb0 float-left">승인요청 문서 목록</h6>
-                                <p class="go_btn align-right mb6">
-                                    <a href="" class="btn btn-default mr70"><i class="fa fa-plus fa-minus"></i>&nbsp;일괄제거</a>
-                                </p>
-                                <!-- widget div-->
-                                <div class="mt30 table-bordered ">
-                
-                                    <!-- widget content -->
-                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-                            
-                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-                                            <colgroup>
-											    <col width="30px">
-											    <col width="50px">
-											    <col>
-											    <col>
-											    <col width="100px">
-											    <col width="90px">
-											    <col width="90px">
-											    <col width="100px">
-											</colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th class="smart-form remove-sort">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </th>
-                                                    <th>No.</th>
-                                                    <th>분류</th>
-                                                    <th>문서명</th>
-                                                    <th>최근업데이트</th>
-                                                    <th>진행상황</th>
-                                                    <th class="remove-sort">승인내역</th>
-                                                    <th class="remove-sort">비고</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="smart-form">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </td>
-                                                    <td>1</td>
-                                                    <td class="tleft">
-                                                        경영>경영총괄>일반
-                                                    </td>
-                                                    <td>문서이름</td>
-                                                    <td>2014-02-01</td>
-                                                    <td>
-                                                        <span class="badge badge-color-darkorange">진행중</span>
-                                                    </td>
-                                                    <td>
-                                                        <a data-toggle="modal" href="#myModal1" class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        조회</a>      
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        추가</a>                                                      
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="smart-form">
-                                                        <label class="checkbox">
-                                                            <input type="checkbox">
-                                                            <i></i> 
-                                                        </label>
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td class="tleft">
-                                                        경영>경영총괄>일반
-                                                    </td>
-                                                    <td>문서이름</td>
-                                                    <td>2014-02-05</td>
-                                                    <td>
-                                                        <span class="badge bg-color-blueLight">신규</span>
-                                                    </td>
-                                                    <td>
-                                                        <a data-toggle="modal" href="#myModal1" class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        조회</a>      
-                                                    </td>
-                                                    <td>
-                                                        <a class="btn btn-sm btn-default" href="javascript:void(0);">
-                                                        추가</a>                                                      
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                           	<h6 class="h-title float-left">승인요청 문서 목록</h6>
+                           	<p class="go_btn align-right position-rel">
+                                      <a href="" class="btn btn-default mr5"><i class="fa fa-minus"></i> 일괄제거</a>
+                                      <label class="select view_option">
+                                          <select class="form-control">
+                                              <option>5</option>
+                                              <option>10</option>
+                                              <option>15</option>
+                                              <option>20</option>
+                                          </select>
+                                          <i></i>
+                                      </label>
+                                  </p>
+                            <table class="table table-bordered table-condensed table-hover tbodycenter">
+			                    <colgroup>
+								    <col width="30px">
+								    <col width="50px">
+								    <col>
+								    <col>
+								    <col width="100px">
+								    <col width="90px">
+								    <col width="90px">
+								    <col width="100px">
+								</colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="smart-form remove-sort">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i> 
+                                            </label>
+                                        </th>
+                                        <th>No.</th>
+                                        <th>분류</th>
+                                        <th>문서명</th>
+                                        <th>최근업데이트</th>
+                                        <th>진행상황</th>
+                                        <th class="remove-sort">승인내역</th>
+                                        <th class="remove-sort">비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="smart-form">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i> 
+                                            </label>
+                                        </td>
+                                        <td>1</td>
+                                        <td class="tleft">
+                                            경영>경영총괄>일반
+                                        </td>
+                                        <td>문서이름</td>
+                                        <td>2014-02-01</td>
+                                        <td>
+                                            <span class="badge badge-color-darkorange">진행중</span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                            조회</a>      
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                            추가</a>                                                      
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="smart-form">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i> 
+                                            </label>
+                                        </td>
+                                        <td>2</td>
+                                        <td class="tleft">
+                                            경영>경영총괄>일반
+                                        </td>
+                                        <td>문서이름</td>
+                                        <td>2014-02-05</td>
+                                        <td>
+                                            <span class="badge bg-color-blueLight">신규</span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                            조회</a>      
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                            추가</a>                                                      
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                    
                             <div class="text-center">
                                 <ul class="pagination pagination-sm">
                                     <li>
@@ -715,7 +697,7 @@
                                 </ul>
                             </div>
 	                        <div class="float-right">
-					            <button class="btn btn-default btn-lg">승인요청&nbsp;<i class="fa fa-arrow-right"></i></button>
+					            <button class="btn btn-success btn-lg">승인요청&nbsp;<i class="fa fa-arrow-right"></i></button>
 				        	</div>
                         </div>
                         
@@ -786,74 +768,7 @@
 
 
 
-		<!-- Modal -->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 승인내역</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <table class="table table-bordered table-condensed tbodycenter">
-                                    <colgroup>
-                                        <col style="width: 60px;">
-                                        <col style="width: 120px;">
-                                        <col style="width: 60px;">
-                                        <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th>순번</th>
-                                        <th>이름</th>
-                                        <th>상태</th>
-                                        <th>사유</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <!-- 인명정보 -->
-                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
-                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                               data-content="
-																	<ul class='user_info'>
-																		<p><img src='../../images/member_big.png'></p>
-																    	<li>시스템관리자</li>
-																        <li>(주)드림인프라</li>
-																        <li>SI사업부</li>
-																        <li>부장</li>
-																        <li>systemadministrator@dreaminfra.co.kr </li>
-																	</ul>
-																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
-                                            <!--인명정보 끝-->
-                                        </td>
-                                        <td>
-                                            <span class="badge badge-color-bluegreen">승인완료</span>
-                                        </td>
-                                        <td class="tleft">
-                                            전산자산 식별을 위한 자산명 변경 / Hostname 등록 / IP 등록
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
+
 
 
 
@@ -1008,17 +923,7 @@
 				}
 			});
 		</script>
-		
-		<script type="text/javascript">
-			 $('#dt_basic').dataTable({
-	             "sPaginationType" : "bootstrap_full"
-	         });
-	         $('#dt_basic_no_search').dataTable({
-	             "sPaginationType" : "bootstrap_full"
-	         });
-		</script>
-
-
+	
 
 
 	</body>

@@ -521,7 +521,7 @@
                             <div class="tab-pane padding-top-10" id="iss3">
                                 <h6 class="h-title float-left">설치정보(복수등록가능)</h6>
                                 <div class="text-align-right">
-				                	<button class="btn btn-primary margin-bottom-5">
+				                	<button class="btn btn-primary margin-bottom-5" data-toggle="modal" data-target="#myModal3">
 								    	<i class="fa fa-pencil margin-right-5"></i>신규등록
 								    </button>
 				                </div>
@@ -852,6 +852,335 @@
         </div><!-- /.modal -->
         <!-- end Modal -->
 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 설치정보 등록</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <h6 class="h-title">승인자산 등록</h6>
+
+
+                                    <table class="table table-bordered table-condensed">
+                                        <colgroup>
+                                            <col width="80px;">
+                                            <col>
+                                            <col width="80px;">
+                                            <col>
+                                            <col width="80px;">
+                                            <col>
+                                            <col width="70px;">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th>자산유형</th>
+                                            <td>
+                                        <span>
+                                            <select class="form-control pull-left margin-right-5" style="width:100px;">
+                                                <option>서버</option>
+                                                <option>소프트웨어</option>
+                                                <option>하드웨어</option>
+                                            </select>
+                                        </span>
+                                            </td>
+                                            <th>관리번호</th>
+                                            <td>
+                                                <input class="form-control" placeholder="자산관리번호" type="text">
+                                            </td>
+                                            <th>
+                                                담당자
+                                            </th>
+                                            <td>
+                                                <input class="form-control" placeholder="자산담당자" type="text">
+                                            </td>
+                                            <td class="search text-align-center">
+                                                <div class="search-color">
+                                                    <button class="btn btn-default">
+                                                        <i class="fa fa-search fa-lg margin-right-5"></i>검색
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                    <!-- Widget ID (each widget will need unique ID)-->
+                                    <div class="jarviswidget jarviswidget-color-blueDark top10 mb20" data-widget-editbutton="false">
+
+
+                                        <div class="jarviswidget-editbox">
+                                            <!-- This area used as dropdown edit box -->
+                                        </div>
+
+
+                                        <p class="go_btn align-right mb6">
+                                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
+                                        </p>
+                                        <!-- widget div-->
+                                        <div class="mt30 table-bordered ">
+
+                                            <!-- widget content -->
+                                            <div class="widget-body no-padding border-top-type1">
+                                                <div class="">
+
+                                                </div>
+                                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter remove-sort">
+                                                    <colgroup>
+                                                        <col width="40px">
+                                                        <col width="150px">
+                                                        <col width="150px">
+                                                        <col>
+                                                        <col width="100px">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>자산유형</th>
+                                                        <th>관리번호</th>
+                                                        <th>자산명</th>
+                                                        <th class="remove-sort">비고</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>소프트웨어</td>
+                                                        <td>
+                                                            123456700103
+                                                        </td>
+                                                        <td class="tleft">
+                                                            자산명 자산명
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-default btn-sm">추가</button>
+                                                                <button type="button" class="btn btn-default btn-sm">제거</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>알씨</td>
+                                                        <td>
+                                                            123456789000103
+                                                        </td>
+                                                        <td class="tleft">
+                                                            알약
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-default btn-sm">추가</button>
+                                                                <button type="button" class="btn btn-default btn-sm">제거</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                    <div class="text-center">
+                                        <ul class="pagination pagination-sm pagination-alt">
+                                            <li>
+                                                <a href="javascript:void(0);">처음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">이전</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">다음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">마지막</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="jarviswidget jarviswidget-color-blueDark top10 mb20" data-widget-editbutton="false">
+
+
+                                        <div class="jarviswidget-editbox">
+                                            <!-- This area used as dropdown edit box -->
+                                        </div>
+
+
+                                        <p class="go_btn align-right mb6">
+                                            <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄제거</a>
+                                        </p>
+                                        <!-- widget div-->
+                                        <div class="mt30 table-bordered ">
+
+                                            <!-- widget content -->
+                                            <div class="widget-body no-padding border-top-type1">
+                                                <div class="">
+
+                                                </div>
+                                                <table id="dt_basic_no_search" class="table table-bordered table-condensed table-hover tbodycenter remove-sort">
+                                                    <colgroup>
+                                                        <col width="40px">
+                                                        <col width="150px">
+                                                        <col width="150px">
+                                                        <col>
+                                                        <col width="100px">
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>자산유형</th>
+                                                        <th>관리번호</th>
+                                                        <th>자산명</th>
+                                                        <th class="remove-sort">비고</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>소프트웨어</td>
+                                                        <td>
+                                                            123456700103
+                                                        </td>
+                                                        <td class="tleft">
+                                                            자산명 자산명
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-default btn-sm">추가</button>
+                                                                <button type="button" class="btn btn-default btn-sm">제거</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>알씨</td>
+                                                        <td>
+                                                            123456789000103
+                                                        </td>
+                                                        <td class="tleft">
+                                                            알약
+                                                        </td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button" class="btn btn-default btn-sm">추가</button>
+                                                                <button type="button" class="btn btn-default btn-sm">제거</button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- end widget content -->
+                                        </div>
+                                        <!-- end widget div -->
+                                    </div>
+                                    <!-- end widget -->
+                                    <div class="text-center">
+                                        <ul class="pagination pagination-sm pagination-alt">
+                                            <li>
+                                                <a href="javascript:void(0);">처음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">이전</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">4</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">5</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">다음</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">마지막</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                            완료
+                        </button>
+                    </div><!-- /.modal-content -->
+                </div>
+
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 		<!--================================================== -->
 
 		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
@@ -1006,7 +1335,12 @@
                 $('#dt_basic').dataTable({
                     "sPaginationType" : "bootstrap_full"
                 });
-
+                $('#dt_basic-1').dataTable({
+                    "sPaginationType" : "bootstrap_full"
+                });
+                $('#dt_basic_no_search').dataTable({
+                    "sPaginationType" : "bootstrap_full"
+                });
                 /* END BASIC */
 
                 /* Add the events etc before DataTables hides a column */

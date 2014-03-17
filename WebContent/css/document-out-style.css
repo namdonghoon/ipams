@@ -1,0 +1,60 @@
+
+
+/* START 내보내기  */
+.navbar-inner{ 
+	border: 1px solid #d4d4d4;
+	padding-right: 20px;
+	padding-left: 20px;	
+}
+.navbar-inverse .navbar-inner{
+	
+	background-color: #1b1b1b;
+	border-color: #252525;
+	
+}
+.container-fluid {
+padding-right: 20px;
+padding-left: 20px;
+}
+.container-fluid:after {
+clear: both;
+}
+.container-fluid:before, .container-fluid:after{
+display: table;
+line-height: 0;
+content: "";
+}
+.navbar .nav {
+position: relative;
+left: 0;
+display: block;
+float: left;
+margin: 0 10px 0 0;
+}
+.pull-right {
+float: right;
+}
+
+.btn-group {
+position: relative;
+display: inline-block;
+font-size: 0;
+white-space: nowrap;
+vertical-align: middle;
+}
+
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+color: #fff;
+background-color: #111;
+}
+.row-fluid {
+width: 100%;
+}
+.affix {
+position: fixed;
+}
+.navbar .brand {
+font-size: 20px;
+font-weight: 200;
+/* END 내보내기  */
+

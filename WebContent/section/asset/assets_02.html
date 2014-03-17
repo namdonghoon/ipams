@@ -311,38 +311,6 @@
                     </div>
                 </div>
                 <div class="well well-light">
-                    <div class="row">
-                    	<div class="col-md-4">
-                        	<div class="box-group pie-box">
-                        		<span class="easy-pie-title">진행중인 승인 수</span>
-                        		<span class="box-container">
-                        			<span class="easy-pie-chart color-orange easyPieChart" data-percent="66" data-pie-size="80">
-									<span class="percent-sign font-bold color-orange"></span>
-									</span>
-								</span>
-							</div>
-						</div>
-						<div class="col-md-4">
-                        	<div class="box-group pie-box">
-                        		<span class="easy-pie-title">신규(미승인)수</span>
-                        		<span class="box-container">
-                        			<span class="easy-pie-chart color-gray easyPieChart" data-percent="35" data-pie-size="80">
-									<span class="percent-sign font-bold color-orange"></span>
-									</span>
-								</span>
-							</div>
-						</div>
-						<div class="col-md-4">
-                        	<div class="box-group pie-box">
-                        		<span class="easy-pie-title">전체(신규+승인진행중)</span>
-                        		<span class="box-container">
-                        			<span class="easy-pie-chart color-blue easyPieChart" data-percent="84" data-pie-size="80">
-									<span class="percent-sign font-bold color-orange"></span>
-									</span>
-								</span>
-							</div>
-						</div>
-                   </div>
                    <div class="row">
 						<div class="col-md-12">
 							<table class="table table-bordered table-condensed">
@@ -452,366 +420,381 @@
                                     </td>
                                 </tr>
                             </table>
-                            
-                            
-                            
-                            <div class="jarviswidget jarviswidget-color-blueDark top10 mb20"  data-widget-editbutton="false">
-                                
-                                <!-- widget edit box -->
-                                <div class="jarviswidget-editbox">
-                                    <!-- This area used as dropdown edit box -->
-                                    
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-group pie-box">
+                                    <span class="easy-pie-title assets-chart-sort"><strong>진행중인 승인 수</strong></span>
+	                        		<span class="box-container">
+	                        			<span class="easy-pie-chart color-orange easyPieChart" data-percent="66" data-pie-size="60">
+										<span class="percent-sign font-bold color-orange"></span>
+										</span>
+									</span>
                                 </div>
-                                <!-- end widget edit box -->
-
-                                <h6 class="h-title">승인 대상 목록</h6>
-                                <p class="go_btn align-right mb6">
-                                    <a href="" class="btn btn-default mr70"><i class="fa fa-plus m"></i>&nbsp;일괄추가</a>
-                                </p>
-                                <!-- widget div-->
-                                <div class="mt30 table-bordered ">
-                
-                                    <!-- widget content -->
-                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-                            
-                                        <table id="datatable_tabletools-1" class="table table-bordered table-condensed table-hover tbodycenter">
-			                                <colgroup>
-			                                    <col width="30px">
-			                                    <col width="50px">
-			                                    <col>
-			                                    <col width="100px">
-			                                    <col width="80px">
-			                                    <col width="80px">
-			                                    <col width="85px">
-			                                    <col width="80px">
-			                                    <col width="80px">
-			                                </colgroup>
-			                                <thead>
-			                                    <tr>
-			                                        <th class="smart-form remove-sort">
-			                                        	<label class="checkbox">
-															<input type="checkbox">
-															<i></i> 
-														</label>
-			                                        </th>
-			                                        <th>No.</th>
-			                                        <th>자산명</th>
-			                                        <th>도입일</th>
-			                                        <th>도입형태</th>
-			                                        <th>도입구분</th>
-			                                        <th>진행상황</th>
-			                                        <th class="remove-sort">담당정보</th>
-			                                        <th class="remove-sort">비고</th>
-			                                    </tr>
-			                                </thead>
-			                                <tbody>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-															<input type="checkbox">
-															<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>1</td>
-			                                        <td class="tleft">
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                            data-content="하드웨어(서버) GG-SVR-001"
-			                                            data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                        </td>
-			                                        <td>2014-02-01</td>
-			                                        <td>도-44</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <span class="badge bg-color-blueLight">신규</span>
-			                                        </td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>      
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            추가</a>                                                      
-			                                        </td>
-			                                    </tr>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-																	<input type="checkbox">
-																	<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>2</td>
-			                                        <td class="tleft">
-			                                            <!--자산정보-->
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                                    data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                                    data-content="하드웨어(서버) GG-SVR-001"
-			                                                    data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                            <!--자산정보 끝-->
-			                                        </td>
-			                                        <td>2014-02-03</td>
-			                                        <td>도입-11</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <span class="badge badge-color-darkorange">진행중</span>
-			                                        </td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>  
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            추가</a>                                                      
-			                                        </td>
-			                                    </tr>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-																	<input type="checkbox">
-																	<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>3</td>
-			                                        <td class="tleft">
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                            data-content="하드웨어(서버) GG-SVR-001"
-			                                            data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                        </td>
-			                                        <td>2014-01-02</td>
-			                                        <td>4</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <span class="badge badge-color-darkorange">진행중</span>
-			                                        </td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>  
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            추가</a>                                                      
-			                                        </td>
-			                                    </tr>
-			                                </tbody>
-			                            </table>
-		                            </div>
-	                            </div>
                             </div>
-                            
-                            <div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
-                            </div>
-		                            
-			                       
-			                       
-			                       
-			                   <div class="jarviswidget jarviswidget-color-blueDark top10 mb20" data-widget-editbutton="false">
-                                
-                                <!-- widget edit box -->
-                                <div class="jarviswidget-editbox">
-                                    <!-- This area used as dropdown edit box -->
+                            <div class="col-md-4">
+                                <div class="box-group pie-box">
+                                    <span class="easy-pie-title assets-chart-sort"><strong>신규(미승인) 수</strong></span>
+	                        		<span class="box-container">
+	                        			<span class="easy-pie-chart color-gray easyPieChart" data-percent="35" data-pie-size="60">
+										<span class="percent-sign font-bold color-orange"></span>
+										</span>
+									</span>
                                 </div>
-                                <!-- end widget edit box -->
-
-                                <h6 class="h-title">승인요청 자산 목록</h6>
-                                <p class="go_btn align-right mb6 mb0">
-                                    <a href="" class="btn btn-default mr70"><i class="fa fa-minus"></i>&nbsp;일괄제거</a>
-                                </p>
-                                <!-- widget div-->
-                                <div class="mt30 table-bordered ">
-                
-                                    <!-- widget content -->
-                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-                            
-                                        <table id="datatable_tabletools-2" class="table table-bordered table-condensed table-hover tbodycenter">
-			                                <colgroup>
-											    <col width="30px">
-											    <col width="50px">
-											    <col>
-											    <col width="100px">
-											    <col width="90px">
-											    <col width="90px">
-											    <col width="100px">
-											    <col width="80px">
-											</colgroup>
-			                                <thead>
-			                                    <tr>
-		    										<th class="smart-form remove-sort">
-		    											<label class="checkbox">
-															<input type="checkbox">
-															<i></i> 
-														</label>
-		    										</th>
-												    <th>No.</th>
-												    <th>자산명</th>
-												    <th>도입일</th>
-												    <th>도입형태</th>
-												    <th>도입구분</th>
-												    <th class="remove-sort">담당자정보</th>
-												    <th class="remove-sort">비고</th>
-												</tr>
-			                                </thead>
-			                                <tbody>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-															<input type="checkbox">
-															<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>1</td>
-			                                        <td class="tleft">
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                            data-content="하드웨어(서버) GG-SVR-001"
-			                                            data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                        </td>
-			                                        <td>2014-02-01</td>
-			                                        <td>도-44</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>      
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            제거</a>
-			                                        </td>
-			                                    </tr>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-																	<input type="checkbox">
-																	<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>2</td>
-			                                        <td class="tleft">
-			                                            <!--자산정보-->
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                                    data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                                    data-content="하드웨어(서버) GG-SVR-001"
-			                                                    data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                            <!--자산정보 끝-->
-			                                        </td>
-			                                        <td>2014-02-03</td>
-			                                        <td>도입-11</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>  
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            제거</a>
-			                                        </td>
-			                                    </tr>
-			                                    <tr>
-			                                        <td class="smart-form">
-			                                            <label class="checkbox">
-																	<input type="checkbox">
-																	<i></i> 
-														</label>
-			                                        </td>
-			                                        <td>3</td>
-			                                        <td class="tleft">
-			                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
-			                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-			                                            data-content="하드웨어(서버) GG-SVR-001"
-			                                            data-html="true">
-			                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
-			                                            </a>
-			                                        </td>
-			                                        <td>2014-01-02</td>
-			                                        <td>4</td>
-			                                        <td>5</td>
-			                                        <td>
-			                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            조회</a>  
-			                                        </td>
-			                                        <td>
-			                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
-			                                            제거</a>
-			                                        </td>
-			                                    </tr>
-			                                </tbody>
-			                            </table>
-		                            </div>
-	                            </div>
                             </div>
-                            
-                            <div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
-                            </div>     		
-			                    
+                            <div class="col-md-4">
+                                <div class="box-group pie-box">
+                                    <span class="easy-pie-title assets-chart-sort"><strong>전체(신규+승인진행중)</strong></span>
+	                        		<span class="box-container">
+	                        			<span class="easy-pie-chart color-blue easyPieChart" data-percent="84" data-pie-size="60">
+										<span class="percent-sign font-bold color-orange"></span>
+										</span>
+									</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 mt20">
+
+                                <h6 class="h-title float-left">승인 대상 목록</h6>
+                                <p class="go_btn align-right position-rel">
+                                    <a href="" class="btn btn-default "><i class="fa fa-plus"></i> 일괄추가</a>
+                                    <label class="select view_option">
+                                        <select class="form-control">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                        </select>
+                                        <i></i>
+                                    </label>
+                                </p>
+                                <table class="table table-bordered table-condensed table-hover tbodycenter">
+                                    <colgroup>
+                                        <col width="30px">
+                                        <col width="50px">
+                                        <col>
+                                        <col width="100px">
+                                        <col width="80px">
+                                        <col width="80px">
+                                        <col width="85px">
+                                        <col width="80px">
+                                        <col width="80px">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th class="smart-form remove-sort">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i>
+                                            </label>
+                                        </th>
+                                        <th>No.</th>
+                                        <th>자산명</th>
+                                        <th>도입일</th>
+                                        <th>도입형태</th>
+                                        <th>도입구분</th>
+                                        <th>진행상황</th>
+                                        <th class="remove-sort">담당정보</th>
+                                        <th class="remove-sort">비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="smart-form">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i>
+                                            </label>
+                                        </td>
+                                        <td>1</td>
+                                        <td class="tleft">
+                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="하드웨어(서버) GG-SVR-001"
+                                               data-html="true">
+                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                            </a>
+                                        </td>
+                                        <td>2014-02-01</td>
+                                        <td>도-44</td>
+                                        <td>5</td>
+                                        <td>
+                                            <span class="badge bg-color-blueLight">신규</span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                조회</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                추가</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="smart-form">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i>
+                                            </label>
+                                        </td>
+                                        <td>2</td>
+                                        <td class="tleft">
+                                            <!--자산정보-->
+                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="하드웨어(서버) GG-SVR-001"
+                                               data-html="true">
+                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                            </a>
+                                            <!--자산정보 끝-->
+                                        </td>
+                                        <td>2014-02-03</td>
+                                        <td>도입-11</td>
+                                        <td>5</td>
+                                        <td>
+                                            <span class="badge badge-color-darkorange">진행중</span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                조회</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                추가</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="smart-form">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                <i></i>
+                                            </label>
+                                        </td>
+                                        <td>3</td>
+                                        <td class="tleft">
+                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="하드웨어(서버) GG-SVR-001"
+                                               data-html="true">
+                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                            </a>
+                                        </td>
+                                        <td>2014-01-02</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>
+                                            <span class="badge badge-color-darkorange">진행중</span>
+                                        </td>
+                                        <td>
+                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                조회</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                추가</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="text-center">
+                                    <ul class="pagination pagination-sm">
+                                        <li>
+                                            <a href="javascript:void(0);">처음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">이전</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">다음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">마지막</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                                <div class="col-md-12 mt20">
+                                    <h6 class="h-title float-left">승인요청 자산 목록</h6>
+                                       <p class="go_btn align-right position-rel">
+                                           <a href="" class="btn btn-default"><i class="fa fa-minus"></i> 일괄제거</a>
+                                           <label class="select view_option">
+                                               <select class="form-control">
+                                                   <option>5</option>
+                                                   <option>10</option>
+                                                   <option>15</option>
+                                                   <option>20</option>
+                                               </select>
+                                               <i></i>
+                                           </label>
+                                       </p>
+
+                                            <table class="table table-bordered table-condensed table-hover tbodycenter">
+                                                <colgroup>
+                                                    <col width="30px">
+                                                    <col width="50px">
+                                                    <col>
+                                                    <col width="100px">
+                                                    <col width="90px">
+                                                    <col width="90px">
+                                                    <col width="100px">
+                                                    <col width="80px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="smart-form remove-sort">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </th>
+                                                        <th>No.</th>
+                                                        <th>자산명</th>
+                                                        <th>도입일</th>
+                                                        <th>도입형태</th>
+                                                        <th>도입구분</th>
+                                                        <th class="remove-sort">담당자정보</th>
+                                                        <th class="remove-sort">비고</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox">
+                                                                <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td class="tleft">
+                                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                            data-content="하드웨어(서버) GG-SVR-001"
+                                                            data-html="true">
+                                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                            </a>
+                                                        </td>
+                                                        <td>2014-02-01</td>
+                                                        <td>도-44</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            조회</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            제거</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                        <input type="checkbox">
+                                                                        <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td class="tleft">
+                                                            <!--자산정보-->
+                                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                                    data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                                    data-content="하드웨어(서버) GG-SVR-001"
+                                                                    data-html="true">
+                                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                            </a>
+                                                            <!--자산정보 끝-->
+                                                        </td>
+                                                        <td>2014-02-03</td>
+                                                        <td>도입-11</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            조회</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            제거</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="smart-form">
+                                                            <label class="checkbox">
+                                                                        <input type="checkbox">
+                                                                        <i></i>
+                                                            </label>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td class="tleft">
+                                                            <a href="#" class="user_info_box" rel="popover-hover" data-placement="bottom"
+                                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                                            data-content="하드웨어(서버) GG-SVR-001"
+                                                            data-html="true">
+                                                                <i class="fa fa-desktop margin-right-5 "></i><strong>경기도청 거버넌스 서버</strong>
+                                                            </a>
+                                                        </td>
+                                                        <td>2014-01-02</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <a data-toggle="modal" href="#myModal" class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            조회</a>
+                                                        </td>
+                                                        <td>
+                                                            <a class="btn btn-sm btn-default" href="javascript:void(0);">
+                                                            제거</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                <div class="text-center">
+                                    <ul class="pagination pagination-sm">
+                                        <li>
+                                            <a href="javascript:void(0);">처음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">이전</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">다음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">마지막</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- END ROW  -->
@@ -1150,6 +1133,9 @@
              * BASIC
              */
             $('#dt_basic').dataTable({
+                "sPaginationType" : "bootstrap_full"
+            });
+            $('#dt_basic_no_search').dataTable({
                 "sPaginationType" : "bootstrap_full"
             });
     

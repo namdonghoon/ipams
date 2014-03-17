@@ -26,6 +26,7 @@
 
         <!-- 2014_0218_스타일 추가-->
         <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
 		<!-- SmartAdmin RTL Support is under construction
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
 
@@ -284,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>전산자산</li><li>자산등록관리 </li><li>신규등록</li>
+					<li>IPAMS HOME</li><li>모니터링</li><li>대시보드 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -302,191 +303,138 @@
 			</div>
 			<!-- END RIBBON -->
 
-
-
-
-
-
-
-
-    			<!-- MAIN CONTENT -->
-                <div id="content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 전산자산 <span> > 신규등록</span></h1>
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 대시보드</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-condensed">
+                            <colgroup>
+                                <col width="90px;">
+                                <col>
+                                <col width="90px;">
+                                <col>
+                                <col width="70px;">
+                            </colgroup>
+                            <tr>
+                                <th>대시보드명</th>
+                                <td>
+                                    <input class="form-control" placeholder="대시보드명으로 검색하세요." type="text">
+                                </td>
+                                <th>작성자</th>
+                                <td>
+                                    <input class="form-control" placeholder="작성자명으로 검색하세요." type="text">
+                                </td>
+                                <td class="search-color">
+                                        <button class="btn btn-default">
+                                            <i class="fa fa-search fa-lg margin-right-5"></i>검색
+                                        </button>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="text-align-right margin-bottom-5">
+                            <a class="btn btn-primary " href="javascript:void(0);">
+                                <i class="fa fa-pencil margin-right-5"></i>신규등록
+                            </a>
                         </div>
                     </div>
-                    <div class="well well-light">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12">
-                                <!-- widget content -->
-                                <div class="fuelux">
-                                    <div class="wizard mb20">
-                                        <ul class="steps">
-                                            <li data-target="#step1">
-                                                <span class="badge badge-info">1</span>공통 사항<span class="chevron"></span>
-                                            </li>
-                                            <li data-target="#step2">
-                                                <span class="badge">2</span>자산유형별 정보<span class="chevron"></span>
-                                            </li>
-                                            <li data-target="#step3" class="active">
-                                                <span class="badge">3</span>자산가치정보<span class="chevron"></span>	
-                                            </li> 
-                                            
-                                        </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-condensed tbodycenter table-hover">
+                            <colgroup>
+                                <col width="30px">
+                                <col>
+                                <col width="130px">
+                                <col width="120px">
+                                <col width="100px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>대시보드명</th>
+                                <th>작성자</th>
+                                <th>조회</th>
+                                <th>비고</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="tleft">
+                                    평가 현황 대시보드
+                                </td>
+                                <td>
+                                    <!-- 인명정보 -->
+                                    <button class="user_info_box" rel="popover-hover" data-placement="left"
+                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                            data-content="
+				            <ul class='user_info'>
+				                <p><img src='../../images/member_big.png'></p>
+				                <li>시스템관리자</li>
+				                <li>(주)드림인프라</li>
+				                <li>SI사업부</li>
+				                <li>부장</li>
+				                <li>systemadministrator@dreaminfra.co.kr </li>
+				            </ul>
+				        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+                                    </button>
+                                    <!--인명정보 끝-->
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-default btn-sm">대시보드 열기</button>
+                                </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default btn-sm">수정</button>
+                                        <button type="button" class="btn btn-default btn-sm">삭제</button>
                                     </div>
-                                </div>
-                            </div>
-    					</div>
-
-
-
-
-
-                        <div class="row">
-                            <h6 class="h-title ml10">자산가치정보</h6>
-                            <div class="col-md-12 col-md-7">
-
-                                <div class="span7">
-                                    <table class="table table-bordered">
-                                        <colgroup>
-                                            <col style="width: 120px;">
-                                            <col style="width: 200px;">
-                                            <col style="width: 200px;">
-                                            <col style="width: 200px;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>기밀성</th>
-                                                <th>가용성</th>
-                                                <th>무결성</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="HIGH">
-                                                <th>높음</th>
-                                                <td class="confidentiality very_high active">
-                                                    매우 제한적인 권한 설정에 따라 이용이 통제되는 민감한 대상
-                                                </td>
-                                                <td class="solubility very_high">
-                                                    매일 95% 이상의 시간 동안 정보, 시스템, 네트워크에 대한 인가된 접근이 가능해야 하는 대상                                        
-                                                </td>
-                                                <td class="atomicity very_high">
-                                                    정보를 불법적인 방법으로 변경하거나 손상시키는 경우, 업무 기능 전체의 마비에까지 이를 수 있는 대상                    
-                                                </td>
-                                            </tr>
-                                            <tr class="MIDDLE">
-                                                <th>보통</th>
-                                                <td class="confidentiality normal">결재선상에 있는 임직원에게만 허용되는 대상</td>
-                                                <td class="solubility normal active">모든 근무일에 걸쳐 표준 근무 시간 동안 정보, 시스템, 네트워크에 대한 정상적인 접근이 가능해야 하는 대상</td>
-                                                <td class="atomicity normal">정보를 불법적인 방법으로 변경하거나 손상시키는 경우 업무에 큰 영향을 주는 대상</td>
-                                            </tr>
-                                            <tr class="LOWER">
-                                                <th>낮음</th>
-                                                <td class="confidentiality very_low" >외부에 공개되더라도 큰 영향을 주지 않는 대상</td>
-                                                <td class="solubility very_low" >모든 근무일에 걸쳐 표준 근무 시간의 25% 이상 시간 동안 정보, 시스템, 네트워크에 대한 정상적인 접근이 가능해야 하는 대상</td>
-                                                <td class="atomicity very_low active">정보를 불법적인 방법으로 변경하거나 손상시키더라도 업무에 큰 영향을 주지 않는 대상</td>
-                                            </tr>                
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-md-5">
-                                
-                                <div class="span5">
-                                    <table class="table table-bordered">
-                                        <colgroup>
-                                            <col width="82px;">
-                                            <col width="82px;">
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="HIGH">
-                                            <th rowspan="2">기밀성</th>
-                                            <th>등급</th>
-                                            <td colspan="5">
-                                                <div class="btn-group confidentialityType" data-type="confidentiality" data-toggle="buttons-radio">
-                                <button type="button" class="btn btn-default very_high active" value="HIGH">높음</button>
-                                <button type="button" class="btn btn-default normal" value="MIDDLE">보통</button>
-                                <button type="button" class="btn btn-default very_low" value="LOWER">낮음</button>
-                            </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>사유</th>
-                                            <td class="smart-form">
-                                                <label class="textarea textarea-resizable"> 
-                                                    <textarea placeholder="사유를 입력해주세요." rows="3" class="custom-scroll"></textarea> 
-                                                </label>
-                                            </td>
-                                        </tr>
-                                        <tr class="MIDDLE">
-                                            <th rowspan="2">가용성</th>
-                                            <th>등급</th>
-                                            <td colspan="5">
-                                               <div class="btn-group solubilityType" data-type="solubility" data-toggle="buttons-radio">
-                                <button type="button" class="btn btn-default very_high" value="HIGH">높음</button>
-                                <button type="button" class="btn btn-default normal active" value="MIDDLE">보통</button>
-                                <button type="button" class="btn btn-default very_low" value="LOWER">낮음</button>
-                            </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>사유</th>
-                                            <td class="smart-form">
-                                                <label class="textarea textarea-resizable"> 
-                                                    <textarea placeholder="사유를 입력해주세요." rows="3" class="custom-scroll"></textarea> 
-                                                </label>
-                                            </td>
-                                        </tr>
-                                        <tr class="LOWER">
-                                            <th rowspan="2">무결성</th>
-                                            <th>등급</th>
-                                            <td colspan="5">
-                                                <div class="btn-group atomicityType" data-type="atomicity" data-toggle="buttons-radio">
-                                <button type="button" class="btn btn-default very_high" value="HIGH">높음</button>
-                                <button type="button" class="btn btn-default normal" value="MIDDLE">보통</button>
-                                <button type="button" class="btn btn-default very_low active" value="LOWER">낮음</button>
-                            </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>사유</th>
-                                            <td class="smart-form">
-                                                <label class="textarea textarea-resizable"> 
-                                                    <textarea placeholder="사유를 입력해주세요." rows="3" class="custom-scroll"></textarea> 
-                                                </label>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>    
-                            </div>
-                            </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <ul class="pagination pagination-sm">
+                                <li>
+                                    <a href="javascript:void(0);">처음</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">이전</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">2</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">4</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">5</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">다음</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">끝</a>
+                                </li>
+                            </ul>
                         </div>
-
-
-
-
-
-                    <div class="align-right mt20">
-                        <button type="button" class="btn btn-lg btn-primary float-left">
-                            <i class="fa fa-times margin-right-5"></i>취소
-                        </button>
-                        <button type="button" class="btn btn-lg btn-success ">
-                            다음
-                            <i class="fa fa-arrow-right"></i>
-                        </button>
                     </div>
-
-    			</div>
-                
+                </div>
+                </div>
+			<!-- END MAIN CONTENT -->
             </div>
-		     <!-- END MAIN CONTENT -->
-        </div>
+		</div>
 		<!-- END MAIN PANEL -->
         <!-- footer -->
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
@@ -538,7 +486,6 @@
 			</ul>
 		</div>
 		<!-- END SHORTCUT AREA -->
-        
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
@@ -547,51 +494,129 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 호스트/IP 정보 등록</h4>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-power-off"></i> 자산 담당자 정보 조회</h4>
                     </div>
                     <div class="modal-body">
-                        <h6 class="h-title">호스트/IP정보 입력</h6>
+                        <h6 class="h-title">자산담당자 목록</h6>
                         <div class="row">
                             <div class="col-md-12">
-
-                                <table class="table table-bordered">
+                                <table class="table table-bordered table-condensed tbodycenter">
                                     <colgroup>
-                                        <col width="100px">
+                                        <col style="width: 120px;">
                                         <col>
+                                        <col style="width: 150px;">
                                     </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>기업/기관명</th>
+                                        <th>이름</th>
+                                        <th>구분</th>
+                                    </tr>
+                                    </thead>
                                     <tbody>
                                     <tr>
-                                        <th>호스트</th>
-                                        <td>
-                                            <input class="form-control" placeholder="호스트명을 입력해주세요." type="text">
+                                        <td>(주)kt rental</td>
+                                        <td class="tleft">
+                                            <!-- 인명정보 -->
+                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="
+																	<ul class='user_info'>
+																		<p><img src='../../images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                            <!--인명정보 끝-->
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <th>IP</th>
-                                        <td>
-                                            <input class="form-control" placeholder="IP명을 입력해주세요." type="text">
-                                        </td>
+                                        <td>자산관리자</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer align-right">
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
-                        </button>
-                         <button type="button" class="btn btn-default" data-dismiss="modal">
-                            완료
                         </button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
         <!-- end modal -->
-
-
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 승인내역조회</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title">승인내역</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-bordered table-condensed tbodycenter">
+                                    <colgroup>
+                                        <col style="width: 60px;">
+                                        <col style="width: 120px;">
+                                        <col style="width: 60px;">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>이름</th>
+                                        <th>상태</th>
+                                        <th>사유</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <!-- 인명정보 -->
+                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="
+																	<ul class='user_info'>
+																		<p><img src='../../images/member_big.png'></p>
+																    	<li>시스템관리자</li>
+																        <li>(주)드림인프라</li>
+																        <li>SI사업부</li>
+																        <li>부장</li>
+																        <li>systemadministrator@dreaminfra.co.kr </li>
+																	</ul>
+																" data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                            <!--인명정보 끝-->
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-color-bluegreen">승인완료</span>
+                                        </td>
+                                        <td class="tleft">
+                                            전산자산 식별을 위한 자산명 변경 / Hostname 등록 / IP 등록
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 		<!--================================================== -->
 
 		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
@@ -661,8 +686,6 @@
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
 
-        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
 		<!-- PAGE RELATED PLUGIN(S) -->
 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
@@ -675,7 +698,7 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
         <!-- data picker-->
-        <script type="text/javascript">
+    <script type="text/javascript">
         $('#startdate').datepicker({
             dateFormat : 'yy-mm-dd',
             prevText : '<i class="fa fa-chevron-left"></i>',
@@ -724,155 +747,12 @@
 
 
 
-        <!--  버튼 색상변경 동작문제로 새로 추가 - 남동훈 140304-->
-        <script type="text/javascript">
-            $(function(){
-                $(".confidentialityType .very_high").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".confidentialityType .normal").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".confidentialityType .very_low").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
 
 
-                $(".solubilityType .very_high").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".solubilityType .normal").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".solubilityType .very_low").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
 
 
-                $(".atomicityType .very_high").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".atomicityType .normal").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
-                $(".atomicityType .very_low").click(function(){
-                    $(this).siblings().removeClass('active');
-                });
 
-            });
-    </script>
-    <!-- END  -->
 
-    <script type="text/javascript">
-    $(function(){
-        errorCheck.load();
-        worthForm.load();
-        lengthLimit('#worthForm');
-    });
-
-        var worthForm = ( function () {
-            var $confidentialityType = $(".confidentialityType");
-            var $solubilityType = $(".solubilityType");
-            var $atomicityType = $(".atomicityType");
-            
-            return {
-                load : function () {
-                    var me = this;
-                    
-                    me.__init();
-                    me.settingWorthType();
-                },
-                __init : function () {
-                    $(".btn-group").on("click", ".btn", function () {
-                        worthForm.settingWorthTable($(this));
-                    });
-                    
-                    // $("#btnSubmit").bind("click", function(){
-                        
-                    //     $("#confidentialityType").val($(".confidentialityType").find(".active").attr("value"));
-                    //     $("#solubilityType").val($(".solubilityType").find(".active").attr("value"));
-                    //     $("#atomicityType").val($(".atomicityType").find(".active").attr("value"));
-
-                    //     $("#worthForm").submit();
-                    //     $(this).attr('disabled', 'disabled');
-                    // });
-                    
-                },
-                settingWorthType : function () {
-                    var me = this;
-                    
-                    // $confidentialityType.find("button").removeClass("active");
-                    // $solubilityType.find("button").removeClass("active");
-                    // $atomicityType.find("button").removeClass("active");
-                    
-                    // $confidentialityType.find("button").each(function () {
-                    //     if( $(this).attr('value') === $("#confidentialityType").val() ) {
-                    //         $(this).addClass('active');
-                    //         me.settingWorthTable( $(this) );
-                    //         return false;
-                    //     }
-                    // });
-                    
-                    // $solubilityType.find("button").each(function () {
-                    //     if( $(this).attr('value') === $("#solubilityType").val() ) {
-                    //         $(this).addClass('active');
-                    //         me.settingWorthTable( $(this) );
-                    //         return false;
-                    //     }
-                    // });
-                    
-                    // $atomicityType.find("button").each(function () {
-                    //     if( $(this).attr('value') === $("#atomicityType").val() ) {
-                    //         $(this).addClass('active');
-                    //         me.settingWorthTable( $(this) );
-                    //         return false;
-                    //     }
-                    // });
-                },
-                settingWorthTable : function ( item ) {
-                    var $me = item, $parent = item.parent(); 
-                    $("." + $parent.data('type') ).removeClass('active')
-                                                  .parent()
-                                                  .filter("." + $me.attr('value') )
-                                                  .find("." + $parent.data('type') )
-                                                  .addClass('active');
-                }
-            };
-            
-        })();
-        
-        var errorCheck = (function () {
-            
-            return {
-                load : function () {
-                    
-                            $('input, select, textarea').focus(function(){
-                                var parent = $('#'+this.id).parent();
-                                
-                                parent.removeClass('control-group');
-                                parent.removeClass('error');
-                                parent.find('.help-inline').remove();
-                            });
-                            
-                            $('#worthForm .help-inline').each(function() {
-                                if($(this).html() !== '') {
-                                    $(this).parent().addClass('control-group');
-                                    $(this).parent().addClass('error');
-                                }
-                            });
-                },
-                add : function ( item, message ) {
-                    $(item).addClass('control-group').addClass('error');
-                    
-                    if ( $(item).find('.help-inline').length > 0 ) {
-                       $(item).find('.help-inline').text(message); 
-                    } else {
-                        $(item).append('<span class="help-inline">'+message+'</span>');
-                    }
-                }
-            };
-        })();
-    </script>
 
 
 
