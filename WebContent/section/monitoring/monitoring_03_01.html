@@ -339,11 +339,79 @@
                         </div>
                         
                         <div class="col-md-12">
-                         	그래프
+                         	<div class="show-grid-div2">
+                         		그래프
+                         	</div>
                         </div>
                         <div class="col-md-12">
-                        <h6 class="h-title">일반버튼</h6>
-                         	테이블
+                        	<h6 class="h-title">직무기술정보 목록</h6>
+                         	<table class="table table-bordered tbodycenter">
+					            <colgroup>
+					                <col width="40px;">
+								    <col>
+								    <col width="150px;">
+								    <col width="100px;">
+								    <col width="100px;">
+								    <col width="80px;">
+								    <col width="60px;">
+								</colgroup>
+								<thead><tr>
+								    <th>No.</th> 
+								    <th>기업/기관</th>
+								    <th>부서</th>
+								    <th>직급</th>
+								    <th>이름</th>
+								    <th>등록상태</th>
+								    <th>비고</th>
+								</tr>
+					            </thead>
+					            <tbody>
+						            <tr>
+						            	<td>1</td>
+						            	<td class="tleft">(주)KT AutoLease</td>
+						            	<td class="tleft">시스템팀</td>
+						            	<td>과장</td>
+						            	<td>송종찬</td>
+						            	<td> 
+						            		<span class="badge badge-color-darkorange" style="background: #b94a48">진행중</span>
+	                                    </td>
+						            	<td>
+						            		 <button type="button" class="btn btn-default btn-sm">조회</button>
+						            	</td>
+					            	</tr>
+					            </tbody>
+					        </table>
+					        <div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         
 					</div>
@@ -423,7 +491,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="input-group search-color width-60">
+                                <div class="input-group search-color width-60 mb10">
 									<input class="form-control" placeholder="기업/기관명을 검색하세요." type="text">
 									<div class="input-group-btn">
 										<button class="btn btn-default btn-search">
@@ -432,17 +500,24 @@
 									</div>
 								</div>
                             </div>
-                            
+                             
                             <div class="col-md-12">
-                            	트리 내용
+                            	<div class="show-grid-div2">
+
+                               내용
+
+                            	</div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
