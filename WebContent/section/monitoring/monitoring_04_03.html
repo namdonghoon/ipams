@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>모니터링 </li><li>교육훈련관리</li><li>연간 교육일정</li>
+					<li>IPAMS HOME</li><li>모니터링 </li><li>사업관리</li><li>취급 사업수</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,7 +310,7 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 연간 교육일정</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 취급 사업수</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
@@ -320,21 +320,33 @@
                         	<table class="table table-bordered">
 						        <colgroup>
 						            <col width="100px;">
+						            <col width="100px;">
+						            <col width="100px;">
 						            <col>
 						            <col width="70px;">
 						        </colgroup>
 						        <tbody><tr>
 						            <th><label>기간설정</label></th>
 						            <td>
-						            <div style="width:100px;">
-										<select  class="select2" >
+										<select  class="select2">
 											<option>전체</option>											
 											<option>2014</option>											
 											<option>2013</option>											
 											<option>2012</option>											
 											<option>2011</option>											
 										</select>
-						            </div>
+						            </td>
+						            <th><label>사업</label></th>
+						            <td>
+						            	<select multiple class="select2">
+											<option>성명</option>
+											<option>운전자번호</option>
+											<option>test1</option>
+											<option>test2</option>
+											<option>test3</option>
+											<option>test4</option>
+											<option>test5</option>												
+										</select>
 						            </td>
 							        <td class="search-color">
 							            <button class="btn btn-default" >
@@ -347,34 +359,68 @@
                         </div>
                         
                         <div class="col-md-12">
+                        	<div class="alert alert-info mb20">
+					            개인정보항목 검색은 10개 이하의 항목만 검색이 가능 합니다.
+					        </div>
+					        
                          	<div class="show-grid-div2 mb20">
-								그래프
-                            </div>
+                         		개인정보 항목별 취급 사업수
+                         	</div>
                         </div>
-                        <div class="col-md-12"> 
-                       		<table class="table table-bordered">
-					        	<colgroup>
-					        		<col>
-					        		<col width="180px">
-					        		<col width="100px">
-					        		<col>
-					        	</colgroup>
-					            <thead>
-					            <tr>
-					                <th>교육명</th>
-					                <th>교육일정</th>
-					                <th>주관부서</th>
-					                <th>교육장소</th>
-					            </tr>
-					            </thead>
-					            <tbody>
-						            <tr>
-						            	<td>-</td>
-						            	<td>-</td>
-						            	<td>-</td>
-						            	<td>-</td>
-					            	</tr>
-					            </tbody>
+                        <div class="col-md-12">
+                       		<table class="table table-bordered tbodycenter">
+					            <colgroup>
+								    <col>
+								    <col style="width: 100px;">
+								</colgroup>
+								<thead>
+									<tr>
+									    <th>개인정보항목</th>
+									    <th>사업수</th>
+									</tr>
+					        	</thead>
+					        	<tbody>
+					        		<tr>
+					        			<td class="tleft">성명</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">주소</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">본적지</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">운전자번호</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">여권번호</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">외국인등록번호</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">얼굴</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">지문</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">홍채</td>
+					        			<td>0</td>
+					        		</tr>
+					        		<tr>
+					        			<td class="tleft">음성</td>
+					        			<td>0</td>
+					        		</tr>
+					        	</tbody>
 					        </table>
                         </div>
                         

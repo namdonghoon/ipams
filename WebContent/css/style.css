@@ -757,6 +757,8 @@ margin-bottom: 30px;
 margin-left: 30px;
 }.mr30 {
 margin-right: 30px;
+}.mb40 {
+margin-bottom: 40px;
 }.mt40{
     margin-top: 40px;
 }.mt50{
@@ -1201,10 +1203,15 @@ box-shadow: 0 0 0 9px #fff;
 	margin-left: -1px;
 }
  
+/* 모니터링 평가수행  */
+.mo-title{
+	font-weight: bold;
+	color: #296191;
+}
 
 
 
-/*모니터링*/
+/*모니터링 보드*/
 .jarviswidget>div.chartbox_bg {
     height: 300px;
     background-color: #22262e!important;
@@ -1227,14 +1234,6 @@ box-shadow: 0 0 0 9px #fff;
     margin: 0;
     padding: 0;
 }
-.dashboard_added ul{
-    width:100%;
-    padding-left: 0;
-}
-.dashboard_added ul li{
-    margin: 0 5px;
-    float: left;
- }
 
 .jarviswidget>div.chartbox_footer{
     padding: 5px!important;
