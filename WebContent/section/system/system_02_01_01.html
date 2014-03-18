@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>모니터링 </li><li>평가수행관리</li><li>이행점검 현황</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 정보</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,59 +310,98 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 이행점검 현황</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 정보</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                			<div class="btn-group btn-group-justified mb40">
-								<a href="javascript:void(0);" class="btn btn-default">평가진행 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">현황진단 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">위험평가 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">개선계획수립 현황</a>
-								<a href="javascript:void(0);" class="btn btn-primary">이행점검 현황</a>
-							</div>
-							<h4 class="mo-title mb20"><i class="fa fa-check-square"></i><span> 안성시 정보보안 관리실태 평가 1분기</span></h4>
-							
-                        	<table class="table table-bordered">
-						        <colgroup>
-						            <col width="160px;">
-						            <col>
-						            <col width="70px;">
-						        </colgroup>
-						        <tbody><tr>
-						            <th><label>개선계획 그룹명</label></th>
-						            <td>
-						            	<select class="form-control" style="width:100px;">
-							                <option>전체</option>
-							                <option>1</option>
-							                <option>2</option>
-							                <option>3</option>
-							            </select>
-						            </td>
-							        <td class="search-color">
-							            <button class="btn btn-default">
-							                <i class="fa fa-search fa-lg margin-right-5"></i>검색
-							            </button>
-							        </td>
-						        </tr>
-						    </tbody></table>
-                        
-                        </div>
-                        
-                        <div class="col-md-12">
-                        	<div class="alert alert-info">
-					           이행점검 단계가 진행되지 않아 정보를 조회할 수 없습니다.
-					        </div>
-                        	<div class="show-grid-div2">
-
-                               내용
-
-                            </div>
+                        	<h6 class="h-title">사용자정보 등록</h6>
+							<table class="table table-bordered form">
+					        <colgroup>
+					            <col width="150px;">
+					            <col>
+					        </colgroup>
+					        <tbody>
+					        	<tr>
+					        		<th>임직원</th>
+					        		<td>
+					        			<div class="input-group search-color width-40" data-toggle="modal" data-target="#myModal1">
+											<input class="form-control" placeholder="임직원을 검색하세요." type="text" disabled>
+											<div class="input-group-btn">
+												<button class="btn btn-default btn-search">
+													<i class="fa fa-search">&nbsp;검색</i>
+												</button>
+											</div>
+										</div>
+					        		</td>
+					        	</tr>
+					        	<tr>
+					        		<th>기업/기관</th>
+					        		<td>
+					        		<input class="form-control width-40" placeholder="기업/기관명" type="text" disabled>
+					        		</td>
+					        	</tr>
+					        	<tr>
+					        		<th>부서</th> 
+					        		<td><input class="form-control width-40" placeholder="부서명" type="text" disabled></td>
+					        	</tr>
+					        	<tr>
+					        		<th>직급</th>
+					        		<td><input class="form-control width-40" placeholder="직급명" type="text" disabled></td>
+					        	</tr>
+					        	<tr>
+					        		<th>계정만료일</th>
+					        		<td class="smart-form">
+							        	<label class="input width-40"><i class="icon-append fa fa-calendar"></i>
+											<input type="text" class="datepicker"  placeholder="만료일" data-dateformat='yy-mm-dd'>
+										</label>
+									</td>
+					        	</tr>
+					        	<tr>
+					        		<th>기업/기관 허용IP 범위</th>
+					        		<td>
+					        			
+					        		</td>
+					        	</tr>
+					        	<tr>
+					        		<th>사용자 허용IP 정보</th>
+					        		<td>
+					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -  
+					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
+					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
+					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
+					        		</td>
+					        	</tr>  
+					        	<tr>
+					        		<th>접근권한그룹 설정</th>
+					        		<td>
+					        			<div class="width-40">
+											<select multiple class="select2">
+												<option>부서보안관리자</option>
+												<option>정보보호책임자</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</div>
+					        		</td>
+					        	</tr>
+					        
+				        	</tbody></table>
                         </div>
                         
 					</div>
+					<div class="align-right">
+			            <button type="button" class="btn btn-lg btn-primary float-left">
+			                <i class="fa fa-times margin-right-5"></i>취소
+			            </button>
+			            <button type="button" class="btn btn-lg btn-success ">
+			                <i class="fa fa-pencil"></i> 등록</button>
+			                 
+			        </div>
 					<!-- end row  -->
 
 				</div>
@@ -426,8 +465,103 @@
     
 
 
-
-
+		<!-- Modal_1 -->
+	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title"><i class="fa fa-power-off"></i> 임직원 검색</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+	                        <div class="col-md-12">
+	                        	<div class="alert alert-info">
+						          계정이 등록되지 않은 사용자 정보만 검색할 수 있습니다.<br>
+									해당 사용자가 검색되지 않을 경우, 이미 계정이 신청된 사용자입니다.  
+						        </div>
+		                        <div class="jarviswidget jarviswidget-color-blueDark top10 mb20 mt40"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+	                                
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+	                                            <colgroup>
+											            <col width="50px;">
+											            <col width="200px;">
+											            <col width="140px;">
+											            <col>
+										        </colgroup>
+	                                            <thead>
+	                                                <tr>
+	                                                    <th class="remove-sort">선택</th>
+	                                                    <th>기업/기관</th>
+	                                                    <th>부서</th>
+	                                                    <th>이름</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td class="inline-group smart-form">
+									                        <label class="radio ml10 mb5">
+									                            <input type="radio" checked="checked">
+									                                <i></i>
+									                        </label>
+									                    </td>
+	                                                    <td class="tleft">드림인프라</td>
+	                                                    <td class="tleft">시스템팀</td>
+	                                                    <td class="tleft">
+	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
+													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+													        data-content="
+													            <ul class='user_info'>
+													                <p><img src='../../images/member_big.png'></p>
+													                <li>시스템관리자</li>
+													                <li>(주)드림인프라</li>
+													                <li>SI사업부</li>
+													                <li>부장</li>
+													                <li>systemadministrator@dreaminfra.co.kr </li>
+													            </ul>
+													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+													        </button>
+	                                                    </td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
+	                            </div>
+	                            <div style="width: 100%; height: 30px;"></div>
+			                        
+			                        
+			                    </div>
+		                    </div>
+		                </div>
+	                <!-- End row  -->
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	    <!-- end modal_3 -->
 
 
 		<!--================================================== -->
@@ -501,8 +635,17 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
+        
 		<!-- PAGE RELATED PLUGIN(S) -->
+		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
+        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
+        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
+        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
+        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
+        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
+        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
 
+		
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
@@ -512,8 +655,124 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
-     
 
+		<script type="text/javascript">
+
+        	pageSetUp();
+        
+			$('#dt_basic').dataTable({
+	            "sPaginationType" : "bootstrap_full",	
+	            "sDom": '<"dt-top-row" f> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
+	        }); 
+		
+		</script>
+		
+		
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+		</script>
+     
 
 
 

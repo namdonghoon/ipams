@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>모니터링 </li><li>평가수행관리</li><li>이행점검 현황</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>내 정보</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,56 +310,110 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 이행점검 현황</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 내 정보</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
-                        <div class="col-md-12">
-                			<div class="btn-group btn-group-justified mb40">
-								<a href="javascript:void(0);" class="btn btn-default">평가진행 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">현황진단 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">위험평가 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">개선계획수립 현황</a>
-								<a href="javascript:void(0);" class="btn btn-primary">이행점검 현황</a>
-							</div>
-							<h4 class="mo-title mb20"><i class="fa fa-check-square"></i><span> 안성시 정보보안 관리실태 평가 1분기</span></h4>
-							
-                        	<table class="table table-bordered">
-						        <colgroup>
-						            <col width="160px;">
-						            <col>
-						            <col width="70px;">
-						        </colgroup>
-						        <tbody><tr>
-						            <th><label>개선계획 그룹명</label></th>
-						            <td>
-						            	<select class="form-control" style="width:100px;">
-							                <option>전체</option>
-							                <option>1</option>
-							                <option>2</option>
-							                <option>3</option>
-							            </select>
-						            </td>
-							        <td class="search-color">
-							            <button class="btn btn-default">
-							                <i class="fa fa-search fa-lg margin-right-5"></i>검색
-							            </button>
-							        </td>
-						        </tr>
-						    </tbody></table>
+                        <div class="col-md-12 col-md-6">
                         
+                        	<table class="table table-bordered">
+					            <colgroup>
+					                <col width="150">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					            	<tr>
+					            		<th>사용자 이미지</th>
+					            		<td>
+					            			<img class="user_profile" src='../../images/member_big.png'> 
+				            				<button type="button" class="btn btn-default btn-sm ml10" data-toggle="modal" data-target="#myModal1">이미지 변경</button>
+					            		</td>
+					            	</tr>
+					            	<tr>
+					            		<th>기업/기관</th>
+					            		<td>드림인프라</td>
+					            	</tr>
+					            	<tr>
+					            		<th>부서</th>
+					            		<td>컨설팅팀</td>
+					            	</tr>
+					            	<tr>
+					            		<th>고용형태</th>
+					            		<td>임직원</td>
+					            	</tr>
+					            	<tr>
+					            		<th>직급</th>
+					            		<td>과장</td>
+					            	</tr>
+					            	<tr>
+					            		<th>이름</th>
+					            		<td>관리자</td>
+					            	</tr>
+					            	<tr>
+					            		<th>이메일</th>
+					            		<td>ipamsadmin@dreaminfra.co.kr</td>
+					            	</tr>
+					            </tbody>
+					        </table>
+                        	
                         </div>
                         
-                        <div class="col-md-12">
-                        	<div class="alert alert-info">
-					           이행점검 단계가 진행되지 않아 정보를 조회할 수 없습니다.
-					        </div>
-                        	<div class="show-grid-div2">
-
-                               내용
-
-                            </div>
+                        <div class="col-md-12 col-md-6">
+                        	<table class="table table-bordered">
+					            <colgroup>
+					                <col width="150">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					            	<tr>
+					            		<th>전자서명</th>
+					            		<td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">이미지 변경</button></td>
+					            	</tr>
+					            	<tr>
+					            		<th>비밀번호 최근 변경일</th>
+					            		<td>
+					            			2014-04-21 13:34:54.00
+					            			<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal3">비밀번호 변경</button>
+					            		</td>
+					            	</tr>
+					            	<tr>
+					            		<th>비밀번호 사용 만료일</th>
+					            		<td>2014-04-21 13:34:54.00</td>
+					            	</tr>
+					            	<tr>
+					            		<th>계정 만료일</th>
+					            		<td></td>
+					            	</tr>
+					            	<tr>
+					            		<th>계정상태</th>
+					            		<td>해제</td>
+					            	</tr>
+					            	<tr>
+					            		<th>접속 허용 IP</th>
+					            		<td>
+					            			<dl class="mb0 mt0">
+						                        <dt>기업/기관 허용 IP 범위</dt>
+						                        <dd>-</dd>
+						                        
+						                        <dt>사용자 허용 IP</dt>
+						                        <dd>
+						                        		-
+						                        </dd>
+						                    </dl>
+					            		</td>
+					            	</tr>
+					            	<tr>
+					            		<th>접근권한목록 </th>
+					            		<td>
+					            			<ul class="pl15 mb0">
+						                        <li>시스템관리자</li>
+						                    </ul>
+					            		</td>
+					            	</tr>
+					            </tbody>
+					        </table>
+                        	
                         </div>
                         
 					</div>
@@ -426,9 +480,125 @@
     
 
 
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 사용자 프로필 이미지 변경</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="file" class="btn btn-default" id="exampleInputFile1">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+        
+		<!-- Modal_2 -->
+ 
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 사용자 프로필 이미지 변경</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="file" class="btn btn-default" id="exampleInputFile1">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal-2 -->
 
 
 
+		 <!-- Modal_3 -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 비밀번호 변경</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                            	<div class="alert alert-info">
+						            비밀번호 작성 규칙 : <br>
+									  1. 영문/숫자/특수문자 중 3가지 조합 8자리 이상 <br>
+									  2. 영문/숫자 또는 영문/특수문자 2가지 조합 10자리 이상
+						        </div>
+                                <table class="table table-bordered table-condensed">
+						            <colgroup>
+						                <col width="150px;">
+						                <col>
+						            </colgroup>
+						            <tbody>
+						            <tr>
+						                <th>현재 비밀번호</th>
+						                <td>
+						                	<input class="form-control" type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>변경 비밀번호</th>
+						                <td>
+						                	<input class="form-control" type="text">
+						                </td>            
+						            </tr>
+						            <tr>
+						                <th>변경 확인 비밀번호</th>
+						                <td>  
+						                	<input class="form-control" type="text">
+						                </td>           
+						            </tr>
+						            </tbody>
+						        </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal_3 -->
 
 		<!--================================================== -->
 
@@ -512,6 +682,112 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
+
+
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+		</script>
      
 
 

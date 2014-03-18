@@ -711,6 +711,17 @@ input, select{
  }.no-padding-all{
     padding: 0px!important;
  }
+ .pt0{
+    padding-top: 0px!important;
+ }.pb0{
+    padding-bottom: 0px!important;
+ }.pl0{
+    padding-left: 0px!important;
+ }.pr0{
+    padding-right: 0px!important;
+ }.p0{
+    padding: 0px!important;
+ }
 
  /* 마진 속성 무효*/
  .no-margin-top{
@@ -724,7 +735,17 @@ input, select{
  }.no-margin-all{
     margin: 0px!important;
  }
-
+ .mt0{
+    margin-top: 0px!important;
+ }.mb0{
+    margin-bottom: 0px!important;
+ }.ml0{
+    margin-left: 0px!important;
+ }.mr0{
+    margin-right: 0px!important;
+ }.m0{
+    margin: 0px!important;
+ }
 
 
 /* 마진 크기 조정 */
@@ -771,6 +792,8 @@ margin-bottom: 40px;
 
 .mr5{
 	margin-right: 5px;
+}.mb5{
+	margin-bottom: 5px !important;	
 }
 .mt4{
 	margin-top: 4px;
@@ -788,6 +811,8 @@ margin-bottom: 40px;
 /* 패딩 크기 조정 */
 .pl10{
     padding-left: 10px;
+}.pl15{
+    padding-left: 15px;
 }
 
 /* float 속성 */
@@ -1255,3 +1280,19 @@ box-shadow: 0 0 0 9px #fff;
     vertical-align: top;
 }
 
+/* 모니터링 */ 
+.user_profile{
+	padding: 2px;
+	background: white;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	width: 40px;
+	height: 40px;
+	border: 1px solid #DDD;	
+}
+
+/*버튼-취소, 이전*/
+.btn-cancel{
+	color: #333;
+	background-color: #f0f0f0;
+	border-color: #ccc;
+}

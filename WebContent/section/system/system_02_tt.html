@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>모니터링 </li><li>평가수행관리</li><li>이행점검 현황</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 정보</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,56 +310,14 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> > 이행점검 현황</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 정보</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                			<div class="btn-group btn-group-justified mb40">
-								<a href="javascript:void(0);" class="btn btn-default">평가진행 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">현황진단 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">위험평가 현황</a>
-								<a href="javascript:void(0);" class="btn btn-default">개선계획수립 현황</a>
-								<a href="javascript:void(0);" class="btn btn-primary">이행점검 현황</a>
-							</div>
-							<h4 class="mo-title mb20"><i class="fa fa-check-square"></i><span> 안성시 정보보안 관리실태 평가 1분기</span></h4>
-							
-                        	<table class="table table-bordered">
-						        <colgroup>
-						            <col width="160px;">
-						            <col>
-						            <col width="70px;">
-						        </colgroup>
-						        <tbody><tr>
-						            <th><label>개선계획 그룹명</label></th>
-						            <td>
-						            	<select class="form-control" style="width:100px;">
-							                <option>전체</option>
-							                <option>1</option>
-							                <option>2</option>
-							                <option>3</option>
-							            </select>
-						            </td>
-							        <td class="search-color">
-							            <button class="btn btn-default">
-							                <i class="fa fa-search fa-lg margin-right-5"></i>검색
-							            </button>
-							        </td>
-						        </tr>
-						    </tbody></table>
                         
-                        </div>
-                        
-                        <div class="col-md-12">
-                        	<div class="alert alert-info">
-					           이행점검 단계가 진행되지 않아 정보를 조회할 수 없습니다.
-					        </div>
-                        	<div class="show-grid-div2">
-
-                               내용
-
-                            </div>
+                        	
                         </div>
                         
 					</div>
@@ -426,7 +384,43 @@
     
 
 
-
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 부서 검색</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group search-color width-60">
+									<input class="form-control" placeholder="기업/기관명을 검색하세요." type="text">
+									<div class="input-group-btn">
+										<button class="btn btn-default btn-search">
+											<i class="fa fa-search">&nbsp;검색</i>
+										</button>
+									</div>
+								</div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                            	트리 내용
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 
 
 
@@ -512,6 +506,112 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
+
+
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+		</script>
      
 
 
