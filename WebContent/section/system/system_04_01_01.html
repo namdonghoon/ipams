@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 정보</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>접근권한 그룹관리</li><li>기업/기관 허용 IP</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,16 +310,95 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 정보</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 기업/기관 허용 IP</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        
-                        	
-                        </div>
-                        
+							<h6 class="h-title">기업/기관 허용 IP 등록</h6>
+							<table class="table table-bordered">
+								<colgroup>
+									<col width="100px">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>기업/기관</th>
+										<td>
+											<select class="form-control"  style="width:150px;">
+					                            <option>선택</option>
+					                            <option>드림인프라</option>
+					                             <option>(주)kt rental</option>
+					                             <option>1</option>
+					                             <option>2</option>
+					                             <option>3</option>
+					                             <option>4</option>
+					                        </select>
+					                        
+										</td>
+									</tr>
+									<tr>
+										<th>허용 IP</th>
+										<td>
+											<div class="alert alert-info mb5">
+									        	추가할 허용 IP에 현재 접속한 IP가 포함되어 있지 않으면 다음 접속시 접근이 제한될 수 있습니다.
+									        </div>
+									        <div class="ml5 mb5">
+						                    	현재 접속 IP : <strong>192.168.0.13</strong><br>
+					                    	</div>
+					                    	<div class="display-inline">
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.   
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
+											</div>
+											<span>&nbsp;&nbsp;~&nbsp;&nbsp;</span>
+											<div class="display-inline">
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.  
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">.
+							        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
+											</div>
+											<button type="button" class="btn btn-default btn-sm">추가</button>
+											
+											<hr>
+											<table class="table table-bordered tbodycenter">
+												<colgroup>
+													<col width="60px">
+													<col>
+													<col width="60px">
+												</colgroup>
+												<thead>
+													<tr>
+														<th>No.</th>
+														<th>허용 IP 대역</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td class="tleft">192.168.0.13 ~ 192.168.0.13</td>
+														<td>
+															<button type="button" class="btn btn-default btn-sm">삭제</button>
+														</td>														
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="align-right">
+					            <button type="button" class="btn btn-lg btn-cancel float-left">
+					                <i class="fa fa-times margin-right-5"></i>취소
+					            </button>
+					            <button type="button" class="btn btn-lg btn-success">
+					                완료
+					                <i class="fa fa-check"></i></button>
+					        </div>
+						</div>
 					</div>
 					<!-- end row  -->
 
@@ -507,6 +586,27 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
 
+		<!-- data picker-->
+    	<script type="text/javascript">
+	        $('#startdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	            }
+	        });
+	
+	        $('#finishdate').datepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+    	</script>
+    	<!-- end data picker -->
 
 
 		<script type="text/javascript">

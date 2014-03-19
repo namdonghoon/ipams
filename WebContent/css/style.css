@@ -786,10 +786,14 @@ margin-bottom: 40px;
     margin-top: 60px;
 }.mr70{
     margin-right:70px;
+}.ml150{
+	margin-left: 150px;
 }
 
 .mr5{
 	margin-right: 5px;
+}.ml5{
+	margin-left: 5px;
 }.mb5{
 	margin-bottom: 5px;	
 }
@@ -811,6 +815,17 @@ margin-bottom: 40px;
     padding-left: 10px;
 }.pl15{
     padding-left: 15px;
+}.pt10{
+	padding-top: 10px;
+}
+.pt20{
+	padding-top: 20px;
+}
+.pt25{
+	padding-top: 25px;
+}
+.pt30{
+	padding-top: 30px;
 }
 
 /* float 속성 */
@@ -1294,8 +1309,14 @@ box-shadow: 0 0 0 9px #fff;
 	background-color: #f0f0f0;
 	border-color: #ccc;
 }
-
 .checkbox{
 	font-size: 12px !important;
+}.smart-form .textarea textarea{
+	font-size: 12px !important;	
 }
-
+.bg-green{
+	background: #468847;
+}
+.bg-red{
+	background: #b94a48	
+}

@@ -138,7 +138,7 @@
 				        </div>
 				
 		        		<div class="align-right">
-				            <button type="button" class="btn btn-lg btn-primary float-left">
+				            <button type="button" class="btn btn-lg btn-cancel float-left">
 				                <i class="fa fa-times margin-right-5"></i>취소
 				            </button>
 				            <button type="button" class="btn btn-lg btn-success ">
@@ -147,7 +147,7 @@
 				            </button>
 				        </div>
 				        <div class="align-right">
-				            <button type="button" class="btn btn-lg btn-primary float-left">
+				            <button type="button" class="btn btn-lg btn-cancel float-left">
 				                <i class="fa fa-times margin-right-5"></i>취소
 				            </button>
 				            <button type="button" class="btn btn-lg btn-success ">
@@ -156,15 +156,15 @@
 				        </div>
 				
 				        <div class="align-right">
-				            <button type="button" class="btn btn-lg btn-primary float-left">
+				            <button type="button" class="btn btn-lg btn-cancel float-left">
 				                <i class="fa fa-times margin-right-5"></i>취소
 				            </button>
-				            <button type="button" class="btn btn-lg btn-success ">
+				            <button type="button" class="btn btn-lg btn-success">
 				                완료
 				                <i class="fa fa-check"></i></button>
 				        </div>
 				        <div class="align-right">
-				            <button type="button" class="btn btn-lg btn-primary float-left">
+				            <button type="button" class="btn btn-lg btn-cancel float-left">
 				                <i class="fa fa-times margin-right-5"></i>취소
 				            </button>
 				            <button type="button" class="btn btn-lg btn-success ">
@@ -214,6 +214,13 @@
 				    	<!--============ START 입력박스 ============ -->
 						<h6 class="h-title">입력 박스</h6>
 						
+						<div>
+		        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -  
+		        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
+		        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
+		        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
+						</div>
+						
 						<input class="form-control" placeholder="구성도명을 입력하세요." type="text">
 	
 				        <table>
@@ -240,40 +247,32 @@
 				    <!--============ START 셀렉트 박스 ============ -->
 						<h6 class="h-title">셀렉트 박스</h6>
 						
-						<span>
-				            <select class="form-control" style="width:100px;">
-				                <option>전체</option>
-				                <option>1</option>
-				                <option>2</option>
-				                <option>3</option>
-				            </select>
-				        </span>
+			            <select class="form-control" style="width:100px;">
+			                <option>전체</option>
+			                <option>1</option>
+			                <option>2</option>
+			                <option>3</option>
+			            </select>
 				
-				        <span>
-				            <select class="form-control" disabled style="width:100px;">
-				                <option>전체</option>
-				                <option>1</option>
-				                <option>2</option>
-				                <option>3</option>
-				            </select>
-				        </span>
+			            <select class="form-control" disabled style="width:100px;">
+			                <option>전체</option>
+			                <option>1</option>
+			                <option>2</option>
+			                <option>3</option>
+			            </select>
                         <h6 class="h-title">셀렉트 박스 나란히</h6>
-                        <span>
-                            <select class="form-control pull-left margin-right-5" style="width:150px;">
-                                <option>개발용 소프트웨어</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </span>
-                        <span>
-                           <select class="form-control" disabled style="width:150px;">
-                                <option>프로젝트관리</option>
-                                 <option>1</option>
-                                 <option>2</option>
-                                 <option>3</option>
-                            </select>
-                        </span>
+                        <select class="form-control pull-left margin-right-5" style="width:150px;">
+                            <option>개발용 소프트웨어</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                       <select class="form-control" disabled style="width:150px;">
+                            <option>프로젝트관리</option>
+                             <option>1</option>
+                             <option>2</option>
+                             <option>3</option>
+                        </select>
                     </div>
                 </div>
 	
@@ -524,28 +523,28 @@
 				    	
 				    	<!--============= START 라디오 박스 =============-->
 				    	<h6>block</h6>
-	                    <div class="inline-group smart-form">
+	                    <div class="smart-form">
 	                        <label class="radio">
 	                            <input type="radio" name="radio-inline"checked="checked">
-	                                <i></i>일반
+	                                <i></i>TLS
 	                        </label>
 	                        <label class="radio">
 	                            <input type="radio" name="radio-inline">
-	                                <i></i>공지사항
+	                                <i></i>SSL
 	                        </label>
 	                    </div>
 	                    
 	                    <br> 
 	                    
 	                    <h6>inline</h6>
-	                    <div class="inline-group smart-form">
+	                    <div class="smart-form">
 	                        <label class="radio display-inline"> 
 	                            <input type="radio" name="radio-inline" checked="checked">
-	                                <i class="t0"></i>미진행&nbsp;&nbsp;
+	                                <i class="t0"></i>사용&nbsp;&nbsp;
 	                        </label> 
 	                        <label class="radio display-inline">
 	                            <input type="radio" name="radio-inline">
-	                                <i class="t0"></i>진행
+	                                <i class="t0"></i>미사용
 	                        </label>
 	                    </div>
 		                <!--============= END 라디오 박스 =============-->

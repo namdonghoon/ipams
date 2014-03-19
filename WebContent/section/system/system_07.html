@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 정보</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>로그관리</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,97 +310,158 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 정보</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 로그관리</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title">사용자정보 수정</h6>
-							<table class="table table-bordered form">
-					        <colgroup>
-					            <col width="150px;">
-					            <col>
-					        </colgroup>
-					        <tbody>
-					        	<tr>
-					        		<th>임직원</th>
-					        		<td>
-					        			<div class="input-group search-color width-40" data-toggle="modal" data-target="#myModal1">
-											<input class="form-control" placeholder="임직원을 검색하세요." type="text" disabled>
-											<div class="input-group-btn">
-												<button class="btn btn-default btn-search">
-													<i class="fa fa-search">&nbsp;검색</i>
-												</button>
-											</div>
-										</div>
-					        		</td>
-					        	</tr>
-					        	<tr>
-					        		<th>기업/기관</th>
-					        		<td>
-					        		<input class="form-control width-40" placeholder="기업/기관명" type="text" disabled>
-					        		</td>
-					        	</tr>
-					        	<tr>
-					        		<th>부서</th> 
-					        		<td><input class="form-control width-40" placeholder="부서명" type="text" disabled></td>
-					        	</tr>
-					        	<tr>
-					        		<th>직급</th>
-					        		<td><input class="form-control width-40" placeholder="직급명" type="text" disabled></td>
-					        	</tr>
-					        	<tr>
-					        		<th>계정만료일</th>
-					        		<td class="smart-form">
-							        	<label class="input width-40"><i class="icon-append fa fa-calendar"></i>
-											<input type="text" class="datepicker"  placeholder="만료일" data-dateformat='yy-mm-dd'>
-										</label>
+                        	
+                        	<table class="table table-bordered form">
+							    <colgroup> 
+							        <col width="100px;">
+							        <col width="400px;">
+							        <col width="100px;">
+							        <col>
+							        <col width="70px;">
+							    </colgroup>
+							    <tbody><tr>
+							        <th><label>대메뉴</label></th>
+							        <td>
+										<select multiple class="select2">
+											<option>평가수행관리</option>
+											<option>기반정보관리</option>
+											<option>모니터링</option>
+											<option>test1</option>
+											<option>test2</option>
+											<option>test3</option>
+											<option>test4</option>
+											<option>test5</option>												
+										</select>
+							        </td>
+							        <th><label>유형</label></th>
+									<td>
+										<select multiple class="select2">
+											<option>등록</option>
+											<option>조회</option>
+											<option>수정</option>
+											<option>삭제</option>
+										</select>
+							        </td>
+							        <td rowspan="3">
+							        	<div class="search">
+								            <button class="btn btn-default">
+								                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+								            </button>
+								        </div>
+							        </td>
+							    </tr>
+							    <tr>
+							        <th><label>중메뉴</label></th>
+							        <td colspan="3">
+							        	<select multiple class="select2">
+											<option>사업</option>
+										</select>
+							        </td>
+							    </tr>
+							    <tr>
+							        <th><label>접근IP</label></th>
+							        <td>
+							        	<input class="form-control" type="text">
+							        </td>
+							        <th><label>접근자</label></th>
+									<td>
+										<input class="form-control" type="text">
 									</td>
-					        	</tr>
-					        	<tr>
-					        		<th>기업/기관 허용IP 범위</th>
-					        		<td>
-					        			
-					        		</td>
-					        	</tr>
-					        	<tr>
-					        		<th>사용자 허용IP 정보</th>
-					        		<td>
-					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -  
-					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
-					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px"> -
-					        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
-					        		</td>
-					        	</tr>  
-					        	<tr>
-					        		<th>접근권한그룹 설정</th>
-					        		<td>
-					        			<div class="width-40">
-											<select multiple class="select2">
-												<option>부서보안관리자</option>
-												<option>정보보호책임자</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					        		</td>
-					        	</tr>
-					        
-				        	</tbody></table>
+							    </tr>
+							</tbody></table>
+                        	
+                        	
+                        	<table class="table table-bordered tbodycenter">
+							    <colgroup>
+								    <col width="50px">
+								    <col width="70px">
+								    <col>
+								    <col width="120px;">
+								    <col width="150px;">
+								    <col width="150px">
+								    <col width="70px;">
+							    </colgroup>
+								<thead>
+								<tr>
+								    <th>No.</th>
+								    <th>유형</th>
+								    <th>메뉴</th>
+								    <th>접근 IP</th>
+								    <th>생성일시</th>
+								    <th>접근자</th>
+								    <th>비고</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>조회</td>
+										<td class="tleft">시스템 > 로그조회</td>
+										<td>211.216.10.105</td>
+										<td>2014-03-19 17:21:01.0</td>
+										<td>
+											<button class="user_info_box" rel="popover-hover" data-placement="left"
+									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+									        data-content="
+									            <ul class='user_info'>
+									                <p><img src='../../images/member_big.png'></p>
+									                <li>시스템관리자</li>
+									                <li>(주)드림인프라</li>
+									                <li>SI사업부</li>
+									                <li>부장</li>
+									                <li>systemadministrator@dreaminfra.co.kr </li>
+									            </ul>
+									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>관리자</strong>
+									        </button>
+										</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">조회</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+                        	
+                        	<div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        	
                         </div>
                         
 					</div>
-					<div class="align-right">
-			            <button type="button" class="btn btn-lg btn-cancel float-left">
-			                <i class="fa fa-times margin-right-5"></i>취소
-			            </button>
-		               <button type="button" class="btn btn-lg btn-success ">
-			                <i class="fa fa-pencil-square-o"></i>&nbsp;수정 </button>  
-			        </div>
 					<!-- end row  -->
 
 				</div>
@@ -465,102 +526,127 @@
 
 
 		<!-- Modal_1 -->
-	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-	        <div class="modal-dialog modal-sm">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                        &times;
-	                    </button>
-	                    <h4 class="modal-title"><i class="fa fa-power-off"></i> 임직원 검색</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <div class="row">
-	                        <div class="col-md-12">
-	                        	<div class="alert alert-info">
-						          계정이 등록되지 않은 사용자 정보만 검색할 수 있습니다.<br>
-									해당 사용자가 검색되지 않을 경우, 이미 계정이 신청된 사용자입니다.  
-						        </div>
-		                        <div class="jarviswidget jarviswidget-color-blueDark top10 mb20 mt40"  data-widget-editbutton="false">
-                                
-	                                <!-- widget edit box -->
-	                                <div class="jarviswidget-editbox">
-	                                    <!-- This area used as dropdown edit box -->
-	                                </div>
-	                                <!-- end widget edit box -->
-	                                
-	                                <!-- widget div-->
-	                                <div class="mt30 table-bordered ">
-	                
-	                                    <!-- widget content -->
-	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-	                            
-	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-	                                            <colgroup>
-											            <col width="50px;">
-											            <col width="200px;">
-											            <col width="140px;">
-											            <col>
-										        </colgroup>
-	                                            <thead>
-	                                                <tr>
-	                                                    <th class="remove-sort">선택</th>
-	                                                    <th>기업/기관</th>
-	                                                    <th>부서</th>
-	                                                    <th>이름</th>
-	                                                </tr>
-	                                            </thead>
-	                                            <tbody>
-	                                                <tr>
-	                                                    <td class="inline-group smart-form">
-									                        <label class="radio ml10 mb5">
-									                            <input type="radio" checked="checked">
-									                                <i></i>
-									                        </label>
-									                    </td>
-	                                                    <td class="tleft">드림인프라</td>
-	                                                    <td class="tleft">시스템팀</td>
-	                                                    <td class="tleft">
-	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
-													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-													        data-content="
-													            <ul class='user_info'>
-													                <p><img src='../../images/member_big.png'></p>
-													                <li>시스템관리자</li>
-													                <li>(주)드림인프라</li>
-													                <li>SI사업부</li>
-													                <li>부장</li>
-													                <li>systemadministrator@dreaminfra.co.kr </li>
-													            </ul>
-													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-													        </button>
-	                                                    </td>
-	                                                </tr>
-	                                            </tbody>
-	                                        </table>
-	                                    </div>
-	                                    <!-- END widget content -->
-	                                </div>
-	                            </div>
-	                            <div style="width: 100%; height: 30px;"></div>
-			                        
-			                        
-			                    </div>
-		                    </div>
-		                </div>
-	                <!-- End row  -->
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">
-	                        닫기
-	                    </button>
-	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-	                       	완료
-	                    </button>
-	                </div>
-	            </div><!-- /.modal-content -->
-	        </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
-	    <!-- end modal_3 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 로그 상세</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                            
+                            	<table class="table table-bordered">
+									<colgroup>
+										<col width="80px;">
+										<col>
+										<col width="80px;">
+									    <col>
+									    <col width="80px;">
+									    <col>
+									</colgroup>
+									<tbody><tr>
+									    <th><label>유형</label></th>
+									    <td>
+									        조회
+									    </td>
+									    <th><label>메뉴</label></th>
+									    <td>
+									        시스템 &gt; 로그조회
+									    </td>
+									    <th><label>생성일시</label></th>
+									    <td>
+									        2014-03-19 17:21:01.0
+									    </td>
+									</tr>
+									<tr>
+									    <th><label>접근 IP</label></th>
+									    <td colspan="3">
+									        211.216.10.105
+									        
+									        (127.0.0.1)
+									        
+									    </td>
+									    <th><label>접근자</label></th>
+									    <td>
+									    	<button class="user_info_box" rel="popover-hover" data-placement="left"
+									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+									        data-content="
+									            <ul class='user_info'>
+									                <p><img src='../../images/member_big.png'></p>
+									                <li>시스템관리자</li>
+									                <li>(주)드림인프라</li>
+									                <li>SI사업부</li>
+									                <li>부장</li>
+									                <li>systemadministrator@dreaminfra.co.kr </li>
+									            </ul>
+									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>관리자</strong>
+									        </button>
+									    </td>
+									</tr>
+									<tr>
+									    <th><label>결과 건 수</label></th>
+									    <td colspan="5">
+									        
+									    </td>
+									</tr>
+									<tr>
+									    <th><label>파라미터</label></th>
+									    <td colspan="5">
+									        {"systemModules":["business"]}
+									    </td>
+									</tr>
+									<tr>
+									    <th><label>상세정보</label></th>
+									    <td colspan="5">
+									        <div style="max-width: 900px; overflow: auto;">
+									        <table class="table table-bordered">
+									            <tbody><tr>
+									                <th><label>remoteAddr</label></th>
+									                <td>211.216.10.105</td>
+									                <th><label>remoteHost</label></th>
+									                <td>211.216.10.105</td>
+									            </tr>
+									            <tr>
+									                <th><label>remotePort</label></th>
+									                <td>54917 </td>
+									                <th><label>remoteUser</label></th>
+									                <td>ipamsadmin@dreaminfra.co.kr</td>
+									            </tr>
+									            <tr>
+									                <th><label>url</label></th>
+									                <td>http://ipams.dreaminfra.co.kr/gg/system/log/manage/business-module</td>
+									                <th><label>uri</label></th>
+									                <td>/gg/system/log/manage/business-module</td>
+									            </tr>
+									            <tr>
+									                <th><label>headers</label></th>
+									                <td colspan="5">
+									                    {cookie=JSESSIONID=53E738E1FAAACFB4043ACB06A790652A, connection=keep-alive, Max-Forwards=100, accept-language=ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4, host=ipams.dreaminfra.co.kr, X-Requested-With=XMLHttpRequest, accept=*/*, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36, accept-encoding=gzip,deflate,sdch, referer=http://ipams.dreaminfra.co.kr/gg/system/log/manage}                
+									                </td>
+									            </tr>
+									        </tbody></table>
+									        </div>
+									    </td>
+									</tr>
+								</tbody></table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+
 
 
 		<!--================================================== -->
@@ -634,17 +720,8 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-        
 		<!-- PAGE RELATED PLUGIN(S) -->
-		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
-        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
-        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
-        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
-        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
-        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
-        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
 
-		
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
@@ -655,18 +732,7 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
 
-		<script type="text/javascript">
 
-        	pageSetUp();
-        
-			$('#dt_basic').dataTable({
-	            "sPaginationType" : "bootstrap_full",	
-	            "sDom": '<"dt-top-row" f> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
-	        }); 
-		
-		</script>
-		
-		
 
 		<script type="text/javascript">
 		
@@ -772,6 +838,7 @@
 		})
 		</script>
      
+
 
 
 
