@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+		<title> IPAMS </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Use the correct meta names below for your web application
+			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
+			 
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
+
+		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
+
+        <!-- 2014_0218_스타일 추가-->
+        <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
+
+		<!-- SmartAdmin RTL Support is under construction
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		specific styles this will also ensure you retrain your customization
+		with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.css"> -->
+
+		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../css/demo.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../images/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+	</head>
+	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
+		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+		<!-- HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span id="logo"> <img src="../../images/top_logo.png" alt="IPAMS"></span>
+				<!-- END LOGO PLACEHOLDER -->
+
+				<!-- Note: The activity badge color changes when clicked and resets the number to 0
+				Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+
+
+				<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+
+
+            <!-- projects dropdown -->
+            <div id="project-context">
+    <span class="notification"> <i class="fa fa-bell-o"></i></span>
+    <span class="label">알림센터</span>
+    <span id="activity" class="popover-trigger-element dropdown-toggle">
+        미확인 알림이
+        <span><b class="badge bg-color-red bounceIn animated"> 21 </b></span>
+        개 있습니다.
+    </span>
+
+                <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+                <div class="ajax-dropdown">
+
+
+                    <!-- notification content -->
+                    <div class="ajax-notifications custom-scroll">
+
+                        <div class="alert alert-transparent">
+                            <ul class="notification_list">
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>평가수행관리</strong> > <strong>개선계획수립</strong>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <a href="">개선계획수립 단계가 완료되었습니다.개선계획수립 단계가 완료되었습니다.</a>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <button class="btn btn-primary btn-xs">확인</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end notification content -->
+
+                    <!-- footer: refresh area -->
+                    <div class="pull-right">
+                        <button class="btn btn-default btn-sm" href="javascript:void(0);"><i class="fa fa-chevron-circle-right margin-right-5"></i>알림센터 바로가기</button>
+                    </div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- END AJAX-DROPDOWN -->
+
+
+				<!-- Suggestion: populate this list with fetch and push technique -->
+				<ul  class="dropdown-menu custom-scroll" style="height: 200px; overflow-y:auto;">
+					<li>
+						<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">Assesment Report for merchant account</a>
+					</li>
+                    <li>
+                        <a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Notes on pipeline upgradee</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Assesment Report for merchant account</a>
+                    </li>
+                    <li class="divider"></li>
+					<li class="text-align-right">
+						<a href="javascript:void(0);"><i class="fa fa-power-off"></i> 알림센터가기</a>
+					</li>
+				</ul>
+				<!-- end dropdown-menu-->
+
+			</div>
+			<!-- end projects dropdown -->
+            <!-- pulled right: nav area -->
+            <div class="user_box pull-right">
+                <div class="user_name">
+                    <span>홍길동</span>님 환영합니다.
+                </div>
+                <!-- 내정보 수정 -->
+                <div class="btn btn-sm btn_blue myinfo">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-gear"></i></a> </span>
+                </div>
+                <!-- end 내정보 수정 -->
+                <!-- logout button -->
+                <div id="logout" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Sign Out"><i class="fa fa-sign-out"></i></a> </span>
+                </div>
+                <!-- end logout button -->
+                <div id="hide-menu" class="btn btn-sm btn_blue">
+                    <span> <a href="#" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+                </div>
+
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
+
+			<!-- 전체메뉴보기 -->
+			<div class="sitemap-info">
+				<span> <i class="fa fa-sitemap"></i> <a href="javascript:void(0);" id="show-shortcut">전체메뉴보기 </a> </span>
+			</div>
+			<!-- end 전체메뉴보기 -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+					<li class="menu_bookmark_box">
+						<a href="#">
+                            <i class="fa fa-lg fa-fw fa-bookmark-o"></i><span class="menu-item-parent">메뉴즐겨찾기</span>
+                        </a>
+						<ul>
+							<li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">문서관리</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+							</li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">진단수행</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark fade in">
+                                    <a href="#">승인대상목록</a>
+                                    <button class="close" data-dismiss="alert">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="alert bookmark_add">
+                                    <a href="#"  data-toggle="modal" data-target="#addsitemapModal">메뉴추가하기<i class="fa fa-plus-square margin-right-5 pull-right"></i></a>
+                                </div>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>접근권한그룹</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+
+
+
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 접근권한그룹</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                	<div class="row">
+                        <div class="col-md-12">
+                        	<div class="alert alert-info mb10">
+					            <strong>권한을 수정 후 적용</strong> 하려면 로그아웃 후 <strong>다시 로그인</strong> 하여야 합니다.
+					        </div>
+                        </div>
+                        
+                        <div class="col-md-12 col-md-5">
+                        	<div class="align-right">
+	                        	<h6 class="h-title float-left">접근권한그룹 목록</h6>
+						        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+					                <i class="fa fa-pencil"></i> 신규등록
+					            </button>
+                        	</div>
+				            <table class="table table-bordered tbodycenter">
+								<colgroup>
+									<col width="50px">
+									<col>
+									<col width="120px">
+									<col width="60px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>선택</th>
+										<th>권한명</th>
+										<th>권한 사용자정보</th>
+										<th>비고</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="inline-group smart-form">
+					                        <label class="radio align-center" style="margin-left: 7px;">
+					                            <input type="radio" checked="checked">
+					                                <i></i>
+					                        </label>
+					                    </td>
+										<td class="tleft">정보보호 컨설턴트</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm"  data-toggle="modal" data-target="#myModal2">6명</button>
+										</td>
+										<td>
+							            	<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="할당된 권한그룹은 삭제불가">삭제</button>
+							            </td>
+									</tr>
+									<tr>
+										<td class="inline-group smart-form">
+					                        <label class="radio align-center" style="margin-left: 7px;">
+					                            <input type="radio" checked="checked">
+					                                <i></i>
+					                        </label>
+					                    </td>
+										<td class="tleft">정보보호 담당자</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm">1명</button>
+										</td>
+										<td>
+							            	<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="할당된 권한그룹은 삭제불가">삭제</button>
+							            </td>
+									</tr>
+								</tbody>
+								
+							</table>
+							<div class="text-center">
+                                <ul class="pagination pagination-sm mt0"> 
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 col-md-7">
+                        	<h6 class="h-title">
+                        		<span>[정보보호 커설턴트] 접근권한</span>
+                        	</h6>
+                        	<div class="well well-light show-grid-div2">
+								<div class="tab-pane active">
+			
+			                        <ul class="nav nav-tabs">
+			                            <li class="active">
+			                                <a href="#iss1" data-toggle="tab">기반정보관리</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss2" data-toggle="tab">사업관리</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss3" data-toggle="tab">평가수행관리</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss4" data-toggle="tab">정기점검관리</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss5" data-toggle="tab">정보제공</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss6" data-toggle="tab">모니터링</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss7" data-toggle="tab">시스템</a>
+			                            </li>
+			                        </ul>
+			
+			                        <div class="tab-content">
+			                            <div class="tab-pane padding-top-10 active" id="iss1">
+			                                
+			                                <div class="panel-group smart-accordion-default" id="accordion1">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														기업/기관정보 </a></h4>
+													</div>
+													<div id="collapseOne1" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>기업/기관정보&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														조직 및 인사 </a></h4>
+													</div>
+													<div id="collapseTwo1" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>부서정보 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>인사정보 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>직무기술 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														전산자산 </a></h4>
+													</div>
+													<div id="collapseThree1" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>자산등록관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>자산승인관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														문서관리 </a></h4>
+													</div>
+													<div id="collapseFour1" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>문서등록관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>문서승인관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>문서서식관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss1  -->
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss2">
+			                                <div class="panel-group smart-accordion-default" id="accordion2">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														사업관리 </a></h4>
+													</div>
+													<div id="collapseOne2" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사업정보 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline ">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss2  -->
+			                            
+			                            
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss3">
+			                                <div class="panel-group smart-accordion-default" id="accordion3">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														평가생성 </a></h4>
+													</div>
+													<div id="collapseOne3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>생성목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														평가현황 </a></h4>
+													</div>
+													<div id="collapseTwo3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>평가현황 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseTree3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														평가계획 </a></h4>
+													</div>
+													<div id="collapseTree3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>평가현황 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseFour3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														현황진단 </a></h4>
+													</div>
+													<div id="collapseFour3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>현황진단 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseFive3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														위험평가 </a></h4>
+													</div>
+													<div id="collapseFive3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>위험평가 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseSix3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														개선계획수립 </a></h4>
+													</div>
+													<div id="collapseSix3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>개선계획수립 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseSeven3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														이행점검 </a></h4>
+													</div>
+													<div id="collapseSeven3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>이행점검 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseEight3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														보고서조회 </a></h4>
+													</div>
+													<div id="collapseEight3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>보고서 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3" href="#collapseNine3"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														평가유형관리 </a></h4>
+													</div>
+													<div id="collapseNine3" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>평가유형관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss3  -->
+			                            
+			                            
+			                            
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss4">
+			                                <div class="panel-group smart-accordion-default" id="accordion4">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#collapseOne4"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														정기점검 요청</a></h4>
+													</div>
+													<div id="collapseOne4" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>정기점검 요청&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo4"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														점검수행 </a></h4>
+													</div>
+													<div id="collapseTwo4" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>점검수행 목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4" href="#collapseTree4"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														정기점검 유형관리 </a></h4>
+													</div>
+													<div id="collapseTree4" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>정기점검 유형관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss4  -->
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss5">
+			                                <div class="panel-group smart-accordion-default" id="accordion5">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion5" href="#collapseOne5"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														정보제공</a></h4>
+													</div>
+													<div id="collapseOne5" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>게시판&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사용 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사이트 포털&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss5  -->
+			                            
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss6">
+			                                <div class="panel-group smart-accordion-default" id="accordion6">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion6" href="#collapseOne6"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														대시보드</a></h4>
+													</div>
+													<div id="collapseOne6" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>대시보드관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                    <label class="checkbox display-inline">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion6" href="#collapseTwo6"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														평가수행 모니터링 </a></h4>
+													</div>
+													<div id="collapseTwo6" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>평가목록&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion6" href="#collapseTree6"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														기반정보 모니터링 </a></h4>
+													</div>
+													<div id="collapseTree6" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>직무기술정보 등록/미등록 현황&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사업별 개인정보 취급자 현황 &nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사업별 취급 개인정보 현황&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>개인정보 항목별 취급 사업수&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>연간교육일정&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion6" href="#collapseFour6"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														시스템 모니터링 </a></h4>
+													</div>
+													<div id="collapseFour6" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>로그인 발생 현황&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>계정신청/승인 현황&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>조회 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss6  -->
+			                            
+			                            
+			                            
+			                            <div class="tab-pane padding-top-10" id="iss7">
+			                                <div class="panel-group smart-accordion-default" id="accordion7">
+			                                
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseOne7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														사용자 관리 </a></h4>
+													</div>
+													<div id="collapseOne7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사용자 정보 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>사용자 신청 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>접근권한그룹 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseTwo7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														환경설정 </a></h4>
+													</div>
+													<div id="collapseTwo7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>시스템메일 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>시스템주기 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>기업/기관 허용 IP 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseTree7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														백업 복구 관리 </a></h4>
+													</div>
+													<div id="collapseTree7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>백업 복구 관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseFour7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														코드관리 </a></h4>
+													</div>
+													<div id="collapseFour7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>기업/기관 유형&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>기업/기관 분류&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>고용형태&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>직급&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>교육유형&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>교육미이수 사유&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>문서분류&nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>문서분류&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>개인정보항목&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseFive7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														연동관리 </a></h4>
+													</div>
+													<div id="collapseFive7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>인사 연동관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>배치 스케쥴관리&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7" href="#collapseSix7"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> 
+														로그관리 </a></h4>
+													</div>
+													<div id="collapseSix7" class="panel-collapse collapse">
+														<div class="panel-body">
+															<table class="table table-bordered mb0">
+																<colgroup>
+																	<col width="250px">
+																	<col>
+																</colgroup>		
+																<tbody>
+																	<tr>
+																		<th class="align-left smart-form">
+																			<label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>로그조회&nbsp;
+														                    </label>
+														                </th>
+										                                <td class="smart-form"> 
+														                    <label class="checkbox">
+														                        <input type="checkbox" name="checkbox" checked="checked"><i></i>관리 &nbsp;
+														                    </label>
+														                </td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+												
+												
+												
+												<div class="align-right mt10 ">
+										            <button type="button" class="btn btn-default btn-sm align-right">저장</button>
+										        </div>
+											</div><!-- END accordion  -->
+			                            </div><!-- END iss7  -->
+			                            
+			                            
+			                            
+			                            
+			                        </div>
+			                        <!-- END tab content  -->
+			                    </div>
+                        	</div>
+                        </div>
+                        
+					</div>
+					<!-- end row  -->
+
+				</div>
+                <!-- END well  -->
+			
+            </div>
+            <!-- END MAIN CONTENT -->
+            
+		</div>
+		<!-- END MAIN PANEL -->
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
+                </div>
+            </footer>
+        </nav>
+        <!-- end footer -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+    
+
+
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 접근권한그룹 추가</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12"> 
+								<table class="table table-bordered mb0">
+						            <colgroup>
+						                <col width="120px">
+						                <col>
+						            </colgroup>
+						            <tbody>
+						            <tr>
+						                <th>접근권한그룹명</th>
+						                <td>
+							                <input class="form-control" placeholder="그룹명을 입력하세요." type="text">
+						                </td>
+						            </tr>
+						            </tbody>
+						        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+        
+		<!-- Modal_2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> [정보보호 컨설턴트] 권한 사용자 목록</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                            	<table class="table table-bordered tbodycenter">
+	            					<colgroup>
+						                <col width="50px;">
+						                <col width="150px;">
+						                <col>
+						                <col>
+						            </colgroup>
+						            <thead>
+						                <tr>
+						                	<th>No.</th>
+						                    <th>기업/기관</th>
+						                    <th>부서</th>
+						                    <th>이름</th>
+						                </tr>
+						            </thead>
+						            <tbody>
+						            	<tr>
+						            		<td>6</td>
+						            		<td class="tleft">드림인프라</td>
+						            		<td class="tleft">영업무</td>
+						            		<td class="tleft">
+						            			<!-- 인명정보 -->
+										        <button class="user_info_box" rel="popover-hover" data-placement="left"
+										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+										        data-content="
+										            <ul class='user_info'>
+										                <p><img src='../../images/member_big.png'></p>
+										                <li>시스템관리자</li>
+										                <li>(주)드림인프라</li>
+										                <li>SI사업부</li>
+										                <li>부장</li>
+										                <li>systemadministrator@dreaminfra.co.kr </li>
+										            </ul>
+										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>민준희</strong>
+										        </button>
+										        <!--인명정보 끝-->
+						            		</td>						            		
+						            	</tr>
+						            </tbody>
+						            
+						        </table>
+						        
+                                <div class="text-center">
+                                    <ul class="pagination pagination-sm pagination-alt mt0 mb0">
+                                        <li>
+                                            <a href="javascript:void(0);">처음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">이전</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">다음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">마지막</a>
+                                        </li>
+                                    </ul>
+                                </div>
+		        
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal-2 -->
+
+
+
+		
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../js/libs/jquery-2.0.2.min.js"><\/script>');
+			}
+		</script>
+
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>-->
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="../../js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="../../js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="../../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="../../js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- SmartClick: For mobile devices -->
+		<script src="../../js/plugin/smartclick/smartclick.js"></script>
+
+		<!--[if IE 7]>
+
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		<script src="../../js/demo.js"></script>
+
+		<!-- MAIN APP JS FILE -->
+		<script src="../../js/app.js"></script>
+
+        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+
+
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+		</script>
+     
+
+
+
+
+
+
+
+	</body>
+
+</html>

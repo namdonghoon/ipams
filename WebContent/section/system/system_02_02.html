@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 정보</li>
+					<li>IPAMS HOME</li><li>시스템 </li><li>사용자관리</li><li>사용자 신청</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,82 +310,66 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 정보</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 시스템 <span> > 사용자 신청</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-                	<div class="row">
+                	<div class="row">	
                         <div class="col-md-12">
+	                		<h6 class="h-title">사용자정보 목록</h6>
                         	<table class="table table-bordered form">
 								<colgroup>
-								    <col width="100px;">
+								    <col style="width: 100px;">
 								    <col>
-								    <col width="100px;">
+								    <col style="width: 100px;">
 								    <col>
-								    <col width="70px;">
+								    <col style="width: 100px;">
+								    <col>
+								    <col style="width: 70px;">
 								</colgroup>
 								<tbody>
 									<tr>
-									    <th><label for="state">상태</label></th>
+									    <th><label for="state">이메일</label></th>
 										<td>   
-											<div class="inline-group smart-form">
-						                        <label class="radio display-inline"> 
-						                            <input type="radio" name="radio-inline" checked="checked">
-						                                <i class="t0"></i>전체&nbsp;&nbsp;
-						                        </label> 
-						                        <label class="radio display-inline"> 
-						                            <input type="radio" name="radio-inline">
-						                                <i class="t0"></i>잠금해제&nbsp;&nbsp;
-						                        </label> 
-						                        <label class="radio display-inline">
-						                            <input type="radio" name="radio-inline">
-						                                <i class="t0"></i>잠금
-						                        </label>
-						                    </div>      
+									    	<input class="form-control" placeholder="이메일을 입력하세요." type="text">
 									    </td>
 									    <th><label for="employeeName">이름</label></th>
 									    <td>
 									    	<input class="form-control" placeholder="이름을 입력하세요." type="text">
 									    </td>
-										<td rowspan="2" class="search">         
+									    <th><label for="state">상태</label></th>
+									    <td>
+								            <select class="form-control" style="width:100px;">
+								                <option>전체</option>
+								                <option>신청</option>
+								                <option>승인</option>
+								                <option>대기</option>
+								                <option>반려</option>
+								            </select>
+									    </td>
+										<td rowspan="2" class="search-color">         
 								            <button class="btn btn-default">
 								                <i class="fa fa-search fa-lg margin-right-5"></i>검색
 								            </button>
 									    </td>
 									</tr>
-									<tr>
-										<th><label for="employeeName">접근권한그룹</label></th>
-										<td colspan="3">
-											<div>
-												<select multiple  class="select2">
-													<option>시스템관리자</option>
-													<option>사용자</option>
-													<option>정보보호 컨설턴트</option>
-													<option>test1</option>
-													<option>test2</option>
-													<option>test3</option>
-													<option>test4</option>
-													<option>test5</option>												
-												</select>
-											</div>
-										</td>
-									</tr>
 								</tbody>
 							</table>
 							
-							<div>
-				            <button class="btn btn-primary float-right mb10">
-				                <i class="fa fa-pencil "></i> 신규등록
-				            </button>
+				            <div class="alert alert-info">
+				            1. <strong>[반려]</strong>버튼을 누르면 계정 신청 상태가 <strong>[반려]</strong>되고 신청한 사용자에게 반려 메일이 발송됩니다.<br>
+							2. <strong>[초기화]</strong>버튼을 눌러 거부된 사용자 계정를 초기화 한 후 <strong>[인증메일 재발송]</strong>버튼을 눌러야 해당 사용자에게 메일이 발송됩니다.
+					        </div>
 							<table class="table table-bordered tbodycenter" >
 								<colgroup>
-								    <col width="60px;">
+								    <col width="50px">
 								    <col>
 								    <col>
 								    <col width="100px;">
-								    <col>
-								    <col width="80px;">
-								    <col width="120px;">
+								    <col width="200px;">
+								    <col width="70px;">
+								    <col width="130px;">
+								    <col width="150px">
 								</colgroup>
 								<thead>
 								<tr>
@@ -393,11 +377,12 @@
 								    <th>기업/기관</th>
 								    <th>부서</th>
 								    <th>이름</th>
-								    <th>아이디</th>
-								    <th>권한정보</th>
-								    <th>비고</th>
+								    <th>신청자 메일</th>
+								    <th>상태</th>
+								    <th>신청일자</th>
+								    <th>비고</th>								    
 								</tr>
-								</thead>
+								</thead> 
 								<tbody>
 									<tr>
 										<td>53</td>
@@ -405,26 +390,69 @@
 										<td>개발부</td>
 										<td>박다빈</td>
 										<td>bdb@dreaminfra.co.kr</td>
+										<td>승인</td>
+										<td>2014-03-18 00:14</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>52</td>
+										<td>드림인프라</td>
+										<td>개발부</td>
+										<td>박두빈</td>
+										<td>bdb22@dreaminfra.co.kr</td>
+										<td>신청</td>
+										<td>2014-03-18 10:14</td>
 										<td>
-											<button class="user_info_box" rel="popover-hover" data-placement="left"
-										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>권한" 
-										        data-content="
-										            <ul class='user_info'>
-										                <li>사용자</li>
-										                <li>정보보호 담당자</li>
-										            </ul>
-										        " data-html="true"><i class="fa fa-user"></i></button>
-				        				</td>
+				            				<button type="button" class="btn btn-default btn-sm">승인</button>
+				            				<button type="button" class="btn btn-default btn-sm">반려</button>
+										</td>
+									</tr>
+									<tr>
+										<td>51</td>
+										<td>드림인프라</td>
+										<td>개발부</td>
+										<td>박데빈</td>
+										<td>bdb12@dreaminfra.co.kr</td>
+										<td>대기</td>
+										<td>2014-03-18 01:14</td>
 										<td>
-				            				<button type="button" class="btn btn-default btn-sm">수정</button>
-				            				<button type="button" class="btn btn-default btn-sm">잠금</button>
+				            				<button type="button" class="btn btn-default btn-sm">인증메일 재발송</button>
 										</td>
 									</tr>
 								</tbody>
-								</table>
-							
+							</table>
+							<div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        
 					</div>
 					<!-- end row  -->
 
@@ -488,44 +516,6 @@
 		<!-- END SHORTCUT AREA -->
     
 
-
-		<!-- Modal_1 -->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 부서 검색</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="input-group search-color width-60">
-									<input class="form-control" placeholder="기업/기관명을 검색하세요." type="text">
-									<div class="input-group-btn">
-										<button class="btn btn-default btn-search">
-											<i class="fa fa-search">&nbsp;검색</i>
-										</button>
-									</div>
-								</div>
-                            </div>
-                            
-                            <div class="col-md-12">
-                            	트리 내용
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
 
 
 

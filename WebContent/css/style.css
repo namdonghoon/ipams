@@ -749,9 +749,7 @@ input, select{
 
 
 /* 마진 크기 조정 */
-.mb0{
-	margin-bottom: 0px;
-}
+
  .mt10 {
 margin-top: 10px;
 }.mb10 {
@@ -793,7 +791,7 @@ margin-bottom: 40px;
 .mr5{
 	margin-right: 5px;
 }.mb5{
-	margin-bottom: 5px !important;	
+	margin-bottom: 5px;	
 }
 .mt4{
 	margin-top: 4px;
@@ -1296,3 +1294,8 @@ box-shadow: 0 0 0 9px #fff;
 	background-color: #f0f0f0;
 	border-color: #ccc;
 }
+
+.checkbox{
+	font-size: 12px !important;
+}
+
