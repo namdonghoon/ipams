@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>인사정보관리 </li><li>직무기술목록 </li>
+					<li>IPAMS HOME</li><li>인사정보관리 </li><li>인사정보목록 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -312,41 +312,60 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >  직무기술목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 인사정보목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
                         
                         <div class="col-md-12">
-                            <table class="table table-bordered form">
-								<colgroup>
-								    <col width="100px">
-								    <col>
-								    <col width="50px">
-								</colgroup>
-								<tbody>
-									<tr>
-									    <th><label for="txtName">직무명</label></th>
-									    <td>
-									    	<input class="form-control" placeholder="직무명을 입력하세요." type="text">
-									    </td>
-										<td>
-											<div class="search-color">
-									            <button class="btn btn-default">
-									                <i class="fa fa-search fa-lg margin-right-5"></i>검색
-									            </button>
-									        </div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-
-
-
-
+                            <table class="table table-bordered">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col>
+                                    <col width="100px">
+                                    <col>
+                                    <col width="70px">
+                                </colgroup>
+                                <tr>
+                                    <th>기업/기관</th>
+                                    <td>
+                                    	<input class="form-control" placeholder="기업/기관명을 입력하세요." type="text">
+                                    </td>
+                                    <th>부서</th>
+                                    <td>
+                                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+                                    </td>
+                                    <td rowspan="2" class="search text-align-center">
+                                        <button class="btn btn-default btn-lg" href="javascript:void(0);">
+                                            <i class="fa fa-search fa-lg margin-right-5"></i>검색
+                                        </button>
+                                    </td> 
+                                </tr> 
+                                <tr>
+                                    <th>이름</th>
+                                    <td>
+                                    	<input class="form-control" placeholder="이름을 입력하세요." type="text">
+                                    </td>
+                                    <th>상태</th>
+                                    <td>
+                                    	<span>
+								            <select class="form-control" style="width:100px;">
+								                <option>-전체-</option>
+								                <option>1</option>
+								                <option>2</option>
+								                <option>3</option>
+								            </select>
+								        </span>
+                                    </td> 
+                                    
+                                </tr>
+                            </table>
 
                             <div class="text-align-right margin-bottom-5">
+                                <button data-toggle="modal" data-target="#myModal1" class="btn btn-default float-left">
+                                    부서이동
+                                </button>
                                 <button class="btn btn-primary">
                                     <i class="fa fa-pencil margin-right-5"></i>신규등록
                                 </button>
@@ -354,33 +373,65 @@
 
                             <table class="table table-bordered tbodycenter">
                                 <colgroup>
-									<col width="50px;">
-									<col width="100px;">
-									<col>
-									<col width="100px;">
-									<col width="100px;">
-									<col width="150px;">
-								</colgroup>
+                                    <col width="50px">
+                                    <col width="50px">
+                                    <col>
+                                    <col>
+                                    <col width="90px">
+                                    <col width="100px">
+                                    <col width="200px">
+                                    <col width="90px">
+                                    <col width="90px">
+                                    <col width="150px">
+                                </colgroup>
                                 <thead>
-									<tr>
-										<th>No.</th>
-										<th>직무분류</th>
-										<th>직무명</th>
-										<th>관련부서</th>
-										<th>할당내역</th>
-										<th>비고</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>-</td>
-										<td>-</td>
-										<td>-</td>
-										<td>-</td>
-										<td>-</td>
-									</tr>
-								</tbody>
+                                    <tr>
+                                        <th class="smart-form"> 
+						                    <label class="checkbox">
+						                        <input type="checkbox">
+						                        <i></i> 
+						                    </label>
+						                </th>
+                                        <th>No.</th>
+                                        <th>기업/기관</th>
+                                        <th>부서</th>
+                                        <th>직급</th>
+                                        <th>이름</th>
+                                        <th>이메일</th>
+                                        <th>상태</th>
+                                        <th>변경이력</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="smart-form"> 
+							                    <label class="checkbox">
+							                        <input type="checkbox">
+							                        <i></i> 
+							                    </label>
+							                </td>
+                                            <td>1</td>
+                                            <td>드림인프라</td>
+                                            <td>개발본부</td>
+                                            <td>과장</td>
+                                            <td>홍길동</td>
+                                            <td>abcd@dreaminfa.co.kr</td>
+                                            <td>재직</td>
+                                            <td>
+                                                <button class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
+                                                    조회
+                                                </button>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default btn-sm">조회</button>
+                                                    <button type="button" class="btn btn-default btn-sm">수정</button>
+                                                    <button type="button" class="btn btn-default btn-sm">삭제</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
                             </table>
 
                             <div class="text-center">

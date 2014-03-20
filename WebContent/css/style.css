@@ -1241,7 +1241,7 @@ box-shadow: 0 0 0 9px #fff;
 	margin-left: -1px;
 }
  
-/* 모니터링 평가수행  */
+* 모니터링 평가수행  */
 .mo-title{
 	font-weight: bold;
 	color: #296191;
@@ -1292,23 +1292,27 @@ box-shadow: 0 0 0 9px #fff;
 .vertical_top{
     vertical-align: top;
 }
-
-/* 모니터링 */ 
-.user_profile{
-	padding: 2px;
-	background: white;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-	width: 40px;
-	height: 40px;
-	border: 1px solid #DDD;	
-}
-
 /*버튼-취소, 이전*/
 .btn-cancel{
-	color: #333;
-	background-color: #f0f0f0;
-	border-color: #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+    border-color: #ccc;
 }
+/*모니터링 대시보드 미리보기*/
+.dashboard_added ul{
+    margin-top: 30px;
+    padding-left: 0;
+    display: table;
+}
+.dashboard_added ul li{
+    float: left;
+    margin: 0 5px;
+}
+.dashboard_added ul li .jarviswidget{
+    margin-bottom: 0;
+}
+
+
 .checkbox{
 	font-size: 12px !important;
 }.smart-form .textarea textarea{

@@ -273,68 +273,286 @@
 		<!-- END NAVIGATION -->
 
 		<!-- MAIN PANEL -->
-	<div id="main" role="main">
+		<div id="main" role="main">
 
-		<!-- RIBBON -->
-		<div id="ribbon">
+			<!-- RIBBON -->
+			<div id="ribbon">
 
-			<span class="ribbon-button-alignment"> <span
-				class="btn btn-ribbon" rel="tooltip" data-placement="bottom"
-				data-original-title="<i class='fa fa-home'></i> 홈으로 가기"
-				data-html="true"> <i class="fa fa-home"></i>
-			</span>
-			</span>
-			<!-- breadcrumb -->
-			<ol class="breadcrumb">
-				<li>IPAMS HOME</li>
-				<li>인사정보관리</li>
-				<li>기업조직도</li>
-			</ol>
-			<!-- end breadcrumb -->
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>인사정보관리 </li><li>직무기술 할당 </li>
+				</ol>
+				<!-- end breadcrumb -->
 
-		</div>
-		<!-- END RIBBON -->
+				<!-- You can also add more buttons to the
+				ribbon for further usability
 
+				Example below:
 
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
 
-
-
-
-
-
-		<!-- MAIN CONTENT -->
-		<div id="content">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="page-title txt-color-blueDark">
-						<i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >
-							기업조직도</span>
-					</h1>
-				</div>
 			</div>
-			<div class="well well-light">
-				<div class="row">
+			<!-- END RIBBON -->
 
-					<div class="col-md-12">
 
-						<div class="show-grid-div1">
-						
-						</div>
-						
-						<div>
-				            <button class="btn btn-default btn-lg mt10"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
-				        </div>
-					</div>
-			
-				</div>
-			</div>
+
+
+
+
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 직무기술 할당</span></h1>
+                    </div>
+                </div>
+                <div class="well well-light">
+                    <div class="row">
+ 						<div class="col-md-12" >
+                          	<h6 class="h-title">임직원 정보</h6>
+                          	<table class="table table-bordered table-fixed">
+					            <colgroup>
+					                <col width="100px">
+					                <col>
+					                <col width="100px">
+					                <col>
+					                <col width="100px">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					                <tr>
+					                    <th>기업/기관</th>
+					                    <td>(주)kt rental</td>
+					                    <th>부서</th>
+					                    <td colspan="3">
+					                    	용산영업소&nbsp;
+											<button data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-default btn-sm" > &nbsp;상세조회</button>
+										</td>
+					                </tr>
+					                <tr>
+					                    <th>직급</th>
+					                    <td>사원</td>
+					                    <th>이름</th>
+					                    <td>강동규</td>
+					                    <th>이메일</th>
+					                    <td>hoomoo2@naver.com</td>
+					                </tr>
+					            </tbody>
+					        </table>
+                       		
+ 						</div>
+ 					</div>
+ 					<!-- END ROW  -->
+ 					
+ 					<div class="row">
+                        <div class="col-md-12 col-md-4">
+                          	<h6 class="h-title">할당직무 목록</h6>
+                          	 <div class="show-grid-div2">
+                          	 
+                          	 </div>
+ 						</div>
+	 						
+ 						<div class="col-md-12 col-md-8" >
+                          	<h6 class="h-title">직무명</h6>
+                       		<table class="table table-bordered">
+					            <colgroup>
+					                <col width="100px">
+					                <col>
+					                <col width="100px">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					                <tr>
+					                    <th>직무분류</th>
+					                    <td>-</td>
+					                    <th>직무명</th>
+					                    <td>-</td>
+					                </tr>
+					            </tbody>
+					        </table>
+					        
+					        <h6 class="h-title">직무수행요건</h6>
+					        <table class="table table-bordered">
+	            				<colgroup>
+								    <col width="200px;">
+								    <col>
+							    </colgroup>
+					            <thead>
+					            <tr>
+							        <th>구분</th>
+							        <th>내용</th>
+							    </tr>
+					            </thead>
+					            <tbody>
+								    <tr>
+								    	<td></td>
+								    	<td></td>
+								    </tr>
+					            </tbody>
+					        </table>
+					        
+					        <h6 class="h-title">세부직무내용</h6>
+					        <table class="table table-bordered">
+	            				<colgroup>
+					                <col width="200px;">
+					                <col>
+					                <col width="150px;">
+					                <col width="150px;">
+					            </colgroup>
+					            <thead>
+					            <tr>
+					                <th>직무내용</th>
+					                <th>처리절차 및 방법</th>
+					                <th>수행주기</th>
+					                <th>관련문서</th>
+					            </tr>
+					            </thead>
+					            <tbody>
+								    <tr>
+								    	<td></td>
+								    	<td></td>
+								    	<td></td>
+								    	<td></td>
+								    </tr>
+					            </tbody>
+					        </table>
+					        
+					        <h6 class="h-title">특이사항</h6>
+					        <table class="table table-bordered">
+					            <colgroup>
+					                <col width="100px;">
+					                <col>
+					            </colgroup>
+					            <tbody>
+					            <tr>
+					                <th>특이사항</th>
+					                <td class="smart-form">
+				                    <label class="textarea textarea-resizable">
+				                        <textarea rows="4"></textarea>
+				                    </label>
+				                </td>
+					            </tr>
+					            </tbody>
+					        </table>
+ 						</div>
+ 						      
+		            </div>
+                    <!-- END ROW --> 
+                          
+                    <div class="align-right">
+			            <button type="button" class="btn btn-lg btn-cancel float-left">
+			                <i class="fa fa-times margin-right-5"></i>취소
+			            </button>
+			            <button type="button" class="btn btn-lg btn-success ">
+			                완료
+			                <i class="fa fa-check"></i></button>
+			        </div>
+                          
+                </div><!-- END well  -->
+                   
+            </div>
+            <!-- END MAIN CONTENT -->
+            
 		</div>
-		<!-- END CONTENT  -->
-		 
-	</div>
+		<!-- END MAIN PANEL -->
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
+                </div>
+            </footer>
+        </nav>
+        <!-- end footer -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+        
 
 
-	<!--================================================== -->
+
+       
+		<!-- Modal_1 -->
+	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-sm">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 부서 상세</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+	                        <div class="col-md-12">
+	              
+	                            <!--  내용 삽입  -->
+		                         <div class="show-grid-div2">
+		
+		                         </div>
+	
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	        <!-- end modal -->
+
+
+		<!--================================================== -->
 
 		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
 		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
@@ -415,6 +633,55 @@
 		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+        <!-- data picker-->
+        <script type="text/javascript">
+        $('#startdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+            }
+        });
+
+        $('#finishdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+            }
+        });
+    </script>
+    <!-- end data picker -->
+
+
+
+
+
+        <script>
+            $(document).ready(function() {
+
+                // DO NOT REMOVE : GLOBAL FUNCTIONS!
+                pageSetUp();
+
+                /*
+                 * PAGE RELATED SCRIPTS
+                 */
+
+                $(".js-status-update a").click(function() {
+                    var selText = $(this).text();
+                    $this = $(this);
+                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                    $this.parents('.dropdown-menu').find('li').removeClass('active');
+                    $this.parent().addClass('active');
+                });
+            });
+
+        </script>
+
+
 
 
 

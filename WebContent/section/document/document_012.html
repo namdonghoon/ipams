@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>모니터링 </li><li>평가수행관리</li>
+					<li>IPAMS HOME</li><li>문서관리 </li><li>문서등록관리 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -306,131 +306,128 @@
 
 
 
+
+
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 모니터링 <span> >  평가수행관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 문서관리 <span> > 문서등록관리</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
-             		
-                	<div class="row">
-                        <div class="col-md-12">
-                            <table class="table table-bordered">
-						        <colgroup>
-						            <col style="width: 100px;">
-						            <col>
-						            <col style="width: 100px;">
-						            <col>
-						            <col style="width: 70px;">
-						        </colgroup>
-						        <tbody><tr>
-						            <th class="tleft"><label for="txtName">평가명</label></th>
-								    <td>
-								    	<input class="form-control" placeholder="평가명을 입력하세요." type="text">
-								    </td>
-								    <th class="tleft"><label id="txtTypeName">평가유형명</label></th>
-								    <td>
-								    	<input class="form-control" placeholder="평가유형명을 입력하세요." type="text">
-								    </td>
-								    <td class="search-color">
-						            <button class="btn btn-default">
-						                <i class="fa fa-search fa-lg"></i> 검색
-						            </button>
-						            </td>
-						        </tr>
-						    </tbody></table>
-                            
-                        </div>
-                        
-                        <div class="col-md-12">
-                        	<table class="table table-bordered tbodycenter">
-								<colgroup>
-							        <col width="50px">
-							        <col>
-							        <col>
-							        <col width="130px">
-							        <col width="130px">
-							        <col width="90px">
-							        <col width="80px">
-							    </colgroup>
-							    <thead>
-							    <tr>
-							        <th>No.</th>
-							        <th>평가명</th>
-							        <th>평가유형명</th>
-							        <th>평가생성자</th>
-							        <th>진행단계</th>
-							        <th>진행상태</th>
-							        <th>비고</th>
-							    </tr>
-							    </thead>
-							    <tbody>
-							    	<tr>
-							    		<td>1</td>
-							    		<td class="tleft">통합_KTR_관리체계진단 정보보호대책명세서(ISMS 및 CCTV)_2013</td>
-							    		<td class="tleft">통합_KTR_관리체계진단 정보보호대책명세서(ISMS 및 CCTV)_2013</td>
-							    		<td>
-							    			<span class="badge badge-color-darkorange">진행중</span>
-							    		</td>
-							    		<td>
-							    			<button class="user_info_box" rel="popover-hover" data-placement="left"
-									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-									        data-content="
-									            <ul class='user_info'>
-									                <p><img src='../../images/member_big.png'></p>
-									                <li>시스템관리자</li>
-									                <li>(주)드림인프라</li>
-									                <li>SI사업부</li>
-									                <li>부장</li>
-									                <li>systemadministrator@dreaminfra.co.kr </li>
-									            </ul>
-									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-									        </button>
-							    		</td>
-							    		<td>현황진단</td>
-							    		<td>
-							    			<button type="button" class="btn btn-default btn-sm">조회</button>
-							    		</td>
-							    	</tr>
-							    </tbody>
-							</table>
-							<div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
+                    <div class="row">
+                    	<div class="col-md-12 col-md-3">
+                 			<h6 class="h-title">문서분류</h6>
+                            <div class="show-grid-div2">
+                                트리
                             </div>
                         </div>
-                        
+                        <div class="col-md-12 col-md-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group search-color width-40 margin-bottom-5">
+                                    <input class="form-control" placeholder="문서명을 검색하세요." type="text">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-search">
+                                            <i class="fa fa-search">&nbsp;검색</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="panel-group smart-accordion-default" id="accordion1">
+                                <div class="panel panel-default margin-bottom-5">
+                                    <div class="panel-heading">
+                                        <p class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+                                               <span><i class="fa fa-lg fa-fw fa-expand-o"></i></span>경영
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <!--  내용  -->
+                                            <div class="row">
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">경영총괄</p>
+                                                    <ul>
+                                                        <li><a>일반(7)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">사업계획 및 실적</p>
+                                                    <ul>
+                                                        <li><a>일반(0)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">예산관리</p>
+                                                    <ul>
+                                                        <li><a>경영총괄(0)</a>
+                                                            <button class="btn btn-default btn-xs detail_progress_btn"><i class="fa fa-plus"></i></button>
+                                                        </li>
+                                                        <div class="detail_progress" style="display: none;">
+                                                        <li><a>사업계획 및 실적(0)</a></li>
+                                                        <li><a>예산관리(0)</a></li>
+                                                        <li><a>원가관리(0)</a></li>
+                                                        <li><a>예산관리(0)</a></li>
+                                                        <li><a>경영개선(0)</a></li>
+                                                        <li><a>경영개선(0)</a></li>
+                                                        <li><a>전산(0) </a></li>
+                                                    </div>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">사업계획 및 실적</p>
+                                                    <ul>
+                                                        <li><a>일반(0)</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">원가관리</p>
+                                                    <ul><li><a>일반(0)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">보고서</p>
+                                                    <ul>
+                                                        <li><a>평가계획 수립 보고서(0)</a>
+                                                            <button class="btn btn-default btn-xs detail_progress_btn"><i class="fa fa-plus"></i></button>
+                                                        </li>
+                                                        <div class="detail_progress" style="display: none;">
+                                                        <li><a>현황진단 결과 보고서 (0)</a></li>
+                                                        <li><a>침해요인 분석 보고서 (0)</a></li>
+                                                        <li><a>위험분석 보고서 (0)</a></li>
+                                                        <li><a>개선계획 수립 보고서 (0)</a></li>
+                                                        <li><a>이행점검 결과 보고서 (0)</a></li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">고객관리</p>
+                                                    <ul>
+                                                        <li><a>일반(0)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xs-3 file_category">
+                                                    <p class="badge">고객관리</p>
+                                                    <ul>
+                                                        <li><a>일반(0)</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-			        <!-- end row  -->
+                    <!-- END ROW -->
+			        
 
                 </div>
                 <!-- END well  -->
@@ -493,6 +490,78 @@
     
 
 
+
+
+		<!-- Modal-1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 파일업로드</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="h-title pull-left">파일업로드</h6>
+                                <div style="margin-left:110px;">
+                                    <div class="alert alert-info">
+                                        <i class="fa-fw fa fa-info"></i>100MB 이상의 파일은 업로드 되지 않습니다.
+                                    </div>
+                                </div>
+                                <table class="table table-bordered tbodycenter">
+                                    <colgroup>
+                                        <col>
+                                        <col width="100">
+                                        <col width="150">
+                                        <col width="80">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>파일명</th>
+                                        <th>파일크기</th>
+                                        <th>진행률</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tleft">경기도정보보안_s_text.ai</td>
+                                        <td>1MB</td>
+                                        <td>
+                                            <div class="bar-holder">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm">
+                                               삭제
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary disabled">완료</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end Modal -->
 
 
 
@@ -579,14 +648,67 @@
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="../../js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 
-     
+        <!-- data picker-->
+        <script type="text/javascript">
+        $('#startdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+            }
+        });
+
+        $('#finishdate').datepicker({
+            dateFormat : 'yy-mm-dd',
+            prevText : '<i class="fa fa-chevron-left"></i>',
+            nextText : '<i class="fa fa-chevron-right"></i>',
+            onSelect : function(selectedDate) {
+                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+            }
+        });
+    </script>
+    <!-- end data picker -->
 
 
 
 
 
+        <script>
+            $(document).ready(function() {
 
+                // DO NOT REMOVE : GLOBAL FUNCTIONS!
+                pageSetUp();
 
+                /*
+                 * PAGE RELATED SCRIPTS
+                 */
+
+                $(".js-status-update a").click(function() {
+                    var selText = $(this).text();
+                    $this = $(this);
+                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+                    $this.parents('.dropdown-menu').find('li').removeClass('active');
+                    $this.parent().addClass('active');
+                });
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.detail_progress_btn').click(function(){
+                    if($(this).parent().parent().children(".detail_progress").is(":hidden")){
+                        $(this).children("i").removeClass("fa-plus");
+                        $(this).children("i").addClass("fa-minus");
+                        $(this).parent().parent().children(".detail_progress").slideDown("slow");
+                    }else{
+                        $(this).children("i").removeClass("fa-minus");
+                        $(this).children("i").addClass("fa-plus");
+                        $(this).parent().parent().children(".detail_progress").slideUp("slow");
+                    };
+                });
+            });
+        </script>
 	</body>
-
 </html>

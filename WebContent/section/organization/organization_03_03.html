@@ -19,7 +19,7 @@
 		<!-- Basic Styles -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/font-awesome.min.css">
-
+		
 		<!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-production.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="../../css/smartadmin-skins.css">
@@ -288,7 +288,7 @@
 			<ol class="breadcrumb">
 				<li>IPAMS HOME</li>
 				<li>인사정보관리</li>
-				<li>기업/기관정보 상세</li>
+				<li>인사정보 상세</li>
 			</ol>
 			<!-- end breadcrumb -->
 
@@ -304,11 +304,13 @@
 
 		<!-- MAIN CONTENT -->
 		<div id="content">
+		
+		
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="page-title txt-color-blueDark">
 						<i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >
-							기업/기관정보 상세</span>
+							인사정보상세</span>
 					</h1>
 				</div>
 			</div>
@@ -316,43 +318,79 @@
 				<div class="row">
 
 					<div class="col-md-12">
+						<h6 class="h-title float-left">신규등록</h6>
+						<div class="align-right">
+		              		<button class="btn btn-default mb10" >
+		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
+		                    </button>
+		                    <button class="btn btn-default mb10" >
+		                    	<i class="fa fa-upload"></i> 엑셀 등록
+		                    </button>
+						</div> 
 						
-						<table class="table table-bordered">
-							<colgroup>
-								<col width="150px">
-								<col>
-							</colgroup>
-							<tbody>
-								<tr>
-									<th><label>유형</label></th>
-									<td>민간기업</td>
-								</tr>
-								<tr>
-									<th><label>분류</label></th>
-									<td>위탁업체</td>
-								</tr>
-								<tr>
-									<th><label>기업/기관명</label></th>
-									<td>A3시큐리티</td>
-								</tr>
-								<tr>
-									<th><label>대표 전화번호</label></th>
-									<td>02-6292-3001</td>
-								</tr>
-								<tr>
-									<th><label>우편번호</label></th>
-									<td>153-706</td>
-								</tr>
-								<tr>
-									<th><label>주소</label></th>
-									<td>서울 금천구 가산동 345-90 한라시그마벨리 1605호</td>
-								</tr>
-								<tr>
-									<th><label>비고</label></th>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
+						
+						<table class="table table-bordered" id="employeeTable">
+				            <colgroup>
+				                <col width="100px">
+				                <col>
+				            </colgroup>
+				            <tbody>
+					            <tr>
+					                <th><label for="company">기업/기관</label></th>
+					                <td>
+						               	드림인프라
+					                </td>
+					            </tr> 
+					            <tr>
+					                <th><label for="department">부서</label></th>
+					                <td>
+					                	시스템 팀
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="type">고용형태</label></th>
+					                <td>
+					                	정규직
+									</td>
+					            </tr>
+					            <tr>
+					                <th><label for="position">직급</label></th>
+					                <td>
+					                	과장
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="duty">직책</label></th>
+					                <td>
+					                	팀원
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="employeeNumber">사원번호</label></th>
+					                <td>
+					                	00050009
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="name">이름</label></th>
+					                <td>
+					                	이종찬
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="email">이메일</label></th>
+					                <td>
+					                	50009@ktrental.com
+					                </td>
+					            </tr>
+					            <tr>
+					                <th><label for="status">상태</label></th>
+					                <td>
+					                	재직
+					                </td>
+					            </tr>
+					        </tbody>
+				        </table>
 						
 						
 						<div class="text-align-right">

@@ -348,53 +348,55 @@
                 <div class="well well-light">
                 <div class="row">
                     <div class="col-md-12">
-                        <h6 class="h-title">글내용</h6>
+                        <h6 class="h-title">내용보기</h6>
                         <table class="table table-bordered">
                             <colgroup>
                                 <col width="100px">
                                 <col>
+                                <col width="100px">
+                                <col width="150px">
                             </colgroup>
                             <tbody>
                             <tr>
-                                <th>유형</th>
+                                <th>제목</th>
                                 <td>
-                                    <form class="smart-form">
-                                        <div class="inline-group">
-                                            <label class="radio">
-                                                <input type="radio" name="radio-inline" checked="checked">
-                                                    <i></i>일반
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="radio-inline">
-                                                    <i></i>공지사항
-                                            </label>
-                                        </div>
-                                    </form>
+                                    게시글 제목입니다.
+                                </td>
+                                <th>작성일</th>
+                                <td>
+                                    2014-03-12
                                 </td>
                             </tr>
                             <tr>
-                                <th>제목</th>
-                                <td>
-                                    <form class="smart-form">
-                                        <label class="input state-disabled">
-                                            <input type="text" disabled="disabled" value="">
-                                        </label>
-                                    </form>
+                                <th>작성자</th>
+                                <td colspan="3">
+                                    <!-- 인명정보 -->
+                                    <button class="user_info_box" rel="popover-hover" data-placement="left"
+                                            data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                            data-content="
+				            <ul class='user_info'>
+				                <p><img src='../../images/member_big.png'></p>
+				                <li>시스템관리자</li>
+				                <li>(주)드림인프라</li>
+				                <li>SI사업부</li>
+				                <li>부장</li>
+				                <li>systemadministrator@dreaminfra.co.kr </li>
+				            </ul>
+				        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+                                    </button>
+                                    <!--인명정보 끝-->
+
                                 </td>
                             </tr>
                             <tr>
                                 <th>내용</th>
-                                <td>
-                                    <form class="smart-form">
-                                        <label class="textarea textarea-resizable state-disabled">
-                                            <textarea rows="5" class="custom-scroll" disabled="disabled"></textarea>
-                                        </label>
-                                    </form>
+                                <td colspan="3">
+                                    내용 테스트입니다.
                                 </td>
                             </tr>
                             <tr>
                                 <th>첨부파일</th>
-                                <td>
+                                <td colspan="3">
                                     <ul class="file_upload">
                                         <li>
                                             <span><i class="fa fa-fw fa-file-text-o"></i></span>경기도청 지도.ai

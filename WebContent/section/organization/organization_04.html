@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>인사정보관리 </li><li>직무기술 할당 </li>
+					<li>IPAMS HOME</li><li>인사정보관리 </li><li>직무기술목록 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -312,120 +312,76 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 직무기술 할당</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >  직무기술목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
                         
                         <div class="col-md-12">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered form">
 								<colgroup>
-								    <col width="100px">
-								    <col>
-								    <col width="100px">
-								    <col>
 								    <col width="100px">
 								    <col>
 								    <col width="50px">
 								</colgroup>
 								<tbody>
 									<tr>
-									    <th><label for="txtCompany">기업/기관</label></th>
+									    <th><label for="txtName">직무명</label></th>
 									    <td>
-									    	<input class="form-control" placeholder="기업/기관명을 입력하세요." type="text">
+									    	<input class="form-control" placeholder="직무명을 입력하세요." type="text">
 									    </td>
-									    <th><label id="txtDepartment">부서</label></th>
-									    <td>
-									    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
-									    </td>
-									    <th><label id="txtName">이름</label></th>
-									    <td>
-									    	<input class="form-control" placeholder="이름을 입력하세요." type="text">
-									    </td>
-									    
-										<td rowspan="2">
-											<div class="search">
+										<td>
+											<div class="search-color">
 									            <button class="btn btn-default">
 									                <i class="fa fa-search fa-lg margin-right-5"></i>검색
 									            </button>
 									        </div>
 										</td>
 									</tr>
-									<tr>
-									    <th><label for="txtRole">직무명</label></th>
-									    <td>
-									    	<input class="form-control" placeholder="직무명 입력하세요." type="text">
-									    </td>
-									    <th><label id="txtRoleCondition">등록여부</label></th>
-									    <td class="smart-form" colspan="3">
-										    <div class="inline-group">
-										        <label class="radio">
-										            <input type="radio" name="radio-inline" checked="checked">
-										                <i></i>전체
-										        </label>
-										        <label class="radio">
-										            <input type="radio" name="radio-inline">
-										                <i></i>등록
-										        </label>
-										        <label class="radio">
-										            <input type="radio" name="radio-inline">
-										                <i></i>미등록
-										        </label>
-										    </div>
-										</td> 
-									</tr>
 								</tbody>
 							</table>
 
 
-							<table class="table table-bordered tbodycenter">
-								<colgroup>
+
+
+
+                            <div class="text-align-right margin-bottom-5">
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-pencil margin-right-5"></i>신규등록
+                                </button>
+                            </div>
+
+                            <table class="table table-bordered tbodycenter">
+                                <colgroup>
 									<col width="50px;">
+									<col width="100px;">
 									<col>
-									<col>
-									<col width="145px;">
+									<col width="100px;">
+									<col width="100px;">
 									<col width="150px;">
 								</colgroup>
-								<thead>
+                                <thead>
 									<tr>
 										<th>No.</th>
-										<th>기업/기관</th>
-										<th>부서</th>
-										<th>이름</th>
+										<th>직무분류</th>
+										<th>직무명</th>
+										<th>관련부서</th>
+										<th>할당내역</th>
 										<th>비고</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>819</td>
-										<td class="tleft">(주)kt rental</td>
-										<td class="tleft">양재영업소</td>
-										<td>
-											<button class="user_info_box" rel="popover-hover" data-placement="left"
-									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-									        data-content="
-									            <ul class='user_info'>
-									                <p><img src='../../images/member_big.png'></p>
-									                <li>시스템관리자</li>
-									                <li>(주)드림인프라</li>
-									                <li>SI사업부</li>
-									                <li>부장</li>
-									                <li>systemadministrator@dreaminfra.co.kr </li>
-									            </ul>
-									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-									        </button>
-										</td>
-										<td>
-											 <div class="btn-group">
-									            <button rel="tooltip" data-placement="top" data-original-title="직무기술정보 없음" type="button" class="btn btn-default btn-sm">조회</button>
-									            <button type="button" class="btn btn-default btn-sm">등록</button>
-									        </div>
-										</td>
+										<td>1</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
+										<td>-</td>
 									</tr>
 								</tbody>
-							</table>
-
+                            </table>
 
                             <div class="text-center">
                                 <ul class="pagination pagination-sm">

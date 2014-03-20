@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>인사정보관리 </li><li>인사정보목록 </li>
+					<li>IPAMS HOME</li><li>인사정보관리 </li><li>부서정보관리 </li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -308,169 +308,117 @@
 
 
 
+
+
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 인사정보목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> > 부서정보관리</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                     <div class="row">
                         
-                        <div class="col-md-12">
-                            <table class="table table-bordered">
-                                <colgroup>
-                                    <col width="100px">
-                                    <col>
-                                    <col width="100px">
-                                    <col>
-                                    <col width="70px">
-                                </colgroup>
-                                <tr>
-                                    <th>기업/기관</th>
-                                    <td>
-                                    	<input class="form-control" placeholder="기업/기관명을 입력하세요." type="text">
-                                    </td>
-                                    <th>부서</th>
-                                    <td>
-                                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
-                                    </td>
-                                    <td rowspan="2" class="search text-align-center">
-                                        <button class="btn btn-default btn-lg" href="javascript:void(0);">
-                                            <i class="fa fa-search fa-lg margin-right-5"></i>검색
-                                        </button>
-                                    </td> 
-                                </tr> 
-                                <tr>
-                                    <th>이름</th>
-                                    <td>
-                                    	<input class="form-control" placeholder="이름을 입력하세요." type="text">
-                                    </td>
-                                    <th>상태</th>
-                                    <td>
-                                    	<span>
-								            <select class="form-control" style="width:100px;">
-								                <option>-전체-</option>
-								                <option>1</option>
-								                <option>2</option>
-								                <option>3</option>
-								            </select>
-								        </span>
-                                    </td> 
-                                    
-                                </tr>
-                            </table>
+                        <div class="col-md-12 col-md-4">
+                            <h6 class="h-title">부서 선택</h6>
 
-                            <div class="text-align-right margin-bottom-5">
-                                <button data-toggle="modal" data-target="#myModal1" class="btn btn-default float-left">
-                                    부서이동
-                                </button>
-                                <button class="btn btn-primary">
-                                    <i class="fa fa-pencil margin-right-5"></i>신규등록
-                                </button>
+
+							<div class="input-group search-color">
+  								<input class="form-control" placeholder="기관/기업명을 입력하세요." type="text">
+								<div class="input-group-btn">
+									<button class="btn btn-default btn-search mb10">
+										<i class="fa fa-search">&nbsp;검색</i>
+									</button>
+								</div>
+  							</div>
+
+							<div class="show-grid-div2">
+	                                <!--   트리들어가는 곳   -->
+	                                트리 내용 삽입
                             </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-8">
+                            <h6 class="h-title float-left">부서 상세</h6>
+                            <div class="align-right mb10">
 
-                            <table class="table table-bordered tbodycenter">
+                                <!--  버튼으로 적용 (작동안됨.) -->
+                                <button type="button" class="btn btn-sm btn-default" rel="tooltip" data-original-title="기업/기관 또는 부서를 선택해야 활성화됩니다.">
+                                    <i class="fa fa-external-link"></i>&nbsp;기업/기관 조직도 
+                                </button>
+
+
+                            </div>
+                           <div class="" role="content">
+                                <form class="form-horizontal" id="fuelux-wizard" method="post">
+    
+
+                                    <table class="table table-bordered table-fixed">
+                                        <colgroup>
+                                            <col width="100px">
+                                            <col>
+                                        </colgroup>
+                                            <tbody>
+                                                <tr>  
+                                                    <th>기업/기관</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서</th>  
+                                                    <td></td> 
+                                                </tr> 
+                                                <tr>  
+                                                    <th>부서설명</th>  
+                                                    <td></td> 
+                                                </tr>
+                                            </tbody>
+                                    </table>
+
+                                </form>
+                            </div> 
+
+
+                            <h6 class="h-title float-left mt20">부서 상세
+                                &nbsp;<span>0</span>명
+                            </h6>
+                           <table class="table table-bordered table-fixed">
                                 <colgroup>
-                                    <col width="50px">
-                                    <col width="50px">
-                                    <col>
-                                    <col>
-                                    <col width="90px">
                                     <col width="100px">
-                                    <col width="200px">
-                                    <col width="90px">
-                                    <col width="90px">
-                                    <col width="150px">
+                                    <col width="145px">
+                                    <col>
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th class="smart-form"> 
-						                    <label class="checkbox">
-						                        <input type="checkbox">
-						                        <i></i> 
-						                    </label>
-						                </th>
-                                        <th>No.</th>
-                                        <th>기업/기관</th>
-                                        <th>부서</th>
                                         <th>직급</th>
                                         <th>이름</th>
                                         <th>이메일</th>
-                                        <th>상태</th>
-                                        <th>변경이력</th>
-                                        <th>비고</th>
                                     </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="smart-form"> 
-							                    <label class="checkbox">
-							                        <input type="checkbox">
-							                        <i></i> 
-							                    </label>
-							                </td>
-                                            <td>1</td>
-                                            <td>드림인프라</td>
-                                            <td>개발본부</td>
-                                            <td>과장</td>
-                                            <td>홍길동</td>
-                                            <td>abcd@dreaminfa.co.kr</td>
-                                            <td>재직</td>
-                                            <td>
-                                                <button class="btn btn-default btn-sm" rel="tooltip" data-placement="top" data-original-title="변경이력 정보조회" >
-                                                    조회
-                                                </button>
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-default btn-sm">조회</button>
-                                                    <button type="button" class="btn btn-default btn-sm">수정</button>
-                                                    <button type="button" class="btn btn-default btn-sm">삭제</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> - </td>
+                                        <td> - </td>
+                                        <td> - </td>
+                                    </tr>
+                                </tbody>
                             </table>
 
-                            <div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
-                            </div>
 
                         </div>
-                        
-                        
                     </div>
 
+                <div class="mt20">
+                    <button data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-default">
+                        <i class="fa fa-pencil"></i>&nbsp;등록
+                    </button>
+                    <button data-toggle="modal" data-target="#myModal2" type="button" class="btn btn-sm btn-default ">
+                        <i class="fa fa-pencil-square-o"></i>&nbsp;수정
+                    </button>
+                    <button type="button" class="btn btn-sm btn-default ">                        
+                        <i class="fa fa-trash-o"></i>&nbsp;삭제
+                    </button>
+                </div>
 
                 </div>
 			<!-- END MAIN CONTENT -->
@@ -528,55 +476,140 @@
 		</div>
 		<!-- END SHORTCUT AREA -->
         
+        
+        
+        
+        <!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 부서등록</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+
+                                <!--  내용 삽입  -->
+								<form  method="post">
+						            <table class="table table-bordered">
+						            	<colgroup>
+						            		<col width="100px;">
+						            		<col>
+						            	</colgroup>
+						                <tbody>
+							                <tr>
+							                    <th>기업/기관</th>
+							                    <td>(주)kt rental</td>
+							                </tr>
+							                <tr>
+							                    <th>상위부서</th>
+							                    <td></td>
+							                </tr>
+							                <tr>
+							                    <th>부서명</th>
+							                    <td>
+							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+							                    </td>
+							                </tr>
+							                <tr>
+							                    <th>부서설명</th>
+							                    <td class="smart-form">
+								                    <label class="textarea textarea-resizable">
+								                        <textarea rows="3"></textarea>
+								                    </label>
+								                </td>
+							                </tr>
+							            </tbody>
+						            </table>
+						        </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                          	완료
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 
 
 
-       
-	<!-- Modal_1 -->
-	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-	        <div class="modal-dialog modal-sm">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                        &times;
-	                    </button>
-	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <h6 class="h-title">모달 소제목</h6>
-	                    <div class="row">
-	                        <div class="col-md-12">
-	                            
-					<div class="input-group search-color width-60">
-								<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
-						<div class="input-group-btn">
-							<button class="btn btn-default btn-search">
-								<i class="fa fa-search">&nbsp;검색</i>
-							</button>
-						</div>
-						
-							</div>
-	                            <!--  내용 삽입  -->
-	                         <div class="show-grid-div1 mt10">
-	
-	                         </div>
-	
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">
-	                        닫기
-	                    </button>
-	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-	                       	완료
-	                    </button>
-	                </div>
-	            </div><!-- /.modal-content -->
-	        </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
-	        <!-- end modal -->
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h6 class="modal-title"><i class="fa fa-power-off"></i> 부서수정</h6>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
 
+                                <!--  내용 삽입  -->
+								<form  method="post">
+						            <table class="table table-bordered">
+						            	<colgroup>
+						            		<col width="100px;">
+						            		<col>
+						            	</colgroup>
+						                <tbody>
+							                <tr>
+							                    <th>기업/기관</th>
+							                    <td>(주)kt rental</td>
+							                </tr>
+							                <tr>
+							                    <th>상위부서</th>
+							                    <td></td>
+							                </tr>
+							                <tr>
+							                    <th>부서명</th>
+							                    <td>
+							                    	<input class="form-control" placeholder="부서명을 입력하세요." type="text">
+							                    </td>
+							                </tr>
+							                <tr>
+							                    <th>부서설명</th>
+							                    <td class="smart-form">
+								                    <label class="textarea textarea-resizable">
+								                        <textarea rows="3"></textarea>
+								                    </label>
+								                </td>
+							                </tr>
+							            </tbody>
+						            </table>
+						        </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                          	완료
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 
 		<!--================================================== -->
 
@@ -706,22 +739,6 @@
             });
 
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
