@@ -49,6 +49,11 @@
 	<body class="smart-style-1 fixed-ribbon fixed-header fixed-navigation  desktop-detected pace-done">
 		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
 
+		
+		
+	
+
+
 		<!-- HEADER -->
 		<header id="header">
 			<div id="logo-group">
@@ -273,316 +278,426 @@
 		<!-- END NAVIGATION -->
 
 		<!-- MAIN PANEL -->
-	<div id="main" role="main">
+		<div id="main" role="main">
 
-		<!-- RIBBON -->
-		<div id="ribbon">
+			<!-- RIBBON -->
+			<div id="ribbon">
 
-			<span class="ribbon-button-alignment"> <span
-				class="btn btn-ribbon" rel="tooltip" data-placement="bottom"
-				data-original-title="<i class='fa fa-home'></i> 홈으로 가기"
-				data-html="true"> <i class="fa fa-home"></i>
-			</span>
-			</span>
-			<!-- breadcrumb -->
-			<ol class="breadcrumb">
-				<li>IPAMS HOME</li>
-				<li>인사정보관리</li>
-				<li>인사정보등록</li>
-			</ol>
-			<!-- end breadcrumb -->
+				<span class="ribbon-button-alignment">
+                    <span class="btn btn-ribbon"  rel="tooltip" data-placement="bottom" data-original-title="<i class='fa fa-home'></i> 홈으로 가기" data-html="true">
+                        <i class="fa fa-home"></i>
+                    </span>
+                </span>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>IPAMS HOME</li><li>교육훈 관리 </li><li>교육정보 목록</li><li>교육일정등록</li>
+				</ol>
+				<!-- end breadcrumb -->
 
-		</div>
-		<!-- END RIBBON -->
+				<!-- You can also add more buttons to the
+				ribbon for further usability
 
+				Example below:
 
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
 
-
-
-
-
-
-		<!-- MAIN CONTENT -->
-		<div id="content">
-		
-		
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="page-title txt-color-blueDark">
-						<i class="fa-fw fa fa-keyboard-o"></i> 인사정보관리 <span> >
-							인사정보등록</span>
-					</h1>
-				</div>
 			</div>
-			<div class="well well-light">
-				<div class="row">
+			<!-- END RIBBON -->
 
-					<div class="col-md-12">
-						<h6 class="h-title float-left">신규등록</h6>
-						<div class="align-right">
-		              		<button class="btn btn-default mb10" >
-		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
-		                    </button>
-		                    <button class="btn btn-default mb10" data-toggle="modal" data-target="#myModal2">
-		                    	<i class="fa fa-upload"></i> 엑셀 등록
-		                    </button>
-						</div> 
-						
-						
-						<table class="table table-bordered" id="employeeTable">
-				            <colgroup>
-				                <col width="100px">
-				                <col>
-				            </colgroup>
-				            <tbody>
-					            <tr>
-					                <th><label for="company">기업/기관</label></th>
-					                <td>
-						                <div class="input-group search-color width-40" data-toggle="modal" data-target="#myModal1">
-			  								<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text" disabled>
-											<div class="input-group-btn">
-												<button class="btn btn-default btn-search">
-													<i class="fa fa-search">&nbsp;검색</i>
-												</button>
-											</div>
-											
-			  							</div>
-					                
-					                </td>
-					            </tr> 
-					            <tr>
-					                <th><label for="department">부서</label></th>
-					                <td>
-					                	<div class="input-group search-color width-40">
-			  								<input class="form-control" placeholder="검색시 부서명이 자동선택 됩니다." type="text" disabled>
-			  							</div>
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="type">고용형태</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-									</td>
-					            </tr>
-					            <tr>
-					                <th><label for="position">직급</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="duty">직책</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="employeeNumber">사원번호</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="사원번호를 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="name">이름</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="이름을 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="email">이메일</label></th>
-					                <td>
-					                	<input class="form-control width-40" placeholder="이메일을 입력하세요." type="text">
-					                </td>
-					            </tr>
-					            <tr>
-					                <th><label for="status">상태</label></th>
-					                <td>
-					                	<div class="width-40">
-											<select  class="select2">
-												<option>정규직</option>
-												<option>임원</option>
-												<option>파견직</option>
-												<option>본부장</option>
-												<option>감사</option>
-												<option>팀원</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
-										</div>
-					                </td>
-					            </tr>
-					        </tbody>
-				        </table>
-						
-						
-						<div class="align-right">
-				            <button type="button" class="btn btn-lg btn-cancel float-left">
-				                <i class="fa fa-times margin-right-5"></i>취소
-				            </button>
-				            <button type="button" class="btn btn-lg btn-success ">
-				                완료
-				                <i class="fa fa-check"></i></button>
-				        </div>
-					</div>
-			
-				</div>
-			</div>
-		</div>
-		<!-- END CONTENT  -->
-		 
-	</div>
+	
 
 
-
-
-	<!-- Modal_1 -->
-    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        &times;
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            
-						<div class="input-group search-color width-60">
-							<input class="form-control" placeholder="기관/기업명을 검색하세요." type="text">
-							<div class="input-group-btn">
-								<button class="btn btn-default btn-search">
-									<i class="fa fa-search">&nbsp;검색</i>
-								</button>
-							</div>
-					
-						</div>
-                            <!--  내용 삽입  -->
-                         <div class="show-grid-div1 mt10">
-
-                         </div>
-
-                        </div>
+			<!-- MAIN CONTENT -->
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육일정등록</span></h1>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        닫기
-                    </button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-                       	완료
-                    </button>
+                <div class="well well-light">
+                	<div class="row">
+                        <div class="col-md-12 col-md-9">
+							<table class="table table-bordered">
+								<colgroup>
+									<col width="100px;">
+									<col>
+									<col width="100px;">
+									<col width="150px;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>교육유형</th>
+										<td>
+											<select multiple class="select2">
+												<option>조직기반강화</option>
+												<option>전문성강화</option>
+												<option>test1</option>
+												<option>test2</option>
+												<option>test3</option>
+												<option>test4</option>
+												<option>test5</option>												
+											</select>
+										</td>
+										<th>참가자</th>
+										<td>
+											<div class="smart-form">
+						                        <label class="radio display-inline"> 
+						                            <input type="radio" name="radio-inline" checked="checked">
+						                                <i></i>사용&nbsp;&nbsp;
+						                        </label> 
+						                        <label class="radio display-inline">
+						                            <input type="radio" name="radio-inline">
+						                                <i></i>미사용
+						                        </label>
+						                    </div>
+										</td>
+									</tr>
+									<tr>
+										<th>교육명</th>
+										<td>
+											<input class="form-control" placeholder="교육명을 입력하세요." type="text">
+										</td>
+										<th>주관부서</th>
+										<td>
+											<input class="form-control" placeholder="주관부서명을 입력하세요." type="text">
+										</td>
+									</tr>
+									<tr>
+										<th>교육기간</th>
+										<td class="smart-form">
+				            				<div class="row">
+								                <section class="col col-sm-6 mb0">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+								                    </label>
+								                </section>
+								                <section class="col col-sm-6 mb0">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+								                    </label>
+								                </section>
+								            </div>
+										</td>										
+										<th>총 교육시간</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>교육장소</th>
+										<td colspan="3">
+											<input class="form-control" placeholder="교육장소명을 입력하세요." type="text">
+										</td>
+									</tr>
+									<tr>
+										<th>교육방법</th>
+										<td>
+											<!-- <div>
+										 		<input type="text" name="basic_example_1" id="basic_example_1" value="" class="hasDatepicker">
+											</div> -->
+										</td>
+										<th>교육위치</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>교육강사</th>
+										<td colspan="3">
+										
+										</td>
+									</tr>
+									<tr>
+										<th>교육내용</th>
+										<td colspan="3">
+											<div>
+										 		<input type="text" name="basic_example_1" id="basic_example_1" value="" />
+											</div>	
+										</td>
+									</tr>
+									<tr>
+										<th>첨부파일</th>
+										<td colspan="3">
+										
+										</td>
+									</tr>
+									<tr>
+										<th>설문지</th>
+										<td colspan="3">
+										
+										</td>
+									</tr>
+									<tr>
+										<th>이수증 서식</th>
+										<td colspan="3">
+										
+										</td>
+									</tr>
+									<tr>
+										<th>승인절차</th>
+										<td colspan="3">
+										
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+							
+                       	<div class="col-md-12 col-md-3">
+                       		<div class="alert alert-info">
+					           교육 참가자 등록은 <strong>참가자</strong>를 <strong>지정</strong>으로 선택해야 가능합니다.
+					        </div>
+					        
+					        <div class="show-grid-div2">
+	                       		<h6 class="h-title mt0">교육 참가자 목록</h6>
+					        	<button class="btn btn-default mb10">
+					                <i class="fa fa-user"></i> 참가자 등록
+					            </button>
+								<table class="table table-bordered tbodycenter">
+									<colgroup>
+										<col>
+										<col width="65px">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>이름</th>
+											<th>비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<button class="user_info_box" rel="popover-hover" data-placement="left"
+										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+										        data-content="
+										            <ul class='user_info'>
+										                <p><img src='../../images/member_big.png'></p>
+										                <li>시스템관리자</li>
+										                <li>(주)드림인프라</li>
+										                <li>SI사업부</li>
+										                <li>부장</li>
+										                <li>systemadministrator@dreaminfra.co.kr </li>
+										            </ul>
+										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>양승환</strong>
+										        </button>
+											</td>
+											<td>
+												<button type="button" class="btn btn-default btn-sm">삭제</button>
+											</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>-</td>
+											<td>-</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+                       	</div>
+                       	
+                       	<div class="col-md-12 mt20">
+	                  		<div class="align-right">
+					            <button type="button" class="btn btn-lg btn-cancel float-left">
+					                <i class="fa fa-times margin-right-5"></i>취소
+					            </button>
+					            <button type="button" class="btn btn-lg btn-success">
+					                완료
+					                <i class="fa fa-check"></i></button>
+					        </div>
+					</div>
+					<!-- end row  -->
+				
+	            </div>
+                <!-- END well  -->
+	            
+			</div>
+            <!-- END MAIN CONTENT -->
+		</div>
+		<!-- END MAIN PANEL -->
+		
+		
+		
+		
+		</div>
+        <!-- footer -->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <footer class="footer">
+                <div class="footer_box">
+                    <p class="pull-left"><img src="../../images/footer_logo.png" alt="IPAMS"></p>
+                    <p class="copyright pull-left">Copyright © 2012 IPAMS. All rights reserved.</p>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-        <!-- end modal -->
+            </footer>
+        </nav>
+        <!-- end footer -->
 
-
-	<!-- Modal_2 -->
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+        Note: These tiles are completely responsive,
+        you can add as many as you like
+        -->
+		<div id="shortcut">
+			<ul>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-home fa-4x"></i> <span>홈으로가기 </span> </span> </a>
+                </li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-file-text fa-4x"></i> <span>평가수행관리 </span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>인사정보관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-tasks fa-4x"></i> <span>사업관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa  fa-keyboard-o fa-4x"></i> <span>전산자산관리</span> </span> </a>
+				</li>
+				<li>
+					<a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-clipboard fa-4x"></i> <span>문서관리 </span> </span> </a>
+				</li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>교육훈련관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-list-alt fa-4x"></i> <span>정보제공</span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-greenLight selected"> <span class="iconbox"> <i class="fa fa-cogs fa-4x"></i> <span>시스템관리 </span> </span> </a>
+                </li>
+                <li>
+                    <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
+                </li>
+			</ul>
+		</div>
+		<!-- END SHORTCUT AREA -->
+		
+		
+		
+		
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 엑셀에서 인사정보 추출</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 승인내역</h4>
                     </div>
                     <div class="modal-body">
+                        
                         <div class="row">
                             <div class="col-md-12">
-								<table class="table table-bordered">
-									<colgroup>
-									
-										<col style="width: 80px;">
-										<col>
-									</colgroup>
-									<tbody>
-										<tr>
-											<th>기업/기관</th>
-											<td><select class="form-control" style="width:100px;">
-													<option>A컨설팅</option>
-													<option>가평군</option>
-													<option>경기도청</option>
-													<option>고양시</option>
-													<option>과천시</option>
-													<option>광명시</option>
-											</select></td>
-										</tr>
-										<tr>
-											<th>엑셀 파일</th>
-											<td><input type="file" class="btn btn-default" id="exampleInputFile1"></td>
-										</tr>
-									</tbody>
-								</table>
+							<table class="table table-bordered tbodycenter">
+								<colgroup>
+									<col style="width: 60px;">
+									<col style="width: 145px;">
+									<col style="width: 80px;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>순번</th>
+										<th>이름</th>
+										<th>상태</th>
+										<th>사유</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td class="tleft">
+                                            <!-- 인명정보 -->
+                                            <button class="user_info_box" rel="popover-hover" data-placement="right"
+                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                               data-content="
+                                                <ul class='user_info'>
+                                                    <p><img src='../../images/member_big.png'></p>
+                                                    <li>시스템관리자</li>
+                                                    <li>(주)드림인프라</li>
+                                                    <li>SI사업부</li>
+                                                    <li>부장</li>
+                                                    <li>systemadministrator@dreaminfra.co.kr </li>
+                                                </ul>
+                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></button>
+                                            <!--인명정보 끝-->
+                                        </td>
+										<td>승인</td>
+										<td class="tleft">교육 일괄 승인</td>
+									</tr>
+								</tbody>
+							</table>
 
-							</div>
                         </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
                         </button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">
-	                       	완료
-	                    </button>
+                        
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal -->
+        <!-- end modal_2 -->
+		</div>
+    
 
 
-	<!--================================================== -->
+		<!--================================================== -->
 
-	<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
 		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../js/plugin/pace/pace.min.js"></script>
 
 		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
@@ -593,12 +708,13 @@
 			}
 		</script>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="../../js/libs/jquery-ui-1.10.3.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script>
 			if (!window.jQuery.ui) {
 				document.write('<script src="../../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
 			}
-		</script>
+		</script>-->
 
 		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events
 		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
@@ -619,7 +735,7 @@
 		<script src="../../js/plugin/sparkline/jquery.sparkline.min.js"></script>
 
 		<!-- JQUERY VALIDATE -->
-		<script src="../../"></script>
+		<script src="../../js/plugin/jquery-validate/jquery.validate.min.js"></script>
 
 		<!-- JQUERY MASKED INPUT -->
 		<script src="../../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
@@ -628,25 +744,75 @@
 		<script src="../../js/plugin/select2/select2.min.js"></script>
 
 		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-
+		<!-- <script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script> -->
+		
 		<!-- browser msie issue fix -->
 		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
 
 		<!-- SmartClick: For mobile devices -->
 		<script src="../../js/plugin/smartclick/smartclick.js"></script>
 
+
+
+		<!--  datetimepicker  [********JQUERY UI + Bootstrap Slider 제거 ********] -->
+		<script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-addon.js"></script>
+		<script src="../../js/plugin/datetimepicker/jquery-ui-sliderAccess.js"></script>
+		<script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-ko.js"></script>
+		
+		
+		
+
 		<!--[if IE 7]>
 
-		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
 
 		<![endif]-->
+
+		<!-- <script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-ko.js"></script>
+		<script src="../../js/plugin/datetimepicker/jquery-ui-sliderAccess.js"></script> -->
+
 
 		<!-- Demo purpose only -->
 		<script src="../../js/demo.js"></script>
 
 		<!-- MAIN APP JS FILE -->
 		<script src="../../js/app.js"></script>
+
+        <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
+		<!-- PAGE RELATED PLUGIN(S) -->
+
+		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
+		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
+		<script src="../../js/plugin/flot/jquery.flot.tooltip.js"></script>
+
+		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+	
+        <!-- data picker-->
+    	<script type="text/javascript">
+	        $('#startdate').datetimepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	            }
+	        });
+	
+	        $('#finishdate').datetimepicker({
+	            dateFormat : 'yy-mm-dd',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+	          
+    	</script>
+    	<!-- end data picker -->
+
+
 
 		<script type="text/javascript">
 		
@@ -750,28 +916,10 @@
 		
 	
 		})
-
 		</script>
+     
 
-		<!-- Your GOOGLE ANALYTICS CODE Below -->
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-				_gaq.push(['_trackPageview']);
-			
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
-
-		</script>
-
-
-
+		
 
 
 

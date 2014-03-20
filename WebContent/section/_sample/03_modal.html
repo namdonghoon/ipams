@@ -96,6 +96,12 @@
         <button data-toggle="modal" data-target="#myModal101">
             <strong>정보제공 -> 수정 </strong>
         </button>
+        
+        
+        <button class="btn btn-default" data-toggle="modal" data-target="#myModal102">
+        	<i class="fa fa-upload"></i> 엑셀 등록
+        </button>
+        
 		</div>
 		
 		
@@ -168,7 +174,7 @@
                                         <td>(주)kt rental</td>
                                         <td class="tleft">
                                             <!-- 인명정보 -->
-                                            <a href="javascript:void(0);" class="user_info_box" rel="popover-hover" data-placement="right"
+                                            <button class="user_info_box" rel="popover-hover" data-placement="right"
                                                data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
                                                data-content="
                                                 <ul class='user_info'>
@@ -179,7 +185,7 @@
                                                     <li>부장</li>
                                                     <li>systemadministrator@dreaminfra.co.kr </li>
                                                 </ul>
-                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></a>
+                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></button>
                                             <!--인명정보 끝-->
                                         </td>
                                         <td>자산관리자</td>
@@ -778,6 +784,59 @@
         
         
         
+        <!-- Modal_102 -->
+        <div class="modal fade" id="myModal102" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 엑셀에서 인사정보 추출</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+								<table class="table table-bordered">
+									<colgroup>
+									
+										<col style="width: 80px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>기업/기관</th>
+											<td><select class="form-control" style="width:100px;">
+													<option>A컨설팅</option>
+													<option>가평군</option>
+													<option>경기도청</option>
+													<option>고양시</option>
+													<option>과천시</option>
+													<option>광명시</option>
+											</select></td>
+										</tr>
+										<tr>
+											<th>엑셀 파일</th>
+											<td><input type="file" class="btn btn-default" id="exampleInputFile1"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 
         
         

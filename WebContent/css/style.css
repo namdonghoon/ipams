@@ -1024,7 +1024,7 @@ margin-bottom: 40px;
 /* 도표 정렬  */
 .assets-chart-sort{
 	text-align: center;
-	padding-left: 30xp;
+	padding-left: 30px;
 	padding-top: 5px;
 }
 
@@ -1241,7 +1241,7 @@ box-shadow: 0 0 0 9px #fff;
 	margin-left: -1px;
 }
  
-* 모니터링 평가수행  */
+/* 모니터링 평가수행  */
 .mo-title{
 	font-weight: bold;
 	color: #296191;
@@ -1311,16 +1311,22 @@ box-shadow: 0 0 0 9px #fff;
 .dashboard_added ul li .jarviswidget{
     margin-bottom: 0;
 }
-
-
 .checkbox{
 	font-size: 12px !important;
 }.smart-form .textarea textarea{
-	font-size: 12px !important;	
+	font-size: 12px !important;
 }
 .bg-green{
 	background: #468847;
 }
 .bg-red{
-	background: #b94a48	
+	background: #b94a48;
 }
+
+/*시스템관리-백업복구관리*/
+.backup{
+    background:#5EA52E;
+    color:#fff;
+    font-weight: bold;
+    border: solid 1px #2C8A0A;
+}s

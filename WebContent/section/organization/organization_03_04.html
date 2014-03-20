@@ -323,7 +323,7 @@
 		              		<button class="btn btn-default mb10" >
 		                    	<i class="fa fa-download"></i> 엑셀양식 내려받기
 		                    </button>
-		                    <button class="btn btn-default mb10" >
+		                    <button class="btn btn-default mb10" data-toggle="modal" data-target="#myModal2">
 		                    	<i class="fa fa-upload"></i> 엑셀 등록
 		                    </button>
 						</div> 
@@ -491,7 +491,6 @@
                     <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 주 제목</h4>
                 </div>
                 <div class="modal-body">
-                    <h6 class="h-title">모달 소제목</h6>
                     <div class="row">
                         <div class="col-md-12">
                             
@@ -524,6 +523,62 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
         <!-- end modal -->
+
+
+	<!-- Modal_2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 엑셀에서 인사정보 추출</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+								<table class="table table-bordered">
+									<colgroup>
+									
+										<col style="width: 80px;">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>기업/기관</th>
+											<td><select class="form-control" style="width:100px;">
+													<option>A컨설팅</option>
+													<option>가평군</option>
+													<option>경기도청</option>
+													<option>고양시</option>
+													<option>과천시</option>
+													<option>광명시</option>
+											</select></td>
+										</tr>
+										<tr>
+											<th>엑셀 파일</th>
+											<td><input type="file" class="btn btn-default" id="exampleInputFile1"></td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+
 
 
 	<!--================================================== -->

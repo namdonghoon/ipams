@@ -111,12 +111,12 @@
 						
 		                <div class="search">
 				            <button class="btn btn-default">
-				                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+				                <i class="fa fa-search fa-lg"></i> 검색
 				            </button>
 				        </div>
 				        <div class="search-color">
 				            <button class="btn btn-default">
-				                <i class="fa fa-search fa-lg margin-right-5"></i>검색
+				                <i class="fa fa-search fa-lg"></i> 검색
 				            </button>
 				        </div>
 				        <!--============ END 일반버튼 ============ -->
@@ -222,7 +222,8 @@
 						</div>
 						
 						<input class="form-control" placeholder="구성도명을 입력하세요." type="text">
-	
+						<input type="file" class="btn btn-default" id="exampleInputFile1">
+						
 				        <table>
 				            <tr>
 				                <td class="smart-form">
@@ -322,22 +323,23 @@
 				    	<h6 class="h-title">캘린더</h6>
 				    
 				        <!--============= START 시작일, 종료일, 단일일자 =============-->
-				        <fieldset class="no-padding-all smart-form">
-				            <div class="row">
-				                <section class="col col-sm-5 no-margin-bottom">
-				                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-				                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-				                    </label>
-				                </section>
-				                <section class="col col-sm-5 no-margin-bottom">
-				                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-				                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-				                    </label>
-				                </section>
-				            </div>
-				        </fieldset>
-				        
 				        <table>
+				        <tr>
+					        <td class="smart-form">
+	            				<div class="row">
+					                <section class="col col-sm-6 mb0">
+					                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+					                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+					                    </label>
+					                </section>
+					                <section class="col col-sm-6 mb0">
+					                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+					                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+					                    </label>
+					                </section>
+					            </div>
+							</td>
+				        </tr>
 				        <tr>
 					        <td class="smart-form">
 					        	<label class="input"><i class="icon-append fa fa-calendar"></i>
@@ -540,11 +542,11 @@
 	                    <div class="smart-form">
 	                        <label class="radio display-inline"> 
 	                            <input type="radio" name="radio-inline" checked="checked">
-	                                <i class="t0"></i>사용&nbsp;&nbsp;
+	                                <i></i>사용&nbsp;&nbsp;
 	                        </label> 
 	                        <label class="radio display-inline">
 	                            <input type="radio" name="radio-inline">
-	                                <i class="t0"></i>미사용
+	                                <i></i>미사용
 	                        </label>
 	                    </div>
 		                <!--============= END 라디오 박스 =============-->
