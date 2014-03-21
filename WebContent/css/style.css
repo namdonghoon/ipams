@@ -1322,11 +1322,34 @@ box-shadow: 0 0 0 9px #fff;
 .bg-red{
 	background: #b94a48;
 }
-
 /*시스템관리-백업복구관리*/
 .backup{
     background:#5EA52E;
     color:#fff;
     font-weight: bold;
     border: solid 1px #2C8A0A;
-}s
+}
+/*테이블 안 체크,라디오박스 margin*/
+table .smart-form .checkbox i, .smart-form .radio i{
+    top: 0;
+    line-height: 30px;
+ }
+ 
+ 
+.state-error input {
+	background: #fff0f0;
+	border-color: #A90329;
+}
+.smart-form .state-error ul {
+	background: #fff0f0;
+	border-color: #A90329;
+}
+.state-error em,.state-error ~ em {
+	display: block;
+	margin-top: 6px;
+	padding: 0 1px;
+	font-style: normal;
+	font-size: 11px;
+	line-height: 15px;
+	color: #D56161;
+}

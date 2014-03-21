@@ -223,7 +223,7 @@
 						
 						<input class="form-control" placeholder="구성도명을 입력하세요." type="text">
 						<input type="file" class="btn btn-default" id="exampleInputFile1">
-						
+						<input class="form-control tagsinput" value="" data-role="tagsinput">
 				        <table>
 				            <tr>
 				                <td class="smart-form">
@@ -347,8 +347,27 @@
 								</label>
 							</td>
 				        </tr>
+				        
+				        	
+				        <tr>
+				        	<td class="smart-form">
+	            				<div class="row">
+					                <section class="col col-sm-6 mb0">
+					                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+					                        <input type="text" name="startdatetime" id="startdatetime" placeholder="시작일">
+					                    </label>
+					                </section>
+					                <section class="col col-sm-6 mb0">
+					                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+					                        <input type="text" name="finishdatetime" id="finishdatetime" placeholder="종료일">
+					                    </label>
+					                </section>
+					            </div>
+							</td>
+				        </tr>
+				        
 				        </table>
-				        <!--============= END 시작일, 종료일, 단일일자 =============-->
+				        <!--============= END 시작일, 종료일, 단일일자, DateTimePicker =============-->
 				        
 				        
 				    </div>
@@ -557,16 +576,50 @@
 		
 				<div class="col-md-12 col-md-4">
 				    <div class="show-grid-div1 well well-light">
-				    	<h6 class="h-title">에러 체크 CSS -> .smart-form, .state-error</h6>
 				    	
 				    	<!--============= START 에러 체크 박스 CSS=============-->
+				    	<h6 class="h-title">에러 체크 CSS: .smart-form -> .state-error</h6>
 	                    <div class="smart-form">
-							<label class="label">E-mail</label>
 							<label class="input state-error">
-								<input type="email" name="email" class="invalid">
+								<input type="text">
 							</label>
-							<em for="email" class="invalid">Enter a VALID email</em>
+							<em>필수로 입력해야 합니다.</em>
 						</div>
+						
+						<!-- div는  td로 교체  -->
+		                <div class="smart-form">
+							<label class="textarea textarea-resizable state-error">
+								<textarea rows="1"></textarea>
+							</label>
+							<em>필수로 입력해야 합니다.</em>
+		                </div>
+						
+						<div class="smart-form">
+							<div class="state-error">
+								<select multiple class="select2">
+									<option>조직기반강화</option>
+									<option>전문성강화</option>
+									<option>test1</option>
+									<option>test2</option>
+									<option>test3</option>
+									<option>test4</option>
+									<option>test5</option>												
+								</select>
+								<em>필수로 입력해야 합니다.</em>
+							</div>
+						</div>
+										
+						
+				    	<h6 class="h-title">에러 체크 CSS : .smart-form -> .state-error,  .has-error</h6>
+						<div class="has-error mb0">
+							<div class="input-group state-error">
+								<input class="form-control" type="text">
+								<span class="input-group-addon">시간</span>
+							</div>
+							<em class="mb0">필수로 입력해야 합니다.</em>
+						</div>
+						
+						
 		                <!--============= END 에러체크 박스 CSS=============-->
 		      		</div>
 		      </div>
@@ -790,7 +843,15 @@
 		<script src="../../js/plugin/select2/select2.min.js"></script>
 
 		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+		<!-- <script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script> -->
+	
+	
+		<!--  datetimepicker  [********JQUERY UI + Bootstrap Slider 제거 ********] -->
+		<script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-addon.js"></script>
+		<script src="../../js/plugin/datetimepicker/jquery-ui-sliderAccess.js"></script>
+		<script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-ko.js"></script>
+	
+	
 
 		<!-- browser msie issue fix -->
 		<script src="../../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
@@ -801,7 +862,7 @@
 		<!--[if IE 7]>
 
 		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
-
+ 
 		<![endif]-->
 
 		<!-- Demo purpose only -->
@@ -812,6 +873,8 @@
 
 		<!-- PAGE RELATED PLUGIN(S) -->
 		<script src="../../js/plugin/bootstrap-progressbar/bootstrap-progressbar.js"></script>
+		<script src="../../js/plugin/bootstrap-tags/bootstrap-tagsinput.min.js"></script>
+
 
 		<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
         <script src="../../js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js"></script>
@@ -825,7 +888,7 @@
 	            prevText : '<i class="fa fa-chevron-left"></i>',
 	            nextText : '<i class="fa fa-chevron-right"></i>',
 	            onSelect : function(selectedDate) {
-	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	                $('#finishdatetime').datepicker('option', 'minDate', selectedDate);
 	            }
 	        });
 	
@@ -834,11 +897,37 @@
 	            prevText : '<i class="fa fa-chevron-left"></i>',
 	            nextText : '<i class="fa fa-chevron-right"></i>',
 	            onSelect : function(selectedDate) {
-	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	                $('#startdatetime').datepicker('option', 'maxDate', selectedDate);
 	            }
 	        });
     	</script>
     	<!-- end data picker -->
+
+
+
+
+		<!-- 시작일, 종료일 (시간 포함)  -->
+		<script type="text/javascript">
+	        $('#startdatetime').datetimepicker({
+	            dateFormat : 'yy-mm-dd', timeFormat: 'HH:mm',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#finishdatetime').datepicker('option', 'minDate', selectedDate);
+	            }
+	        });
+	
+	        $('#finishdatetime').datetimepicker({
+	            dateFormat : 'yy-mm-dd', timeFormat: 'HH:mm',
+	            prevText : '<i class="fa fa-chevron-left"></i>',
+	            nextText : '<i class="fa fa-chevron-right"></i>',
+	            onSelect : function(selectedDate) {
+	                $('#startdatetime').datepicker('option', 'maxDate', selectedDate);
+	            }
+	        });
+	          
+    	</script>
+
 
 
 		<script>
@@ -996,6 +1085,9 @@
 		});
 		
 		</script>
+
+
+		
 
 
 

@@ -290,7 +290,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈 관리 </li><li>교육정보 목록</li><li>교육일정등록</li>
+					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육정보 목록</li><li>교육일정등록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -321,7 +321,8 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12 col-md-9">
-							<table class="table table-bordered">
+                        
+								<table class="table table-bordered">
 								<colgroup>
 									<col width="100px;">
 									<col>
@@ -331,16 +332,19 @@
 								<tbody>
 									<tr>
 										<th>교육유형</th>
-										<td>
-											<select multiple class="select2">
-												<option>조직기반강화</option>
-												<option>전문성강화</option>
-												<option>test1</option>
-												<option>test2</option>
-												<option>test3</option>
-												<option>test4</option>
-												<option>test5</option>												
-											</select>
+										<td class="smart-form">
+											<div class="state-error">
+												<select multiple class="select2">
+													<option>조직기반강화</option>
+													<option>전문성강화</option>
+													<option>test1</option>
+													<option>test2</option>
+													<option>test3</option>
+													<option>test4</option>
+													<option>test5</option>												
+												</select>
+												<em>필수로 입력해야 합니다.</em>
+											</div>
 										</td>
 										<th>참가자</th>
 										<td>
@@ -363,7 +367,7 @@
 										</td>
 										<th>주관부서</th>
 										<td>
-											<input class="form-control" placeholder="주관부서명을 입력하세요." type="text">
+											<input class="form-control" type="text">
 										</td>
 									</tr>
 									<tr>
@@ -372,71 +376,133 @@
 				            				<div class="row">
 								                <section class="col col-sm-6 mb0">
 								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-								                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+								                        <input type="text" name="startdatetime" id="startdatetime" placeholder="시작일">
 								                    </label>
 								                </section>
 								                <section class="col col-sm-6 mb0">
 								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-								                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+								                        <input type="text" name="finishdatetime" id="finishdatetime" placeholder="종료일">
 								                    </label>
 								                </section>
 								            </div>
 										</td>										
 										<th>총 교육시간</th>
-										<td></td>
+										<td>
+											<div class="has-error mb0">
+												<div class="input-group state-error">
+													<input class="form-control" type="text">
+													<span class="input-group-addon">시간</span>
+												</div>
+												<em>필수로 입력해야 합니다.</em>
+											</div>
+										</td>
 									</tr>
 									<tr>
 										<th>교육장소</th>
-										<td colspan="3">
-											<input class="form-control" placeholder="교육장소명을 입력하세요." type="text">
+										<td class="smart-form" colspan="3">
+											<label class="input state-error">
+												<input class="form-control" placeholder="교육장소명을 입력하세요." type="text">
+											</label>
+											<em>필수로 입력해야 합니다.</em>
 										</td>
 									</tr>
 									<tr>
 										<th>교육방법</th>
 										<td>
-											<!-- <div>
-										 		<input type="text" name="basic_example_1" id="basic_example_1" value="" class="hasDatepicker">
-											</div> -->
+											<div class="smart-form">
+						                        <label class="radio display-inline"> 
+						                            <input type="radio" name="radio-inline" checked="checked">
+						                                <i></i>온라인&nbsp;&nbsp;
+						                        </label> 
+						                        <label class="radio display-inline">
+						                            <input type="radio" name="radio-inline">
+						                                <i></i>오프라인
+						                        </label>
+						                    </div>
 										</td>
 										<th>교육위치</th>
-										<td></td>
+										<td>
+											<div class="smart-form">
+						                        <label class="radio display-inline"> 
+						                            <input type="radio" name="radio-inline" checked="checked">
+						                                <i></i>사내&nbsp;&nbsp;
+						                        </label> 
+						                        <label class="radio display-inline">
+						                            <input type="radio" name="radio-inline">
+						                                <i></i>사외
+						                        </label>
+						                    </div>
+										</td>
 									</tr>
 									<tr>
 										<th>교육강사</th>
 										<td colspan="3">
 										
+									
+											<div class="input-group search-color width-40">
+												<input id="addLecturer" type="text" class="form-control">
+												<div class="input-group-btn">
+													<button id="addd" class="btn btn-default btn-search">
+														<i class="fa fa-search">&nbsp;추가</i>
+													</button>
+												</div>
+											</div>
 										</td>
 									</tr>
 									<tr>
 										<th>교육내용</th>
-										<td colspan="3">
-											<div>
-										 		<input type="text" name="basic_example_1" id="basic_example_1" value="" />
-											</div>	
+										<td colspan="3" class="smart-form">
+											<label class="textarea textarea-resizable state-error">
+												<textarea rows="1"></textarea>
+											</label>
+											<em>필수로 입력해야 합니다.</em>
 										</td>
-									</tr>
+									</tr> 
 									<tr>
 										<th>첨부파일</th>
 										<td colspan="3">
-										
+											<button class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+						                    	<i class="fa fa-upload"></i> 업로드
+						                    </button>
 										</td>
 									</tr>
 									<tr>
 										<th>설문지</th>
 										<td colspan="3">
-										
+											<select class="form-control" style="width:100px;">
+								                <option>선택</option>
+								                <option>사외교육설문</option>
+								                <option>1</option>
+								                <option>2</option>
+								                <option>3</option>
+								            </select>
 										</td>
 									</tr>
 									<tr>
 										<th>이수증 서식</th>
 										<td colspan="3">
-										
+											<select class="form-control" style="width:100px;">
+								                <option>선택</option>
+								                <option>교육이수증</option>
+								                <option>1</option>
+								                <option>2</option>
+								                <option>3</option>
+								            </select>
 										</td>
 									</tr>
 									<tr>
 										<th>승인절차</th>
 										<td colspan="3">
-										
+											<div class="smart-form">
+						                        <label class="radio display-inline"> 
+						                            <input type="radio" name="radio-inline" checked="checked">
+						                                <i></i>미진행&nbsp;&nbsp;
+						                        </label> 
+						                        <label class="radio display-inline">
+						                            <input type="radio" name="radio-inline">
+						                                <i></i>진행
+						                        </label>
+						                    </div>
 										</td>
 									</tr>
 								</tbody>
@@ -448,9 +514,9 @@
 					           교육 참가자 등록은 <strong>참가자</strong>를 <strong>지정</strong>으로 선택해야 가능합니다.
 					        </div>
 					        
-					        <div class="show-grid-div2">
+					        <div class="show-grid-div2" style="height: 555px; overflow-y: auto;">
 	                       		<h6 class="h-title mt0">교육 참가자 목록</h6>
-					        	<button class="btn btn-default mb10">
+					        	<button class="btn btn-default mb10" data-toggle="modal" data-target="#myModal1">
 					                <i class="fa fa-user"></i> 참가자 등록
 					            </button>
 								<table class="table table-bordered tbodycenter">
@@ -624,60 +690,255 @@
 		
 		
 		
-		<!-- Modal_1 -->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<!-- Modal_1 검색 테이블-->
+	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+	        <div class="modal-dialog modal-lg">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+	                        &times;
+	                    </button>
+	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 교육참가자 등록</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <div class="row">
+
+	                        <div class="col-md-12 col-md-6">
+	                        	<h6 class="h-title float-left">직원 목록</h6> 
+		                        <div class="jarviswidget jarviswidget-color-blueDark mb20"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+                                	
+	                                <p class="go_btn align-right mb6">
+                                    	<button class="btn btn-default mt4"><i class="fa fa-plus "></i>&nbsp;일괄추가</button>
+	                                </p>
+	                                
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+                                                <colgroup>
+									                <col width="20px">
+									                <col width="150px">
+									                <col width="90px">
+									                <col>
+									                <col width="70px">
+									            </colgroup>
+	                                            <thead>
+	                                                <tr>
+                                                    	<th class="smart-form remove-sort"> 
+										                    <label class="checkbox">
+										                        <input type="checkbox">
+										                        <i></i> 
+										                    </label>
+										                </th>
+	                                                    <th>기업/기관</th>
+	                                                    <th>고용형태</th>
+	                                                    <th>이름</th>
+	                                                    <th>비고</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td class="smart-form remove-sort"> 
+										                    <label class="checkbox">
+										                        <input type="checkbox">
+										                        <i></i> 
+										                    </label>
+										                </td>
+	                                                    <td class="tbody">드림인프라</td>
+	                                                    <td>임직원</td>
+	                                                    <td class="tbody">
+	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
+													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+													        data-content="
+													            <ul class='user_info'>
+													                <p><img src='../../images/member_big.png'></p>
+													                <li>시스템관리자</li>
+													                <li>(주)드림인프라</li>
+													                <li>SI사업부</li>
+													                <li>부장</li>
+													                <li>systemadministrator@dreaminfra.co.kr </li>
+													            </ul>
+													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+													        </button>
+	                                                    </td>
+	                                                    <td>
+	                                                    	<button type="button" class="btn btn-default btn-sm">추가</button>
+	                                                    </td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
+	                            </div>
+	                            <div style="width: 100%; height: 30px;"></div>
+			                        
+			                        
+			                    </div>
+			                    
+			                    <div class="col-md-12 col-md-6">
+	                        		<h6 class="h-title float-left">참가자 등록 목록</h6>
+	                        		<div class="jarviswidget jarviswidget-color-blueDark mb20"  data-widget-editbutton="false">
+                                
+	                                <!-- widget edit box -->
+	                                <div class="jarviswidget-editbox">
+	                                    <!-- This area used as dropdown edit box -->
+	                                </div>
+	                                <!-- end widget edit box -->
+                                	
+	                                <p class="go_btn align-right mb6">
+                                    	<button class="btn btn-default mt4"><i class="fa fa-minus"></i>&nbsp;일괄제거</button>
+	                                </p>
+	                                
+	                                <!-- widget div-->
+	                                <div class="mt30 table-bordered ">
+	                
+	                                    <!-- widget content -->
+	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+	                            
+	                                        <table id="dt_basic_1" class="table table-bordered table-condensed table-hover tbodycenter">
+                                                <colgroup>
+									                <col width="20px">
+									                <col width="150px">
+									                <col width="90px">
+									                <col>
+									                <col width="70px">
+									            </colgroup>
+	                                            <thead>
+	                                                <tr>
+                                                    	<th class="smart-form remove-sort"> 
+										                    <label class="checkbox">
+										                        <input type="checkbox">
+										                        <i></i> 
+										                    </label>
+										                </th>
+	                                                    <th>기업/기관</th>
+	                                                    <th>고용형태</th>
+	                                                    <th>이름</th>
+	                                                    <th>비고</th>
+	                                                </tr>
+	                                            </thead>
+	                                            <tbody>
+	                                                <tr>
+	                                                    <td class="smart-form remove-sort"> 
+										                    <label class="checkbox">
+										                        <input type="checkbox">
+										                        <i></i> 
+										                    </label>
+										                </td>
+	                                                    <td class="tbody">드림인프라</td>
+	                                                    <td>임직원</td>
+	                                                    <td class="tbody">
+	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
+													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+													        data-content="
+													            <ul class='user_info'>
+													                <p><img src='../../images/member_big.png'></p>
+													                <li>시스템관리자</li>
+													                <li>(주)드림인프라</li>
+													                <li>SI사업부</li>
+													                <li>부장</li>
+													                <li>systemadministrator@dreaminfra.co.kr </li>
+													            </ul>
+													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+													        </button>
+	                                                    </td>
+	                                                    <td>
+	                                                    	<button type="button" class="btn btn-default btn-sm">제거</button>
+	                                                    </td>
+	                                                </tr>
+	                                            </tbody>
+	                                        </table>
+	                                    </div>
+	                                    <!-- END widget content -->
+	                                </div>
+	                            </div>
+			                    </div>
+			                    
+		                    </div>
+		                </div>
+	                <!-- End row  -->
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.modal -->
+	    <!-- end modal_1 -->
+        
+        
+        
+        <!-- Modal_2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 승인내역</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 파일업로드</h4>
                     </div>
                     <div class="modal-body">
-                        
+
                         <div class="row">
                             <div class="col-md-12">
-							<table class="table table-bordered tbodycenter">
-								<colgroup>
-									<col style="width: 60px;">
-									<col style="width: 145px;">
-									<col style="width: 80px;">
-									<col>
-								</colgroup>
-								<thead>
-									<tr>
-										<th>순번</th>
-										<th>이름</th>
-										<th>상태</th>
-										<th>사유</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td class="tleft">
-                                            <!-- 인명정보 -->
-                                            <button class="user_info_box" rel="popover-hover" data-placement="right"
-                                               data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
-                                               data-content="
-                                                <ul class='user_info'>
-                                                    <p><img src='../../images/member_big.png'></p>
-                                                    <li>시스템관리자</li>
-                                                    <li>(주)드림인프라</li>
-                                                    <li>SI사업부</li>
-                                                    <li>부장</li>
-                                                    <li>systemadministrator@dreaminfra.co.kr </li>
-                                                </ul>
-                                            " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong></button>
-                                            <!--인명정보 끝-->
+                                <h6 class="h-title pull-left">파일업로드</h6>
+                                <div style="margin-left:110px;">
+                                    <div class="alert alert-info">
+                                        <i class="fa-fw fa fa-info"></i>100MB 이상의 파일은 업로드 되지 않습니다.
+                                    </div>
+                                </div>
+                                <table class="table table-bordered tbodycenter">
+                                    <colgroup>
+                                        <col>
+                                        <col width="100">
+                                        <col width="150">
+                                        <col width="80">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th>파일명</th>
+                                        <th>파일크기</th>
+                                        <th>진행률</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tleft">경기도정보보안_s_text.ai</td>
+                                        <td>1MB</td>
+                                        <td>
+                                            <div class="progress eval mb0" >
+												<div class="bar" style="width: 100%;">   
+													<span class="number">100%</span>
+												</div>
+											</div>
                                         </td>
-										<td>승인</td>
-										<td class="tleft">교육 일괄 승인</td>
-									</tr>
-								</tbody>
-							</table>
-
+                                        <td>
+                                            <button class="btn btn-default btn-sm">
+                                               삭제
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-search"></i> 파일선택 </button>
+                                <button class="btn btn-default btn-sm"><i class="fa fa-fw fa-upload"></i>파일 업로드</button>
+                            </div>
                         </div>
 
                     </div>
@@ -685,15 +946,16 @@
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             닫기
                         </button>
-                        
+                        <button type="button" class="btn btn-primary disabled">완료</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal_2 -->
-		</div>
-    
-
+        <!-- end Modal_2 -->
+        
+        
+        
+        
 
 		<!--================================================== -->
 
@@ -742,7 +1004,7 @@
 
 		<!-- JQUERY SELECT2 INPUT -->
 		<script src="../../js/plugin/select2/select2.min.js"></script>
-
+ 
 		<!-- JQUERY UI + Bootstrap Slider -->
 		<!-- <script src="../../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script> -->
 		
@@ -768,8 +1030,6 @@
 
 		<![endif]-->
 
-		<!-- <script src="../../js/plugin/datetimepicker/jquery-ui-timepicker-ko.js"></script>
-		<script src="../../js/plugin/datetimepicker/jquery-ui-sliderAccess.js"></script> -->
 
 
 		<!-- Demo purpose only -->
@@ -780,8 +1040,20 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-		<!-- PAGE RELATED PLUGIN(S) -->
 
+
+		<!-- PAGE RELATED PLUGIN(S) -->
+		<script src="../../js/plugin/bootstrap-tags/bootstrap-tagsinput.min.js"></script>
+ 		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
+        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
+        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
+        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
+        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
+        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
+        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
+
+
+ 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
@@ -791,26 +1063,50 @@
 	
         <!-- data picker-->
     	<script type="text/javascript">
-	        $('#startdate').datetimepicker({
-	            dateFormat : 'yy-mm-dd',
+	        $('#startdatetime').datetimepicker({
+	            dateFormat : 'yy-mm-dd', timeFormat: 'HH:mm',
 	            prevText : '<i class="fa fa-chevron-left"></i>',
 	            nextText : '<i class="fa fa-chevron-right"></i>',
 	            onSelect : function(selectedDate) {
-	                $('#finishdate').datepicker('option', 'minDate', selectedDate);
+	                $('#finishdatetime').datepicker('option', 'minDate', selectedDate);
 	            }
 	        });
 	
-	        $('#finishdate').datetimepicker({
-	            dateFormat : 'yy-mm-dd',
+	        $('#finishdatetime').datetimepicker({
+	            dateFormat : 'yy-mm-dd', timeFormat: 'HH:mm',
 	            prevText : '<i class="fa fa-chevron-left"></i>',
 	            nextText : '<i class="fa fa-chevron-right"></i>',
 	            onSelect : function(selectedDate) {
-	                $('#startdate').datepicker('option', 'maxDate', selectedDate);
+	                $('#startdatetime').datepicker('option', 'maxDate', selectedDate);
 	            }
 	        });
 	          
     	</script>
     	<!-- end data picker -->
+
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			            
+	            pageSetUp();
+	            
+	            /*
+	             * BASIC
+	             */
+	             
+	             /* 검색, 일괄추가, 페이지분류 */
+	             $('#dt_basic').dataTable({
+	                "sPaginationType" : "bootstrap_full",	
+	                "sDom": 'rt<"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
+	            }); 
+	             $('#dt_basic_1').dataTable({
+	                "sPaginationType" : "bootstrap_full",	
+	                "sDom": 'rt<"dt-bottom-row" i>' 
+	            }); 
+			});
+		</script>	
+
 
 
 
@@ -919,10 +1215,48 @@
 		</script>
      
 
+		<script type="text/javascript">
+		$('.bar').progressbar({ 
+			display_text : 'fill'   
+		}); 
+		$(".bar span").text(function(index, text){
+			if(text.trim() == "100%"){
+				$(this).parent().addClass("bar-success");
+			}
+		});
 		
+	</script>
+	
+		
+	
+	
 
 
+	<script type="text/javascript">
+	
+	$('#addLecturer').tagsinput({
+		 
+		maxTags: 5
+	});
+	
+	
+	
+	/* $('#addd').click(function(){
+		$('#addLecturer').tagsinput('input');
+		//var $test =  .; 
+		
+	}); */
+	/* $('#addd').click(function () {
 
+       
+		$('#addLecturer').tagsinput({
+			 
+			maxTags: 5
+		});  
+	}); */
+	
+	
+	</script>
 
 
 	</body>
