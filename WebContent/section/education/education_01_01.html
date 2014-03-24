@@ -50,7 +50,6 @@
 		<!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
 
 		
-		
 	
 
 
@@ -290,7 +289,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육정보 목록</li><li>교육일정등록</li>
+					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육정보 목록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -315,13 +314,13 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육일정등록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육정보 목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12 col-md-9">
-                        
+	                		<h6 class="h-title">교육일정 제공</h6>
 								<table class="table table-bordered">
 								<colgroup>
 									<col width="100px;">
@@ -440,12 +439,15 @@
 										
 									
 											<div class="input-group search-color width-40">
-												<input id="addLecturer" type="text" class="form-control">
+												<!-- <input id="addLecturer" > --> 
+												<!-- <input id="lecturer" type="text" class="form-control"> -->
+												<input id="lecturer" type="text" value="" />
 												<div class="input-group-btn">
-													<button id="addd" class="btn btn-default btn-search">
+													<button id="addLecturer" class="btn btn-default btn-search">
 														<i class="fa fa-search">&nbsp;추가</i>
 													</button>
 												</div>
+												<div id="space" class="bootstrap-tagsinput"></div>
 											</div>
 										</td>
 									</tr>
@@ -621,7 +623,7 @@
 					                완료
 					                <i class="fa fa-check"></i></button>
 					        </div>
-					</div>
+						</div>
 					<!-- end row  -->
 				
 	            </div>
@@ -1234,27 +1236,44 @@
 
 	<script type="text/javascript">
 	
-	$('#addLecturer').tagsinput({
-		 
-		maxTags: 5
+	
+	//
+	 
+	 
+	//var a = $('#lecturer').tagsinput('item'); 
+	$('#lecturer').tagsinput('item');
+	 
+	
+	$('#addLecturer').click(function () { 
+		alert($(".bootstrap-tagsinput input").val() );
+		//$('#lecturer').tagsinput('add', { id: 1, text: 'some' });
 	});
+	/* var m=a('<span class="tag '+e(j)+'">'+e(i)+'<span data-role="remove"></span></span>');
+	if(m.data("item",b), 
+			$('#space').append(m),  
+			m.after(" "), */
 	
 	
 	
-	/* $('#addd').click(function(){
-		$('#addLecturer').tagsinput('input');
-		//var $test =  .; 
-		
+	
+	/* $('#lecturer').tagsinput({
+			 
+			maxTags: 5
+		});   */
+	/* $('#addLecturer').click(function () {
+	
 	}); */
+	
+	
 	/* $('#addd').click(function () {
-
+ 
        
-		$('#addLecturer').tagsinput({
+		$('#lecturer').tagsinput({
 			 
 			maxTags: 5
 		});  
-	}); */
-	
+	}); 
+	 */
 	
 	</script>
 
