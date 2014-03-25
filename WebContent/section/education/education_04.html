@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육정보목록</li>
+					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육설문 관리</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,251 +310,119 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육정보목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육설문 관리</span></h1>
                     </div>
                 </div>
-                <div class="well well-light">
+                <div class="well well-light"> 
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title float-left mt0">교육정보 상세</h6>
-                        	<button type="button" class="btn btn-sm btn-primary float-right ml5" rel="tooltip">교육종료</button>
-                        	<button type="button" class="btn btn-sm btn-success float-right" rel="tooltip">이수증 발급</button>
-							
-							
-							<table class="table table-bordered table-condensed">
-									<colgroup>
-							            <col width="150px;">
-							            <col>
-							            <col width="150px;">
-							            <col>
-							        </colgroup>
-							        <tbody>
-							        	<tr>
-								            <th><label>교육유형</label></th>
-								            <td>보안사고 대응</td>
-								            <th><label>참가자 지정 여부</label></th>
-								            <td>지정</td>
-								        </tr>
-								        <tr>
-								            <th><label>교육명</label></th>
-								            <td>보안사고 대응 교육 2차</td>
-								            <th><label>주관부서</label></th>
-								            <td></td>
-								        </tr>
-								        <tr>
-								            <th><label>교육기간</label></th>
-								            <td>2013-12-30 13:30 ~ 2013-12-30 15:00</td>
-								            <th><label>총 교육시간</label></th>
-								            <td>2시간</td>
-								        </tr>
-								        <tr>
-								            <th><label>교육강사</label></th>
-								            <td colspan="4">
-								            </td>
-								        </tr>
-								        <tr>
-								            <th><label>교육장소</label></th>
-								            <td>회의실</td>
-								            <th><label>교육방법</label></th>
-								            <td>온라인 - 사내</td>
-								        </tr>
-								        <tr>
-								            <th><label>교육내용</label></th>
-								            <td colspan="4">심각도 등급 및 보고 절차</td>        
-								        </tr>
-								        <tr>
-								            <th><label>첨부파일</label></th>
-								            <td colspan="4"></td>        
-								        </tr>
-								        <tr>
-								        	<th>
-									        	<label>승인절차</label>
-								        	</th>
-								        	<td colspan="5">
-								        		<div class="alert alert-info mb5">
-										            1) <strong>[관리]</strong>권한을 가진 사용자는 미 승인 상태의 승인자에게 <strong>[승인 요청]</strong>알림을 재발송할 수 있습니다.<br>
-													2) 알림 재발송은 현재 진행 중인 <strong>미 승인</strong> 대상자에게만 발송됩니다.
-										        </div>
-										        
-										        <table class="table table-bordered tbodycenter mb0">
-													<colgroup>
-													    <col width="50px">
-													    <col width="150px">
-													    <col width="70px">
-													    <col>
-													</colgroup>
-													<tbody><tr>
-													    <th>순번</th>
-													    <th>이름</th>
-													    <th>상태</th>
-													    <th>사유</th>
-													</tr>
-													 
-													 <tr>
-													    <td>1</td>
-													    <td class="tleft">
-													     	<button class="user_info_box" rel="popover-hover" data-placement="left"
-													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-													        data-content="
-													            <ul class='user_info'>
-													                <p><img src='../../images/member_big.png'></p>
-													                <li>시스템관리자</li>
-													                <li>(주)드림인프라</li>
-													                <li>SI사업부</li>
-													                <li>부장</li>
-													                <li>systemadministrator@dreaminfra.co.kr </li>
-													            </ul>
-													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-													        </button>
-														</td>
-													    <td>승인</td>
-													    <td class="tleft">교육 일괄 승인</td>
-													 </tr>
-													</tbody>
-												</table>
-								        	</td>
-								        </tr>
-								        <tr>
-											<th><label>교육계획서</label></th>	
-											<td colspan="4">
-											</td>	
-								        </tr>
-							        </tbody>
-							    </table>
-							
+                        	<h6 class="h-title">교육설문 목록</h6>
+							<table class="table table-bordered">
+								<colgroup>
+								    <col width="100px;">
+								    <col>
+								    <col width="100px;">
+								    <col width="300px;">
+								    <col width="100px;">
+								    <col>
+								    <col width="70px;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><label for="title">설문명</label></th>
+										<td>
+											<input class="form-control" placeholder="설문명을 입력하세요." type="text">
+										</td>
+										<th><label for="createdBy">작성자</label></th>
+										<td colspan="3">
+											<input class="form-control" placeholder="작성자를 입력하세요." type="text">
+										</td>
+										<th><label for="educationName">교육명</label></th>
+										<td colspan="3">
+											<input class="form-control" placeholder="교육명을 입력하세요." type="text">
+										</td>
+										<td rowspan="2">
+											<div class="search-color">
+									            <button class="btn btn-default">
+									                <i class="fa fa-search fa-lg"></i> 검색
+									            </button>
+									        </div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="align-right">
+					            <button class="btn btn-primary mb10">
+					                <i class="fa fa-pencil"></i> 신규등록
+					            </button>
+				            </div>
+
+							<table class="table table-bordered tbodycenter">
+								<colgroup>
+								    <col width="60px">
+								    <col>
+								    <col width="100px">
+								    <col width="120px">
+								    <col width="160px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>No.</th>
+										<th>설문명</th>
+										<th>작성자</th>
+										<th>교육할당정보</th>
+										<th>비고</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td  class="tleft">사외 교육 설문</td>
+										<td>유진영</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm"  rel="tooltip" data-original-title="설문할당 이력없음" data-toggle="modal" data-target="#myModal1">조회</button>
+									    </td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm">조회</button>
+											<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 수정불가.">수정</button>
+											<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 삭제불가.">삭제</button>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							<div class="text-center">
+                                <ul class="pagination pagination-sm">
+                                    <li>
+                                        <a href="javascript:void(0);">처음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">이전</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">다음</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">마지막</a>
+                                    </li>
+                                </ul>
+                            </div>
 	
-	
-						<h6 class="h-title float-left">이수 정보</h6>
-	                    
-	                    <div class="jarviswidget jarviswidget-color-blueDark mb20 t35"  data-widget-editbutton="false">
-	                        
-	                        <!-- widget edit box -->
-	                        <div class="jarviswidget-editbox">
-	                            <!-- This area used as dropdown edit box -->
-	                            
-	                        </div>
-	                        <!-- end widget edit box -->
-	
-	                        <!-- widget div-->
-	                        <div class="mt30 table-bordered ">
-	        
-	                            <!-- widget content -->
-	                            <div class="widget-body no-padding border-top-type1 display-non-wid-id-3 ">
-	                    
-	                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-	                                    <colgroup>
-											<col width="150px">
-											<col width="100px">
-											<col>
-											<col width="100px">
-											<col width="100px">
-										</colgroup>
-	                                    <thead>
-	                                        <tr>
-	                                            <th>이름</th>
-	                                            <th>이수여부</th>
-	                                            <th>이수확인증</th>
-	                                            <th class="remove-sort">설문결과</th>
-	                                            <th>비고</th>
-	                                        </tr>
-	                                    </thead>
-	                                    <tbody>
-	                                        <tr>
-	                                            <td class="tleft">
-	                                            	<button class="user_info_box" rel="popover-hover" data-placement="left"
-											        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-											        data-content="
-											            <ul class='user_info'>
-											                <p><img src='../../images/member_big.png'></p>
-											                <li>시스템관리자</li>
-											                <li>(주)드림인프라</li>
-											                <li>SI사업부</li>
-											                <li>부장</li>
-											                <li>systemadministrator@dreaminfra.co.kr </li>
-											            </ul>
-											        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-											        </button>
-	                                            </td>
-	                                            <td>
-	                                                <span class="badge badge-color-bluegreen">이수</span>
-	                                            </td>
-	                                            <td class="tleft">
-	                                            	<ul class="file_upload">
-									                    <li class="display-inline">
-									                        <span><i class="fa fa-fw fa-file-text-o"></i></span>백업계획.doc
-									                        
-									                    </li>
-									                </ul>
-	                                            </td>
-	                                            <td>
-	                                            	<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">조회</button>
-	                                            </td>
-	                                            <td>
-	                                            </td>
-	                                        </tr>
-	                                    </tbody>
-	                                </table>
-	                            </div>
-	                        </div>
-	                    </div>
-	                    <div style="width: 100%; height: 70px;"></div>
-	                    
-	                    
-						<h6 class="h-title float-left mt10">미이수사유 정보</h6>
-						<table class="table table-bordered tbodycenter">
-							<colgroup>
-								<col width="150px">
-								<col width="100px">
-								<col>
-								<col width="100px">
-								<col width="80px">
-								<col width="100px">
-							</colgroup>
-                                <thead>
-                                    <tr>
-                                        <th>이름</th>
-                                        <th>이수여부</th>
-                                        <th>사유</th>
-                                        <th>관련문서</th>
-                                        <th>승인</th>
-                                        <th>비고</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="tleft">
-                                        	<button class="user_info_box" rel="popover-hover" data-placement="left"
-									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-									        data-content="
-									            <ul class='user_info'>
-									                <p><img src='../../images/member_big.png'></p>
-									                <li>시스템관리자</li>
-									                <li>(주)드림인프라</li>
-									                <li>SI사업부</li>
-									                <li>부장</li>
-									                <li>systemadministrator@dreaminfra.co.kr </li>
-									            </ul>
-									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
-									        </button>
-                                        </td>
-                                        <td>
-                                            <span class="badge badge-color-darkorange">미이수</span>
-                                        </td>
-                                        <td class="tleft">
-                                        	기타
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-						</table>
-	
-	                  		<div>
-				            	<button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
-				       		</div>
-	
-					
 						</div>
 						<!-- end row  -->
 	
@@ -620,7 +488,7 @@
 		<!-- END SHORTCUT AREA -->
 		
 		
-	
+		
 		<!-- Modal_1 -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
@@ -629,45 +497,68 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 교육설문 응답결과</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 교육할당정보</h4>
                     </div>
                     <div class="modal-body">
                         
+                        <!--  시작. 모달 내용  -->
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="show-grid-div2">
-                                	<h6 class="h-title">사외 교육 설문</h6>
-                                	<hr>
-	                                <div class="show-grid-div2">
-	                                	<span class="badge badge-color-bluegreen">1/1</span> <strong> 교육 내용 선정이 적절하였는가?</strong>
-	                                	
-	                                	<hr>
-	                                	 <div class="smart-form">
-					                        <label class="radio">
-					                            <input type="radio" name="radio-inline"checked="checked">
-					                                <i></i>매우 적절
-					                        </label>
-					                        <label class="radio">
-					                            <input type="radio" name="radio-inline">
-					                                <i></i>적절
-					                        </label>
-					                        <label class="radio">
-					                            <input type="radio" name="radio-inline">
-					                                <i></i>보통
-					                        </label>
-					                        <label class="radio">
-					                            <input type="radio" name="radio-inline">
-					                                <i></i>부적절
-					                        </label>
-					                        <label class="radio">
-					                            <input type="radio" name="radio-inline">
-					                                <i></i>매우 부적절
-					                        </label>
-					                    </div>
-                                	</div>
+                                <table class="table table-bordered table-condensed tbodycenter">
+								    <colgroup>
+									    <col style="width:60px;">
+									    <col>
+								    </colgroup>
+								    <thead>
+								    	<tr>
+								    		<th>NO.</th>
+								    		<th>교육명</th>
+								    	</tr>
+								    </thead>
+								    
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="tleft">
+                                        임베디드 ARM 프로세스</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="text-center">
+                                    <ul class="pagination pagination-sm pagination-alt mt0 mb0">
+                                        <li>
+                                            <a href="javascript:void(0);">처음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">이전</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">다음</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">마지막</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <!--  끝. 모달 내용  -->
 
                     </div>
                     <div class="modal-footer">
@@ -679,8 +570,8 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
         <!-- end modal_1 -->
+		
     
-
 
 
 		<!--================================================== -->
@@ -754,16 +645,8 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-        
-		<!-- PAGE RELATED PLUGIN(S) --> 
-		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
-        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
-        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
-        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
-        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
-        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
-        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
-        
+		<!-- PAGE RELATED PLUGIN(S) -->
+
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
 		<script src="../../js/plugin/flot/jquery.flot.resize.js"></script>
@@ -796,63 +679,6 @@
 	        });
     	</script>
     	<!-- end data picker -->
-	
-	
-	<script>
-            $(document).ready(function() {
-
-                // DO NOT REMOVE : GLOBAL FUNCTIONS!
-                pageSetUp();
-
-                /*
-                 * PAGE RELATED SCRIPTS
-                 */
-
-                $(".js-status-update a").click(function() {
-                    var selText = $(this).text();
-                    $this = $(this);
-                    $this.parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
-                    $this.parents('.dropdown-menu').find('li').removeClass('active');
-                    $this.parent().addClass('active');
-                });
-            });
-
-        </script>
-
-
-
-
-
- 		<script type="text/javascript">
-        
-        // DO NOT REMOVE : GLOBAL FUNCTIONS!
-        
-        $(document).ready(function() {
-            
-            pageSetUp();
-            
-            /*
-             * BASIC
-             */
-             
-             /* 검색, 일괄추가, 페이지분류 */
-             $('#dt_basic').dataTable({
-                "sPaginationType" : "bootstrap_full",	
-                "sDom": '<"dt-top-row" fl> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
-            }); 
-            
-        
-            /*
-            * 기존 테이블의 작은버튼을 기본버튼으로 변경
-            */ 
-            $('.dt-top-row a').removeClass('btn-sm');
-
-        })
-    </script>
-
-
-
-
 	
 
 

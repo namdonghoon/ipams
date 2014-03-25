@@ -623,6 +623,11 @@ ul.user_info li{
     padding-left: 10px;
     margin-bottom: 10px;
     background: url("../images/modal_title_icon.png") no-repeat left center ;
+}.s-title{
+	font-size: 13px !important;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background: url("../images/title_small_icon.png") no-repeat left center ;
 }
 /*모달*/
 .modal-dialog {
@@ -750,7 +755,9 @@ input, select{
 
 /* 마진 크기 조정 */
 
- .mt10 {
+ .mt5 {
+margin-top: 5px;
+}.mt10 {
 margin-top: 10px;
 }.mb10 {
 margin-bottom: 10px;
