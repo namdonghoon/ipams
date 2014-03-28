@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육설문 관리</li>
+					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가현황</li><li>평가목록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,83 +310,118 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육설문 관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 평가목록</span></h1>
                     </div>
                 </div>
-                <div class="well well-light"> 
+                <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title">교육설문 목록</h6>
 							<table class="table table-bordered">
 								<colgroup>
 								    <col width="100px;">
 								    <col>
 								    <col width="100px;">
-								    <col width="300px;">
+								    <col>
 								    <col width="100px;">
 								    <col>
 								    <col width="70px;">
 								</colgroup>
 								<tbody>
 									<tr>
-										<th><label for="title">설문명</label></th>
+										<th><label for="name">평가명</label></th>
 										<td>
-											<input class="form-control" placeholder="설문명을 입력하세요." type="text">
+											<input class="form-control" placeholder="평가명을 입력하세요." type="text">
 										</td>
-										<th><label for="createdBy">작성자</label></th>
-										<td colspan="3">
-											<input class="form-control" placeholder="작성자를 입력하세요." type="text">
+										<th><label for="typeName">평가유형명</label></th>
+										<td>
+											<input class="form-control" placeholder="평가유형명을 입력하세요." type="text">
 										</td>
-										<th><label for="educationName">교육명</label></th>
-										<td colspan="3">
-											<input class="form-control" placeholder="교육명을 입력하세요." type="text">
+										<th><label for="administrator">평가자</label></th>
+										<td>
+											<input class="form-control" placeholder="평가자를 입력하세요." type="text">
 										</td>
 										<td rowspan="2">
-											<div class="search-color">
+											<div class="search">
 									            <button class="btn btn-default">
 									                <i class="fa fa-search fa-lg"></i> 검색
 									            </button>
 									        </div>
 										</td>
 									</tr>
+									<tr>
+										<th><label for="status">진행상태</label></th>
+										<td>
+											<select class="form-control" style="width:100px;">
+								                <option>전체</option>
+								                <option>진행중</option>
+								                <option>완료</option>
+								            </select>
+										</td>
+										<th><label for="step">평가단계</label></th>
+										<td colspan="3">
+											<select class="form-control pull-left margin-right-5" style="width:100px;">
+								                <option>전체</option>
+								                <option>평가계획</option>
+								                <option>현황진단</option>
+								                <option>위험평가</option>
+								                <option>개선계획수립</option>
+								                <option>이행점검</option>
+								            </select>
+											<select class="form-control" style="width:100px;">
+								                <option>전체</option>
+								            </select>
+										</td>
+									</tr>
 								</tbody>
 							</table>
-							<div class="align-right">
-					            <button class="btn btn-primary mb10">
-					                <i class="fa fa-pencil"></i> 신규등록
-					            </button>
-				            </div>
-
+							
+							<div class="alert alert-info display-inline-block">
+					            <strong>평가생성자</strong> 또는 <strong>평가 총괄관리자</strong>로 등록된 목록만 조회할 수 있습니다.
+				        	</div>
+							
 							<table class="table table-bordered tbodycenter">
 								<colgroup>
-								    <col width="60px">
-								    <col>
-								    <col width="100px">
-								    <col width="120px">
-								    <col width="120px">
-								</colgroup>
+					                <col width="40px">
+					                <col>
+					                <col>
+					                <col width="100px">
+					                <col width="80px">
+					                <col width="80px">
+					                <col width="130px">
+					                <col width="90px">
+					                <col width="60px">
+					            </colgroup>
 								<thead>
-									<tr>
-										<th>No.</th>
-										<th>설문명</th>
-										<th>작성자</th>
-										<th>교육할당정보</th>
-										<th>비고</th>
-									</tr>
-								</thead>
+						            <tr>
+						                <th>No.</th>
+						                <th>평가명</th>
+						                <th>평가유형명</th>
+						                <th>평가팀</th>
+						                <th>진행상태</th>
+						                <th>평가단계</th>
+						                <th>평가절차</th>
+						                <th>평가진행</th>
+						                <th>비고</th>
+						            </tr>
+					            </thead>
 								<tbody>
 									<tr>
-										<td>1</td>
-										<td  class="tleft">사외 교육 설문</td>
-										<td>유진영</td>
+										<td>4</td>
+										<td  class="tleft">기반시설 점검 테스트</td>
+										<td  class="tleft">기반시설 취약성 진단(관리/물리 영역)</td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm"  rel="tooltip" data-original-title="설문할당 이력없음" data-toggle="modal" data-target="#myModal1">조회</button>
-									    </td>
+											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1" rel="tooltip" data-original-title="평가 단계별 담당자 정보 조회">평가팀정보</button>
+										</td>
+										<td><span class="badge badge-color-darkorange">진행중</span></td>
 										<td>
-											<div class="btn-group">
-												<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 수정불가.">수정</button>
-												<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 삭제불가.">삭제</button>
-											</div>
+											위험평가
+										</td>
+										<td>침해요인 분석</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm">단계진행</button>
+										</td>
+										<td>
+											<button type="button" class="btn btn-default btn-sm">조회</button>
 										</td>
 									</tr>
 									
@@ -498,69 +533,401 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 교육할당정보</h4>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i>평가 담당자 정보</h4>
                     </div>
                     <div class="modal-body">
-                        
-                        <!--  시작. 모달 내용  -->
                         <div class="row">
                             <div class="col-md-12">
-                                <table class="table table-bordered table-condensed tbodycenter">
-								    <colgroup>
-									    <col style="width:60px;">
-									    <col>
-								    </colgroup>
-								    <thead>
-								    	<tr>
-								    		<th>NO.</th>
-								    		<th>교육명</th>
-								    	</tr>
-								    </thead>
-								    
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="tleft">
-                                        임베디드 ARM 프로세스</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
                                 
-                                <div class="text-center">
-                                    <ul class="pagination pagination-sm pagination-alt mt0 mb0">
-                                        <li>
-                                            <a href="javascript:void(0);">처음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">이전</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">2</a>
-                                        </li>
-                                        <li class="active">
-                                            <a href="javascript:void(0);">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">5</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">다음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">마지막</a>
-                                        </li>
-                                    </ul>
-                                </div>
+								<div class="tab-pane active">
+			
+			                        <ul class="nav nav-tabs">
+			                            <li class="active">
+			                                <a href="#iss1" data-toggle="tab">평가계획</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss2" data-toggle="tab">현황진단</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss3" data-toggle="tab">위험평가</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss4" data-toggle="tab">개선게획 수립</a>
+			                            </li>
+			                            <li class="">
+			                                <a href="#iss5" data-toggle="tab">이행점검</a>
+			                            </li>
+			                        </ul>
+			
+			                        <div class="tab-content">
+			                            <div class="tab-pane padding-top-10 active" id="iss1">
+											<table class="table table-bordered mb0 mt10">
+												<colgroup>
+													<col width="110px;">
+													<col>
+												</colgroup>
+												<tbody><tr>
+													<th>평가총괄관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+											</tbody></table>
+			                            </div>
+			                            <div class="tab-pane padding-top-10" id="iss2">
+											<table class="table table-bordered mb0 mt10">
+												<colgroup>
+													<col width="110px;">
+													<col>
+												</colgroup>
+												<tbody>
+												<tr>
+													<th>평가총괄관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>단계관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>평가팀원</th>
+													<td>
+														<table class="table table-bordered mb0 ml5">
+															<colgroup>
+																<col width="150px;">
+																<col>
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th>진단</th>
+																	<td>
+																		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																        data-content="
+																            <ul class='user_info'>
+																                <p><img src='../../images/member_big.png'></p>
+																                <li>시스템관리자</li>
+																                <li>(주)드림인프라</li>
+																                <li>SI사업부</li>
+																                <li>부장</li>
+																                <li>systemadministrator@dreaminfra.co.kr </li>
+																            </ul>
+																        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+																        </button>
+																	</td>
+																</tr>
+																<tr>
+																	<th>보정</th>
+																	<td>
+																		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																        data-content="
+																            <ul class='user_info'>
+																                <p><img src='../../images/member_big.png'></p>
+																                <li>시스템관리자</li>
+																                <li>(주)드림인프라</li>
+																                <li>SI사업부</li>
+																                <li>부장</li>
+																                <li>systemadministrator@dreaminfra.co.kr </li>
+																            </ul>
+																        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+																        </button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+												</tr>
+											</tbody></table>
+			                            </div>
+			                            <div class="tab-pane padding-top-10" id="iss3">
+											<table class="table table-bordered mb0 mt10">
+												<colgroup>
+													<col width="110px;">
+													<col>
+												</colgroup>
+												<tbody>
+												<tr>
+													<th>평가총괄관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>단계관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>평가팀원</th>
+													<td>
+														<table class="table table-bordered mb0 ml5">
+															<colgroup>
+																<col width="150px;">
+																<col>
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th>침해요인 분석</th>
+																	<td>
+																		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																        data-content="
+																            <ul class='user_info'>
+																                <p><img src='../../images/member_big.png'></p>
+																                <li>시스템관리자</li>
+																                <li>(주)드림인프라</li>
+																                <li>SI사업부</li>
+																                <li>부장</li>
+																                <li>systemadministrator@dreaminfra.co.kr </li>
+																            </ul>
+																        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+																        </button>
+																	</td>
+																</tr>
+																<tr>
+																	<th>위험 분석</th>
+																	<td>
+																		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																        data-content="
+																            <ul class='user_info'>
+																                <p><img src='../../images/member_big.png'></p>
+																                <li>시스템관리자</li>
+																                <li>(주)드림인프라</li>
+																                <li>SI사업부</li>
+																                <li>부장</li>
+																                <li>systemadministrator@dreaminfra.co.kr </li>
+																            </ul>
+																        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+																        </button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+												</tr>
+											</tbody></table>
+			                            </div>
+			                            <div class="tab-pane padding-top-10" id="iss4">
+											<table class="table table-bordered mb0 mt10">
+												<colgroup>
+													<col width="110px;">
+													<col>
+												</colgroup>
+												<tbody>
+												<tr>
+													<th>평가총괄관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>단계관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>평가팀원</th>
+													<td>
+														<table class="table table-bordered mb0 ml5">
+															<colgroup>
+																<col width="150px;">
+																<col>
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th>개선계획 작성</th>
+																	<td></td>
+																</tr>
+																<tr>
+																	<th>개선계획 적정성 검토</th>
+																	<td></td>
+																</tr>
+																<tr>
+																	<th>개선계획 승인</th>
+																	<td></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+												</tr>
+											</tbody></table>
+			                            </div>
+			                            <div class="tab-pane padding-top-10" id="iss5">
+											<table class="table table-bordered mb0 mt10">
+												<colgroup>
+													<col width="110px;">
+													<col>
+												</colgroup>
+												<tbody>
+												<tr>
+													<th>평가총괄관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>단계관리자</th>
+													<td>
+														<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+												        </button>
+													</td>
+												</tr>
+												<tr>
+													<th>평가팀원</th>
+													<td>
+														<table class="table table-bordered mb0 ml5">
+															<colgroup>
+																<col width="150px;">
+																<col>
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th>개선계획 작성</th>
+																	<td></td>
+																</tr>
+																<tr>
+																	<th>개선계획 적정성 검토</th>
+																	<td></td>
+																</tr>
+																<tr>
+																	<th>개선계획 승인</th>
+																	<td></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+												</tr>
+											</tbody></table>
+			                            </div>
+			                            
+			                        </div>
+			                    </div>
+
                             </div>
                         </div>
-                        <!--  끝. 모달 내용  -->
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -570,8 +937,7 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal_1 -->
-		
+        <!-- end modal -->
     
 
 

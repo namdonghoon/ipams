@@ -371,7 +371,7 @@
 				                                    <colgroup>
 				                                        <col width="50px">
 				                                        <col>
-				                                        <col width="140px">
+				                                        <col width="110px"> 
 				                                    </colgroup>
 				                                    <thead>
 				                                        <tr>
@@ -384,10 +384,11 @@
 				                                    	<tr>	
 				                                            <td>1</td>
 				                                            <td class="tleft">첫번째 질의문 입니다.</td>
-				                                            <td class="tleft">
-				                                            	<button type="button" class="btn btn-default btn-sm">조회</button>
-				                                            	<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">수정</button>
-				                                            	<button type="button" class="btn btn-default btn-sm">삭제</button>
+				                                            <td>
+				                                            	<div class="btn-group">
+					                                            	<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">수정</button>
+					                                            	<button type="button" class="btn btn-default btn-sm">삭제</button>
+				                                            	</div>
 				                                            </td>
 					                                    </tr>
 				                                    </tbody>
@@ -434,6 +435,9 @@
 								<div class="align-right mt20">
 					            <button type="button" class="btn btn-lg btn-cancel float-left">
 					                <i class="fa fa-times margin-right-5"></i>취소
+					            </button>
+					            <button class="btn btn-lg btn-default">
+					                <i class="fa  fa-file"></i> 등록된 설문 미리보기
 					            </button>
 					            <button type="button" class="btn btn-lg btn-success">
 					                완료
@@ -540,9 +544,10 @@
 								    		<td>
 								    			<select class="form-control" style="width:150px;">
 									                <option>단문항 단일선택형</option>
-									                <option>1</option>
-									                <option>2</option>
-									                <option>3</option>
+									                <option>단문항 단일혼합선택형</option>
+									                <option>단문항 복수선택형</option>
+									                <option>단문항 복수혼합선택형</option>
+									                <option>단문항 복수순위선택형</option>
 									            </select>
 								    		</td>
 								    	</tr>

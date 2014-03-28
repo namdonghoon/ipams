@@ -346,17 +346,17 @@
 											</div>
 										</td>
 										<th>참가자</th>
-										<td>
-											<div class="smart-form">
-						                        <label class="radio display-inline"> 
+										<td class="smart-form">
+											<div class="inline-group">
+						                        <label class="radio"> 
 						                            <input type="radio" name="radio-inline" checked="checked">
 						                                <i></i>사용&nbsp;&nbsp;
 						                        </label> 
-						                        <label class="radio display-inline">
+						                        <label class="radio">
 						                            <input type="radio" name="radio-inline">
 						                                <i></i>미사용
 						                        </label>
-						                    </div>
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -407,26 +407,26 @@
 									</tr>
 									<tr>
 										<th>교육방법</th>
-										<td>
-											<div class="smart-form">
-						                        <label class="radio display-inline"> 
+										<td class="smart-form">
+											<div class="inline-group">
+						                        <label class="radio">
 						                            <input type="radio" name="radio-inline" checked="checked">
 						                                <i></i>온라인&nbsp;&nbsp;
 						                        </label> 
-						                        <label class="radio display-inline">
+						                        <label class="radio">
 						                            <input type="radio" name="radio-inline">
 						                                <i></i>오프라인
 						                        </label>
 						                    </div>
 										</td>
 										<th>교육위치</th>
-										<td>
-											<div class="smart-form">
-						                        <label class="radio display-inline"> 
+										<td class="smart-form">
+											<div class="inline-group">
+						                        <label class="radio"> 
 						                            <input type="radio" name="radio-inline" checked="checked">
 						                                <i></i>사내&nbsp;&nbsp;
 						                        </label> 
-						                        <label class="radio display-inline">
+						                        <label class="radio">
 						                            <input type="radio" name="radio-inline">
 						                                <i></i>사외
 						                        </label>
@@ -436,19 +436,15 @@
 									<tr>
 										<th>교육강사</th>
 										<td colspan="3">
-										
-									
-											<div class="input-group search-color width-40">
-												<!-- <input id="addLecturer" > --> 
-												<!-- <input id="lecturer" type="text" class="form-control"> -->
-												<input id="lecturer" type="text" value="" />
+											<div class="input-group search-color width-40 mb10">
+												<input id="tagsin" class="form-control" type="text" value=""/>
 												<div class="input-group-btn">
-													<button id="addLecturer" class="btn btn-default btn-search">
+													<button id="addtags" class="btn btn-default btn-search">
 														<i class="fa fa-search">&nbsp;추가</i>
 													</button>
 												</div>
-												<div id="space" class="bootstrap-tagsinput"></div>
 											</div>
+											<div id="tagsout" class="tagsout-display"></div>
 										</td>
 									</tr>
 									<tr>
@@ -494,17 +490,17 @@
 									</tr>
 									<tr>
 										<th>승인절차</th>
-										<td colspan="3">
-											<div class="smart-form">
-						                        <label class="radio display-inline"> 
+										<td class="smart-form" colspan="3">
+											<div class="inline-group">
+						                        <label class="radio"> 
 						                            <input type="radio" name="radio-inline" checked="checked">
 						                                <i></i>미진행&nbsp;&nbsp;
 						                        </label> 
-						                        <label class="radio display-inline">
+						                        <label class="radio">
 						                            <input type="radio" name="radio-inline">
 						                                <i></i>진행
 						                        </label>
-						                    </div>
+					                        </div>
 										</td>
 									</tr>
 								</tbody>
@@ -1237,43 +1233,30 @@
 	<script type="text/javascript">
 	
 	
-	//
-	 
-	 
-	//var a = $('#lecturer').tagsinput('item'); 
-	$('#lecturer').tagsinput('item');
-	 
-	
-	$('#addLecturer').click(function () { 
-		alert($(".bootstrap-tagsinput input").val() );
-		//$('#lecturer').tagsinput('add', { id: 1, text: 'some' });
-	});
-	/* var m=a('<span class="tag '+e(j)+'">'+e(i)+'<span data-role="remove"></span></span>');
-	if(m.data("item",b), 
-			$('#space').append(m),  
-			m.after(" "), */
-	
-	
-	
-	
-	/* $('#lecturer').tagsinput({
-			 
-			maxTags: 5
-		});   */
-	/* $('#addLecturer').click(function () {
-	
-	}); */
-	
-	
-	/* $('#addd').click(function () {
- 
-       
-		$('#lecturer').tagsinput({
-			 
-			maxTags: 5
-		});  
+	/* tags 옵션 */
+	$('#tagsout').tagsinput({
+		maxTags: 5
 	}); 
-	 */
+	
+	//영역숨기기
+	$('.bootstrap-tagsinput').hide();
+	
+	/* 엔터  */ 
+	$("#tagsin").keydown(function(evt){ 
+        if( (evt.keyCode) && (evt.keyCode==13) ) { 
+    		$('#tagsout').tagsinput('add', $('#tagsin').val());
+        	$('#tagsin').val("");
+        	$('.bootstrap-tagsinput').show();
+        };
+    });
+	
+	/* 클릭  */
+	$('#addtags').click(function () {
+		$('#tagsout').tagsinput('add', $('#tagsin').val());
+		$('#tagsin').val("");
+		$('.bootstrap-tagsinput').show();
+	});
+	
 	
 	</script>
 

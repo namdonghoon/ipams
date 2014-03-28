@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육설문 관리</li>
+					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육이수증 관리</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -310,43 +310,54 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육설문 관리</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 교육이수증 관리</span></h1>
                     </div>
                 </div>
-                <div class="well well-light"> 
+                <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title">교육설문 목록</h6>
+                        	<h6 class="h-title">이수증 서식 목록</h6>
 							<table class="table table-bordered">
 								<colgroup>
-								    <col width="100px;">
+								    <col width="120px;">
 								    <col>
-								    <col width="100px;">
-								    <col width="300px;">
-								    <col width="100px;">
+								    <col width="120px;">
 								    <col>
 								    <col width="70px;">
 								</colgroup>
 								<tbody>
 									<tr>
-										<th><label for="title">설문명</label></th>
+										<th><label for="name">서식명</label></th>
 										<td>
-											<input class="form-control" placeholder="설문명을 입력하세요." type="text">
+											<input class="form-control" placeholder="서식명을 입력하세요." type="text">
 										</td>
-										<th><label for="createdBy">작성자</label></th>
-										<td colspan="3">
-											<input class="form-control" placeholder="작성자를 입력하세요." type="text">
-										</td>
-										<th><label for="educationName">교육명</label></th>
-										<td colspan="3">
-											<input class="form-control" placeholder="교육명을 입력하세요." type="text">
+										<th><label for="creator">작성자</label></th>
+										<td>
+											<input class="form-control" placeholder="작성자명을 입력하세요." type="text">
 										</td>
 										<td rowspan="2">
-											<div class="search-color">
+											<div class="search">
 									            <button class="btn btn-default">
 									                <i class="fa fa-search fa-lg"></i> 검색
 									            </button>
 									        </div>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="creator">최근업데이트</label></th>
+										<td class="smart-form" colspan="3">
+				            				<div class="row">
+								                <section class="col col-sm-3 mb0">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
+								                    </label>
+								                </section>
+								                <section class="col col-sm-3 mb0">
+								                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
+								                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
+								                    </label>
+								                </section>
+								            </div>
 										</td>
 									</tr>
 								</tbody>
@@ -356,42 +367,55 @@
 					                <i class="fa fa-pencil"></i> 신규등록
 					            </button>
 				            </div>
-
 							<table class="table table-bordered tbodycenter">
 								<colgroup>
-								    <col width="60px">
+								    <col width="40px">
 								    <col>
-								    <col width="100px">
-								    <col width="120px">
-								    <col width="120px">
+								    <col width="150px">
+								    <col width="150px">
+								    <col width="110px">
 								</colgroup>
 								<thead>
 									<tr>
-										<th>No.</th>
-										<th>설문명</th>
-										<th>작성자</th>
-										<th>교육할당정보</th>
-										<th>비고</th>
+									    <th>No.</th>
+									    <th>서식명</th>
+									    <th>작성자</th>
+									    <th>최근업데이트</th>
+									    <th>비고</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>1</td>
-										<td  class="tleft">사외 교육 설문</td>
-										<td>유진영</td>
+										<td class="tleft">교육이수증</td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm"  rel="tooltip" data-original-title="설문할당 이력없음" data-toggle="modal" data-target="#myModal1">조회</button>
-									    </td>
+											<button class="user_info_box" rel="popover-hover" data-placement="left"
+									        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+									        data-content="
+									            <ul class='user_info'>
+									                <p><img src='../../images/member_big.png'></p>
+									                <li>시스템관리자</li>
+									                <li>(주)드림인프라</li>
+									                <li>SI사업부</li>
+									                <li>부장</li>
+									                <li>systemadministrator@dreaminfra.co.kr </li>
+									            </ul>
+									        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+									        </button>
+										</td>
+										<td>
+											2013-11-21
+										</td> 
 										<td>
 											<div class="btn-group">
-												<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 수정불가.">수정</button>
-												<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="문서가 등록되어 삭제불가.">삭제</button>
+	                                          	<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2" rel="tooltip" data-original-title="할당된 이수증서식은 수정불가">수정</button>
+	                                          	<button type="button" class="btn btn-default btn-sm" rel="tooltip" data-original-title="할당된 이수증서식은 수정불가">삭제</button>
 											</div>
 										</td>
 									</tr>
-									
 								</tbody>
 							</table>
+							
 							<div class="text-center">
                                 <ul class="pagination pagination-sm">
                                     <li>
@@ -490,87 +514,6 @@
 		
 		
 		
-		<!-- Modal_1 -->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 교육할당정보</h4>
-                    </div>
-                    <div class="modal-body">
-                        
-                        <!--  시작. 모달 내용  -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <table class="table table-bordered table-condensed tbodycenter">
-								    <colgroup>
-									    <col style="width:60px;">
-									    <col>
-								    </colgroup>
-								    <thead>
-								    	<tr>
-								    		<th>NO.</th>
-								    		<th>교육명</th>
-								    	</tr>
-								    </thead>
-								    
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="tleft">
-                                        임베디드 ARM 프로세스</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                
-                                <div class="text-center">
-                                    <ul class="pagination pagination-sm pagination-alt mt0 mb0">
-                                        <li>
-                                            <a href="javascript:void(0);">처음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">이전</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">2</a>
-                                        </li>
-                                        <li class="active">
-                                            <a href="javascript:void(0);">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">5</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">다음</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">마지막</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--  끝. 모달 내용  -->
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal_1 -->
 		
     
 

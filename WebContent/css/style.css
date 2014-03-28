@@ -625,7 +625,7 @@ ul.user_info li{
     background: url("../images/modal_title_icon.png") no-repeat left center ;
 }.s-title{
 	font-size: 13px !important;
-    padding-left: 10px;
+    padding-left: 10px; 
     margin-bottom: 10px;
     background: url("../images/title_small_icon.png") no-repeat left center ;
 }
@@ -852,6 +852,9 @@ margin-bottom: 40px;
 }
 .display-table-cell{
     display: table-cell !important;
+}
+.display-inline-block{
+	display: inline-block !important;
 }
 
 .input-group-addon, .smart-form .radio{
@@ -1080,14 +1083,23 @@ pre.text-box {
     font-size: 12px;
 }
 /*파이챠트*/
+/*2014_03.22수정*/
 .pie-box{
 	padding:10px;
 	margin-bottom:10px;
+    height: 80px;
+    text-align: center;
 }
 .pie-box .easy-pie-title{
-	margin-left:10px;
 	width:150px;
+    text-align: left;
+    padding-left: 0;
 }
+.pie-box-many{
+    height: 110px;
+    text-align: center;
+}
+/*2014_03.22수정끝*/
 /*글쓰기 파일업로드*/
 .file_upload{
 margin-top: 10px;
@@ -1346,6 +1358,81 @@ table .smart-form .checkbox i, .smart-form .radio i{
  }
  
  
+ /*알림페이지*/
+.notice_category_box{
+    float: left;
+    width: 200px;
+    padding-right: 10px;
+}
+.notice_category_box p.theme{
+    width:100%;
+    height: 40px;
+    padding: 12px 0 0 15px;
+    background: #57889c;
+    color:#ffffff;
+}
+.notice_category_box ul{
+    padding-left: 0;
+}
+.notice_box{
+    margin-left: 230px;
+}
+.notice_box .tab-content{
+    min-height: 700px;
+    border-left: solid 1px #dddddd;
+}
+.notice_category_in{
+    margin: 10px;
+}
+.notice_category_in .badge{
+    padding: 2px 6px 2px 5px;
+}
+ul.notice_list_box {
+    list-style: none;
+    margin-left:0;
+    padding-left: 0;
+}
+.notice_list{
+    border-bottom: solid 1px #dddddd;
+}
+ul.notice_tab_in{
+    list-style: none;
+    padding-left: 0;
+}
+ul.notice_tab_in li{
+    width: 100%;
+    min-height: 80px;
+    padding: 15px 20px 10px 20px;
+    display: table;
+    border-bottom: solid 1px #dddddd;
+}
+ul.notice_tab_in li:hover{
+    background: #fafafa;
+}
+
+/*2014.03.26 수정*/
+ul.notice_tab_in li div p:first-child{
+	line-height: 24px;
+}
+/*2014.03.26 수정끝*/
+
+.notice_tab_in .state{
+    background: #fafafa;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: solid 1px #dddddd;
+    padding: 3px 6px;
+}
+/*모니터링 추가*/
+.dashboard_added ul.monitoring_detail{
+    margin-top: 0;
+}
+ 
+ 
+ 
+ 
+ /*  에러검증  */
 .state-error input {
 	background: #fff0f0;
 	border-color: #A90329;
@@ -1361,5 +1448,49 @@ table .smart-form .checkbox i, .smart-form .radio i{
 	font-style: normal;
 	font-size: 11px;
 	line-height: 15px;
-	color: #D56161;
+	color: #D56161; 
+}
+.tagsout-display ~ .bootstrap-tagsinput{
+	border: none !important;
+}
+.tagsout-display ~ .bootstrap-tagsinput input{
+	display: none !important;
+}
+
+
+/*알림센터 모달창 내용*/
+.btn-mini{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+h5.title{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background: url("../images/modal_title_icon.png") no-repeat left center ;
+}
+/*승인센터*/
+.widget_dropdown ul{
+    min-width: 80px;
+}
+.widget_dropdown ul a{
+    padding-left: 10px;
+}
+.widget_dropdown ul a span{
+    padding-top: 5px;
+    margin-right: 5px;
+}
+.btn-group.widget_dropdown {
+    margin-top: -2px;
+}
+.widget_table_page{
+    border-top: solid 1px #dddddd;
+}
+
+.smart-form .inline-group .checkbox, .smart-form .inline-group .radio {
+	margin-right: 10px !important;
 }

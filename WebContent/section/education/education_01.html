@@ -382,18 +382,20 @@
 										<th><label for="isAssigned">참가자여부</label></th>
 										<td>
 											<div class="smart-form">
-						                        <label class="radio display-inline"> 
-						                            <input type="radio" name="radio-inline" checked="checked">
-						                                <i class="t0"></i>전체&nbsp;&nbsp;
-						                        </label> 
-						                        <label class="radio display-inline"> 
-						                            <input type="radio" name="radio-inline" checked="checked">
-						                                <i class="t0"></i>지정&nbsp;&nbsp;
-						                        </label> 
-						                        <label class="radio display-inline">
-						                            <input type="radio" name="radio-inline">
-						                                <i class="t0"></i>미지정
-						                        </label>
+												<div class="inline-group">
+							                        <label class="radio"> 
+							                            <input type="radio" name="radio-inline" checked="checked">
+							                                <i class="t0"></i>전체&nbsp;&nbsp;
+							                        </label> 
+							                        <label class="radio"> 
+							                            <input type="radio" name="radio-inline" checked="checked">
+							                                <i class="t0"></i>지정&nbsp;&nbsp;
+							                        </label>
+							                        <label class="radio">
+							                            <input type="radio" name="radio-inline">
+							                                <i class="t0"></i>미지정
+							                        </label>
+							                    </div>
 						                    </div>
 										</td>
 									</tr>
@@ -416,7 +418,7 @@
 								    <col width="90px">
 								    <col width="70px">
 								    <col width="70px">
-								    <col width="150px">
+								    <col width="120px">
 								</colgroup>
 								<thead>
 									<tr>
@@ -444,9 +446,10 @@
 										<td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">1/1</button></td>
 										<td><span class="badge badge-color-bluegreen">완료</span></td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm">조회</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
+												<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -460,9 +463,10 @@
 										<td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">0/1</button></td>
 										<td></td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm">조회</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
+												<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -476,9 +480,10 @@
 										<td><button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">0/1</button></td>
 										<td></td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm">조회</button>
-											<button type="button" class="btn btn-default btn-sm">수정</button>
-											<button type="button" class="btn btn-default btn-sm">삭제</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default btn-sm">수정</button>
+												<button type="button" class="btn btn-default btn-sm">삭제</button>
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -494,9 +499,10 @@
 											<button type="button" class="btn btn-default btn-sm">등록</button>
 										</td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm">조회</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
-											<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default btn-sm" disabled>수정</button>
+												<button type="button" class="btn btn-default btn-sm" disabled>삭제</button>
+											</div>
 										</td>
 									</tr>
 								</tbody>
