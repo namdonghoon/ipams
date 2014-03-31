@@ -316,149 +316,347 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-							<table class="table table-bordered">
-								<colgroup>
-								    <col width="100px;">
-								    <col>
-								    <col width="100px;">
-								    <col>
-								    <col width="100px;">
-								    <col>
-								    <col width="70px;">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th><label for="name">평가명</label></th>
-										<td>
-											<input class="form-control" placeholder="평가명을 입력하세요." type="text">
-										</td>
-										<th><label for="typeName">평가유형명</label></th>
-										<td>
-											<input class="form-control" placeholder="평가유형명을 입력하세요." type="text">
-										</td>
-										<th><label for="administrator">평가자</label></th>
-										<td>
-											<input class="form-control" placeholder="평가자를 입력하세요." type="text">
-										</td>
-										<td rowspan="2">
-											<div class="search">
-									            <button class="btn btn-default">
-									                <i class="fa fa-search fa-lg"></i> 검색
-									            </button>
-									        </div>
-										</td>
-									</tr>
-									<tr>
-										<th><label for="status">진행상태</label></th>
-										<td>
-											<select class="form-control" style="width:100px;">
-								                <option>전체</option>
-								                <option>진행중</option>
-								                <option>완료</option>
-								            </select>
-										</td>
-										<th><label for="step">평가단계</label></th>
-										<td colspan="3">
-											<select class="form-control pull-left margin-right-5" style="width:100px;">
-								                <option>전체</option>
-								                <option>평가계획</option>
-								                <option>현황진단</option>
-								                <option>위험평가</option>
-								                <option>개선계획수립</option>
-								                <option>이행점검</option>
-								            </select>
-											<select class="form-control" style="width:100px;">
-								                <option>전체</option>
-								            </select>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+
+							<h6 class="h-title">기반시설 점검 테스트</h6>
+							<div class="show-grid-div2">
+								평가계획 -> 현황진단 -> 위험평가
+							</div>
+							<h6 class="s-title">평가계획단계</h6>
+							<div class="show-grid-div2">
+								그래프 
+							</div>
 							
-							<div class="alert alert-info display-inline-block">
-					            <strong>평가생성자</strong> 또는 <strong>평가 총괄관리자</strong>로 등록된 목록만 조회할 수 있습니다.
-				        	</div>
+							<div class="row mt10">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        			<div class="align-right mb5">
+			                        		<span class="float-left">현황진단 단계</span>
+			                        		<span class="badge badge-color-bluegreen">완료</span>
+	                        			</div>
+									<table class="table table-bordered tbodycenter">
+										<colgroup>
+											<col width="40">
+											<col width="100">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>운영계획</th>
+												<td class="tleft">2014-03-29 ~ 2014-04-10</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<button class="user_info_box float-left" rel="popover-hover"
+														data-placement="left"
+														data-original-title="<i class='fa fa-fw fa-file-text-o'></i>단계관리자"
+														data-content="
+															        <table class='table table-bordered tbodycenter'>
+																		<tbody>
+																			<tr>
+																				<th width='30%'>기업/기관명</th>
+																				<th width='30%'>부서명</th>
+																				<th width='20%'>직급</th>
+																				<th width='20%'>이름</th>
+																			</tr>
+																			<tr>
+																				<td>(주)kt rental</td>
+																				<td>시스템팀</td>
+																				<td>대리</td>
+																				<td>김웅정</td>
+																			</tr>
+																		</tbody>
+																</table>
+											        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+											        </button>
+											        <button class="btn btn-default btn-search float-right">
+														<i class="fa fa-search">&nbsp;정보조회</i>
+													</button>
+					                        	</td>
+					                        </tr>
+					                        
+					                        </tbody>
+					                    </table>
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        			<div class="align-right mb5">
+			                        		<span class="float-left">위험평가 단계</span>
+			                        		<span class="badge badge-color-bluegreen">완료</span>
+	                        			</div>
+									<table class="table table-bordered tbodycenter">
+										<colgroup>
+											<col width="40">
+											<col width="100">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>운영계획</th>
+												<td class="tleft">2014-03-29 ~ 2014-04-10</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<button class="user_info_box float-left" rel="popover-hover"
+														data-placement="left"
+														data-original-title="<i class='fa fa-fw fa-file-text-o'></i>단계관리자"
+														data-content="
+															        <table class='table table-bordered tbodycenter'>
+																		<tbody>
+																			<tr>
+																				<th width='30%'>기업/기관명</th>
+																				<th width='30%'>부서명</th>
+																				<th width='20%'>직급</th>
+																				<th width='20%'>이름</th>
+																			</tr>
+																			<tr>
+																				<td>(주)kt rental</td>
+																				<td>시스템팀</td>
+																				<td>대리</td>
+																				<td>김웅정</td>
+																			</tr>
+																		</tbody>
+																</table>
+											        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+											        </button>
+											        <button class="btn btn-default btn-search float-right">
+														<i class="fa fa-search">&nbsp;정보조회</i>
+													</button>
+					                        	</td>
+					                        </tr>
+					                        
+					                        </tbody>
+					                    </table>
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
 							
-							<table class="table table-bordered tbodycenter">
-								<colgroup>
-					                <col width="40px">
-					                <col>
-					                <col>
-					                <col width="100px">
-					                <col width="80px">
-					                <col width="80px">
-					                <col width="130px">
-					                <col width="90px">
-					                <col width="60px">
-					            </colgroup>
-								<thead>
-						            <tr>
-						                <th>No.</th>
-						                <th>평가명</th>
-						                <th>평가유형명</th>
-						                <th>평가팀</th>
-						                <th>진행상태</th>
-						                <th>평가단계</th>
-						                <th>평가절차</th>
-						                <th>평가진행</th>
-						                <th>비고</th>
-						            </tr>
-					            </thead>
-								<tbody>
-									<tr>
-										<td>4</td>
-										<td  class="tleft">기반시설 점검 테스트</td>
-										<td  class="tleft">기반시설 취약성 진단(관리/물리 영역)</td>
-										<td>
-											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1" rel="tooltip" data-original-title="평가 단계별 담당자 정보 조회">평가팀정보</button>
-										</td>
-										<td><span class="badge badge-color-darkorange">진행중</span></td>
-										<td>
-											위험평가
-										</td>
-										<td>침해요인 분석</td>
-										<td>
-											<button type="button" class="btn btn-default btn-sm">단계진행</button>
-										</td>
-										<td>
-											<button type="button" class="btn btn-default btn-sm">조회</button>
-										</td>
-									</tr>
-									
-								</tbody>
-							</table>
-							<div class="text-center">
-                                <ul class="pagination pagination-sm">
-                                    <li>
-                                        <a href="javascript:void(0);">처음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">이전</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">2</a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0);">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">다음</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">마지막</a>
-                                    </li>
-                                </ul>
-                            </div>
-	
+							
+							
+							<div class="row">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        			<div class="align-right mb5">
+			                        		<span class="float-left">개선계획수립 단계</span>
+			                        		<span class="badge badge-color-dartblue">진행중</span>
+	                        			</div>
+									<table class="table table-bordered tbodycenter">
+										<colgroup>
+											<col width="40">
+											<col width="100">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>운영계획</th>
+												<td class="tleft">2014-03-29 ~ 2014-04-10</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<button class="user_info_box float-left" rel="popover-hover"
+														data-placement="left"
+														data-original-title="<i class='fa fa-fw fa-file-text-o'></i>단계관리자"
+														data-content="
+															        <table class='table table-bordered tbodycenter'>
+																		<tbody>
+																			<tr>
+																				<th width='30%'>기업/기관명</th>
+																				<th width='30%'>부서명</th>
+																				<th width='20%'>직급</th>
+																				<th width='20%'>이름</th>
+																			</tr>
+																			<tr>
+																				<td>(주)kt rental</td>
+																				<td>시스템팀</td>
+																				<td>대리</td>
+																				<td>김웅정</td>
+																			</tr>
+																		</tbody>
+																</table>
+											        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+											        </button>
+											        <button class="btn btn-default btn-search float-right">
+														<i class="fa fa-search">&nbsp;정보조회</i>
+													</button>
+					                        	</td>
+					                        </tr>
+					                        
+					                        </tbody>
+					                    </table>
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        			<div class="align-right mb5">
+			                        		<span class="float-left">이행점검 단계</span>
+			                        		<span class="badge badge-color-darkorange">미진행</span>
+	                        			</div>
+									<table class="table table-bordered tbodycenter">
+										<colgroup>
+											<col width="40">
+											<col width="100">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>운영계획</th>
+												<td class="tleft">2014-03-29 ~ 2014-04-10</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<button class="user_info_box float-left" rel="popover-hover"
+														data-placement="left"
+														data-original-title="<i class='fa fa-fw fa-file-text-o'></i>단계관리자"
+														data-content="
+															        <table class='table table-bordered tbodycenter'>
+																		<tbody>
+																			<tr>
+																				<th width='30%'>기업/기관명</th>
+																				<th width='30%'>부서명</th>
+																				<th width='20%'>직급</th>
+																				<th width='20%'>이름</th>
+																			</tr>
+																			<tr>
+																				<td>(주)kt rental</td>
+																				<td>시스템팀</td>
+																				<td>대리</td>
+																				<td>김웅정</td>
+																			</tr>
+																		</tbody>
+																</table>
+											        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+											        </button>
+											        <button class="btn btn-default btn-search float-right">
+														<i class="fa fa-search">&nbsp;정보조회</i>
+													</button>
+					                        	</td>
+					                        </tr>
+					                        
+					                        </tbody>
+					                    </table>
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							
+							
+							
+							
+							
+							
+							<h6 class="s-title mt20"> 현황진단 단계</h6>
+							<div class="show-grid-div2">
+								그래프 
+							</div>
+							<div class="row mt10">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							
+							<div class="row">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							
+							
+							
+							
+							
+							<h6 class="s-title mt20"> 위험평가 단계</h6>
+							<div class="show-grid-div2">
+								그래프 
+							</div>
+							<div class="row mt10">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							<div class="row">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							<h6 class="s-title mt20"> 개선계획수립 단계</h6>
+							<div class="show-grid-div2">
+								그래프 
+							</div>
+							<div class="row mt10">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							<div class="row">
+	                        	<div class="col-md-4 mt10">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+	                        	
+	                        	<div class="col-md-4 mt10 pl0">
+	                        		<div class="show-grid-div2">
+	                        		
+	                        		</div>
+	                        	</div><!-- END col4  -->
+							</div><!-- END ROW -->
+							
+							
+							
+							
+							<h6 class="s-title mt20"> 이행점검 단계</h6>
+							<div class="alert alert-info">
+					        	1) 이행점검 단계가 진행되지 않아 정보를 조회할 수 없습니다.
+					        </div> 
+							
+							 
+							<div class="mt50"> 
+					            <button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+					        </div>
+					        
 						</div>
 						<!-- end row  -->
 	
