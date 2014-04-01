@@ -756,7 +756,9 @@ input, select{
  }.m0{
     margin: 0px!important;
  }
-
+.child-mb0 >div{
+	margin-bottom: 0px!important;
+}
 
 /* 마진 크기 조정 */
 
@@ -1531,4 +1533,10 @@ h5.title{
 } 
 .remove-tborder2 tr td:FIRST-CHILD {
 	border-left: none;
+}
+ 
+/*form-horizontal 안 체크,라디오박스 margin-2014.03.31수정*/
+.form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox,
+.form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    padding-top: 0;
 }

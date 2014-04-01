@@ -315,18 +315,18 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title"> 평가생성 정보조회 </h6>
+                        	<h6 class="h-title"> 평가조회</h6>
 							<div class="fuelux">
 		                        <div class="wizard mb20">
 		
 		                            <ul class="steps">
-		                                <li data-target="#step1"  class="active">
+		                                <li data-target="#step1"  >
 		                                    <span class="badge badge-info">1</span>평가 생성 정보조회<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step2">
+		                                <li data-target="#step2" >
 		                                    <span class="badge">2</span>평가 대상 등록<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step3">
+		                                <li data-target="#step3" class="active">
 		                                    <span class="badge">3</span>필요성 검토<span class="chevron"></span>
 		                                </li>
 		                                <li data-target="#step4">
@@ -343,37 +343,12 @@
 		                        <div class="step-content">
 		                            <form class="form-horizontal" id="fuelux-wizard" method="post">
 		
-		                                <div class="step-pane active" id="step1">
-										<table class="table table-bordered form">
-											<colgroup>
-												<col style="width: 150px;">
-												<col>
-											</colgroup>
-											<tbody>
-												<tr>
-													<th>평가유형</th>
-													<td>기반시설 취약성 진단(관리/물리 영역)</td>
-												</tr>
-												<tr>
-													<th>평가명</th>
-													<td>기반시설 점검 테스트</td>
-												</tr>
-												<tr>
-													<th>평가총괄 관리자</th>
-													<td>
-													</td>
-												</tr>
-												<tr>
-													<th>평가목적</th>
-													<td>기반시설 점검 테스트</td>
-												</tr>
-												<tr>
-													<th>주요평가사항</th>
-													<td>기반시설 점검 테스트</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+		                                <div class="step-pane active" id="step3">
+			                                <div class="alert alert-info">
+									            필요성 검토 절차를 수행하지 않는, <strong>[필요성 검토 미진행]</strong>인 평가입니다.<br>
+												<strong>[다음]</strong>을 누르면 다음 절차가 진행됩니다.
+									        </div> 
+										</div>
 		                                <!-- end step1  -->
 		                            </form>
 		                        </div> 
@@ -381,8 +356,10 @@
 		                       
 		                    </div>
 	
-							
-							<div class="align-right">
+					        <div class="align-right">
+					            <button type="button" class="btn btn-lg btn-cancel float-left">
+					                <i class="fa fa-arrow-left"></i> 이전
+					            </button>
 					            <button type="button" class="btn btn-lg btn-success ">
 					                다음
 					                <i class="fa fa-arrow-right"></i>

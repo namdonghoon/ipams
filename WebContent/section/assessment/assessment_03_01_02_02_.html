@@ -315,7 +315,7 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title"> 평가 대상 등록</h6>
+                        	<h6 class="h-title"> 단계진행</h6>
 							<div class="fuelux">
 		                        <div class="wizard mb20">
 		
@@ -343,146 +343,174 @@
 		                        <div class="step-content">
 		                            <form class="form-horizontal" id="fuelux-wizard" method="post">
 		
-		                                <div class="step-pane active" id="step1">
-											<h6 class="s-title">평가 대상 목록 - 부서</h6>
-											<table class="table remove-tborder1 mt5 table-fixed">
-												<colgroup>
-													<col width="40px">
-													<col>
-													<col width="120px">
-													<col width="80px">
-												</colgroup>
-												<thead>
-													<tr>
-														<th><input type="checkbox" name="deleteAllCheck"
-															readonly="readonly" disabled="disabled"></th>
-														<th>기업/기관</th>
-														<th>부서</th>
-														<th>비고</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td  class="no-padding-all"  colspan="4">
-															<div >
-																<div style="overflow-y: scroll; width: auto; height: 200px; min-height: 77px;">
-																	<table class="table remove-tborder2 table-fixed">
-																		<colgroup> 
-																			<col width="40px">
-																			<col>
-																			<col width="120px">
-																			<col width="80px">
-																		</colgroup>
-																		<tbody >
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																			<tr>
-																				<td class="smart-form"> 
-																                    <label class="checkbox no-padding-all">
-																                        <input type="checkbox">
-																                        <i></i> 
-																                    </label>
-																                </td>
-																				<td>드림인프라</td>
-																				<td>컨설팅팀</td>
-																				<td></td>
-																			</tr>
-																		</tbody>
-																	</table>
+					                	<div class="row">
+					                        <div class="col-md-6">
+												<h6 class="s-title float-left">부서목록</h6>
+												<p class="go_btn align-right position-rel">
+				                                    <button class="btn btn-default "><i class="fa fa-plus"></i> 일괄추가</button>
+				                                </p>
+												<div class="show-grid-div2">
+													트리 내용
+												</div>
+											</div><!-- col  -->
+											
+					                        <div class="col-md-6">
+												<h6 class="s-title float-left">평가 대상 목록 - 부서</h6>
+												<p class="go_btn align-right position-rel">
+				                                    <button class="btn btn-default "><i class="fa fa-minus"></i> 일괄제거</button>
+				                                </p>
+				                                <table class="table remove-tborder1 mt5 table-fixed">
+													<colgroup>
+														<col width="40px">
+														<col>
+														<col width="120px">
+														<col width="80px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th class="smart-form"> 
+											                    <label class="checkbox no-padding-all">
+											                        <input type="checkbox">
+											                        <i></i> 
+											                    </label>
+											                </th>
+															<th>기업/기관</th>
+															<th>부서</th>
+															<th>비고</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td  class="no-padding-all"  colspan="4">
+																<div >
+																	<div style="overflow-y: scroll; width: auto; height: 200px; min-height: 77px;">
+																		<table class="table remove-tborder2 table-fixed">
+																			<colgroup> 
+																				<col width="40px">
+																				<col>
+																				<col width="120px">
+																				<col width="80px">
+																			</colgroup>
+																			<tbody >
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																				<tr>
+																					<td class="smart-form"> 
+																	                    <label class="checkbox no-padding-all">
+																	                        <input type="checkbox">
+																	                        <i></i> 
+																	                    </label>
+																	                </td>
+																					<td>드림인프라</td>
+																					<td>컨설팅팀</td>
+																					<td></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
 																</div>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-
-										</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div> <!-- row  -->
+										
+										
+										<div class="row">
+					                        <div class="col-md-6">
+					                        	
+					                        	
+				                                
+											</div>
+										</div><!-- ENd ROW -->
+											
 		                                <!-- end step1  -->
 		                            </form>
 		                        </div> 
@@ -490,7 +518,7 @@
 		                       
 		                    </div>
 	
-					        <div class="align-right">
+					        <div class="align-right mt30">
 					            <button type="button" class="btn btn-lg btn-cancel float-left">
 					                <i class="fa fa-arrow-left"></i> 이전
 					            </button>
@@ -565,6 +593,248 @@
 		<!-- END SHORTCUT AREA -->
 		
 		
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 자산 정보</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="h-title"></h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="h-title">기본정보</h6>
+								<table class="table table-bordered">
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col style="width: 150px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody><tr>
+                                        <th>자산관리 번호</th>
+                                        <td>
+                                            KTR-WSV-0005
+                                        </td>
+                                        <th>자산명</th>
+                                        <td>
+                                            (구)금호 메일서버
+                                        </td>
+                                        <th>자산유형</th>
+                                        <td>
+                                            서버
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>도입형태</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입구분</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입가</th>
+                                        <td class="clearfix input-prepend">
+                                            <div class="input-group" style="width:150px;">
+                                                <span class="input-group-addon">￦</span>
+                                                <span class="input-group-addon">1,000,000</span>
+                                                <span class="input-group-addon">(VAT 포함)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조일</th>
+                                        <td>
+                                            -
+                                        </td>
+                                        <th>도입일(검수일기준)</th>
+                                        <td colspan="3">
+                                            2013-07-15
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <h6 class="h-title">자산정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col style="width: 120px;">
+                                                <col style="width: 300px;">
+                                                <col style="width: 120px;">
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>분류</th>
+                                                <td>
+                                                    하드웨어 &gt; 서버
+                                                </td>
+                                                <th>모델명</th>
+                                                <td>
+                                                    IBM P5 55A
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>제조사명</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                                <th>사용용도</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="h-title">유형별 기본정보</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col width="120px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>사용구분</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col width="120px;">
+                                                <col>
+                                                <col width="120px;">
+                                                <col>
+                                                <col width="120px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>OS구분</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                                <th>OS명</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                                <th>OS버전</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col width="50px">
+                                                <col>
+                                                <col width="150px">
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>No.</th>
+                                                <th>호스트명</th>
+                                                <th>IP</th>
+                                            </tr>
+                                            <tr>
+												<td>1</td>
+												<td>KTR-WEB-WAS2</td>
+												<td>125.141.188.237</td>
+											</tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col width="120px;/">
+                                                <col>
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>스토리지 구성</th>
+                                                <td>
+                                                    -
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered">
+                                            <colgroup>
+                                                <col width="120px;/">
+                                                <col>
+                                            </colgroup>
+                                            <tbody><tr>
+                                                <th>위치정보</th>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            닫기
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
+		 
 	
 
 		<!--================================================== -->
