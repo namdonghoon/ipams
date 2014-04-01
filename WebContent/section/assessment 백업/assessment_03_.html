@@ -7,7 +7,7 @@
 		<title> IPAMS </title>
 		<meta name="description" content="">
 		<meta name="author" content="">
- 
+
 		<!-- Use the correct meta names below for your web application
 			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
 			 
@@ -27,7 +27,7 @@
         <!-- 2014_0218_스타일 추가-->
         <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
 
-		<!-- SmartAdmin RTL Support is under construction 
+		<!-- SmartAdmin RTL Support is under construction
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
 
 		<!-- We recommend you use "your_style.css" to override SmartAdmin
@@ -315,15 +315,15 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title"> 단계진행</h6>
+                        	<h6 class="h-title"> 평가생성 정보조회 </h6>
 							<div class="fuelux">
 		                        <div class="wizard mb20">
 		
 		                            <ul class="steps">
-		                                <li data-target="#step1"  >
+		                                <li data-target="#step1"  class="active">
 		                                    <span class="badge badge-info">1</span>평가 생성 정보조회<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step2" >
+		                                <li data-target="#step2">
 		                                    <span class="badge">2</span>평가 대상 등록<span class="chevron"></span>
 		                                </li>
 		                                <li data-target="#step3">
@@ -332,7 +332,7 @@
 		                                <li data-target="#step4">
 		                                    <span class="badge">4</span>단계별 관리자 지정<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step5"  class="active">
+		                                <li data-target="#step5">
 		                                    <span class="badge">5</span>단계별 일정 수립<span class="chevron"></span>
 		                                </li>
 		                                
@@ -340,216 +340,12 @@
 		                        </div>
 		
 		
-		                        <div class="">  <!--  class="step-content"  데이터테이블의 페이지 CSS와 충돌 -->
+		                        <div class="step-content">
 		                            <form class="form-horizontal" id="fuelux-wizard" method="post">
 		
-		                                <div class="step-pane active" id="step5"> 
-								            <div class="row">
-								                <div class="col-md-12">
-								                	<table  class="table table-bordered">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">평가 전체일정</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>
-										            <br>
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		 <span class="badge">Step 1</span>
-												            		 &nbsp; 현황진단</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 2</span>
-												            		&nbsp;위험평가	
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 3</span>
-												            		&nbsp;개선계획 수립
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 4</span>
-												            		&nbsp;이행점검	
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            	
-													
-								                
-												</div>								                    
-								                    
-								            </div><!-- END ROW  -->
-			                                
-										</div>
+		                                <div class="step-pane active" id="step1">
+		                                        
+		                                </div>
 		                                <!-- end step1  -->
 		                            </form>
 		                        </div> 
@@ -557,16 +353,6 @@
 		                       
 		                    </div>
 	
-					        <div class="align-right mt30">
-					            <button type="button" class="btn btn-lg btn-cancel float-left">
-					                <i class="fa fa-arrow-left"></i> 이전
-					            </button> 
-					            <button type="button" class="btn btn-lg btn-success ">
-					                다음
-					                <i class="fa fa-arrow-right"></i>
-					            </button>
-					        </div>
-				        
 						</div>
 						<!-- end row  -->
 	
@@ -714,6 +500,7 @@
         <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
         <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
         <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
+		<script src="../../js/plugin/bootstrap-progressbar/bootstrap-progressbar.js"></script>
 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
@@ -759,10 +546,10 @@
             
             pageSetUp();
              
-             /* 검색,  페이지분류 */
+             /* 검색, 일괄추가, 페이지분류 */
              $('#dt_basic').dataTable({
                 "sPaginationType" : "bootstrap_full",	
-                "sDom": '<"dt-top-row" f> rt <"dt-bottom-row" i> <"dt-bottom page-box mt13" p>' 
+                "sDom": '<"dt-top-row" fl> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
             });	
        });
 	</script>
@@ -771,6 +558,125 @@
 
 
 
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			 // PAGE RELATED SCRIPTS
+		
+		    (function (e) {
+		        "use strict";
+		        var t = function (e) {
+		            this.init("address", e, t.defaults)
+		        };
+		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+		        e.extend(t.prototype, {
+		            render: function () {
+		                this.$input = this.$tpl.find("input")
+		            },
+		            value2html: function (t, n) {
+		                if (!t) {
+		                    e(n).empty();
+		                    return
+		                }
+		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+		                    " st., bld. " + e("<div>").text(t.building).html();
+		                e(n).html(r)
+		            },
+		            html2value: function (e) {
+		                return null
+		            },
+		            value2str: function (e) {
+		                var t = "";
+		                if (e)
+		                    for (var n in e)
+		                        t = t + n + ":" + e[n] + ";";
+		                return t
+		            },
+		            str2value: function (e) {
+		                return e
+		            },
+		            value2input: function (e) {
+		                if (!e)
+		                    return;
+		                this.$input.filter('[name="city"]').val(e.city);
+		                this.$input.filter('[name="street"]').val(e.street);
+		                this.$input.filter('[name="building"]').val(e.building)
+		            },
+		            input2value: function () {
+		                return {
+		                    city: this.$input.filter('[name="city"]').val(),
+		                    street: this.$input.filter('[name="street"]').val(),
+		                    building: this.$input.filter('[name="building"]').val()
+		                }
+		            },
+		            activate: function () {
+		                this.$input.filter('[name="city"]').focus()
+		            },
+		            autosubmit: function () {
+		                this.$input.keydown(function (t) {
+		                    t.which === 13 && e(this).closest("form").submit()
+		                })
+		            }
+		        });
+		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+		            inputclass: ""
+		        });
+		        e.fn.editabletypes.address = t
+		    })(window.jQuery);
+		
+		    $('#state').editable({
+		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+		        ]
+		    });
+		
+		    $('#state2').editable({
+		        value: 'California',
+		        typeahead: {
+		            name: 'state',
+		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+		                "Wisconsin", "Wyoming"
+		            ]
+		        }
+		    });
+		
+		
+	
+		})
+		</script>
+		
+		
+		
+		
+     <script type="text/javascript">
+		$('.bar').progressbar({ 
+			display_text : 'fill'   
+		}); 
+		$(".bar span").text(function(index, text){
+			if(text.trim() == "100%"){
+				$(this).parent().addClass("bar-success");
+			}
+		});
+		
+		</script>
 
 
 

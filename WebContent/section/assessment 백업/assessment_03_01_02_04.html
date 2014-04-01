@@ -7,7 +7,7 @@
 		<title> IPAMS </title>
 		<meta name="description" content="">
 		<meta name="author" content="">
- 
+
 		<!-- Use the correct meta names below for your web application
 			 Ref: http://davidbcalhoun.com/2010/viewport-metatag 
 			 
@@ -326,13 +326,13 @@
 		                                <li data-target="#step2" >
 		                                    <span class="badge">2</span>평가 대상 등록<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step3">
+		                                <li data-target="#step3" >
 		                                    <span class="badge">3</span>필요성 검토<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step4">
+		                                <li data-target="#step4" class="active">
 		                                    <span class="badge">4</span>단계별 관리자 지정<span class="chevron"></span>
 		                                </li>
-		                                <li data-target="#step5"  class="active">
+		                                <li data-target="#step5">
 		                                    <span class="badge">5</span>단계별 일정 수립<span class="chevron"></span>
 		                                </li>
 		                                
@@ -343,209 +343,278 @@
 		                        <div class="">  <!--  class="step-content"  데이터테이블의 페이지 CSS와 충돌 -->
 		                            <form class="form-horizontal" id="fuelux-wizard" method="post">
 		
-		                                <div class="step-pane active" id="step5"> 
+		                                <div class="step-pane active" id="step4"> 
 								            <div class="row">
-								                <div class="col-md-12">
-								                	<table  class="table table-bordered">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">평가 전체일정</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>
-										            <br>
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		 <span class="badge">Step 1</span>
-												            		 &nbsp; 현황진단</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 2</span>
-												            		&nbsp;위험평가	
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 3</span>
-												            		&nbsp;개선계획 수립
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            <table  class="table table-bordered mb10">
-									                	<colgroup>
-											                <col style="width:250px;">
-											                <col style="width:300px;">
-											                <col>
-											            </colgroup>	
-											            <tbody>
-												            <tr>
-												            	<th class="align-left">
-												            		<span class="badge">Step 4</span>
-												            		&nbsp;이행점검	
-												            	</th>
-												            	 <td class="smart-form">
-										            				<div class="row">
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="startdate" id="startdate" placeholder="시작일">
-														                    </label>
-														                </section>
-														                <section class="col col-sm-6 mb0">
-														                    <label class="input"> <i class="icon-append fa fa-calendar"></i>
-														                        <input type="text" name="finishdate" id="finishdate" placeholder="종료일">
-														                    </label>
-														                </section>
-														            </div>
-																</td>
-												            	<td>
-												            	<div class="child-mb0">
-												            		<input type="text" class="slider slider-success" id="g2" value="" 
-																		data-slider-max="1000" 
-																		data-slider-step="1" 
-																		data-slider-value="[150,760]" 
-																		data-slider-handle="squar">
-												            	</div>
-												            	</td>
-												            	
-												            </tr>
-											            </tbody>
-										            </table>	
-										            
-										            	
-													
+								                <div class="col-md-5">
+								                    <h6 class="s-title">임직원 검색</h6>
+								                    <div class="jarviswidget jarviswidget-color-blueDark t35 mb20 not-right"  data-widget-editbutton="false">
+								                        
+								                        <!-- widget edit box -->
+								                        <div class="jarviswidget-editbox">
+								                            <!-- This area used as dropdown edit box -->
+								                        </div>
+								                        <!-- end widget edit box -->
+							
+								                        <!-- widget div-->
+								                        <div class="mt30 table-bordered ">
+								        
+								                            <!-- widget content -->
+								                            <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+								                    
+								                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+								                                    <colgroup>
+																		<col width="60px">
+																		<col width="120px">
+																		<col width="150px">
+																	</colgroup>
+								                                    <thead>
+																		<tr>
+																			<th>No.</th>
+																			<th>기업명</th>
+																			<th>이름</th>
+																		</tr>
+																	</thead>
+								                                    <tbody>
+								                                        <tr>
+								                                        	<td>1737</td>
+								                                        	<td>드림인프</td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1736</td>
+								                                        	<td>(주)KT AutoLease</td>
+								                                        	<td><button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+																		     </td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1735</td>
+								                                        	<td>(주)KT AutoCare </td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                    </tbody>
+								                                </table>
+								                            </div>
+								                        </div>
+								                    </div>
+								                    <div style="width: 100%; height: 30px;"></div>
+								                </div><!--  END COL6 -->
 								                
-												</div>								                    
+								                
+								                
+								                
+								                
+								                
+								                
+								                <div class="col-md-7">
+								                     <h6 class="s-title">단계 관리자 지정 정보</h6>
+								                     <div class="alert alert-info">
+								                     	평가 단계별 관리자는 1명만 등록이 가능하며<br>
+														<strong>단계별 관리자로 등록된 사람은 조회자에 등록할 수 없습니다.</strong>
+											        </div>
+
+												<table class="table table-bordered tbodycenter">
+													<colgroup>
+														<col width="150px">
+														<col width="80px">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th>평가단계</th>
+															<th>권한구분</th>
+															<th>인원구성</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="tleft" rowspan="2">현황진단</td>
+															<td>관리자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td>조회자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td class="tleft" rowspan="2">위험평가</td>
+															<td>관리자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td>조회자</td>
+															<td class="tleft">
+																여기에 드래그 & 드롭하여 등록하세요.
+															</td>
+														</tr>
+														<tr>
+															<td class="tleft" rowspan="2">개선게획 수립</td>
+															<td>관리자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td>조회자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td class="tleft" rowspan="2">이행점검</td>
+															<td>관리자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td>조회자</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</div><!--  END COL6 -->
+								                    
+								                    
 								                    
 								            </div><!-- END ROW  -->
 			                                

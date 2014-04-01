@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가수행</li><li>평가계획 목록</li>
+					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가현황</li><li>평가목록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -305,11 +305,12 @@
 
 	
 
+
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 평가계획 목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 평가목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
@@ -317,13 +318,13 @@
                         <div class="col-md-12">
 							<table class="table table-bordered">
 								<colgroup>
-									<col width="100px;">
-									<col> 
-									<col width="100px;">
-									<col>
-									<col width="100px;">
-									<col width="150px;">
-									<col width="70px;">
+								    <col width="100px;">
+								    <col>
+								    <col width="100px;">
+								    <col>
+								    <col width="100px;">
+								    <col>
+								    <col width="70px;">
 								</colgroup>
 								<tbody>
 									<tr>
@@ -335,14 +336,9 @@
 										<td>
 											<input class="form-control" placeholder="평가유형명을 입력하세요." type="text">
 										</td>
-										<th><label for="status">단계진행상태</label></th>
+										<th><label for="administrator">평가자</label></th>
 										<td>
-											<select class="form-control" style="width:100px;">
-								                <option>전체</option>
-								                <option>미진행중</option>
-								                <option>진행중</option>
-								                <option>완료</option>
-								            </select>
+											<input class="form-control" placeholder="평가자를 입력하세요." type="text">
 										</td>
 										<td rowspan="2">
 											<div class="search">
@@ -353,86 +349,72 @@
 										</td>
 									</tr>
 									<tr>
-										<th><label for="targetType">평가대상유형</label></th>
-										<td colspan="3">
-											<select multiple class="select2">
-												<option>기업</option>
-												<option>부서</option>
-												<option>임직원</option>
-												<option>사업</option>
-												<option>자산</option>
-												<option>문서</option>
-											</select>
-										</td>
-										<th><label for="target">평가대상</label></th>
+										<th><label for="status">진행상태</label></th>
 										<td>
-											<input class="form-control" placeholder="평가대상을 입력하세요." type="text">
+											<select class="form-control" style="width:100px;">
+								                <option>전체</option>
+								                <option>진행중</option>
+								                <option>완료</option>
+								            </select>
+										</td>
+										<th><label for="step">평가단계</label></th>
+										<td colspan="3">
+											<select class="form-control pull-left margin-right-5" style="width:100px;">
+								                <option>전체</option>
+								                <option>평가계획</option>
+								                <option>현황진단</option>
+								                <option>위험평가</option>
+								                <option>개선계획수립</option>
+								                <option>이행점검</option>
+								            </select>
+											<select class="form-control" style="width:100px;">
+								                <option>전체</option>
+								            </select>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							 
+							
+							<div class="alert alert-info display-inline-block">
+					            <strong>평가생성자</strong> 또는 <strong>평가 총괄관리자</strong>로 등록된 목록만 조회할 수 있습니다.
+				        	</div>
+							
 							<table class="table table-bordered tbodycenter">
 								<colgroup>
-							    	<col width="60px">
-									<col>
-									<col>
-									<col width="130px">
-									<col width="100px">
-									<col width="100px">
-									<col width="100px">
-									<col width="100px">
-							    </colgroup>
+					                <col width="40px">
+					                <col>
+					                <col>
+					                <col width="100px">
+					                <col width="80px">
+					                <col width="80px">
+					                <col width="130px">
+					                <col width="90px">
+					            </colgroup>
 								<thead>
 						            <tr>
 						                <th>No.</th>
 						                <th>평가명</th>
 						                <th>평가유형명</th>
-						                <th>평가대상</th>
-						                <th>평가대상유형</th>
 						                <th>평가팀</th>
-						                <th>단계진행상태</th>
-						                <th>비고</th>
+						                <th>진행상태</th>
+						                <th>평가단계</th>
+						                <th>평가절차</th>
+						                <th>평가진행</th>
 						            </tr>
 					            </thead>
 								<tbody>
 									<tr>
-										<td>3</td>
+										<td>4</td>
 										<td  class="tleft">기반시설 점검 테스트</td>
 										<td  class="tleft">기반시설 취약성 진단(관리/물리 영역)</td>
-										<td>부서</td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1" >조회</button>
+											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1" rel="tooltip" data-original-title="평가 단계별 담당자 정보 조회">평가팀정보</button>
 										</td>
+										<td><span class="badge badge-color-darkorange">진행중</span></td>
 										<td>
-											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2" >평가팀정보</button>
+											위험평가
 										</td>
-										<td>
-											<div class="progress eval mb0" rel="tooltip" data-original-title="완료(평가계획 완료)">
-												<div class="bar bar-success" style="width: 100%;" > </div>
-											</div> 	
-																			
-										</td>
-										<td>
-											<button type="button" class="btn btn-default btn-sm">평가조회</button>
-										</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td  class="tleft">임시점검테스트</td>
-										<td  class="tleft">통합_KTR_정보자산 취약성 점검 기준(Unix 서버)</td>
-										<td>자산</td>
-										<td>
-											대상없음
-										</td>
-										<td>
-											<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2" >평가팀정보</button>
-										</td>
-										<td>
-											<div class="progress eval mb0" rel="tooltip" data-original-title="진행중(평가 대상 등록)">
-												<div class="bar" style="width: 50%;" ></div>
-											</div> 
-										</td>
+										<td>침해요인 분석</td>
 										<td>
 											<button type="button" class="btn btn-default btn-sm">단계진행</button>
 										</td>
@@ -533,83 +515,13 @@
                     <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
                 </li>
 			</ul>
-		</div> 
+		</div>
 		<!-- END SHORTCUT AREA -->
 		
 		
-		<!-- Modal_1 검색 테이블-->
-	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-	        <div class="modal-dialog modal-sm">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                        &times;
-	                    </button> 
-	                    <h4 class="modal-title" id="myModalLabel2"><i class="fa fa-power-off"></i> 기본 검색 테이블</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <div class="row">
-	                        <div class="col-md-12">
-	                        	
-		                        <div class="jarviswidget jarviswidget-color-blueDark t35 mb20"  data-widget-editbutton="false">
-                                
-	                                <!-- widget edit box -->
-	                                <div class="jarviswidget-editbox">
-	                                    <!-- This area used as dropdown edit box -->
-	                                </div>
-	                                <!-- end widget edit box -->
-	                                
-	                                <!-- widget div-->
-	                                <div class="mt30 table-bordered ">
-	                
-	                                    <!-- widget content -->
-	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-	                            
-	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-	                                            <colgroup> 
-	                                                <col width="30px">
-	                                                <col>
-	                                            </colgroup>
-	                                            <thead>
-	                                                <tr>
-	                                                    <th></th>
-	                                                    <th class="tleft">부서명</th>
-	                                                </tr>
-	                                            </thead>
-	                                            <tbody>
-	                                                <tr>
-	                                                    <td>1</td>
-	                                                    <td>드림인프라/컨설팅팀</td>
-	                                                </tr>
-	                                            </tbody>
-	                                        </table>
-	                                    </div>
-	                                    <!-- END widget content -->
-	                                </div>
-	                            </div>
-	                            <div style="width: 100%; height: 30px;"></div>
-			                        
-			                        
-			                    </div>
-		                    </div>
-		                </div>
-	                <!-- End row  -->
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">
-	                        닫기
-	                    </button>
-	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
-	                       	완료
-	                    </button>
-	                </div>
-	            </div><!-- /.modal-content -->
-	        </div><!-- /.modal-dialog -->
-	    </div><!-- /.modal -->
-	    <!-- end modal_3 -->
 		
-		
-		<!-- Modal_2 -->
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1020,7 +932,7 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- end modal_2 -->
+        <!-- end modal -->
     
 
 
@@ -1095,16 +1007,7 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-		
 		<!-- PAGE RELATED PLUGIN(S) -->
-		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
-        <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
-        <script src="../../js/plugin/datatables/FixedColumns.min.js"></script>
-        <script src="../../js/plugin/datatables/ColVis.min.js"></script>
-        <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
-        <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
-        <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
-		<script src="../../js/plugin/bootstrap-progressbar/bootstrap-progressbar.js"></script>
 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
@@ -1139,27 +1042,6 @@
     	</script>
     	<!-- end data picker -->
 	
-
-
-
-		<script type="text/javascript">
-        
-        // DO NOT REMOVE : GLOBAL FUNCTIONS!
-        
-        $(document).ready(function() {
-            
-            pageSetUp();
-             
-             /* 검색, 일괄추가, 페이지분류 */
-             $('#dt_basic').dataTable({
-                "sPaginationType" : "bootstrap_full",	
-                "sDom": '<"dt-top-row" fl> rt <"dt-bottom-row" i> <"dt-bottom page-box page-modal mt13" p>' 
-            });	
-       });
-	</script>
-
-
-
 
 
 
@@ -1266,26 +1148,12 @@
 	
 		})
 		</script>
-		
-		
-		
-		
-     <script type="text/javascript">
-		$('.bar').progressbar({ 
-			display_text : 'fill'   
-		}); 
-		$(".bar span").text(function(index, text){
-			if(text.trim() == "100%"){
-				$(this).parent().addClass("bar-success");
-			}
-		});
-		
-		</script>
+     
 
 
 
 
- 
+
 
 
 	</body>
