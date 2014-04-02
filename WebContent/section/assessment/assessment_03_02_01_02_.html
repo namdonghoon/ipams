@@ -27,7 +27,7 @@
         <!-- 2014_0218_스타일 추가-->
         <link rel="stylesheet" type="text/css" media="screen" href="../../css/style.css">
 
-		<!-- SmartAdmin RTL Support is under construction
+		<!-- SmartAdmin RTL Support is under construction 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.css"> -->
 
 		<!-- We recommend you use "your_style.css" to override SmartAdmin
@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>교육훈련 관리 </li><li>교육이수 현황</li><li>교육별 이수현황</li>
+					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가수행</li><li>평가계획 목록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -305,186 +305,347 @@
 
 	
 
-
 			<!-- MAIN CONTENT -->
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 교육훈련 관리 <span> > 사용자별 이수현황</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 현황진단 목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<div class="alert alert-info mb10">
-					        	<strong>교육유형 별</strong> 사용자 이수 현황은<br>
-								<strong>해당 교육유형 별 </strong>모든 교육이 이수 상태일 경우<strong>[이수]</strong><br>
-								이수 등록이 완료된 교육이 없거나 [참가자 지정 교육]중 미이수 건이 있을 경우 <strong>[미이수]</strong>
-					        </div>
-							<table class="table table-bordered">
-								<colgroup> 
-								    <col width="100px;">
-								    <col width="230px;">
-								    <col width="100px;">
-								    <col width="900px;">
-								    <col width="70px;"> 
-								</colgroup>
-								<tbody>
-									<tr>
-										<th><label for="year">연도</label></th>
-										<td>
-											<select class="form-control pull-left margin-right-5" style="width:100px;">
-								                <option>2013</option>
-								                <option>2014</option>
-								            </select>
-								            <select class="form-control "  style="width:100px;">
-								                <option>전체</option>
-								                <option>1월</option>
-								                <option>2월</option>
-								                <option>3월</option>
-								                <option>4월</option>
-								                <option>5월</option>
-								                <option>6월</option>
-								                <option>7월</option>
-								                <option>8월</option>
-								                <option>9월</option>
-								                <option>10월</option>
-								                <option>11월</option>
-								                <option>12월</option>
-								            </select>
-										</td>
-										<th><label for="category">교육유형</label></th>
-										<td colspan="3">
-											<select multiple class="select2">
-												<option>조직기반강화</option>
-												<option>전문성강화</option>
-												<option>보안사고대응</option>
-												<option>개인정보보호</option>
-												<option>정보보호</option>
-												<option>기타</option>
-											</select>
-										</td>
-										<td>
-											<div class="search-color">
-									            <button class="btn btn-default">
-									                <i class="fa fa-search fa-lg"></i> 검색
-									            </button>
-									        </div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+                        	<h6 class="h-title"> 평가조회</h6>
+							<div class="fuelux">
+		                        <div class="wizard mb20">
+		
+		                            <ul class="steps">
+		                                <li data-target="#step1"  >
+		                                    <span class="badge badge-info">1</span>운영계획 수립<span class="chevron"></span>
+		                                </li>
+		                                <li data-target="#step2" class="active">
+		                                    <span class="badge">2</span>평가팀 구성<span class="chevron"></span>
+		                                </li>
+		                                <li data-target="#step3">
+		                                    <span class="badge">3</span>진단<span class="chevron"></span>
+		                                </li>
+		                                <li data-target="#step4">
+		                                    <span class="badge">4</span>보정<span class="chevron"></span>
+		                                </li>
+		                                
+		                            </ul>
+		                        </div>
+		
+		
+		                        <div class="">  <!--  class="step-content"  데이터테이블의 페이지 CSS와 충돌 -->
+		                            <form class="form-horizontal" id="fuelux-wizard" method="post">
+		
+		                                <div class="step-pane active" id="step2"> 
+								            <div class="row">
+								                <div class="col-md-6">
+								                    <h6 class="s-title">임직원 검색</h6>
+								                    <div class="jarviswidget jarviswidget-color-blueDark t35 mb20 not-right"  data-widget-editbutton="false">
+								                        
+								                        <!-- widget edit box -->
+								                        <div class="jarviswidget-editbox">
+								                            <!-- This area used as dropdown edit box -->
+								                        </div>
+								                        <!-- end widget edit box -->
 							
-							<div class="show-grid-div2">
-								<div class="row">
-									<div class="col-md-12">
-										<h6 class="h-title">분류: 2013년 전체 > 조직기반강화</h6>
-									</div>
-									<div class="col-md-4">
-		                                <div class="box-group pie-box">
-		                                    <span class="easy-pie-title assets-chart-sort"><strong>미이수 대상자</strong></span>
-			                        		<span class="box-container">
-			                        			<span class="easy-pie-chart color-orange easyPieChart" data-percent="66" data-pie-size="60">
-												<span class="percent-sign font-bold color-orange"></span>
-												</span>
-											</span>
-		                                </div>
-		                            </div>
-		                            <div class="col-md-4">
-		                                <div class="box-group pie-box">
-		                                    <span class="easy-pie-title assets-chart-sort"><strong>이수 대상자</strong></span>
-			                        		<span class="box-container">
-			                        			<span class="easy-pie-chart color-gray easyPieChart" data-percent="35" data-pie-size="60">
-												<span class="percent-sign font-bold color-orange"></span>
-												</span>
-											</span>
-		                                </div>
-		                            </div>
-		                            <div class="col-md-4">
-		                                <div class="box-group pie-box">
-		                                    <span class="easy-pie-title assets-chart-sort"><strong>전체 이수 대상자</strong></span>
-			                        		<span class="box-container">
-			                        			<span class="easy-pie-chart color-blue easyPieChart" data-percent="84" data-pie-size="60">
-												<span class="percent-sign font-bold color-orange"></span>
-												</span>
-											</span>
-		                                </div>
-		                            </div>
-								</div><!-- end row  -->	
-									
-								<div class="row">
-									<div class="col-md-12">
-					                    <div class="jarviswidget jarviswidget-color-blueDark mb10 t35"  data-widget-editbutton="false">
-					                        
-					                        <!-- widget edit box --> 
-					                        <div class="jarviswidget-editbox">
-					                            <!-- This area used as dropdown edit box -->
-					                            
-					                        </div>
-					                        <!-- end widget edit box -->
-					
-					                        <!-- widget div-->
-					                        <div class="mt30 table-bordered ">
-					        
-					                            <!-- widget content -->
-					                            <div class="widget-body no-padding border-top-type1 display-non-wid-id-3 ">
-					                    
-					                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-					                                    <colgroup>
-															<col width="60px;">
+								                        <!-- widget div-->
+								                        <div class="mt30 table-bordered ">
+								        
+								                            <!-- widget content -->
+								                            <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
+								                    
+								                                <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
+								                                    <colgroup>
+																		<col width="60px">
+																		<col width="120px">
+																		<col width="150px">
+																	</colgroup>
+								                                    <thead>
+																		<tr>
+																			<th>No.</th>
+																			<th>기업명</th>
+																			<th>이름</th>
+																		</tr>
+																	</thead>
+								                                    <tbody>
+								                                        <tr>
+								                                        	<td>1737</td>
+								                                        	<td>드림인프</td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1736</td>
+								                                        	<td>(주)KT AutoLease</td>
+								                                        	<td><button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+																		     </td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1735</td>
+								                                        	<td>(주)KT AutoCare </td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1735</td>
+								                                        	<td>(주)KT AutoCare </td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                        <tr>
+								                                        	<td>1735</td>
+								                                        	<td>(주)KT AutoCare </td>
+								                                        	<td>
+								                                        		<button class="user_info_box" rel="popover-hover" data-placement="left"
+																		        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+																		        data-content="
+																		            <ul class='user_info'>
+																		                <p><img src='../../images/member_big.png'></p>
+																		                <li>시스템관리자</li>
+																		                <li>(주)드림인프라</li>
+																		                <li>SI사업부</li>
+																		                <li>부장</li>
+																		                <li>systemadministrator@dreaminfra.co.kr </li>
+																		            </ul>
+																		        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+																		        </button>
+								                                        	</td>
+								                                        </tr>
+								                                    </tbody>
+								                                </table>
+								                            </div>
+								                        </div>
+								                    </div>
+								                    <div style="width: 100%; height: 30px;"></div>
+								                </div><!--  END COL6 -->
+								                
+								                
+								                
+								                
+								                
+								                
+								                
+								                <div class="col-md-6">
+								                     <h6 class="s-title">평가절차별 평가자 지정 정보</h6>
+												<table style="width: 100%">
+													<colgroup>
+														<col>
+														<col width="100px">
+														<col width="120px">
+													</colgroup>
+													<tbody>
+														<tr>
+															<td>
+																<div class="alert alert-info">
+											                     	<strong>평가자</strong>: 지정된 [절차]에 한해 등록/수정/삭제 권한을 가지며 다른 절차의
+											                     	정보는 모두 조회할 수 있습니다.
+																	단계별 관리자로 등록된 사람은 조회자에 등록할 수 없습니다.
+														        </div>
+															</td>
+															<td class="align-center">단계관리자: </td>  
+															<td>
+																<button class="user_info_box" rel="popover-hover" data-placement="left" data-original-title="&lt;i class='fa fa-fw fa-file-text-o'&gt;&lt;/i&gt;상세정보" data-content="
+														            &lt;ul class='user_info'&gt;
+														                &lt;p&gt;&lt;img src='../../images/member_big.png'&gt;&lt;/p&gt;
+														                &lt;li&gt;시스템관리자&lt;/li&gt;
+														                &lt;li&gt;(주)드림인프라&lt;/li&gt;
+														                &lt;li&gt;SI사업부&lt;/li&gt;
+														                &lt;li&gt;부장&lt;/li&gt;
+														                &lt;li&gt;systemadministrator@dreaminfra.co.kr &lt;/li&gt;
+														            &lt;/ul&gt;
+														        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table class="table table-bordered tbodycenter">
+													<colgroup>
+														<col width="150px">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th>평가단계</th>
+															<th>권한구분</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="tleft">진단</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+														<tr>
+															<td class="tleft">보정</td>
+															<td class="tleft">
+																 <button class="user_info_box" rel="popover-hover" data-placement="left"
+														        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+														        data-content="
+														            <ul class='user_info'>
+														                <p><img src='../../images/member_big.png'></p>
+														                <li>시스템관리자</li>
+														                <li>(주)드림인프라</li>
+														                <li>SI사업부</li>
+														                <li>부장</li>
+														                <li>systemadministrator@dreaminfra.co.kr </li>
+														            </ul>
+														        " data-html="true">
+														        <img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+														        </button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</div><!--  END COL6 -->
+								            
+								            <div class="col-md-6">
+								            </div>        
+								            <div class="col-md-6">
+								                	<h6 class="s-title">단계 조회자 지정 정보</h6>
+													<table style="width: 100%">
+														<colgroup>
 															<col>
-															<col width="150px;">
-															<col width="100px;">
-															<col width="100px;">
-															<col width="60px;">
+															<col width="100px">
+															<col width="120px">
 														</colgroup>
-					                                    <thead>
-					                                        <tr>
-					                                            <th>No.</th>
-					                                            <th>교육일시</th>
-					                                            <th>교육명</th>
-					                                            <th>참가자 지정 구분</th>
-					                                            <th>이수현황</th>
-					                                            <th class="remove-sort">이수정보조회</th>
-					                                            <th class="remove-sort">비고</th>
-					                                        </tr>
-					                                    </thead>
-					                                    <tbody>
-					                                        <tr>
-					                                            <td>1</td>
-					                                            <td class="tleft">
-																	2013-12-17 ~ 2013-12-17
-					                                            </td>
-					                                            <td>
-					                                            	정보통신망법 계정 공정회
-					                                            </td>
-					                                            <td>
-					                                            	미지정
-					                                            </td>
-					                                            <td>
-					                                            	 <span class="badge badge-color-darkorange">3/8</span>
-					                                            </td>
-					                                            <td>
-					                                            	<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">조회</button>
-					                                            </td>
-					                                            <td>
-					                                            	<button type="button" class="btn btn-default btn-sm">
-					                                            		<i class="fa  fa-envelope"></i>
-					                                            	</button>
-					                                            </td>
-					                                        </tr>
-					                                    </tbody>
-					                                </table>
-					                            </div>
-					                        </div>
-					                    </div> <!-- End jarviswidget -->
-		                        		<div style="width: 100%; height: 80px;"></div>
-			                    	</div>
-			                    </div>
-			                </div>
-		                    
-						</div>	
+														<tbody>
+															<tr>
+																<td>
+																	<div class="alert alert-info">
+															           <strong>조회자 : </strong> 지정된 단계의 모든 절차 정보를 조회할 수 있습니다.
+															        </div>
+																</td>
+																<td></td>  
+																<td></td>  
+															</tr>
+														</tbody>
+													</table>
+													<table class="table table-bordered">
+														<thead>
+															<tr>
+																<th>인원구성</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>
+																	<button class="user_info_box" rel="popover-hover" data-placement="left" data-original-title="&lt;i class='fa fa-fw fa-file-text-o'&gt;&lt;/i&gt;상세정보" data-content="
+															            &lt;ul class='user_info'&gt;
+															                &lt;p&gt;&lt;img src='../../images/member_big.png'&gt;&lt;/p&gt;
+															                &lt;li&gt;시스템관리자&lt;/li&gt;
+															                &lt;li&gt;(주)드림인프라&lt;/li&gt;
+															                &lt;li&gt;SI사업부&lt;/li&gt;
+															                &lt;li&gt;부장&lt;/li&gt;
+															                &lt;li&gt;systemadministrator@dreaminfra.co.kr &lt;/li&gt;
+															            &lt;/ul&gt;
+															        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+															        </button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+	
+												</div>
+								                    
+								                    
+								            </div><!-- END ROW  -->
+			                                
+										</div>
+		                                <!-- end step1  -->
+		                            </form>
+		                        </div> 
+		                        <!-- end step-content -->  
+		                       
+		                    </div>
+	
+					        <div class="align-right mt30">
+					            <button type="button" class="btn btn-lg btn-cancel float-left">
+					                <i class="fa fa-arrow-left"></i> 이전
+					            </button> 
+					            <button type="button" class="btn btn-lg btn-success ">
+					                다음
+					                <i class="fa fa-arrow-right"></i>
+					            </button>
+					        </div>
+				        
+						</div>
+						<!-- end row  -->
+	
 					</div>
+	                <!-- END well  -->
+				
 	            </div>
 	            <!-- END MAIN CONTENT -->
 	            
@@ -540,103 +701,11 @@
                     <a href="#" class="jarvismetro-tile small-cubes bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-desktop fa-4x"></i> <span>모니터링 </span> </span> </a>
                 </li>
 			</ul>
-		</div>
+		</div> 
 		<!-- END SHORTCUT AREA -->
 		
 		
-		
-		<!-- Modal_1 -->
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title"><i class="fa fa-power-off"></i>이수정보조회</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-12"> 
-                            	<div class="mb10">(이수자: 1)</div>
-								<table class="table table-bordered tbodycenter">
-									<colgroup>
-										<col>
-										<col width="200px">
-										<col width="100px">
-									</colgroup>
-									<thead>
-										<tr>
-											<th>기업/기관명</th>
-											<th>이름</th>
-											<th>상태</th>
-											<th>비고</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="tleft">(주)드림인프라</td>
-											<td class="tleft">
-												<button class="user_info_box" rel="popover-hover" data-placement="left"
-										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-										        data-content="
-										            <ul class='user_info'>
-										                <p><img src='../../images/member_big.png'></p>
-										                <li>시스템관리자</li>
-										                <li>(주)드림인프라</li>
-										                <li>SI사업부</li>
-										                <li>부장</li>
-										                <li>systemadministrator@dreaminfra.co.kr </li>
-										            </ul>
-										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>이동원</strong>
-										        </button>
-																
-											</td>
-											<td>미이수</td>
-											<td>
-												<button type="button" class="btn btn-default btn-sm">
-                                 	          		<i class="fa  fa-envelope"></i>
-                                           		</button>
-											</td>
-										</tr> 
-										<tr>
-											<td class="tleft">(주)드림인프라</td>
-											<td class="tleft">
-												<button class="user_info_box" rel="popover-hover" data-placement="left"
-										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-										        data-content="
-										            <ul class='user_info'>
-										                <p><img src='../../images/member_big.png'></p>
-										                <li>시스템관리자</li>
-										                <li>(주)드림인프라</li>
-										                <li>SI사업부</li>
-										                <li>부장</li>
-										                <li>systemadministrator@dreaminfra.co.kr </li>
-										            </ul>
-										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>이동원</strong>
-										        </button>
-																
-											</td>
-											<td>이수</td>
-											<td>
-											</td>
-										</tr> 
-									</tbody>
-								</table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">
-                            닫기
-                        </button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-        <!-- end modal -->
-    
-
+	
 
 		<!--================================================== -->
 
@@ -709,7 +778,7 @@
 
         <script src="../../js/plugin/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         <script src="../../js/plugin/fuelux/wizard/wizard.js"></script>
-
+		
 		<!-- PAGE RELATED PLUGIN(S) -->
 		<script src="../../js/plugin/datatables/jquery.dataTables-cust.min.js"></script>
         <script src="../../js/plugin/datatables/ColReorder.min.js"></script>
@@ -718,7 +787,6 @@
         <script src="../../js/plugin/datatables/ZeroClipboard.js"></script>
         <script src="../../js/plugin/datatables/media/js/TableTools.min.js"></script>
         <script src="../../js/plugin/datatables/DT_bootstrap.js"></script>
-
 
 		<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip -->
 		<script src="../../js/plugin/flot/jquery.flot.cust.js"></script>
@@ -754,6 +822,8 @@
     	<!-- end data picker -->
 	
 
+
+
 		<script type="text/javascript">
         
         // DO NOT REMOVE : GLOBAL FUNCTIONS!
@@ -761,125 +831,19 @@
         $(document).ready(function() {
             
             pageSetUp();
-            
-            /*
-             * BASIC
-             */
              
-             /* 검색, 페이지분류 */
+             /* 검색,  페이지분류 */
              $('#dt_basic').dataTable({
                 "sPaginationType" : "bootstrap_full",	
-                "sDom": '<"dt-top-row" fl> rt <"dt-bottom-row" i> <"dt-bottom page-box mt13" p>' 
-            }); 
-        });
-        </script>
+                "sDom": '<"dt-top-row" f> rt <"dt-bottom-row" i> <"dt-bottom page-box mt13" p>' 
+            });	
+       });
+	</script>
 
 
 
-		<script type="text/javascript">
-		
-		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-		
-		$(document).ready(function() {
-			
-			pageSetUp();
-			
-			 // PAGE RELATED SCRIPTS
-		
-		    (function (e) {
-		        "use strict";
-		        var t = function (e) {
-		            this.init("address", e, t.defaults)
-		        };
-		        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
-		        e.extend(t.prototype, {
-		            render: function () {
-		                this.$input = this.$tpl.find("input")
-		            },
-		            value2html: function (t, n) {
-		                if (!t) {
-		                    e(n).empty();
-		                    return
-		                }
-		                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
-		                    " st., bld. " + e("<div>").text(t.building).html();
-		                e(n).html(r)
-		            },
-		            html2value: function (e) {
-		                return null
-		            },
-		            value2str: function (e) {
-		                var t = "";
-		                if (e)
-		                    for (var n in e)
-		                        t = t + n + ":" + e[n] + ";";
-		                return t
-		            },
-		            str2value: function (e) {
-		                return e
-		            },
-		            value2input: function (e) {
-		                if (!e)
-		                    return;
-		                this.$input.filter('[name="city"]').val(e.city);
-		                this.$input.filter('[name="street"]').val(e.street);
-		                this.$input.filter('[name="building"]').val(e.building)
-		            },
-		            input2value: function () {
-		                return {
-		                    city: this.$input.filter('[name="city"]').val(),
-		                    street: this.$input.filter('[name="street"]').val(),
-		                    building: this.$input.filter('[name="building"]').val()
-		                }
-		            },
-		            activate: function () {
-		                this.$input.filter('[name="city"]').focus()
-		            },
-		            autosubmit: function () {
-		                this.$input.keydown(function (t) {
-		                    t.which === 13 && e(this).closest("form").submit()
-		                })
-		            }
-		        });
-		        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
-		            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
-		            inputclass: ""
-		        });
-		        e.fn.editabletypes.address = t
-		    })(window.jQuery);
-		
-		    $('#state').editable({
-		        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
-		            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
-		            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
-		            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
-		            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
-		            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
-		            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
-		        ]
-		    });
-		
-		    $('#state2').editable({
-		        value: 'California',
-		        typeahead: {
-		            name: 'state',
-		            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
-		                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
-		                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
-		                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
-		                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
-		                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
-		                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
-		                "Wisconsin", "Wyoming"
-		            ]
-		        }
-		    });
-		
-		
-	
-		})
-		</script>
-     
+
+
 
 
 
