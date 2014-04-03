@@ -680,7 +680,7 @@
 		
 		
 		
-		<!-- Modal_1 검색 테이블-->
+		<!-- Modal_1-->
 	    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
 	        <div class="modal-dialog modal-lg">
 	            <div class="modal-content">
@@ -695,163 +695,156 @@
 
 	                        <div class="col-md-12 col-md-6">
 	                        	<h6 class="h-title float-left">직원 목록</h6> 
-		                        <div class="jarviswidget jarviswidget-color-blueDark mb20"  data-widget-editbutton="false">
                                 
-	                                <!-- widget edit box -->
-	                                <div class="jarviswidget-editbox">
-	                                    <!-- This area used as dropdown edit box -->
-	                                </div>
-	                                <!-- end widget edit box -->
-                                	
-	                                <p class="go_btn align-right mb6">
+	                                <p class="go_btn align-right mb6"> 
                                     	<button class="btn btn-default mt4"><i class="fa fa-plus "></i>&nbsp;일괄추가</button>
 	                                </p>
-	                                
-	                                <!-- widget div-->
-	                                <div class="mt30 table-bordered ">
-	                
-	                                    <!-- widget content -->
-	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-	                            
-	                                        <table id="dt_basic" class="table table-bordered table-condensed table-hover tbodycenter">
-                                                <colgroup>
-									                <col width="20px">
-									                <col width="150px">
-									                <col width="90px">
-									                <col>
-									                <col width="70px">
-									            </colgroup>
-	                                            <thead>
-	                                                <tr>
-                                                    	<th class="smart-form remove-sort"> 
-										                    <label class="checkbox">
-										                        <input type="checkbox">
-										                        <i></i> 
-										                    </label>
-										                </th>
-	                                                    <th>기업/기관</th>
-	                                                    <th>고용형태</th>
-	                                                    <th>이름</th>
-	                                                    <th>비고</th>
-	                                                </tr>
-	                                            </thead>
-	                                            <tbody>
-	                                                <tr>
-	                                                    <td class="smart-form remove-sort"> 
-										                    <label class="checkbox">
-										                        <input type="checkbox">
-										                        <i></i> 
-										                    </label>
-										                </td>
-	                                                    <td class="tbody">드림인프라</td>
-	                                                    <td>임직원</td>
-	                                                    <td class="tbody">
-	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
-													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-													        data-content="
-													            <ul class='user_info'>
-													                <p><img src='../../images/member_big.png'></p>
-													                <li>시스템관리자</li>
-													                <li>(주)드림인프라</li>
-													                <li>SI사업부</li>
-													                <li>부장</li>
-													                <li>systemadministrator@dreaminfra.co.kr </li>
-													            </ul>
-													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
-													        </button>
-	                                                    </td>
-	                                                    <td>
-	                                                    	<button type="button" class="btn btn-default btn-sm">추가</button>
-	                                                    </td>
-	                                                </tr>
-	                                            </tbody>
-	                                        </table>
-	                                    </div>
-	                                    <!-- END widget content -->
-	                                </div>
-	                            </div>
-	                            <div style="width: 100%; height: 30px;"></div>
-			                        
-			                        
+                                        <table class="table table-bordered table-condensed table-hover tbodycenter">
+                                               <colgroup>
+								                <col width="20px">
+								                <col width="150px">
+								                <col width="90px">
+								                <col>
+								                <col width="70px">
+								            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                   	<th class="smart-form remove-sort"> 
+									                    <label class="checkbox">
+									                        <input type="checkbox">
+									                        <i></i> 
+									                    </label>
+									                </th>
+                                                    <th>기업/기관</th>
+                                                    <th>고용형태</th>
+                                                    <th>이름</th>
+                                                    <th>비고</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="smart-form remove-sort"> 
+									                    <label class="checkbox">
+									                        <input type="checkbox">
+									                        <i></i> 
+									                    </label>
+									                </td>
+                                                    <td class="tbody">드림인프라</td>
+                                                    <td>임직원</td>
+                                                    <td class="tbody">
+                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
+												        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+												        data-content="
+												            <ul class='user_info'>
+												                <p><img src='../../images/member_big.png'></p>
+												                <li>시스템관리자</li>
+												                <li>(주)드림인프라</li>
+												                <li>SI사업부</li>
+												                <li>부장</li>
+												                <li>systemadministrator@dreaminfra.co.kr </li>
+												            </ul>
+												        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+												        </button>
+                                                    </td>
+                                                    <td>
+                                                    	<button type="button" class="btn btn-default btn-sm">추가</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="text-center">
+		                                    <ul class="pagination pagination-sm pagination-alt mt0 mb0">
+		                                        <li>
+		                                            <a href="javascript:void(0);">처음</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">이전</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">1</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">2</a>
+		                                        </li>
+		                                        <li class="active">
+		                                            <a href="javascript:void(0);">3</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">4</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">5</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">다음</a>
+		                                        </li>
+		                                        <li>
+		                                            <a href="javascript:void(0);">마지막</a>
+		                                        </li>
+		                                    </ul>
+		                                </div>
 			                    </div>
 			                    
 			                    <div class="col-md-12 col-md-6">
 	                        		<h6 class="h-title float-left">참가자 등록 목록</h6>
-	                        		<div class="jarviswidget jarviswidget-color-blueDark mb20"  data-widget-editbutton="false">
                                 
-	                                <!-- widget edit box -->
-	                                <div class="jarviswidget-editbox">
-	                                    <!-- This area used as dropdown edit box -->
-	                                </div>
-	                                <!-- end widget edit box -->
-                                	
 	                                <p class="go_btn align-right mb6">
                                     	<button class="btn btn-default mt4"><i class="fa fa-minus"></i>&nbsp;일괄제거</button>
 	                                </p>
 	                                
-	                                <!-- widget div-->
-	                                <div class="mt30 table-bordered ">
-	                
-	                                    <!-- widget content -->
-	                                    <div class="widget-body no-padding border-top-type1 display-non-wid-id-3">
-	                            
-	                                        <table id="dt_basic_1" class="table table-bordered table-condensed table-hover tbodycenter">
-                                                <colgroup>
-									                <col width="20px">
-									                <col width="150px">
-									                <col width="90px">
-									                <col>
-									                <col width="70px">
-									            </colgroup>
-	                                            <thead>
-	                                                <tr>
-                                                    	<th class="smart-form remove-sort"> 
-										                    <label class="checkbox">
-										                        <input type="checkbox">
-										                        <i></i> 
-										                    </label>
-										                </th>
-	                                                    <th>기업/기관</th>
-	                                                    <th>고용형태</th>
-	                                                    <th>이름</th>
-	                                                    <th>비고</th>
-	                                                </tr>
-	                                            </thead>
-	                                            <tbody>
-	                                                <tr>
-	                                                    <td class="smart-form remove-sort"> 
-										                    <label class="checkbox">
-										                        <input type="checkbox">
-										                        <i></i> 
-										                    </label>
-										                </td>
-	                                                    <td class="tbody">드림인프라</td>
-	                                                    <td>임직원</td>
-	                                                    <td class="tbody">
-	                                                    	<button class="user_info_box" rel="popover-hover" data-placement="left"
-													        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
-													        data-content="
-													            <ul class='user_info'>
-													                <p><img src='../../images/member_big.png'></p>
-													                <li>시스템관리자</li>
-													                <li>(주)드림인프라</li>
-													                <li>SI사업부</li>
-													                <li>부장</li>
-													                <li>systemadministrator@dreaminfra.co.kr </li>
-													            </ul>
-													        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
-													        </button>
-	                                                    </td>
-	                                                    <td>
-	                                                    	<button type="button" class="btn btn-default btn-sm">제거</button>
-	                                                    </td>
-	                                                </tr>
-	                                            </tbody>
-	                                        </table>
-	                                    </div>
-	                                    <!-- END widget content -->
-	                                </div>
-	                            </div>
+                                    <table class="table table-bordered table-condensed table-hover tbodycenter">
+                                        <colgroup>
+							                <col width="20px">
+							                <col width="150px">
+							                <col width="90px">
+							                <col>
+							                <col width="70px">
+						            	</colgroup>
+                                          <thead>
+                                              <tr>
+                                                 	<th class="smart-form remove-sort"> 
+							                    <label class="checkbox">
+							                        <input type="checkbox">
+							                        <i></i> 
+							                    </label>
+							                </th>
+                                                  <th>기업/기관</th>
+                                                  <th>고용형태</th>
+                                                  <th>이름</th>
+                                                  <th>비고</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td class="smart-form remove-sort"> 
+							                    <label class="checkbox">
+							                        <input type="checkbox">
+							                        <i></i> 
+							                    </label>
+							                </td>
+                                                  <td class="tbody">드림인프라</td>
+                                                  <td>임직원</td>
+                                                  <td class="tbody">
+                                                  	<button class="user_info_box" rel="popover-hover" data-placement="left"
+										        data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보" 
+										        data-content="
+										            <ul class='user_info'>
+										                <p><img src='../../images/member_big.png'></p>
+										                <li>시스템관리자</li>
+										                <li>(주)드림인프라</li>
+										                <li>SI사업부</li>
+										                <li>부장</li>
+										                <li>systemadministrator@dreaminfra.co.kr </li>
+										            </ul>
+										        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>홍길동</strong>
+										        </button>
+                                                  </td>
+                                                  <td>
+                                                  	<button type="button" class="btn btn-default btn-sm">제거</button>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
 			                    </div>
 			                    
 		                    </div>

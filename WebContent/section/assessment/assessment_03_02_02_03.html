@@ -315,7 +315,7 @@
                 <div class="well well-light">
                 	<div class="row">
                         <div class="col-md-12">
-                        	<h6 class="h-title"> 평가조회</h6>
+                        	<h6 class="h-title"> 단계진행</h6>
 							<div class="fuelux">
 		                        <div class="wizard mb20">
 		
@@ -391,7 +391,12 @@
 														</tbody>
 													</table>
 													
-													<h6 class="s-title"> 진행현황</h6>
+													<div class="align-right mt10">
+														<h6 class="s-title float-left"> 진행현황</h6>
+														<div>
+															<button class="btn btn-default btn-sm"><i class="fa fa-fw fa-download"></i>질의문 엑셀양식 내려받기</button>
+														</div>
+													</div>
 													<table class="table table-bordered mb10">
 														<colgroup>
 															<col width="100px">
@@ -430,10 +435,14 @@
 														</tbody>
 													</table>
 													<div class="panel-group smart-accordion-default" id="accordion">
-														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> 
+														<div class="align-right mb10">
+															<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1"><i class="fa fa-fw fa-upload"></i>엑셀 업로드</button>
+														</div> 
+														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 														<table class="table table-bordered mb0">
 															<colgroup>
 												                <col>
+												                
 												                <col width="80px">
 												                <col width="80px">
 												                <col width="80px">
@@ -484,9 +493,6 @@
 													            		<td>
 													            			<button class="btn btn-default bt_show">
 																                <i class="fa fa-plus"></i>
-																            </button>
-																            <button class="btn btn-default bt_hide">
-																                <i class="fa fa-minus"></i> 
 																            </button>
 													            		</td>
 													            	</tr>
@@ -652,15 +658,9 @@
 		                       
 		                    </div>
 	
-							<div class="align-right mt30">
-					            <button type="button" class="btn btn-lg btn-cancel float-left">
-					                <i class="fa fa-arrow-left"></i> 이전
-					            </button> 
-					            <button type="button" class="btn btn-lg btn-success ">
-					                다음
-					                <i class="fa fa-arrow-right"></i>
-					            </button>
-					        </div>			
+							<div class="mt30">
+					            <button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
+					        </div>	
 					        	        
 						</div>
 						<!-- end row  -->
@@ -726,6 +726,51 @@
 		</div> 
 		<!-- END SHORTCUT AREA -->
 		
+		
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title"><i class="fa fa-power-off"></i> 엑셀에서 질의문응답 추출</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+								<table class="table table-bordered form">
+							        <colgroup>
+							            <col style="width: 80px;">
+							            <col>
+							        </colgroup>
+							        <tbody>
+							        <tr>
+							        	<th>엑셀 파일</th>
+							            <td> 
+							            	<input type="file" class="btn btn-default" id="exampleInputFile1">
+							            </td>
+							        </tr>
+							        </tbody></table>
+							
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 		
 	
 
@@ -877,18 +922,9 @@
 		}); 
 		
 		</script>
-	
-	
-	
-		
 
 
 
-
-
-
-
-
-	</body>
+</body>
 
 </html>

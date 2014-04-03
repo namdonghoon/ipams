@@ -285,7 +285,7 @@
                 </span>
 				<!-- breadcrumb -->
 				<ol class="breadcrumb">
-					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가수행</li><li>현황진단 목록</li>
+					<li>IPAMS HOME</li><li>평가수행관리 </li><li>평가수행</li><li>위험평가 목록</li>
 				</ol>
 				<!-- end breadcrumb -->
 
@@ -309,7 +309,7 @@
             <div id="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 현황진단 목록</span></h1>
+                        <h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-keyboard-o"></i> 평가수행관리 <span> > 위험평가 목록</span></h1>
                     </div>
                 </div>
                 <div class="well well-light">
@@ -327,10 +327,10 @@
 		                                    <span class="badge">2</span>평가팀 구성<span class="chevron"></span>
 		                                </li>
 		                                <li data-target="#step3" class="active">
-		                                    <span class="badge">3</span>진단<span class="chevron"></span>
+		                                    <span class="badge">3</span>침해요인 분석<span class="chevron"></span>
 		                                </li>
 		                                <li data-target="#step4">
-		                                    <span class="badge">4</span>보정<span class="chevron"></span>
+		                                    <span class="badge">4</span>위험 분석<span class="chevron"></span>
 		                                </li>
 		                                
 		                            </ul>
@@ -391,7 +391,9 @@
 														</tbody>
 													</table>
 													
-													<h6 class="s-title"> 진행현황</h6>
+													<div class="align-right mt10">
+														<h6 class="s-title float-left"> 진행현황</h6>
+													</div>
 													<table class="table table-bordered mb10">
 														<colgroup>
 															<col width="100px">
@@ -430,22 +432,22 @@
 														</tbody>
 													</table>
 													<div class="panel-group smart-accordion-default" id="accordion">
-														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> 
+														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 														<table class="table table-bordered mb0">
 															<colgroup>
 												                <col>
 												                <col width="80px">
 												                <col width="80px">
-												                <col width="80px">
+												                <col width="100px">
 												                <col width="200px">
 												                <col width="50px">
 												            </colgroup>
 															<thead>
 													            <tr>
 													                <th>평가대상</th>
-													                <th>미 응답</th>
-													                <th>응답완료</th>
-													                <th>질문 수</th>
+													                <th>미 분석</th>
+													                <th>분석완료</th>
+													                <th>침해요인 수</th>
 													                <th>진행률</th>
 													                <th>상세</th>
 													            </tr>
@@ -485,9 +487,6 @@
 													            			<button class="btn btn-default bt_show">
 																                <i class="fa fa-plus"></i>
 																            </button>
-																            <button class="btn btn-default bt_hide">
-																                <i class="fa fa-minus"></i> 
-																            </button>
 													            		</td>
 													            	</tr>
 													            </tbody>
@@ -520,24 +519,24 @@
 																			            <col>
 																			            <col width="80px">
 																			            <col width="80px">
-																			            <col width="80px">
+																			            <col width="100px">
 																			            <col width="200px">
 																			            <col width="60px">
 																			            <col width="40px">
 																			        </colgroup>
 																			        <thead>
 																			        <tr>
-																			            <th colspan="2">경기도 정보보안 거버넌스 매트릭스</th>
-																			            <th>미 응답</th>
-																			            <th>응답완료</th>
-																			            <th>질문 수</th>
+																			            <th colspan="2">기반시설 취약성 진단(관리/물리 영역)</th>
+																			            <th>미 분석</th>
+																			            <th>분석완료</th>
+																			            <th>침해요인 수</th>
 																			            <th>진행률</th>
 																			            <th colspan="2">비고</th>
 																			        </tr>
 																			        </thead>
 																			        <tbody>
 																			        	<tr class="selectrow">
-																			        		<td class="tleft" colspan="2">1. 전략적 연계</td>
+																			        		<td class="tleft" colspan="2">1. 관리적 분야</td>
 																			        		<td><span class="non-assign">0</span></td>
 																			        		<td><span class="assign">0</span></td>
 																			        		<td><span class="all">0</span></td>
@@ -660,7 +659,7 @@
 					                다음
 					                <i class="fa fa-arrow-right"></i>
 					            </button>
-					        </div>			
+					        </div>
 					        	        
 						</div>
 						<!-- end row  -->
@@ -726,6 +725,50 @@
 		</div> 
 		<!-- END SHORTCUT AREA -->
 		
+		
+		<!-- Modal_1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+								<table class="table table-bordered form">
+							        <colgroup>
+							            <col style="width: 80px;">
+							            <col>
+							        </colgroup>
+							        <tbody>
+							        <tr>
+							        	<th>엑셀 파일</th>
+							            <td> 
+							            	<input type="file" class="btn btn-default" id="exampleInputFile1">
+							            </td>
+							        </tr>
+							        </tbody></table>
+							
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+	                        닫기
+	                    </button>
+	                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+	                       	완료
+	                    </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!-- end modal -->
 		
 	
 
@@ -877,18 +920,9 @@
 		}); 
 		
 		</script>
-	
-	
-	
-		
 
 
 
-
-
-
-
-
-	</body>
+</body>
 
 </html>

@@ -107,7 +107,7 @@
                         	
 						</div>
 						
-						
+						<span class="badge badge-color-bluegreen">진행중</span>
 						
 		                <div class="search">
 				            <button class="btn btn-default">
@@ -133,7 +133,7 @@
 				    	<!--============ START 이동버튼 ============ -->
 						<h6 class="h-title">이동버튼</h6>
 						
-				        <div>
+				        <div class="mt30">
 				            <button class="btn btn-default btn-lg"><i class="fa fa-list-ul margin-right-5"></i>목록으로 가기</button>
 				        </div>
 				
@@ -221,7 +221,7 @@
 		        			<input class="form-control display-inline" type="text" maxlength="3" style="width: 50px">  
 						</div>
 						
-						<input class="form-control" placeholder="구성도명을 입력하세요." type="text">
+						<input class="form-control"  placeholder="구성도명을 입력하세요." type="text">
 						<input type="file" class="btn btn-default" id="exampleInputFile1">
 						<input class="form-control tagsinput" value="" data-role="tagsinput">
 				        <table>
@@ -424,7 +424,25 @@
 				        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
 				        </button>
 				        <!--인명정보 끝-->
-				    	
+
+                        <!-- 인명정보, 삭제 -->
+                        <div class="btn-group user_info_box">
+                        <button class="btn_transparent" rel="popover-hover" data-placement="left"
+                                data-original-title="<i class='fa fa-fw fa-file-text-o'></i>상세정보"
+                                data-content="
+				            <ul class='user_info'>
+				                <p><img src='../../images/member_big.png'></p>
+				                <li>시스템관리자</li>
+				                <li>(주)드림인프라</li>
+				                <li>SI사업부</li>
+				                <li>부장</li>
+				                <li>systemadministrator@dreaminfra.co.kr </li>
+				            </ul>
+				        " data-html="true"><img src="../../images/member.png" style="width:16px; margin-right:5px;"><strong>총괄관리자</strong>
+                        </button>
+                        <button class="remove_btn"><i class="fa fa-times"></i></button>
+                        </div>
+                        <!--인명정보 끝-->
 				    	
 				    	<!--============= END 사용자 정보박스 =============-->
 				    	
@@ -433,7 +451,7 @@
 		
 			
 				
-				 
+				
 				
 				
 				
@@ -580,11 +598,11 @@
 		
 				<div class="col-md-12 col-md-4">
 				    <div class="show-grid-div1 well well-light">
-				    	
+				    	<label class="input error-tle">
+								<input type="text">
+							</label>
+							
 				    	<!--============= START 에러 체크 박스 CSS=============-->
-				    	<h6 class="h-title">에러 체크 CSS: .error</h6>
-				    	<em class="error">필수로 입력해야 합니다.</em>
-				    	
 				    	<h6 class="h-title">에러 체크 CSS: .smart-form -> .state-error</h6>
 	                    <div class="smart-form">
 							<label class="input state-error">
@@ -871,7 +889,7 @@
 		<h1>IPAMS는 익스플로러8 이상에서 작동합니다. 브라우저를 업데이트 해주세요. www.microsoft.com/download</h1>
  
 		<![endif]-->
- 
+
 		<!-- Demo purpose only -->
 		<script src="../../js/demo.js"></script>
 

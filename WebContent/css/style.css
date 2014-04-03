@@ -873,7 +873,26 @@ margin-bottom: 40px;
 	float: left;
 }
 
-
+.badge.very_high{
+	background-color: #da4f49 !important;
+    color: #fff;
+}
+.badge.high{
+	background-color: #faa732 !important;
+    color: #fff;
+}
+.badge.normal{
+	background-color: #5bb75b !important;
+    color: #fff;
+}
+.badge.low{
+	background-color: #49afcd !important;
+    color: #fff;
+}
+.badge.very_low{
+	background-color: #006dcc !important;
+    color: #fff;
+}
 
 /* 자산등록 사업정보 표 (높음, 보통, 낮음) */
 .active.very_high, .very_high:active, .very_high:hover{
@@ -900,6 +919,35 @@ margin-bottom: 40px;
     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
     background-color: #006dcc !important;
+    color: #fff;
+    outline: 0;
+}
+
+/*  평가수행->위험분석-> 미분석, 매우높음, 매우 낮음 표시 */
+.active.high, .high:active, .high:hover{
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #faa732 !important;
+    color: #fff;
+    outline: 0;
+}
+.active.none, .nonel:active, .none:hover {
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #999 !important;
+    color: #fff;
+    outline: 0;
+}
+.active.low, .low:active, .low:hover {
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #49afcd !important;
     color: #fff;
     outline: 0;
 }
@@ -1442,6 +1490,10 @@ ul.notice_tab_in li div p:first-child{
  
  
  /*  에러검증  */
+ .error-input{
+	border-color: #A90329 !important;
+	border-color: #A90329;
+ }
 .state-error input, .state-error span{
 	background: #fff0f0;
 	border-color: #A90329;
@@ -1451,7 +1503,6 @@ ul.notice_tab_in li div p:first-child{
 	border-color: #A90329;
 }
 .state-error em,.state-error ~ em, .error,  .error em{
-	display: block;
 	margin-top: 6px;
 	padding: 0 1px;
 	font-style: normal;
@@ -1539,4 +1590,174 @@ h5.title{
 .form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox,
 .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
     padding-top: 0;
+}
+
+/*  데이터 테이블 페이징  */
+
+.paging_full_numbers .paginate_button, .paging_full_numbers .paginate_active{
+position: relative;
+float: left;
+padding: 6px 12px;
+line-height: 1.428571429;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+margin-left: -1px;
+color: #999;
+background-color: #fff;
+border-color: #ddd;
+}
+.paginate_button_disabled{
+cursor: not-allowed;
+}
+.paging_full_numbers .paginate_active{
+background-color: #36AECC;
+border-color: #36AECC;
+color: white;
+}
+.page-box{
+text-align: center;
+}
+.paging_full_numbers a{
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+    font-size: 11px !important
+}
+/* 평가현황진단 */
+span.non-assign, span.improper, span.non-implementation {
+    color: #ed2f0a;
+    font-weight: 700;
+}
+span.all {
+    color: #0e77ad;
+    font-weight: 700;
+}
+span.assign, span.implementation, span.proper {
+    color: #09ba13;
+    font-weight: 700;
+}
+table tr.selectrow {
+    background-color: #fcf8e3;
+}
+
+/*평가수행-평가유형관리-평가단계설정*/
+.box-p10-center{
+    padding: 20px 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 1px #dddddd;
+}
+.box-p10-center.selected2 .btn{
+    border: solid 1px #0091d9;
+}
+.selected2:before {
+    display: block;
+    position: absolute;
+    content: "\f00c";
+    color: #fff;
+    right: 20px;
+    font-family: FontAwesome;
+    z-index: 1;
+    top: 5px;
+}
+.selected2:after {
+    width: 0;
+    height: 0;
+    border-top: 45px solid #0091d9;
+    border-left: 45px solid rgba(0,0,0,0);
+    position: absolute;
+    display: block;
+    right: 13px;
+    content: "";
+    top: 0;
+}
+.selected2{
+    border: solid 1px #0091d9;
+}
+.teststep_box{
+    padding: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px #dddddd;
+}
+.teststep_box a, .teststep_box span{
+    margin: 0 5px;
+}
+.teststep_box a.active{
+    background: #0091d9;
+}
+.teststep_box a.disabled{
+    opacity: 0.5;
+    color: #000;
+    cursor:not-allowed;
+}
+.teststep_box a.disabled {
+    text-decoration: none;
+}
+.teststep_box span i{
+    color: #999999;
+}
+.teststep_box .badge{
+    padding: 8px 15px;
+    margin: 5px 0;
+    min-width: 145px;
+    font-weight: normal;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.teststep{
+    padding: 0 10px;
+}
+.bg-color-cyan{
+    background: #0091d9;
+}
+.bg-color-darkred{
+    background: #a90329;
+}
+.input_short{
+    width: 160px;
+}
+td.slider_td .slider{
+    margin-bottom: 0;
+}
+
+.btn_transparent{
+    border: none;
+    padding: 0;
+    margin:  0 5px 0 0;
+    background: none;
+}
+.remove_btn{
+    border: none;
+    border-left: solid 1px #dddddd;
+    margin: 0;
+    padding: 0 0 0 7px ;
+    background: none;
+}
+
+.box_sm{
+    border: solid 1px #dddddd;
+    background: #eeeeee;
+    padding:7px 15px 6px 15px;
+}
+.ui-spinner-down, .ui-spinner-up {
+    background: #ffffff;
+    border: solid 1px #dddddd;
+}
+.ui-spinner-down:hover, .ui-spinner-up:hover{
+    background: #0066b3;
+}
+.ui-spinner-down:before, .ui-spinner-up:before {
+    color: #999999;
+}
+.ui-spinner-down:hover:before, .ui-spinner-up:hover:before {
+    color: #ffffff;
+}
+.disabled_selected{
+    background-color: #dddddd!important;
 }
