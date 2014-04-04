@@ -796,6 +796,8 @@ margin-bottom: 40px;
     margin-top: 40px;
 }.mt50{
     margin-top: 50px !important;
+}.mb60 {
+margin-bottom: 60px;
 }.mt60{
     margin-top: 60px;
 }.mr70{
@@ -1492,7 +1494,7 @@ ul.notice_tab_in li div p:first-child{
  /*  에러검증  */
  .error-input{
 	border-color: #A90329 !important;
-	border-color: #A90329;
+    background: #fff0f0;
  }
 .state-error input, .state-error span{
 	background: #fff0f0;
@@ -1713,6 +1715,20 @@ table tr.selectrow {
 .teststep{
     padding: 0 10px;
 }
+.teststep_title{
+    float: left;
+    width:180px;
+}
+.teststep_title a{
+    display: inline-block;
+    width:150px;
+}
+.teststep_title a i{
+    color: #999999;
+}
+.teststep_title a.active{
+    background: #eeeeee;
+}
 .bg-color-cyan{
     background: #0091d9;
 }
@@ -1725,7 +1741,6 @@ table tr.selectrow {
 td.slider_td .slider{
     margin-bottom: 0;
 }
-
 .btn_transparent{
     border: none;
     padding: 0;
@@ -1739,7 +1754,6 @@ td.slider_td .slider{
     padding: 0 0 0 7px ;
     background: none;
 }
-
 .box_sm{
     border: solid 1px #dddddd;
     background: #eeeeee;
@@ -1760,4 +1774,21 @@ td.slider_td .slider{
 }
 .disabled_selected{
     background-color: #dddddd!important;
+}
+
+.btn:hover, .btn.active, .btn.active.disabled, .btn.active.disabled:hover {
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #999;
+background-image: none;
+-webkit-transition: background 0.2s ease-in-out;
+-moz-transition: background 0.2s ease-in-out;
+-ms-transition: background 0.2s ease-in-out;
+-o-transition: background 0.2s ease-in-out;
+transition: background 0.2s ease-in-out;
+}
+.btn.disabled:hover, .btn[disabled]:hover {
+color: #333;
+background-color: #E6E6E6;
+text-shadow: none;
 }
